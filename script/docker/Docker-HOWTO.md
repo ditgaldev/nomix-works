@@ -1,7 +1,7 @@
 # Docker Build & Up
 
 目标: 快速部署体验系统，帮助了解系统之间的依赖关系。
-依赖：docker compose v2，删除`name: nomix-system`，降低`version`版本为`3.3`以下，支持`docker-compose`。
+依赖：docker compose v2，删除`name: nomix-works`，降低`version`版本为`3.3`以下，支持`docker-compose`。
 
 ## 功能文件列表
 

@@ -71,7 +71,7 @@
 
 ① Spring Boot 单体架构：<>
 
-![架构图](/.image/common/nomix-vue-pro-architecture.png)
+![架构图](/.image/common/nomix-works-architecture.png)
 
 ② Spring Cloud 微服务架构：<>
 
@@ -83,7 +83,7 @@
 
 系统内置多种多种业务功能，可以用于快速你的业务系统：
 
-![功能分层](/.image/common/nomix-vue-pro-biz.png)
+![功能分层](/.image/common/nomix-works-biz.png)
 
 * 通用模块（必选）：系统功能、基础设施
 * 通用模块（可选）：工作流程、支付系统、数据报表、会员中心

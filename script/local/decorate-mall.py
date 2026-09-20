@@ -1,6 +1,6 @@
 import json,urllib.request,subprocess,pathlib,datetime
 root=pathlib.Path.cwd();out=root/'outputs/db-init';stamp=datetime.datetime.now().strftime('%Y%m%d%H%M%S')
-args=['docker','exec','-i','-e','MYSQL_PWD=123456','nomix-htzx-mysql','mysql','-uroot','-N','--default-character-set=utf8mb4','nomix-vue-pro']
+args=['docker','exec','-i','-e','MYSQL_PWD=123456','nomix-works-mysql','mysql','-uroot','-N','--default-character-set=utf8mb4','nomix-works']
 backup=subprocess.run(args,input=b'SELECT JSON_OBJECT("id",id,"property",property) FROM promotion_diy_page WHERE tenant_id=1;',capture_output=True,check=True).stdout
 (out/f'decoration-before-{stamp}.jsonl').write_bytes(backup)
 req=urllib.request.Request('http://127.0.0.1:48080/app-api/promotion/diy-template/used',headers={'tenant-id':'1'})

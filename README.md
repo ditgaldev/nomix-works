@@ -30,11 +30,20 @@ Nomix 是一个前后端分离的企业管理系统，包含 Java 后端、PC �
 | `nomix-module-hrm` | 员工、招聘、考勤、薪资、社保与绩效 | 否 |
 | `nomix-module-fms` | 凭证、账簿、报表与财务结账 | 否 |
 | `nomix-module-pms` | 项目、事项、迭代、看板、工时和知识库 | 否 |
+| `nomix-module-oa` | 考勤、日程、计划、任务、公告、通讯录、会议室和协同办公 | 否 |
 | `nomix-module-im` | 单聊、群聊、消息收发、撤回和已读状态 | 否 |
 
 “默认构建”为“是”的模块已在根目录 `pom.xml` 的 `<modules>` 中启用。“否”的模块源码仍完整保留，只是默认没有加入 Maven Reactor；需要使用时，在根目录 `pom.xml` 中启用对应 `<module>`，并准备该模块需要的配置和数据库表。
 
 `nomix-framework` 内含公共基础包以及 MyBatis、Redis、Web、安全、WebSocket、监控、任务、消息队列、Excel、租户和数据权限等 Starter。`nomix-module-mall` 内含商品、营销、交易、统计等子模块，`nomix-module-iot` 内含业务、核心和网关子模块。
+
+### OA 协同办公
+
+`nomix-module-oa` 提供考勤、日程、计划、任务、公告、通讯录、邮件、会议室、文件、用印、车辆、办公用品和工作汇报等后端能力。
+
+![OA 功能图](.image/common/oa-feature.png)
+
+![OA 预览图](.image/common/oa-preview.png)
 
 ### 前端应用
 
@@ -68,10 +77,10 @@ Nomix 是一个前后端分离的企业管理系统，包含 Java 后端、PC �
 
 ## 数据库
 
-创建数据库 `nomix-vue-pro`，然后依次导入：
+创建数据库 `nomix-works`，然后依次导入：
 
 ```text
-sql/mysql/nomix-vue-pro.sql
+sql/mysql/nomix-works.sql
 sql/mysql/quartz.sql
 ```
 

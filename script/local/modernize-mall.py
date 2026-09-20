@@ -23,5 +23,5 @@ sql='START TRANSACTION;\n'+f"UPDATE promotion_diy_template SET property={lit(t['
 for name,page in [('首页',t['home']),('我的',t['user'])]:
  namehex=name.encode().hex();sql+=f"UPDATE promotion_diy_page SET property={lit(page)},update_time=NOW() WHERE template_id={int(t['id'])} AND tenant_id=1 AND name=CONVERT(0x{namehex} USING utf8mb4) COLLATE utf8mb4_unicode_ci AND deleted=0;\n"
 sql+='COMMIT;';(root/'sql/mysql/local-init/04-modern-decoration.sql').write_text(sql,encoding='utf8')
-subprocess.run(['docker','exec','-i','-e','MYSQL_PWD=123456','nomix-htzx-mysql','mysql','-uroot','nomix-vue-pro'],input=sql.encode(),check=True)
+subprocess.run(['docker','exec','-i','-e','MYSQL_PWD=123456','nomix-works-mysql','mysql','-uroot','nomix-works'],input=sql.encode(),check=True)
 print('Modern decoration applied')

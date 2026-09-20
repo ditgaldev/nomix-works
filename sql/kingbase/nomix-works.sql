@@ -3,9 +3,9 @@
 
  Source Server Type    : MySQL
 
- Target Server Type    : PostgreSQL
+ Target Server Type    : Kingbase
 
- Date: 2026-09-20 13:27:14
+ Date: 2026-09-20 13:27:16
 */
 
 
@@ -33,12 +33,12 @@ INSERT INTO dual VALUES (1);
 DROP TABLE IF EXISTS infra_api_access_log;
 CREATE TABLE infra_api_access_log (
     id int8 NOT NULL,
-  trace_id varchar(64) NOT NULL DEFAULT '',
+  trace_id varchar(64) NULL DEFAULT '',
   user_id int8 NOT NULL DEFAULT 0,
   user_type int2 NOT NULL DEFAULT 0,
   application_name varchar(50) NOT NULL,
-  request_method varchar(16) NOT NULL DEFAULT '',
-  request_url varchar(255) NOT NULL DEFAULT '',
+  request_method varchar(16) NULL DEFAULT '',
+  request_url varchar(255) NULL DEFAULT '',
   request_params text NULL,
   response_body text NULL,
   user_ip varchar(50) NOT NULL,
@@ -109,10 +109,10 @@ CREATE TABLE infra_api_error_log (
   user_ip varchar(50) NOT NULL,
   user_agent varchar(512) NOT NULL,
   exception_time timestamp NOT NULL,
-  exception_name varchar(128) NOT NULL DEFAULT '',
-  exception_message text NOT NULL,
-  exception_root_cause_message text NOT NULL,
-  exception_stack_trace text NOT NULL,
+  exception_name varchar(128) NULL DEFAULT '',
+  exception_message text NULL,
+  exception_root_cause_message text NULL,
+  exception_stack_trace text NULL,
   exception_class_name varchar(512) NOT NULL,
   exception_file_name varchar(512) NOT NULL,
   exception_method_name varchar(512) NOT NULL,
@@ -235,12 +235,12 @@ CREATE TABLE infra_codegen_table (
     id int8 NOT NULL,
   data_source_config_id int8 NOT NULL,
   scene int2 NOT NULL DEFAULT 1,
-  table_name varchar(200) NOT NULL DEFAULT '',
-  table_comment varchar(500) NOT NULL DEFAULT '',
+  table_name varchar(200) NULL DEFAULT '',
+  table_comment varchar(500) NULL DEFAULT '',
   remark varchar(500) NULL DEFAULT NULL,
   module_name varchar(30) NOT NULL,
   business_name varchar(30) NOT NULL,
-  class_name varchar(100) NOT NULL DEFAULT '',
+  class_name varchar(100) NULL DEFAULT '',
   class_comment varchar(50) NOT NULL,
   author varchar(50) NOT NULL,
   template_type int2 NOT NULL DEFAULT 1,
@@ -297,9 +297,9 @@ CREATE TABLE infra_config (
     id int8 NOT NULL,
   category varchar(50) NOT NULL,
   type int2 NOT NULL,
-  name varchar(100) NOT NULL DEFAULT '',
-  config_key varchar(100) NOT NULL DEFAULT '',
-  value varchar(500) NOT NULL DEFAULT '',
+  name varchar(100) NULL DEFAULT '',
+  config_key varchar(100) NULL DEFAULT '',
+  value varchar(500) NULL DEFAULT '',
   visible bool NOT NULL,
   remark varchar(500) NULL DEFAULT NULL,
   creator varchar(64) NULL DEFAULT '',
@@ -352,10 +352,10 @@ CREATE SEQUENCE infra_config_seq
 DROP TABLE IF EXISTS infra_data_source_config;
 CREATE TABLE infra_data_source_config (
     id int8 NOT NULL,
-  name varchar(100) NOT NULL DEFAULT '',
+  name varchar(100) NULL DEFAULT '',
   url varchar(1024) NOT NULL,
   username varchar(255) NOT NULL,
-  password varchar(255) NOT NULL DEFAULT '',
+  password varchar(255) NULL DEFAULT '',
   creator varchar(64) NULL DEFAULT '',
   create_time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updater varchar(64) NULL DEFAULT '',
@@ -639,7 +639,7 @@ CREATE SEQUENCE infra_job_log_seq
 DROP TABLE IF EXISTS system_dept;
 CREATE TABLE system_dept (
     id int8 NOT NULL,
-  name varchar(30) NOT NULL DEFAULT '',
+  name varchar(30) NULL DEFAULT '',
   parent_id int8 NOT NULL DEFAULT 0,
   sort int4 NOT NULL DEFAULT 0,
   leader_user_id int8 NULL DEFAULT NULL,
@@ -706,9 +706,9 @@ DROP TABLE IF EXISTS system_dict_data;
 CREATE TABLE system_dict_data (
     id int8 NOT NULL,
   sort int4 NOT NULL DEFAULT 0,
-  label varchar(100) NOT NULL DEFAULT '',
-  value varchar(100) NOT NULL DEFAULT '',
-  dict_type varchar(100) NOT NULL DEFAULT '',
+  label varchar(100) NULL DEFAULT '',
+  value varchar(100) NULL DEFAULT '',
+  dict_type varchar(100) NULL DEFAULT '',
   status int2 NOT NULL DEFAULT 0,
   color_type varchar(100) NULL DEFAULT '',
   css_class varchar(100) NULL DEFAULT '',
@@ -2312,8 +2312,8 @@ CREATE SEQUENCE system_dict_data_seq
 DROP TABLE IF EXISTS system_dict_type;
 CREATE TABLE system_dict_type (
     id int8 NOT NULL,
-  name varchar(100) NOT NULL DEFAULT '',
-  type varchar(100) NOT NULL DEFAULT '',
+  name varchar(100) NULL DEFAULT '',
+  type varchar(100) NULL DEFAULT '',
   status int2 NOT NULL DEFAULT 0,
   remark varchar(500) NULL DEFAULT NULL,
   creator varchar(64) NULL DEFAULT '',
@@ -2701,10 +2701,10 @@ DROP TABLE IF EXISTS system_login_log;
 CREATE TABLE system_login_log (
     id int8 NOT NULL,
   log_type int8 NOT NULL,
-  trace_id varchar(64) NOT NULL DEFAULT '',
+  trace_id varchar(64) NULL DEFAULT '',
   user_id int8 NOT NULL DEFAULT 0,
   user_type int2 NOT NULL DEFAULT 0,
-  username varchar(50) NOT NULL DEFAULT '',
+  username varchar(50) NULL DEFAULT '',
   result int2 NOT NULL,
   user_ip varchar(50) NOT NULL,
   user_agent varchar(512) NOT NULL,
@@ -2810,7 +2810,7 @@ CREATE TABLE system_mail_log (
   template_code varchar(63) NOT NULL,
   template_nickname varchar(255) NULL DEFAULT NULL,
   template_title varchar(255) NOT NULL,
-  template_content text NOT NULL,
+  template_content text NULL,
   template_params varchar(255) NOT NULL,
   send_status int2 NOT NULL DEFAULT 0,
   send_time timestamp NULL DEFAULT NULL,
@@ -2915,7 +2915,7 @@ DROP TABLE IF EXISTS system_menu;
 CREATE TABLE system_menu (
     id int8 NOT NULL,
   name varchar(50) NOT NULL,
-  permission varchar(100) NOT NULL DEFAULT '',
+  permission varchar(100) NULL DEFAULT '',
   type int2 NOT NULL,
   sort int4 NOT NULL DEFAULT 0,
   parent_id int8 NOT NULL DEFAULT 0,
@@ -3044,7 +3044,7 @@ INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (80, '设置用户角色', 'system:permission:assign-user-role', 3, 8, 5, '', '', '', NULL, 0, '1', '1', '1', '', '2021-01-07 10:23:28', '', '2026-08-14 01:49:42', '0');
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (81, '获得 Redis 监控信息', 'infra:redis:get-monitor-info', 3, 1, 17, '', '', '', NULL, 0, '1', '1', '1', '', '2021-01-26 01:02:31', '', '2026-08-14 01:49:42', '0');
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (82, '获得 Redis Key 列表', 'infra:redis:get-key-list', 3, 2, 17, '', '', '', NULL, 0, '1', '1', '1', '', '2021-01-26 01:02:52', '', '2026-08-14 01:49:42', '0');
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (83, '代码生成案例', '', 1, 1, 2, 'demo', 'ep:aim', 'infra/testDemo/index', NULL, 0, '1', '1', '1', '', '2021-02-06 12:42:49', '1', '2026-08-14 01:49:42', '0');
+INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (83, '代码生成案例', '', 1, 1, 2, 'demo', 'ep:aim', '', NULL, 0, '1', '1', '1', '', '2021-02-06 12:42:49', '1', '2026-08-14 01:49:42', '0');
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (84, '任务触发', 'infra:job:trigger', 3, 8, 14, '', '', '', NULL, 0, '1', '1', '1', '', '2021-02-07 13:03:10', '', '2026-08-14 01:49:42', '0');
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (85, '链路追踪', '', 2, 4, 773, 'skywalking', 'fa:eye', 'infra/skywalking/index', 'InfraSkyWalking', 0, '1', '1', '1', '', '2021-02-08 20:41:31', '1', '2026-08-14 01:49:42', '0');
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (86, '访问日志', '', 2, 1, 88, 'api-access-log', 'ep:place', 'infra/apiAccessLog/index', 'InfraApiAccessLog', 0, '1', '1', '1', '', '2021-02-26 01:32:59', '1', '2026-08-14 01:49:42', '0');
@@ -5137,7 +5137,7 @@ DROP TABLE IF EXISTS system_notice;
 CREATE TABLE system_notice (
     id int8 NOT NULL,
   title varchar(50) NOT NULL,
-  content text NOT NULL,
+  content text NULL,
   type int2 NOT NULL,
   status int2 NOT NULL DEFAULT 0,
   creator varchar(64) NULL DEFAULT '',
@@ -5428,7 +5428,7 @@ CREATE TABLE system_oauth2_approve (
   user_id int8 NOT NULL,
   user_type int2 NOT NULL,
   client_id varchar(255) NOT NULL,
-  scope varchar(255) NOT NULL DEFAULT '',
+  scope varchar(255) NULL DEFAULT '',
   approved bool NOT NULL DEFAULT '0',
   expires_time timestamp NOT NULL,
   creator varchar(64) NULL DEFAULT '',
@@ -5544,7 +5544,7 @@ CREATE TABLE system_oauth2_code (
   scopes varchar(255) NULL DEFAULT '',
   expires_time timestamp NOT NULL,
   redirect_uri varchar(255) NULL DEFAULT NULL,
-  state varchar(255) NOT NULL DEFAULT '',
+  state varchar(255) NULL DEFAULT '',
   creator varchar(64) NULL DEFAULT '',
   create_time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updater varchar(64) NULL DEFAULT '',
@@ -5625,15 +5625,15 @@ CREATE SEQUENCE system_oauth2_refresh_token_seq
 DROP TABLE IF EXISTS system_operate_log;
 CREATE TABLE system_operate_log (
     id int8 NOT NULL,
-  trace_id varchar(64) NOT NULL DEFAULT '',
+  trace_id varchar(64) NULL DEFAULT '',
   user_id int8 NOT NULL,
   user_type int2 NOT NULL DEFAULT 0,
   type varchar(50) NOT NULL,
   sub_type varchar(50) NOT NULL,
   biz_id int8 NOT NULL,
-  action varchar(2000) NOT NULL DEFAULT '',
+  action varchar(2000) NULL DEFAULT '',
   success bool NOT NULL DEFAULT '1',
-  extra varchar(2000) NOT NULL DEFAULT '',
+  extra varchar(2000) NULL DEFAULT '',
   request_method varchar(16) NULL DEFAULT '',
   request_url varchar(255) NULL DEFAULT '',
   user_ip varchar(50) NULL DEFAULT NULL,
@@ -5736,7 +5736,7 @@ CREATE TABLE system_role (
   code varchar(100) NOT NULL,
   sort int4 NOT NULL,
   data_scope int2 NOT NULL DEFAULT 1,
-  data_scope_dept_ids varchar(500) NOT NULL DEFAULT '',
+  data_scope_dept_ids varchar(500) NULL DEFAULT '',
   status int2 NOT NULL,
   type int2 NOT NULL,
   remark varchar(500) NULL DEFAULT NULL,
@@ -7775,7 +7775,7 @@ CREATE TABLE system_tenant (
   package_id int8 NOT NULL,
   expire_time timestamp NOT NULL,
   account_count int4 NOT NULL,
-  creator varchar(64) NOT NULL DEFAULT '',
+  creator varchar(64) NULL DEFAULT '',
   create_time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updater varchar(64) NULL DEFAULT '',
   update_time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -7825,7 +7825,7 @@ CREATE TABLE system_tenant_package (
   status int2 NOT NULL DEFAULT 0,
   remark varchar(256) NULL DEFAULT '',
   menu_ids varchar(4096) NOT NULL,
-  creator varchar(64) NOT NULL DEFAULT '',
+  creator varchar(64) NULL DEFAULT '',
   create_time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updater varchar(64) NULL DEFAULT '',
   update_time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -7982,7 +7982,7 @@ DROP TABLE IF EXISTS system_users;
 CREATE TABLE system_users (
     id int8 NOT NULL,
   username varchar(30) NOT NULL,
-  password varchar(100) NOT NULL DEFAULT '',
+  password varchar(100) NULL DEFAULT '',
   nickname varchar(30) NOT NULL,
   remark varchar(500) NULL DEFAULT NULL,
   dept_id int8 NULL DEFAULT NULL,
@@ -8069,7 +8069,7 @@ CREATE SEQUENCE system_users_seq
 DROP TABLE IF EXISTS nomix_demo01_contact;
 CREATE TABLE nomix_demo01_contact (
     id int8 NOT NULL,
-  name varchar(100) NOT NULL DEFAULT '',
+  name varchar(100) NULL DEFAULT '',
   sex int2 NOT NULL,
   birthday timestamp NOT NULL,
   description varchar(255) NOT NULL,
@@ -8116,7 +8116,7 @@ CREATE SEQUENCE nomix_demo01_contact_seq
 DROP TABLE IF EXISTS nomix_demo02_category;
 CREATE TABLE nomix_demo02_category (
     id int8 NOT NULL,
-  name varchar(100) NOT NULL DEFAULT '',
+  name varchar(100) NULL DEFAULT '',
   parent_id int8 NOT NULL,
   creator varchar(64) NULL DEFAULT '',
   create_time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -8164,7 +8164,7 @@ DROP TABLE IF EXISTS nomix_demo03_course;
 CREATE TABLE nomix_demo03_course (
     id int8 NOT NULL,
   student_id int8 NOT NULL,
-  name varchar(100) NOT NULL DEFAULT '',
+  name varchar(100) NULL DEFAULT '',
   score int2 NOT NULL,
   creator varchar(64) NULL DEFAULT '',
   create_time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -8223,7 +8223,7 @@ DROP TABLE IF EXISTS nomix_demo03_grade;
 CREATE TABLE nomix_demo03_grade (
     id int8 NOT NULL,
   student_id int8 NOT NULL,
-  name varchar(100) NOT NULL DEFAULT '',
+  name varchar(100) NULL DEFAULT '',
   teacher varchar(255) NOT NULL,
   creator varchar(64) NULL DEFAULT '',
   create_time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -8267,7 +8267,7 @@ CREATE SEQUENCE nomix_demo03_grade_seq
 DROP TABLE IF EXISTS nomix_demo03_student;
 CREATE TABLE nomix_demo03_student (
     id int8 NOT NULL,
-  name varchar(100) NOT NULL DEFAULT '',
+  name varchar(100) NULL DEFAULT '',
   sex int2 NOT NULL,
   birthday timestamp NOT NULL,
   description varchar(255) NOT NULL,

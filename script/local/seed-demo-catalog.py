@@ -34,7 +34,7 @@ for page in [t['home'],t['user']]:
 t['property']=convert(t['property'])
 p={'layoutType':'twoCol','fields':{k:{'show':k in ['name','price'],'color':'#284c3b' if k=='price' else '#303d32'} for k in ['name','introduction','price','marketPrice','salesCount','stock']},'badge':{'show':False,'imgUrl':''},'btnBuy':{'type':'text','text':'看看','bgBeginColor':'#284c3b','bgEndColor':'#284c3b','imgUrl':''},'borderRadiusTop':16,'borderRadiusBottom':16,'space':10,'spuIds':[m['spu-'+x[0]] for x in products],'style':{'bgType':'color','bgColor':'','marginLeft':20,'marginRight':20,'marginBottom':20}}
 t['home']['components']=[c for c in t['home']['components'] if c['id'] not in ['ProductCard','MenuList']]+[{'id':'ProductCard','property':p}]
-args=['docker','exec','-i','-e','MYSQL_PWD=123456','nomix-htzx-mysql','mysql','-uroot','-N','nomix-vue-pro']
+args=['docker','exec','-i','-e','MYSQL_PWD=123456','nomix-works-mysql','mysql','-uroot','-N','nomix-works']
 def lit(s):return 'CONVERT(0x'+s.encode().hex()+' USING utf8mb4)'
 sql='START TRANSACTION;\n'
 for name,page in [('首页',t['home']),('我的',t['user'])]:sql+=f"UPDATE promotion_diy_page SET property={lit(json.dumps(page,ensure_ascii=False))} WHERE template_id={t['id']} AND tenant_id=1 AND name={lit(name)} COLLATE utf8mb4_unicode_ci AND deleted=0;\n"

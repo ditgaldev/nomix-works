@@ -91,7 +91,7 @@
 
 文档地址：<>
 
-![架构图](./.image/common/nomix-vue-pro-architecture.png)
+![架构图](./.image/common/nomix-works-architecture.png)
 
 ### ② Spring Cloud 微服务架构
 

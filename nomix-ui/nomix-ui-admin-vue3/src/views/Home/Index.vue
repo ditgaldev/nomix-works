@@ -235,7 +235,7 @@ let projects = reactive<Project[]>([])
 const getProject = async () => {
   const data = [
     {
-      name: 'nomix-vue-pro',
+      name: 'nomix-works',
       icon: 'simple-icons:springboot',
       message: 'Nomix 后端服务',
       personal: 'Spring Boot 单体架构',
