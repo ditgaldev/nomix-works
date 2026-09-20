@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * HRM 考勤节假日类型
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

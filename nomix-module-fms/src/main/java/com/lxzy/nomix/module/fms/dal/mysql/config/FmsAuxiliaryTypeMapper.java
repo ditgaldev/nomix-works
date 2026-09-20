@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * FMS 辅助核算类别 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface FmsAuxiliaryTypeMapper extends BaseMapperX<FmsAuxiliaryTypeDO> {

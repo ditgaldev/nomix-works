@@ -3,10 +3,10 @@ package com.lxzy.nomix.module.mes.controller.admin.md.unitmeasure.vo;
 import com.lxzy.nomix.framework.common.enums.CommonStatusEnum;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 @Schema(description = "管理后台 - MES 计量单位新增/修改 Request VO")

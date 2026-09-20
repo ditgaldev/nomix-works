@@ -5,12 +5,13 @@ import cn.hutool.core.util.IdUtil;
 import com.lxzy.nomix.framework.common.util.validation.ValidationUtils;
 import com.lxzy.nomix.module.infra.framework.file.core.client.s3.S3FileClient;
 import com.lxzy.nomix.module.infra.framework.file.core.client.s3.S3FileClientConfig;
+import jakarta.validation.Validation;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-import javax.validation.Validation;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SuppressWarnings("resource")
 public class S3FileClientTest {
@@ -19,7 +20,7 @@ public class S3FileClientTest {
     public void testPresignGetUrl_publicAccess_encodeUrlPath() {
         // 准备参数
         S3FileClientConfig config = new S3FileClientConfig();
-        config.setDomain("");
+        config.setDomain("https://static.nomix.cn");
         config.setEnablePublicAccess(true);
         S3FileClient client = new S3FileClient(0L, config);
 
@@ -27,22 +28,22 @@ public class S3FileClientTest {
         String result = client.presignGetUrl("avatar/中文 100%+文件.jpg", 300);
 
         // 断言
-        assertEquals("", result);
+        assertEquals("https://static.nomix.cn/avatar/%E4%B8%AD%E6%96%87%20100%25+%E6%96%87%E4%BB%B6.jpg", result);
     }
 
     @Test
     public void testPresignGetUrl_publicAccess_decodeDomainUrl() {
         // 准备参数
         S3FileClientConfig config = new S3FileClientConfig();
-        config.setDomain("");
+        config.setDomain("https://static.nomix.cn");
         config.setEnablePublicAccess(true);
         S3FileClient client = new S3FileClient(0L, config);
 
         // 调用
-        String result = client.presignGetUrl("", 300);
+        String result = client.presignGetUrl("https://static.nomix.cn/avatar/%E4%B8%AD%E6%96%87%20100%25+%E6%96%87%E4%BB%B6.jpg?token=1", 300);
 
         // 断言
-        assertEquals("", result);
+        assertEquals("https://static.nomix.cn/avatar/%E4%B8%AD%E6%96%87%20100%25+%E6%96%87%E4%BB%B6.jpg", result);
     }
 
     @Test
@@ -128,7 +129,7 @@ public class S3FileClientTest {
         config.setAccessKey(System.getenv("ALIYUN_ACCESS_KEY"));
         config.setAccessSecret(System.getenv("ALIYUN_SECRET_KEY"));
         config.setBucket("nomix-aoteman");
-        config.setDomain(null); // 如果有自定义域名，则可以设置。
+        config.setDomain(null); // 如果有自定义域名，则可以设置。http://ali-oss.nomix.cn
         // 默认北京的 endpoint
         config.setEndpoint("oss-cn-beijing.aliyuncs.com");
 
@@ -144,7 +145,7 @@ public class S3FileClientTest {
         config.setAccessKey(System.getenv("QCLOUD_ACCESS_KEY"));
         config.setAccessSecret(System.getenv("QCLOUD_SECRET_KEY"));
         config.setBucket("aoteman-1255880240");
-        config.setDomain(null); // 如果有自定义域名，则可以设置。
+        config.setDomain(null); // 如果有自定义域名，则可以设置。http://tengxun-oss.nomix.cn
         // 默认上海的 endpoint
         config.setEndpoint("cos.ap-shanghai.myqcloud.com");
 
@@ -161,8 +162,8 @@ public class S3FileClientTest {
 //        config.setAccessSecret(System.getenv("QINIU_SECRET_KEY"));
         config.setAccessKey("b7yvuhBSAGjmtPhMFcn9iMOxUOY_I06cA_p0ZUx8");
         config.setAccessSecret("kXM1l5ia1RvSX3QaOEcwI3RLz3Y2rmNszWonKZtP");
-        config.setBucket("nomix-vue-pro");
-        config.setDomain(""); // 如果有自定义域名，则可以设置。
+        config.setBucket("nomix-works");
+        config.setDomain("http://test.nomix.nomix.cn"); // 如果有自定义域名，则可以设置。http://static.nomix.nomix.cn
         config.setEnablePathStyleAccess(false);
         // 默认上海的 endpoint
         config.setEndpoint("s3-cn-south-1.qiniucs.com");
@@ -180,8 +181,8 @@ public class S3FileClientTest {
 //        config.setAccessSecret(System.getenv("QINIU_SECRET_KEY"));
         config.setAccessKey("b7yvuhBSAGjmtPhMFcn9iMOxUOY_I06cA_p0ZUx8");
         config.setAccessSecret("kXM1l5ia1RvSX3QaOEcwI3RLz3Y2rmNszWonKZtP");
-        config.setBucket("nomix-vue-pro-private");
-        config.setDomain("http://t151glocd.hn-bkt.clouddn.com"); // 如果有自定义域名，则可以设置。
+        config.setBucket("nomix-works-private");
+        config.setDomain("http://t151glocd.hn-bkt.clouddn.com"); // 如果有自定义域名，则可以设置。http://static.nomix.nomix.cn
         config.setEnablePathStyleAccess(false);
         // 默认上海的 endpoint
         config.setEndpoint("s3-cn-south-1.qiniucs.com");

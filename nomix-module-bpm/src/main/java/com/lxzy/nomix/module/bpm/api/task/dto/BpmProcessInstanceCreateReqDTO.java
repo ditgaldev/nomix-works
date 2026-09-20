@@ -2,14 +2,14 @@ package com.lxzy.nomix.module.bpm.api.task.dto;
 
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotEmpty;
 import java.util.List;
 import java.util.Map;
 
 /**
  * 流程实例的创建 Request DTO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class BpmProcessInstanceCreateReqDTO {

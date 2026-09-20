@@ -12,11 +12,10 @@ import com.lxzy.nomix.module.system.api.social.dto.SocialWxaOrderUploadShippingI
 import com.lxzy.nomix.module.trade.dal.dataobject.order.TradeOrderDO;
 import com.lxzy.nomix.module.trade.enums.delivery.DeliveryTypeEnum;
 import com.lxzy.nomix.module.trade.service.delivery.DeliveryExpressService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.Resource;
 
 /**
  * 同步订单状态到微信小程序的 {@link TradeOrderHandler} 实现类

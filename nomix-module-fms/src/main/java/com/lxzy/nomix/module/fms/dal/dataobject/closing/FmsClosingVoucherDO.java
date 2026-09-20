@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 /**
  * FMS 结账凭证 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("fms_closing_voucher")
 @KeySequence("fms_closing_voucher_seq")

@@ -4,14 +4,14 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.iot.controller.admin.alert.vo.config.IotAlertConfigPageReqVO;
 import com.lxzy.nomix.module.iot.controller.admin.alert.vo.config.IotAlertConfigSaveReqVO;
 import com.lxzy.nomix.module.iot.dal.dataobject.alert.IotAlertConfigDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * IoT 告警配置 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface IotAlertConfigService {
 

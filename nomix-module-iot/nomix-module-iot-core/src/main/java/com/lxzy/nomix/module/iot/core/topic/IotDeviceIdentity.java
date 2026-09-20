@@ -1,17 +1,16 @@
 package com.lxzy.nomix.module.iot.core.topic;
 
+import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.validation.constraints.NotEmpty;
 
 /**
  * IoT 设备标识
  *
  * 用于标识一个设备的基本信息（productKey + deviceName）
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 @NoArgsConstructor

@@ -17,7 +17,7 @@ import com.lxzy.nomix.module.im.service.message.ImPrivateMessageService;
 import com.lxzy.nomix.module.im.service.message.dto.ImPrivateMessageSendDTO;
 import com.lxzy.nomix.module.im.service.websocket.ImWebSocketService;
 import com.lxzy.nomix.module.im.service.websocket.notification.friend.*;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
@@ -44,7 +44,7 @@ import static com.lxzy.nomix.module.im.enums.ErrorCodeConstants.FRIEND_NOT_FRIEN
 /**
  * IM 好友关系 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 @Service

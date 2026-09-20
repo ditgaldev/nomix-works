@@ -10,11 +10,11 @@ import com.lxzy.nomix.module.mes.controller.admin.dv.subject.vo.MesDvSubjectSave
 import com.lxzy.nomix.module.mes.dal.dataobject.dv.subject.MesDvSubjectDO;
 import com.lxzy.nomix.module.mes.dal.mysql.dv.subject.MesDvSubjectMapper;
 import com.lxzy.nomix.module.mes.service.dv.checkplan.MesDvCheckPlanSubjectService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -25,7 +25,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 点检保养项目 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

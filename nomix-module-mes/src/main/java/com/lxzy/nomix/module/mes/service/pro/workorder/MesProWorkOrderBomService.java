@@ -5,14 +5,14 @@ import com.lxzy.nomix.module.mes.controller.admin.pro.workorder.vo.MesProWorkOrd
 import com.lxzy.nomix.module.mes.controller.admin.pro.workorder.vo.bom.MesProWorkOrderBomPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.pro.workorder.vo.bom.MesProWorkOrderBomSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.pro.workorder.MesProWorkOrderBomDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * MES 生产工单 BOM Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesProWorkOrderBomService {
 

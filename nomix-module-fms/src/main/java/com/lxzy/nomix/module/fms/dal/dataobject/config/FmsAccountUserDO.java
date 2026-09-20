@@ -14,7 +14,7 @@ import lombok.ToString;
 /**
  * FMS 账套用户 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("fms_account_user")
 @KeySequence("fms_account_user_seq")

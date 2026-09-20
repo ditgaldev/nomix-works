@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * IM 通话参与者 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ImRtcParticipantMapper extends BaseMapperX<ImRtcParticipantDO> {

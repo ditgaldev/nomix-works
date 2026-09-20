@@ -14,11 +14,11 @@ import com.lxzy.nomix.module.hrm.enums.recruit.candidate.HrmRecruitInterviewResu
 import com.lxzy.nomix.module.hrm.service.employee.info.HrmEmployeeService;
 import com.lxzy.nomix.module.system.api.notify.NotifyMessageSendApi;
 import com.lxzy.nomix.module.system.api.notify.dto.NotifySendSingleToUserReqDTO;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -50,7 +50,7 @@ import static org.mockito.Mockito.*;
 /**
  * {@link HrmRecruitInterviewServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmRecruitInterviewServiceImpl.class)
 public class HrmRecruitInterviewServiceImplTest extends BaseDbUnitTest {
@@ -61,11 +61,11 @@ public class HrmRecruitInterviewServiceImplTest extends BaseDbUnitTest {
     @Resource
     private HrmRecruitInterviewMapper recruitInterviewMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmRecruitCandidateService recruitCandidateService;
-    @MockBean
+    @MockitoBean
     private HrmEmployeeService employeeService;
-    @MockBean
+    @MockitoBean
     private NotifyMessageSendApi notifyMessageSendApi;
 
     @Test

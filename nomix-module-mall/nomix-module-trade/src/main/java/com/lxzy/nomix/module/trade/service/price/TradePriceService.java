@@ -3,14 +3,14 @@ package com.lxzy.nomix.module.trade.service.price;
 import com.lxzy.nomix.module.trade.controller.app.order.vo.AppTradeProductSettlementRespVO;
 import com.lxzy.nomix.module.trade.service.price.bo.TradePriceCalculateReqBO;
 import com.lxzy.nomix.module.trade.service.price.bo.TradePriceCalculateRespBO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * 价格计算 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface TradePriceService {
 

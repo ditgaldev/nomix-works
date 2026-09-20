@@ -7,11 +7,11 @@ import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.type.MesMdItemTypeL
 import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.type.MesMdItemTypeSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.md.item.MesMdItemTypeDO;
 import com.lxzy.nomix.module.mes.dal.mysql.md.item.MesMdItemTypeMapper;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.*;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -20,7 +20,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 物料产品分类 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

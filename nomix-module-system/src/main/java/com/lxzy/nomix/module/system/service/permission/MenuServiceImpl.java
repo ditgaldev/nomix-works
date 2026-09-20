@@ -14,6 +14,7 @@ import com.lxzy.nomix.module.system.enums.permission.MenuTypeEnum;
 import com.lxzy.nomix.module.system.service.tenant.TenantService;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.Lists;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
@@ -21,7 +22,6 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.Resource;
 import java.util.*;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -33,7 +33,7 @@ import static com.lxzy.nomix.module.system.enums.ErrorCodeConstants.*;
 /**
  * 菜单 Service 实现
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Slf4j

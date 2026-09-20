@@ -55,7 +55,7 @@ public class PmsProjectRespVO {
     @Schema(description = "创建人编号", example = "1")
     private String creator;
 
-    @Schema(description = "创建人姓名", example = "Nomix")
+    @Schema(description = "创建人姓名", example = "Nomix源码")
     private String creatorName;
 
     @Schema(description = "项目管理员姓名列表")

@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.crm.controller.admin.customer.vo.customer.*;
 import com.lxzy.nomix.module.crm.dal.dataobject.customer.CrmCustomerDO;
 import com.lxzy.nomix.module.crm.service.customer.bo.CrmCustomerCreateReqBO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;

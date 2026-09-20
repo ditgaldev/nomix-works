@@ -4,10 +4,10 @@ import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.module.product.api.spu.dto.ProductSpuRespDTO;
 import com.lxzy.nomix.module.product.dal.dataobject.spu.ProductSpuDO;
 import com.lxzy.nomix.module.product.service.spu.ProductSpuService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 

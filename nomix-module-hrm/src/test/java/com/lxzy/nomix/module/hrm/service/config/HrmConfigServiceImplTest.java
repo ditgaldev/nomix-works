@@ -4,7 +4,7 @@ import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.hrm.dal.dataobject.config.HrmConfigDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.config.HrmConfigMapper;
 import com.lxzy.nomix.module.hrm.enums.config.HrmConfigTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 /**
  * {@link HrmConfigServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmConfigServiceImpl.class)
 public class HrmConfigServiceImplTest extends BaseDbUnitTest {

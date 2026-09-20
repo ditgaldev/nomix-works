@@ -8,10 +8,10 @@ import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.group.BpmUserGro
 import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.group.BpmUserGroupSaveReqVO;
 import com.lxzy.nomix.module.bpm.dal.dataobject.definition.BpmUserGroupDO;
 import com.lxzy.nomix.module.bpm.dal.mysql.definition.BpmUserGroupMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -24,7 +24,7 @@ import static com.lxzy.nomix.module.bpm.enums.ErrorCodeConstants.USER_GROUP_NOT_
 /**
  * 用户组 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

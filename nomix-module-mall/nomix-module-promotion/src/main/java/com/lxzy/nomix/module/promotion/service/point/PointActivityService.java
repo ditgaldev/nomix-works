@@ -6,8 +6,8 @@ import com.lxzy.nomix.module.promotion.controller.admin.point.vo.activity.PointA
 import com.lxzy.nomix.module.promotion.controller.admin.point.vo.activity.PointActivitySaveReqVO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.point.PointActivityDO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.point.PointProductDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 

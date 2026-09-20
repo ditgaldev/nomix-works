@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * WMS 库存流水 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface WmsInventoryHistoryService {
 

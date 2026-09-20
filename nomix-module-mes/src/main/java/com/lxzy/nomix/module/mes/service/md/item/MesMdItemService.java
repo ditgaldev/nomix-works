@@ -6,8 +6,8 @@ import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.MesMdItemImportResp
 import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.MesMdItemPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.MesMdItemSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.md.item.MesMdItemDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -17,7 +17,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * MES 物料产品 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesMdItemService {
 

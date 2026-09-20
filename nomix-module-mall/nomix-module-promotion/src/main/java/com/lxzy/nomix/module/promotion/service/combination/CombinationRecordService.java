@@ -10,7 +10,7 @@ import com.lxzy.nomix.module.promotion.dal.dataobject.combination.CombinationAct
 import com.lxzy.nomix.module.promotion.dal.dataobject.combination.CombinationProductDO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.combination.CombinationRecordDO;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;

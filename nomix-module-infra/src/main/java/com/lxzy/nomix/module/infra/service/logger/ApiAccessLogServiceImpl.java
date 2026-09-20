@@ -9,11 +9,11 @@ import com.lxzy.nomix.framework.tenant.core.util.TenantUtils;
 import com.lxzy.nomix.module.infra.controller.admin.logger.vo.apiaccesslog.ApiAccessLogPageReqVO;
 import com.lxzy.nomix.module.infra.dal.dataobject.logger.ApiAccessLogDO;
 import com.lxzy.nomix.module.infra.dal.mysql.logger.ApiAccessLogMapper;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 
 import static com.lxzy.nomix.module.infra.dal.dataobject.logger.ApiAccessLogDO.REQUEST_PARAMS_MAX_LENGTH;
@@ -22,7 +22,7 @@ import static com.lxzy.nomix.module.infra.dal.dataobject.logger.ApiAccessLogDO.R
 /**
  * API 访问日志 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 @Service

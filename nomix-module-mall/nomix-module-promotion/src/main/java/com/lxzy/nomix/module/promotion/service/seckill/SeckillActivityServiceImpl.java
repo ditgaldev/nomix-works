@@ -21,11 +21,11 @@ import com.lxzy.nomix.module.promotion.dal.dataobject.seckill.SeckillConfigDO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.seckill.SeckillProductDO;
 import com.lxzy.nomix.module.promotion.dal.mysql.seckill.seckillactivity.SeckillActivityMapper;
 import com.lxzy.nomix.module.promotion.dal.mysql.seckill.seckillactivity.SeckillProductMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;

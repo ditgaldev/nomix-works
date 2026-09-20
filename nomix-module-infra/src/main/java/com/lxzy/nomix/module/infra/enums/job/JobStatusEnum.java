@@ -11,7 +11,7 @@ import java.util.Set;
 /**
  * 任务状态的枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

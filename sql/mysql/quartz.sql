@@ -5,7 +5,7 @@
  Source Server Type    : MySQL
  Source Server Version : 80200 (8.2.0)
  Source Host           : 127.0.0.1:3306
- Source Schema         : nomix-vue-pro
+ Source Schema         : nomix-works
 
  Target Server Type    : MySQL
  Target Server Version : 80200 (8.2.0)

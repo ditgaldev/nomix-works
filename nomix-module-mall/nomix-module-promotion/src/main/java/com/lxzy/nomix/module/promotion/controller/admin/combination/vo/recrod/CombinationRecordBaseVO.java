@@ -4,7 +4,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 
 import static com.lxzy.nomix.framework.common.util.date.DateUtils.FORMAT_YEAR_MONTH_DAY_HOUR_MINUTE_SECOND;
@@ -36,7 +36,7 @@ public class CombinationRecordBaseVO {
     @Schema(description = "用户昵称", example = "老Nomix")
     private String nickname;
 
-    @Schema(description = "用户头像", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "用户头像", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn/xxx.jpg")
     private String avatar;
 
     // ========== 商品相关 ==========
@@ -52,7 +52,7 @@ public class CombinationRecordBaseVO {
     @Schema(description = "商品名字", requiredMode = Schema.RequiredMode.REQUIRED, example = "我是大黄豆")
     private String spuName;
 
-    @Schema(description = "商品图片", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "商品图片", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn/1.png")
     private String picUrl;
 
     @Schema(description = "过期时间", requiredMode = Schema.RequiredMode.REQUIRED)

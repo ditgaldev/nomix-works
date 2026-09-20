@@ -38,7 +38,7 @@ import static org.mockito.Mockito.*;
 /**
  * {@link ImPrivateMessageServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class ImPrivateMessageServiceImplTest extends BaseMockitoUnitTest {
 

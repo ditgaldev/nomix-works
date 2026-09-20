@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.infra.api.config;
 /**
  * 参数配置 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ConfigApi {
 

@@ -3,9 +3,8 @@ package com.lxzy.nomix.module.iot.controller.admin.thingmodel.vo;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.iot.enums.thingmodel.IotThingModelTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-
-import javax.validation.constraints.NotNull;
 
 @Schema(description = "管理后台 - IoT 产品物模型 List Request VO")
 @Data

@@ -23,6 +23,7 @@ import com.lxzy.nomix.module.im.service.websocket.notification.friend.FriendRequ
 import com.lxzy.nomix.module.im.service.websocket.notification.friend.FriendRequestRejectedNotification;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
 import com.lxzy.nomix.module.system.api.user.dto.AdminUserRespDTO;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
@@ -31,7 +32,6 @@ import org.springframework.transaction.support.TransactionSynchronization;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Objects;
@@ -42,7 +42,7 @@ import static com.lxzy.nomix.module.im.enums.ErrorCodeConstants.*;
 /**
  * IM 好友申请 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 @Service

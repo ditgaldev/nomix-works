@@ -29,7 +29,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link TradeCouponPriceCalculator} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class TradeCouponPriceCalculatorTest extends BaseMockitoUnitTest {
 

@@ -4,14 +4,14 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.im.controller.admin.face.vo.useritem.ImFaceUserItemSaveReqVO;
 import com.lxzy.nomix.module.im.controller.admin.manager.face.vo.useritem.ImFaceUserItemManagerPageReqVO;
 import com.lxzy.nomix.module.im.dal.dataobject.face.ImFaceUserItemDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * IM 用户私有表情 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ImFaceUserItemService {
 

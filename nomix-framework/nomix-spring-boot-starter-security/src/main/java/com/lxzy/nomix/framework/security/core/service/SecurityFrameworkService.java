@@ -3,7 +3,7 @@ package com.lxzy.nomix.framework.security.core.service;
 /**
  * Security 框架 Service 接口，定义权限相关的校验操作
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface SecurityFrameworkService {
 

@@ -4,14 +4,14 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.hrm.controller.admin.performance.vo.assessmenttemplate.HrmPerformanceAssessmentTemplatePageReqVO;
 import com.lxzy.nomix.module.hrm.controller.admin.performance.vo.assessmenttemplate.HrmPerformanceAssessmentTemplateSaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.performance.config.HrmPerformanceAssessmentTemplateDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
 /**
  * HRM 绩效考核模板 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmPerformanceAssessmentTemplateService {
 

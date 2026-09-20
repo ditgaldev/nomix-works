@@ -5,8 +5,8 @@ import com.lxzy.nomix.module.crm.controller.admin.clue.vo.CrmCluePageReqVO;
 import com.lxzy.nomix.module.crm.controller.admin.clue.vo.CrmClueSaveReqVO;
 import com.lxzy.nomix.module.crm.controller.admin.clue.vo.CrmClueTransferReqVO;
 import com.lxzy.nomix.module.crm.dal.dataobject.clue.CrmClueDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.time.LocalDateTime;
 
 /**

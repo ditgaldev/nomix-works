@@ -12,9 +12,9 @@ import com.lxzy.nomix.module.iot.core.topic.auth.IotDeviceRegisterRespDTO;
 import com.lxzy.nomix.module.iot.core.topic.auth.IotSubDeviceRegisterRespDTO;
 import com.lxzy.nomix.module.iot.core.topic.topo.IotDeviceTopoGetRespDTO;
 import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDeviceDO;
+import jakarta.validation.Valid;
 
 import javax.annotation.Nullable;
-import javax.validation.Valid;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Collection;
@@ -26,7 +26,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * IoT 设备 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface IotDeviceService {
 

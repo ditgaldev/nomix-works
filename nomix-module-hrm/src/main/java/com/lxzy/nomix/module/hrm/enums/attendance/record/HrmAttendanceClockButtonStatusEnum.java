@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * HRM 员工端打卡按钮状态
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

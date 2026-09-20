@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 /**
  * WMS 移库单 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("wms_movement_order")
 @KeySequence("wms_movement_order_seq")

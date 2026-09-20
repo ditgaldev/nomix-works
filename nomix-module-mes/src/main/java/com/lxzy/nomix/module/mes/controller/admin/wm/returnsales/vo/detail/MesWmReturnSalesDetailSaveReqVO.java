@@ -1,16 +1,16 @@
 package com.lxzy.nomix.module.mes.controller.admin.wm.returnsales.vo.detail;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.constraints.DecimalMin;
-import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 /**
  * 管理后台 - MES 销售退货相关
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Schema(description = "管理后台 - MES 销售退货明细新增/修改 Request VO")
 @Data

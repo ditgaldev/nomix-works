@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * 交易订单项 - 售后状态
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Getter

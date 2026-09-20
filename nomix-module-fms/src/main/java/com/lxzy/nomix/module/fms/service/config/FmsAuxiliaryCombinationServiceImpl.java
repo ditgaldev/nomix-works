@@ -5,7 +5,7 @@ import cn.hutool.core.util.ObjUtil;
 import com.lxzy.nomix.module.fms.dal.dataobject.config.FmsAuxiliaryCombinationDO;
 import com.lxzy.nomix.module.fms.dal.dataobject.voucher.FmsVoucherEntryDO;
 import com.lxzy.nomix.module.fms.dal.mysql.config.FmsAuxiliaryCombinationMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -20,7 +20,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * FMS 辅助核算组合 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

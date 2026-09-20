@@ -18,12 +18,12 @@ import com.lxzy.nomix.module.mes.service.wm.transaction.MesWmTransactionService;
 import com.lxzy.nomix.module.mes.service.wm.warehouse.MesWmWarehouseAreaService;
 import com.lxzy.nomix.module.mes.service.wm.warehouse.MesWmWarehouseLocationService;
 import com.lxzy.nomix.module.mes.service.wm.warehouse.MesWmWarehouseService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 
 import static com.lxzy.nomix.framework.test.core.util.RandomUtils.randomLongId;
@@ -35,7 +35,7 @@ import static org.mockito.Mockito.*;
 /**
  * {@link MesWmProductProduceServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(MesWmProductProduceServiceImpl.class)
 public class MesWmProductProduceServiceImplTest extends BaseDbUnitTest {
@@ -46,21 +46,21 @@ public class MesWmProductProduceServiceImplTest extends BaseDbUnitTest {
     @Resource
     private MesWmProductProduceMapper productProduceMapper;
 
-    @MockBean
+    @MockitoBean
     private MesWmProductProduceLineService productProduceLineService;
-    @MockBean
+    @MockitoBean
     private MesWmProductProduceDetailService productProduceDetailService;
-    @MockBean
+    @MockitoBean
     private MesProWorkOrderService workOrderService;
-    @MockBean
+    @MockitoBean
     private MesWmBatchService batchService;
-    @MockBean
+    @MockitoBean
     private MesWmTransactionService wmTransactionService;
-    @MockBean
+    @MockitoBean
     private MesWmWarehouseService warehouseService;
-    @MockBean
+    @MockitoBean
     private MesWmWarehouseLocationService locationService;
-    @MockBean
+    @MockitoBean
     private MesWmWarehouseAreaService areaService;
 
     @Test

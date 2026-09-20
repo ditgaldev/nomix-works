@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * FMS 凭证 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface FmsVoucherMapper extends BaseMapperX<FmsVoucherDO> {

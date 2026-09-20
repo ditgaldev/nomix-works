@@ -6,10 +6,10 @@ import com.lxzy.nomix.module.hrm.controller.admin.employee.vo.salarycard.HrmEmpl
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.info.HrmEmployeeDO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.employment.HrmEmployeeSalaryCardDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.employee.employment.HrmEmployeeSalaryCardMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.Collections;
 import java.util.Map;
@@ -29,7 +29,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmEmployeeSalaryCardServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmEmployeeSalaryCardServiceImpl.class)
 public class HrmEmployeeSalaryCardServiceImplTest extends BaseDbUnitTest {
@@ -40,7 +40,7 @@ public class HrmEmployeeSalaryCardServiceImplTest extends BaseDbUnitTest {
     @Resource
     private HrmEmployeeSalaryCardMapper salaryCardMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmEmployeeService employeeService;
 
     @Test

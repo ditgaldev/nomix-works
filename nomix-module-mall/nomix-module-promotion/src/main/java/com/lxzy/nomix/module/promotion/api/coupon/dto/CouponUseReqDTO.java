@@ -2,12 +2,12 @@ package com.lxzy.nomix.module.promotion.api.coupon.dto;
 
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * 优惠劵使用 Request DTO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class CouponUseReqDTO {

@@ -6,12 +6,12 @@ import com.lxzy.nomix.module.bpm.service.oa.BpmOALeaveService;
 import com.lxzy.nomix.module.bpm.service.oa.BpmOALeaveServiceImpl;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * OA 请假单的结果的监听器实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 public class BpmOALeaveStatusListener extends BpmProcessInstanceStatusEventListener {

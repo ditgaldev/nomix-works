@@ -4,7 +4,7 @@ import com.lxzy.nomix.module.promotion.service.bargain.BargainActivityService;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * 砍价活动 Api 接口实现类

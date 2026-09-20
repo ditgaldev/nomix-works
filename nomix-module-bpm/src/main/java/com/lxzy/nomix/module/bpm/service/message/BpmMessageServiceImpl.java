@@ -12,14 +12,14 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * BPM 消息 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

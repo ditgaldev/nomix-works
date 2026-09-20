@@ -6,7 +6,7 @@ import lombok.Data;
 /**
  * 商品 SPU 基础 Response VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class AppProductSpuBaseRespVO {
@@ -17,7 +17,7 @@ public class AppProductSpuBaseRespVO {
     @Schema(description = "商品 SPU 名字", requiredMode = Schema.RequiredMode.REQUIRED, example = "Nomix")
     private String name;
 
-    @Schema(description = "商品主图地址", example = "")
+    @Schema(description = "商品主图地址", example = "https://www.nomix.cn/xx.png")
     private String picUrl;
 
     @Schema(description = "商品分类编号", example = "1")

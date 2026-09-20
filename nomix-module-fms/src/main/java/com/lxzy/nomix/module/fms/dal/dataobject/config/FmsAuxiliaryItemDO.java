@@ -15,7 +15,7 @@ import lombok.ToString;
 /**
  * FMS 辅助核算项目 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("fms_auxiliary_item")
 @KeySequence("fms_auxiliary_item_seq")

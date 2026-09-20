@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * AI 知识库段落搜索 Response BO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class AiKnowledgeSegmentSearchRespBO {

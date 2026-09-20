@@ -16,11 +16,11 @@ import com.lxzy.nomix.module.mes.service.pro.workorder.MesProWorkOrderService;
 import com.lxzy.nomix.module.mes.service.wm.itemconsume.MesWmItemConsumeService;
 import com.lxzy.nomix.module.mes.service.wm.productproduce.MesWmProductProduceLineService;
 import com.lxzy.nomix.module.mes.service.wm.productproduce.MesWmProductProduceService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 
 import static com.lxzy.nomix.framework.test.core.util.RandomUtils.randomLongId;
@@ -31,7 +31,7 @@ import static org.mockito.Mockito.*;
 /**
  * {@link MesProFeedbackServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(MesProFeedbackServiceImpl.class)
 public class MesProFeedbackServiceImplTest extends BaseDbUnitTest {
@@ -42,19 +42,19 @@ public class MesProFeedbackServiceImplTest extends BaseDbUnitTest {
     @Resource
     private MesProFeedbackMapper feedbackMapper;
 
-    @MockBean
+    @MockitoBean
     private MesProWorkOrderService workOrderService;
-    @MockBean
+    @MockitoBean
     private MesProRouteProcessService routeProcessService;
-    @MockBean
+    @MockitoBean
     private MesMdWorkstationService workstationService;
-    @MockBean
+    @MockitoBean
     private MesProTaskService taskService;
-    @MockBean
+    @MockitoBean
     private MesWmItemConsumeService itemConsumeService;
-    @MockBean
+    @MockitoBean
     private MesWmProductProduceService productProduceService;
-    @MockBean
+    @MockitoBean
     private MesWmProductProduceLineService produceLineService;
 
     @Test

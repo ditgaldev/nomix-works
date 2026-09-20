@@ -7,7 +7,7 @@ import com.lxzy.nomix.module.mes.controller.admin.dv.repair.vo.line.MesDvRepairL
 import com.lxzy.nomix.module.mes.dal.dataobject.dv.repair.MesDvRepairLineDO;
 import com.lxzy.nomix.module.mes.dal.mysql.dv.repair.MesDvRepairLineMapper;
 import com.lxzy.nomix.module.mes.service.dv.subject.MesDvSubjectService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
@@ -20,7 +20,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 维修工单行 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

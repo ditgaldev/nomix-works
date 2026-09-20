@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * BPM 流程监听器的类型
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

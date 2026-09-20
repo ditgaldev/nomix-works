@@ -14,12 +14,11 @@ import com.lxzy.nomix.module.mes.enums.wm.BarcodeBizTypeEnum;
 import com.lxzy.nomix.module.mes.service.md.item.MesMdItemService;
 import com.lxzy.nomix.module.mes.service.pro.workorder.MesProWorkOrderService;
 import com.lxzy.nomix.module.mes.service.wm.barcode.MesWmBarcodeService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
-
-import javax.annotation.Resource;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
@@ -27,7 +26,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 生产流转卡 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

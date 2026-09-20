@@ -3,9 +3,9 @@ package com.lxzy.nomix.module.im.dal.mysql.friend;
 import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.im.dal.dataobject.friend.ImFriendRequestDO;
 import com.lxzy.nomix.module.im.enums.friend.ImFriendRequestHandleResultEnum;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link ImFriendRequestMapper} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class ImFriendRequestMapperTest extends BaseDbUnitTest {
 

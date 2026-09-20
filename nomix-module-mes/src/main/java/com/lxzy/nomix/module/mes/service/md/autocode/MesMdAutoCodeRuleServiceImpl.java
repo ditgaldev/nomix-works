@@ -8,11 +8,11 @@ import com.lxzy.nomix.module.mes.controller.admin.md.autocode.vo.rule.MesMdAutoC
 import com.lxzy.nomix.module.mes.dal.dataobject.md.autocode.MesMdAutoCodeRuleDO;
 import com.lxzy.nomix.module.mes.dal.mysql.md.autocode.MesMdAutoCodePartMapper;
 import com.lxzy.nomix.module.mes.dal.mysql.md.autocode.MesMdAutoCodeRuleMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -21,7 +21,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 编码规则 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

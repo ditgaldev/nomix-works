@@ -14,10 +14,10 @@ import com.lxzy.nomix.module.promotion.enums.common.PromotionTypeEnum;
 import com.lxzy.nomix.module.trade.enums.order.TradeOrderTypeEnum;
 import com.lxzy.nomix.module.trade.service.price.bo.TradePriceCalculateReqBO;
 import com.lxzy.nomix.module.trade.service.price.bo.TradePriceCalculateRespBO;
+import jakarta.annotation.Resource;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
@@ -31,7 +31,7 @@ import static com.lxzy.nomix.module.trade.service.price.calculator.TradePriceCal
  *
  * 由于“会员折扣”和“限时折扣”是冲突，需要选择优惠金额多的，所以也放在这里计算
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 @Order(TradePriceCalculator.ORDER_DISCOUNT_ACTIVITY)

@@ -2,7 +2,7 @@ package com.lxzy.nomix.module.promotion.api.combination.dto;
 
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * 拼团记录的创建 Request DTO

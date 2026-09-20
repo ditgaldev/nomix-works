@@ -5,17 +5,17 @@ import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.module.promotion.api.coupon.dto.CouponRespDTO;
 import com.lxzy.nomix.module.promotion.api.coupon.dto.CouponUseReqDTO;
 import com.lxzy.nomix.module.promotion.service.coupon.CouponService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
 /**
  * 优惠劵 API 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -6,7 +6,7 @@ import lombok.Data;
 /**
  * 短信模板 Response DTO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class SmsTemplateRespDTO {

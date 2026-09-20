@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.bpm.controller.admin.task.vo.task;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotEmpty;
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ public class BpmTaskRejectReqVO {
     @Schema(description = "审批意见", requiredMode = Schema.RequiredMode.REQUIRED, example = "不错不错！")
     private String reason;
 
-    @Schema(description = "附件", example = "[]")
+    @Schema(description = "附件", example = "[https://test.nomix.nomix.cn/20260609/test.txt]")
     private List<String> attachments;
 
 }

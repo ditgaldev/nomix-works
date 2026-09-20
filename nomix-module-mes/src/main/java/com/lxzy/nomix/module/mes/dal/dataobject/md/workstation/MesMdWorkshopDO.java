@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 /**
  * MES 车间 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_md_workshop")
 @KeySequence("mes_md_workshop_seq")

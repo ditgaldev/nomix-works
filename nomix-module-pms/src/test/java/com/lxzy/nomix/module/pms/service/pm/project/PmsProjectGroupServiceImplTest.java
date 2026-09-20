@@ -10,10 +10,10 @@ import com.lxzy.nomix.module.pms.dal.dataobject.pm.project.PmsProjectGroupRelati
 import com.lxzy.nomix.module.pms.dal.mysql.pm.project.PmsProjectGroupMapper;
 import com.lxzy.nomix.module.pms.dal.mysql.pm.project.PmsProjectGroupRelationMapper;
 import com.lxzy.nomix.module.pms.enums.pm.project.PmsProjectGroupTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.List;
 import java.util.Map;
@@ -36,7 +36,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link PmsProjectGroupServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsProjectGroupServiceImpl.class)
 public class PmsProjectGroupServiceImplTest extends BaseDbUnitTest {
@@ -49,7 +49,7 @@ public class PmsProjectGroupServiceImplTest extends BaseDbUnitTest {
     @Resource
     private PmsProjectGroupRelationMapper projectGroupRelationMapper;
 
-    @MockBean
+    @MockitoBean
     private PmsProjectMemberService projectMemberService;
 
     @Test

@@ -1,17 +1,17 @@
 package com.lxzy.nomix.module.trade.service.price.bo;
 
 import com.lxzy.nomix.module.trade.enums.delivery.DeliveryTypeEnum;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.Valid;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
  * 价格计算 Request BO
  *
- * @author Nomix
+ * @author nomix源码
  */
 @Data
 public class TradePriceCalculateReqBO {

@@ -9,12 +9,12 @@ import com.lxzy.nomix.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 import com.lxzy.nomix.module.system.service.oauth2.OAuth2TokenService;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * OAuth2.0 Token API 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class OAuth2TokenApiImpl implements OAuth2TokenCommonApi {

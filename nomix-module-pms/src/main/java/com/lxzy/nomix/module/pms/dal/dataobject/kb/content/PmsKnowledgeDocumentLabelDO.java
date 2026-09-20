@@ -11,7 +11,7 @@ import lombok.ToString;
 /**
  * PMS 知识库文档标签 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("pms_knowledge_document_label")
 @KeySequence("pms_knowledge_document_label_seq")

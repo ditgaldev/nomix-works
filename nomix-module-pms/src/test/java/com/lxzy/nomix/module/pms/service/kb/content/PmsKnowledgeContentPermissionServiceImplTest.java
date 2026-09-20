@@ -16,10 +16,10 @@ import com.lxzy.nomix.module.system.api.dept.DeptApi;
 import com.lxzy.nomix.module.system.api.permission.PermissionApi;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
 import com.lxzy.nomix.module.system.api.user.dto.AdminUserRespDTO;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -44,7 +44,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link PmsKnowledgeContentPermissionServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsKnowledgeContentPermissionServiceImpl.class)
 public class PmsKnowledgeContentPermissionServiceImplTest extends BaseDbUnitTest {
@@ -61,17 +61,17 @@ public class PmsKnowledgeContentPermissionServiceImplTest extends BaseDbUnitTest
     @Resource
     private PmsKnowledgeLibraryMemberMapper libraryMemberMapper;
 
-    @MockBean
+    @MockitoBean
     private PmsKnowledgeLibraryMemberService libraryMemberService;
-    @MockBean
+    @MockitoBean
     private PmsKnowledgeFolderService folderService;
-    @MockBean
+    @MockitoBean
     private PmsKnowledgeDocumentService documentService;
-    @MockBean
+    @MockitoBean
     private AdminUserApi adminUserApi;
-    @MockBean
+    @MockitoBean
     private DeptApi deptApi;
-    @MockBean
+    @MockitoBean
     private PermissionApi permissionApi;
 
     @Test

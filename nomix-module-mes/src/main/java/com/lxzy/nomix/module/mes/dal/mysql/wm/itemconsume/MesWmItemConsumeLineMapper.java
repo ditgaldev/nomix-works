@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * MES 物料消耗记录行 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesWmItemConsumeLineMapper extends BaseMapperX<MesWmItemConsumeLineDO> {

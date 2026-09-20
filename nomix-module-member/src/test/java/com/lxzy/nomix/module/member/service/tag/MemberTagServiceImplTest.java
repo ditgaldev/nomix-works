@@ -8,11 +8,10 @@ import com.lxzy.nomix.module.member.controller.admin.tag.vo.MemberTagUpdateReqVO
 import com.lxzy.nomix.module.member.dal.dataobject.tag.MemberTagDO;
 import com.lxzy.nomix.module.member.dal.mysql.tag.MemberTagMapper;
 import com.lxzy.nomix.module.member.service.user.MemberUserService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
-
-import javax.annotation.Resource;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
 import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildTime;
@@ -28,7 +27,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link MemberTagServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(MemberTagServiceImpl.class)
 public class MemberTagServiceImplTest extends BaseDbUnitTest {
@@ -39,7 +38,7 @@ public class MemberTagServiceImplTest extends BaseDbUnitTest {
     @Resource
     private MemberTagMapper tagMapper;
 
-    @MockBean
+    @MockitoBean
     private MemberUserService memberUserService;
 
     @Test

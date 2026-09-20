@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * MES 装箱明细 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesWmPackageLineMapper extends BaseMapperX<MesWmPackageLineDO> {

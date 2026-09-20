@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * WMS 库存盘点请求 DTO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class WmsInventoryCheckReqDTO {

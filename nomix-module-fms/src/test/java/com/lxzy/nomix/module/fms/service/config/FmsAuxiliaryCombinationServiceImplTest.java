@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.fms.service.config;
 import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.fms.dal.dataobject.config.FmsAuxiliaryCombinationDO;
 import com.lxzy.nomix.module.fms.dal.mysql.config.FmsAuxiliaryCombinationMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 

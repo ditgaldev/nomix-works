@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 /**
  * HRM 薪资对应社保月份类型的 {@link IParseFunction} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 public class HrmSalarySocialSecurityMonthTypeParseFunction implements IParseFunction {

@@ -11,9 +11,9 @@ import com.lxzy.nomix.module.iot.framework.iot.config.NomixIotProperties;
 import com.lxzy.nomix.module.iot.service.device.IotDeviceService;
 import com.lxzy.nomix.module.iot.service.device.message.IotDeviceMessageService;
 import com.lxzy.nomix.module.iot.service.device.property.IotDevicePropertyService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Collections;
@@ -26,7 +26,7 @@ import java.util.Set;
  * 检测逻辑：设备最后一条 {@link IotDeviceMessage} 消息超过一定时间，则认为设备离线
  *
  * @see <a href="https://help.aliyun.com/zh/iot/support/faq-about-device-status#98f7056b2957y">阿里云 IoT —— 设备离线分析</a>
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 public class IotDeviceOfflineCheckJob implements JobHandler {

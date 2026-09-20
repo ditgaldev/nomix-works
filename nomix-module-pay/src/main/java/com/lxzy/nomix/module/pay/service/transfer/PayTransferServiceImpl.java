@@ -25,11 +25,11 @@ import com.lxzy.nomix.module.pay.framework.pay.config.PayProperties;
 import com.lxzy.nomix.module.pay.service.app.PayAppService;
 import com.lxzy.nomix.module.pay.service.channel.PayChannelService;
 import com.lxzy.nomix.module.pay.service.notify.PayNotifyService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -192,7 +192,7 @@ public class PayTransferServiceImpl implements PayTransferService {
     /**
      * 补充渠道 package 信息：处理同步任务先更新为转账中，发起转账接口后返回 channelPackageInfo 的场景
      *
-     * @see <a href="">Issue #1144</a>
+     * @see <a href="https://github.com/ditgaldev/nomix-works/issues/1144">Issue #1144</a>
      */
     private void updateChannelPackageInfoIfAbsent(PayTransferDO transfer, PayTransferRespDTO notify) {
         if (StrUtil.isBlank(notify.getChannelPackageInfo())

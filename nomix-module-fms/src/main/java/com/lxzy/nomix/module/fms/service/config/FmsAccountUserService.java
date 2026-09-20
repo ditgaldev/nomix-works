@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * FMS 账套用户 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface FmsAccountUserService {
 

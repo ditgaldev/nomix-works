@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * IM 群聊消息 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ImGroupMessageService {
 

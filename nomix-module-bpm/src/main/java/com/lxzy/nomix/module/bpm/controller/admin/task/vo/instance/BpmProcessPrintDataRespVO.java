@@ -31,7 +31,7 @@ public class BpmProcessPrintDataRespVO {
         @Schema(description = "任务名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "Nomix")
         private String name;
 
-        @Schema(description = "签名 URL", example = "")
+        @Schema(description = "签名 URL", example = "https://www.nomix.cn/sign.png")
         private String signPicUrl;
 
         @Schema(description = "任务描述", requiredMode = Schema.RequiredMode.REQUIRED)

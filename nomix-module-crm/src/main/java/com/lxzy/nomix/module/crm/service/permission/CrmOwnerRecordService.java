@@ -4,14 +4,14 @@ import com.lxzy.nomix.module.crm.controller.admin.statistics.vo.customer.CrmStat
 import com.lxzy.nomix.module.crm.controller.admin.statistics.vo.customer.CrmStatisticsPoolSummaryByDateRespVO;
 import com.lxzy.nomix.module.crm.controller.admin.statistics.vo.customer.CrmStatisticsPoolSummaryByUserRespVO;
 import com.lxzy.nomix.module.crm.service.permission.bo.CrmOwnerRecordCreateReqBO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
 /**
  * CRM 负责人变更记录 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface CrmOwnerRecordService {
 

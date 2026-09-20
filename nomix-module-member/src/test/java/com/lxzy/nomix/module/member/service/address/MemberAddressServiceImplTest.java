@@ -8,7 +8,7 @@ import com.lxzy.nomix.module.member.dal.mysql.address.MemberAddressMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 import static com.lxzy.nomix.framework.test.core.util.AssertUtils.assertPojoEquals;
 import static com.lxzy.nomix.framework.test.core.util.AssertUtils.assertServiceException;
@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 /**
  * {@link AddressServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(AddressServiceImpl.class)
 public class MemberAddressServiceImplTest extends BaseDbUnitTest {

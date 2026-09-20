@@ -1,11 +1,11 @@
 package com.lxzy.nomix.module.product.controller.admin.spu.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Schema(description = "管理后台 - 商品 SPU 新增/更新 Request VO")
@@ -39,12 +39,12 @@ public class ProductSpuSaveReqVO {
     @NotNull(message = "商品品牌不能为空")
     private Long brandId;
 
-    @Schema(description = "商品封面图", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "商品封面图", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn/xx.png")
     @NotEmpty(message = "商品封面图不能为空")
     private String picUrl;
 
     @Schema(description = "商品轮播图", requiredMode = Schema.RequiredMode.REQUIRED,
-            example = "[ ]")
+            example = "[https://www.nomix.cn/xx.png, https://www.nomix.cn/xxx.png]")
     private List<String> sliderPicUrls;
 
     @Schema(description = "排序字段", requiredMode = Schema.RequiredMode.REQUIRED, example = "1")

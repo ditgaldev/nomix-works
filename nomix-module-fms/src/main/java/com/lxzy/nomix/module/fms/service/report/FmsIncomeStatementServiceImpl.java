@@ -26,7 +26,7 @@ import com.lxzy.nomix.module.fms.enums.report.FmsFormulaRuleEnum;
 import com.lxzy.nomix.module.fms.enums.report.FmsReportTypeEnum;
 import com.lxzy.nomix.module.fms.service.config.FmsAccountSetService;
 import com.lxzy.nomix.module.fms.service.config.FmsSubjectService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -49,7 +49,7 @@ import static com.lxzy.nomix.module.fms.enums.ErrorCodeConstants.REPORT_CONFIG_N
 /**
  * FMS 利润表 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

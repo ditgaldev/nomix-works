@@ -23,7 +23,7 @@ import static com.lxzy.nomix.module.pay.framework.pay.core.client.impl.weixin.Ab
 /**
  * {@link WxBarPayClient} 的集成测试，用于快速调试微信条码支付
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Disabled
 public class WxBarPayClientIntegrationTest {

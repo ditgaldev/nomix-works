@@ -22,7 +22,7 @@ public class AuthWeixinJsapiSignatureRespVO {
     @Schema(description = "时间戳", requiredMode = Schema.RequiredMode.REQUIRED, example = "1024")
     private Long timestamp;
 
-    @Schema(description = "URL", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "URL", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn")
     private String url;
 
     @Schema(description = "签名", requiredMode = Schema.RequiredMode.REQUIRED, example = "阿巴阿巴")

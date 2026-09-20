@@ -11,7 +11,7 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * MES 排班计划 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesCalPlanMapper extends BaseMapperX<MesCalPlanDO> {

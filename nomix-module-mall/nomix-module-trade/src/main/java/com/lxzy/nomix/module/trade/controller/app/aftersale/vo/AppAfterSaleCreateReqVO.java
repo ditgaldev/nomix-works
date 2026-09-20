@@ -5,8 +5,8 @@ import com.lxzy.nomix.module.trade.enums.aftersale.AfterSaleWayEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
 import java.util.List;
 
 @Schema(description = "用户 App - 交易售后创建 Request VO")
@@ -34,7 +34,7 @@ public class AppAfterSaleCreateReqVO {
     @Schema(description = "补充描述", example = "商品质量不好")
     private String applyDescription;
 
-    @Schema(description = "补充凭证图片", example = " ")
+    @Schema(description = "补充凭证图片", example = "https://www.nomix.cn/1.png, https://www.nomix.cn/2.png")
     private List<String> applyPicUrls;
 
 }

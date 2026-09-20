@@ -5,10 +5,10 @@ import com.lxzy.nomix.module.pms.controller.admin.pm.workitem.vo.comment.PmsWork
 import com.lxzy.nomix.module.pms.dal.dataobject.pm.workitem.PmsWorkItemCommentDO;
 import com.lxzy.nomix.module.pms.dal.dataobject.pm.workitem.PmsWorkItemDO;
 import com.lxzy.nomix.module.pms.dal.mysql.pm.workitem.PmsWorkItemCommentMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import static com.lxzy.nomix.framework.test.core.util.AssertUtils.assertServiceException;
 import static com.lxzy.nomix.framework.test.core.util.RandomUtils.randomLongId;
@@ -24,7 +24,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link PmsWorkItemCommentServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsWorkItemCommentServiceImpl.class)
 public class PmsWorkItemCommentServiceImplTest extends BaseDbUnitTest {
@@ -35,9 +35,9 @@ public class PmsWorkItemCommentServiceImplTest extends BaseDbUnitTest {
     @Resource
     private PmsWorkItemCommentMapper commentMapper;
 
-    @MockBean
+    @MockitoBean
     private PmsWorkItemService workItemService;
-    @MockBean
+    @MockitoBean
     private PmsWorkItemActivityService workItemActivityService;
 
     @Test

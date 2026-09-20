@@ -25,13 +25,13 @@ import com.lxzy.nomix.module.pay.framework.pay.core.enums.PayOrderDisplayModeEnu
 import com.lxzy.nomix.module.pay.service.app.PayAppService;
 import com.lxzy.nomix.module.pay.service.channel.PayChannelService;
 import com.lxzy.nomix.module.pay.service.notify.PayNotifyService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.MockedStatic;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -65,13 +65,13 @@ public class PayOrderServiceTest extends BaseDbAndRedisUnitTest {
     @Resource
     private PayOrderExtensionMapper orderExtensionMapper;
 
-    @MockBean
+    @MockitoBean
     private PayProperties properties;
-    @MockBean
+    @MockitoBean
     private PayAppService appService;
-    @MockBean
+    @MockitoBean
     private PayChannelService channelService;
-    @MockBean
+    @MockitoBean
     private PayNotifyService notifyService;
 
     @BeforeEach

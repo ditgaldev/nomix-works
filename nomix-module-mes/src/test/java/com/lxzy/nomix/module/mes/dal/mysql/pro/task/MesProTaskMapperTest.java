@@ -7,10 +7,11 @@ import com.lxzy.nomix.module.mes.controller.admin.pro.task.vo.MesProTaskPageReqV
 import com.lxzy.nomix.module.mes.dal.dataobject.pro.route.MesProRouteProcessDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.pro.task.MesProTaskDO;
 import com.lxzy.nomix.module.mes.dal.mysql.pro.route.MesProRouteProcessMapper;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.function.Consumer;
 
 import static com.lxzy.nomix.framework.common.util.object.ObjectUtils.cloneIgnoreId;
@@ -21,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * {@link MesProTaskMapper#selectPage(MesProTaskPageReqVO)} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class MesProTaskMapperTest extends BaseDbUnitTest {
 

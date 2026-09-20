@@ -14,7 +14,7 @@ import java.util.Set;
 /**
  * HRM 预置薪资项目编码枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

@@ -3,17 +3,19 @@ package com.lxzy.nomix.module.pay.dal.dataobject.channel;
 import cn.hutool.core.util.StrUtil;
 import com.lxzy.nomix.framework.common.enums.CommonStatusEnum;
 import com.lxzy.nomix.framework.common.util.json.JsonUtils;
-import com.lxzy.nomix.framework.tenant.core.db.TenantBaseDO;
-import com.lxzy.nomix.module.pay.dal.dataobject.app.PayAppDO;
 import com.lxzy.nomix.module.pay.enums.PayChannelEnum;
 import com.lxzy.nomix.module.pay.framework.pay.core.client.PayClientConfig;
+import com.lxzy.nomix.framework.tenant.core.db.TenantBaseDO;
+import com.lxzy.nomix.module.pay.dal.dataobject.app.PayAppDO;
 import com.lxzy.nomix.module.pay.framework.pay.core.client.impl.NonePayClientConfig;
+import com.lxzy.nomix.module.pay.framework.pay.core.client.impl.alipay.AlipayAppPayClient;
 import com.lxzy.nomix.module.pay.framework.pay.core.client.impl.alipay.AlipayPayClientConfig;
 import com.lxzy.nomix.module.pay.framework.pay.core.client.impl.weixin.WxPayClientConfig;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.handlers.AbstractJsonTypeHandler;
+import com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler;
 import com.fasterxml.jackson.core.type.TypeReference;
 import lombok.*;
 
@@ -25,7 +27,7 @@ import java.lang.reflect.Field;
  *
  * 即 PayAppDO : PayChannelDO = 1 : n
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "pay_channel", autoResultMap = true)
 @KeySequence("pay_channel_seq") // 用于 Oracle、PostgreSQL、Kingbase、DB2、H2 数据库的主键自增。如果是 MySQL 等数据库，可不写。
@@ -86,7 +88,7 @@ public class PayChannelDO extends TenantBaseDO {
 
         @Override
         public Object parse(String json) {
-            PayClientConfig config = JsonUtils.parseObjectQuietly(json, new TypeReference<PayClientConfig>() {});
+            PayClientConfig config = JsonUtils.parseObjectQuietly(json, new TypeReference<>() {});
             if (config != null) {
                 return config;
             }

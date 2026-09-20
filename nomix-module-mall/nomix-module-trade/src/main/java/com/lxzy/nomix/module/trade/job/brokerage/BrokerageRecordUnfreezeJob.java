@@ -6,7 +6,7 @@ import com.lxzy.nomix.framework.tenant.core.job.TenantJob;
 import com.lxzy.nomix.module.trade.service.brokerage.BrokerageRecordService;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * 佣金解冻 Job

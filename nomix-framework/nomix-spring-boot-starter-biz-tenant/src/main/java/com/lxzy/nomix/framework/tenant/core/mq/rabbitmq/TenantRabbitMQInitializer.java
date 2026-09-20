@@ -7,7 +7,7 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 /**
  * 多租户的 RabbitMQ 初始化器
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class TenantRabbitMQInitializer implements BeanPostProcessor {
 

@@ -15,7 +15,7 @@ import java.math.BigDecimal;
 /**
  * MES 生产任务投料 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_pro_task_issue")
 @KeySequence("mes_pro_task_issue_seq")

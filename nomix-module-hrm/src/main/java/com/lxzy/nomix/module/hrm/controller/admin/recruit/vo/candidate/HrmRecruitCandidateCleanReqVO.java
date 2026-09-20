@@ -3,9 +3,9 @@ package com.lxzy.nomix.module.hrm.controller.admin.recruit.vo.candidate;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.hrm.enums.recruit.candidate.HrmRecruitCandidateStatusEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Positive;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 import lombok.Data;
 
 import java.util.List;

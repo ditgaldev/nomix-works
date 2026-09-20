@@ -4,11 +4,8 @@ import cn.hutool.core.collection.CollUtil;
 import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.pms.dal.dataobject.pm.workitem.PmsWorkItemActivityDO;
 import com.lxzy.nomix.module.pms.dal.mysql.pm.workitem.PmsWorkItemActivityMapper;
-import com.lxzy.nomix.module.pms.service.pm.iteration.PmsIterationService;
-import com.lxzy.nomix.module.system.api.user.AdminUserApi;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
 
 import java.util.List;
@@ -20,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * {@link PmsWorkItemActivityServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsWorkItemActivityServiceImpl.class)
 public class PmsWorkItemActivityServiceImplTest extends BaseDbUnitTest {
@@ -30,15 +27,6 @@ public class PmsWorkItemActivityServiceImplTest extends BaseDbUnitTest {
 
     @Resource
     private PmsWorkItemActivityMapper activityMapper;
-
-    @MockBean
-    private PmsWorkItemLabelService workItemLabelService;
-    @MockBean
-    private PmsWorkItemService workItemService;
-    @MockBean
-    private PmsIterationService iterationService;
-    @MockBean
-    private AdminUserApi adminUserApi;
 
     @Test
     public void testRecordAndGetActivity_success() {

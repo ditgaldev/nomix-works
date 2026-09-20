@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 优惠劵 Response DTO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class CouponRespDTO {

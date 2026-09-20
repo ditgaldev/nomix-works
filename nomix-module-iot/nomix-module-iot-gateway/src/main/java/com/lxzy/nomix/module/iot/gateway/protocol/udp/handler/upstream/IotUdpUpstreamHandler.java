@@ -45,7 +45,7 @@ import static com.lxzy.nomix.module.iot.gateway.enums.ErrorCodeConstants.DEVICE_
  * 3. 后续请求：每次请求在 params 中携带 token
  * 4. 服务端验证：每次请求通过 IotDeviceTokenService.verifyToken() 验证
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class IotUdpUpstreamHandler {

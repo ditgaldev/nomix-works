@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * IoT 设备信息 Response DTO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class IotDeviceRespDTO {

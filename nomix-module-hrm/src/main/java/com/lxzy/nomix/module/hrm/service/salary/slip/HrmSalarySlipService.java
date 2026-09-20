@@ -6,7 +6,7 @@ import com.lxzy.nomix.module.hrm.controller.admin.salary.vo.slip.HrmSalarySlipRe
 import com.lxzy.nomix.module.hrm.dal.dataobject.salary.monthrecord.HrmSalaryMonthEmployeeRecordDO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.salary.slip.HrmSalarySlipDO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.salary.slip.HrmSalarySlipTemplateDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.time.YearMonth;
 import java.util.Collection;
@@ -17,7 +17,7 @@ import java.util.Set;
 /**
  * HRM 工资条 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmSalarySlipService {
 

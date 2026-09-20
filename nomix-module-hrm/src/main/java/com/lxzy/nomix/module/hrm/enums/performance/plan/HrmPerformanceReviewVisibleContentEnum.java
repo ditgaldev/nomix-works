@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * HRM 绩效评分可见内容枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

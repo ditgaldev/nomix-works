@@ -3,8 +3,8 @@ package com.lxzy.nomix.module.fms.controller.admin.config.vo.subject;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.framework.common.enums.CommonStatusEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * FMS 科目状态更新 Request VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Schema(description = "管理后台 - FMS 科目状态更新 Request VO")
 @Data

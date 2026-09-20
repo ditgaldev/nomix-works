@@ -1,15 +1,14 @@
 package com.lxzy.nomix.module.infra.api.file;
 
 import com.lxzy.nomix.module.infra.service.file.FileService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
-
-import javax.annotation.Resource;
 
 /**
  * 文件 API 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

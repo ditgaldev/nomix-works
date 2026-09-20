@@ -4,8 +4,7 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.wm.itemreceipt.vo.MesWmItemReceiptPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.wm.itemreceipt.vo.MesWmItemReceiptSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.itemreceipt.MesWmItemReceiptDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;

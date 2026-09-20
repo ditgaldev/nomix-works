@@ -18,7 +18,7 @@ import com.lxzy.nomix.module.trade.service.brokerage.BrokerageUserService;
 import com.lxzy.nomix.module.trade.service.brokerage.bo.BrokerageAddReqBO;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
@@ -27,7 +27,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * 订单分销的 {@link TradeOrderHandler} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 public class TradeBrokerageOrderHandler implements TradeOrderHandler {

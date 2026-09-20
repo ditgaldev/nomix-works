@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * WMS 入库单类型枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

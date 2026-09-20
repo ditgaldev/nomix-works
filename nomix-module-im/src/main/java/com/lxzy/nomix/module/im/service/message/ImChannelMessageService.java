@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.im.controller.admin.manager.message.vo.channel.ImChannelMessagePageReqVO;
 import com.lxzy.nomix.module.im.controller.admin.manager.message.vo.channel.ImChannelMessageSendReqVO;
 import com.lxzy.nomix.module.im.dal.dataobject.message.ImChannelMessageDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -13,7 +13,7 @@ import java.util.Map;
 /**
  * IM 频道消息 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ImChannelMessageService {
 

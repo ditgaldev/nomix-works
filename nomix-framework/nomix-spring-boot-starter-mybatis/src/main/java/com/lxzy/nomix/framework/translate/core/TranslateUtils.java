@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * VO 数据翻译 Utils
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class TranslateUtils {
 

@@ -1,9 +1,9 @@
 package com.lxzy.nomix.module.bpm.controller.admin.task.vo.task;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
 import java.util.List;
 import java.util.Map;
 
@@ -18,10 +18,10 @@ public class BpmTaskApproveReqVO {
     @Schema(description = "审批意见", example = "不错不错！")
     private String reason;
 
-    @Schema(description = "签名", example = "")
+    @Schema(description = "签名", example = "https://www.nomix.cn/sign.png")
     private String signPicUrl;
 
-    @Schema(description = "附件", example = "[]")
+    @Schema(description = "附件", example = "[https://test.nomix.nomix.cn/20260609/test.txt]")
     private List<String> attachments;
 
     @Schema(description = "变量实例（动态表单）", requiredMode = Schema.RequiredMode.REQUIRED)

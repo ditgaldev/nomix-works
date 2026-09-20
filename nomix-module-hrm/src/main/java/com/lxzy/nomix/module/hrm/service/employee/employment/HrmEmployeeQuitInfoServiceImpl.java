@@ -5,7 +5,7 @@ import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.module.hrm.controller.admin.employee.vo.quitinfo.HrmEmployeeQuitInfoSaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.employment.HrmEmployeeQuitInfoDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.employee.employment.HrmEmployeeQuitInfoMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -20,7 +20,7 @@ import static com.lxzy.nomix.module.hrm.enums.ErrorCodeConstants.EMPLOYEE_QUIT_I
 /**
  * HRM 员工离职信息 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

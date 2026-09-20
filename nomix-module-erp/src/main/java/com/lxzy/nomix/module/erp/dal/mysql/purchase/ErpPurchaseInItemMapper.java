@@ -17,7 +17,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * ERP 采购入库项 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ErpPurchaseInItemMapper extends BaseMapperX<ErpPurchaseInItemDO> {

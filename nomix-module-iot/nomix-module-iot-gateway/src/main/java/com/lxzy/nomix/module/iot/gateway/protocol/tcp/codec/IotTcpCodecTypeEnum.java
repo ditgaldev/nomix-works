@@ -10,7 +10,7 @@ import lombok.Getter;
 /**
  * IoT TCP 拆包类型枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @AllArgsConstructor
 @Getter

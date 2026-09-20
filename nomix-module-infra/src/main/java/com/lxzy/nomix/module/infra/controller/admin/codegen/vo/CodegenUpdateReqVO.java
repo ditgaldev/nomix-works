@@ -3,8 +3,8 @@ package com.lxzy.nomix.module.infra.controller.admin.codegen.vo;
 import com.lxzy.nomix.module.infra.controller.admin.codegen.vo.column.CodegenColumnSaveReqVO;
 import com.lxzy.nomix.module.infra.controller.admin.codegen.vo.table.CodegenTableSaveReqVO;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.util.List;

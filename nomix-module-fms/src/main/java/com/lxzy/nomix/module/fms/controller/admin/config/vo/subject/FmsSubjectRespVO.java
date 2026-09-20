@@ -18,7 +18,7 @@ import static com.lxzy.nomix.module.infra.enums.DictTypeConstants.BOOLEAN_STRING
 /**
  * FMS 科目 Response VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Schema(description = "管理后台 - FMS 科目 Response VO")
 @Data

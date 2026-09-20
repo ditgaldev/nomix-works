@@ -10,12 +10,12 @@ import com.lxzy.nomix.module.mes.controller.admin.pro.process.vo.MesProProcessSa
 import com.lxzy.nomix.module.mes.dal.dataobject.pro.process.MesProProcessDO;
 import com.lxzy.nomix.module.mes.dal.mysql.pro.process.MesProProcessMapper;
 import com.lxzy.nomix.module.mes.service.pro.route.MesProRouteProcessService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -26,7 +26,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 生产工序 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -38,7 +38,7 @@ import com.lxzy.nomix.module.hrm.enums.performance.plan.HrmPerformanceStageTypeE
 import com.lxzy.nomix.module.hrm.enums.performance.config.HrmPerformanceUpperLimitTypeEnum;
 import com.lxzy.nomix.module.hrm.service.employee.info.HrmEmployeeService;
 import com.mzt.logapi.starter.annotation.LogRecord;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
@@ -86,7 +86,7 @@ import static com.lxzy.nomix.module.hrm.enums.LogRecordConstants.HRM_PERFORMANCE
 /**
  * HRM 绩效评分 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

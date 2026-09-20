@@ -5,12 +5,12 @@ import com.lxzy.nomix.framework.tenant.core.job.TenantJob;
 import com.lxzy.nomix.module.trade.service.order.TradeOrderUpdateService;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * 交易订单的自动收货 Job
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 public class TradeOrderAutoReceiveJob implements JobHandler {

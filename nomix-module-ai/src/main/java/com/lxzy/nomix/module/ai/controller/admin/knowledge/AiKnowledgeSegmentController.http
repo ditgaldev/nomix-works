@@ -1,5 +1,5 @@
 ### 切片内容
-GET {{baseUrl}}/ai/knowledge/segment/split?url=
+GET {{baseUrl}}/ai/knowledge/segment/split?url=https://static.nomix.cn/README_nomix.md&segmentMaxTokens=800
 Content-Type: application/json
 Authorization: Bearer {{token}}
 tenant-id: {{adminTenantId}}

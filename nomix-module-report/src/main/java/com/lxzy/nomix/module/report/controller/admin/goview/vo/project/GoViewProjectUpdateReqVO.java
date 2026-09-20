@@ -5,7 +5,7 @@ import com.lxzy.nomix.framework.common.validation.InEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 
-import javax.validation.constraints.*;
+import jakarta.validation.constraints.*;
 
 @Schema(description = "管理后台 - GoView 项目更新 Request VO")
 @Data
@@ -25,7 +25,7 @@ public class GoViewProjectUpdateReqVO {
     @Schema(description = "报表内容") // JSON 格式
     private String content;
 
-    @Schema(description = "预览图片 URL", example = "")
+    @Schema(description = "预览图片 URL", example = "https://www.nomix.cn")
     private String picUrl;
 
     @Schema(description = "项目备注", example = "你猜")

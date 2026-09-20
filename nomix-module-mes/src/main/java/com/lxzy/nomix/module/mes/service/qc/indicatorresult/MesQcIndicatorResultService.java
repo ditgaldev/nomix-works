@@ -5,14 +5,14 @@ import com.lxzy.nomix.module.mes.controller.admin.qc.indicatorresult.vo.MesQcInd
 import com.lxzy.nomix.module.mes.controller.admin.qc.indicatorresult.vo.MesQcIndicatorResultSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.indicatorresult.MesQcIndicatorResultDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.indicatorresult.MesQcIndicatorResultDetailDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * MES 检验结果 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesQcIndicatorResultService {
 

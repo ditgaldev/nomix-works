@@ -8,7 +8,7 @@ import com.lxzy.nomix.module.mp.controller.admin.material.vo.MpMaterialUploadTem
 import com.lxzy.nomix.module.mp.dal.dataobject.material.MpMaterialDO;
 import me.chanjar.weixin.common.api.WxConsts;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.io.IOException;
 import java.util.Collection;
 import java.util.List;
@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * 公众号素材 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MpMaterialService {
 

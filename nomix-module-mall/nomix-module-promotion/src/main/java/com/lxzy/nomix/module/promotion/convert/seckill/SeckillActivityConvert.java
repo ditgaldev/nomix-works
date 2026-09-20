@@ -33,7 +33,7 @@ import static com.lxzy.nomix.framework.common.util.collection.MapUtils.findAndTh
 /**
  * 秒杀活动 Convert
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface SeckillActivityConvert {

@@ -10,7 +10,7 @@ import java.util.Objects;
 /**
  * 优惠劵领取方式
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @AllArgsConstructor
 @Getter

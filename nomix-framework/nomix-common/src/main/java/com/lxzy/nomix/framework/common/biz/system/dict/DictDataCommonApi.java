@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 字典数据 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface DictDataCommonApi {
 

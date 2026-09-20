@@ -26,7 +26,7 @@ import static org.mockito.Mockito.*;
 /**
  * {@link MesMdAutoCodeRecordServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @ExtendWith(MockitoExtension.class)
 public class MesMdAutoCodeRecordServiceImplTest {

@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.wm.arrivalnotice.vo.MesWmArrivalNoticePageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.wm.arrivalnotice.vo.MesWmArrivalNoticeSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.arrivalnotice.MesWmArrivalNoticeDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.List;

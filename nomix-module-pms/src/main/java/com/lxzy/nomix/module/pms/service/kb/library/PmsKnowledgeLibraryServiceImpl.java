@@ -11,7 +11,7 @@ import com.lxzy.nomix.module.pms.enums.kb.content.PmsKnowledgeDocumentStatusEnum
 import com.lxzy.nomix.module.pms.service.kb.recycle.PmsKnowledgeRecycleService;
 import com.lxzy.nomix.module.system.api.permission.PermissionApi;
 import com.lxzy.nomix.module.system.enums.permission.RoleCodeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -27,7 +27,7 @@ import java.util.Objects;
 /**
  * PMS 知识库 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

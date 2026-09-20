@@ -8,7 +8,7 @@ import com.lxzy.nomix.module.mes.dal.dataobject.wm.stocktaking.task.MesWmStockTa
 /**
  * MES 盘点结果 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesWmStockTakingTaskResultService {
 

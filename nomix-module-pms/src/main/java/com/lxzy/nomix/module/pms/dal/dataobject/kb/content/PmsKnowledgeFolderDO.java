@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 /**
  * PMS 知识库文件夹 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("pms_knowledge_folder")
 @KeySequence("pms_knowledge_folder_seq")

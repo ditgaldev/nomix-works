@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.category.BpmCategoryPageReqVO;
 import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.category.BpmCategorySaveReqVO;
 import com.lxzy.nomix.module.bpm.dal.dataobject.definition.BpmCategoryDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -15,7 +15,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * BPM 流程分类 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface BpmCategoryService {
 

@@ -2,15 +2,15 @@ package com.lxzy.nomix.module.promotion.api.coupon;
 
 import com.lxzy.nomix.module.promotion.api.coupon.dto.CouponRespDTO;
 import com.lxzy.nomix.module.promotion.api.coupon.dto.CouponUseReqDTO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 import java.util.Map;
 
 /**
  * 优惠劵 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface CouponApi {
 

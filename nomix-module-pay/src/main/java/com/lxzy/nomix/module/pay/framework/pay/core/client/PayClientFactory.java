@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.pay.framework.pay.core.client;
 /**
  * 支付客户端的工厂接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface PayClientFactory {
 

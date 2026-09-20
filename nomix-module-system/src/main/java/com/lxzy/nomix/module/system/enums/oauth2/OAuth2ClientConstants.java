@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.system.enums.oauth2;
 /**
  * OAuth2.0 客户端的通用枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface OAuth2ClientConstants {
 

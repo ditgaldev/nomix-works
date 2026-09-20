@@ -12,7 +12,7 @@ import lombok.ToString;
 /**
  * PMS 项目收藏 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("pms_project_favorite")
 @KeySequence("pms_project_favorite_seq")

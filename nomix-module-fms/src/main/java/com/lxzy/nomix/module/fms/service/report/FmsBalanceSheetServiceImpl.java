@@ -34,7 +34,7 @@ import com.lxzy.nomix.module.fms.service.config.FmsFinanceParameterService;
 import com.lxzy.nomix.module.fms.service.config.FmsInitialBalanceService;
 import com.lxzy.nomix.module.fms.service.config.FmsSubjectService;
 import com.lxzy.nomix.module.fms.util.FmsPeriodUtils;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -60,7 +60,7 @@ import static com.lxzy.nomix.module.fms.enums.ErrorCodeConstants.REPORT_CONFIG_N
 /**
  * FMS 资产负债表 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

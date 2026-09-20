@@ -6,15 +6,15 @@ import com.lxzy.nomix.module.promotion.controller.admin.discount.vo.DiscountActi
 import com.lxzy.nomix.module.promotion.controller.admin.discount.vo.DiscountActivityUpdateReqVO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.discount.DiscountActivityDO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.discount.DiscountProductDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * 限时折扣 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface DiscountActivityService {
 

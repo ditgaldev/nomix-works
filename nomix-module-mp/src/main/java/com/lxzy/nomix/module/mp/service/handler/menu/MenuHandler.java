@@ -9,7 +9,7 @@ import me.chanjar.weixin.mp.bean.message.WxMpXmlMessage;
 import me.chanjar.weixin.mp.bean.message.WxMpXmlOutMessage;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.Map;
 
 /**
@@ -17,7 +17,7 @@ import java.util.Map;
  *
  * 逻辑：粉丝点击菜单时，触发对应的回复
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 public class MenuHandler implements WxMpMessageHandler {

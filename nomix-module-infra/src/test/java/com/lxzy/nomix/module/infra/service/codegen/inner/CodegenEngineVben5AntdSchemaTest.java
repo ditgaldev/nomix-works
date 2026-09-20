@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * {@link CodegenEngine} 的 Vue3 + Vben5 + AntD + Schema 单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class CodegenEngineVben5AntdSchemaTest extends CodegenEngineAbstractTest {
 

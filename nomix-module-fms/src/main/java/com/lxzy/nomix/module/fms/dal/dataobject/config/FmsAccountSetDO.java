@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 /**
  * FMS 账套 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("fms_account_set")
 @KeySequence("fms_account_set_seq")

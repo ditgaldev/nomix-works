@@ -5,14 +5,14 @@ import com.lxzy.nomix.module.mes.controller.admin.wm.productsales.vo.MesWmProduc
 import com.lxzy.nomix.module.mes.controller.admin.wm.productsales.vo.MesWmProductSalesSaveReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.wm.productsales.vo.MesWmProductSalesShippingReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.productsales.MesWmProductSalesDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * MES 销售出库单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesWmProductSalesService {
 

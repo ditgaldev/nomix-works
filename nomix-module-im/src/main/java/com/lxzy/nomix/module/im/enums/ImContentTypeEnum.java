@@ -13,7 +13,7 @@ import java.util.Set;
 /**
  * IM 内容类型枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @RequiredArgsConstructor

@@ -2,15 +2,16 @@ package com.lxzy.nomix.module.mes.service.qc.iqc;
 
 import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.qc.iqc.vo.line.MesQcIqcLinePageReqVO;
-import com.lxzy.nomix.module.mes.dal.dataobject.qc.defectrecord.MesQcDefectRecordDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.iqc.MesQcIqcLineDO;
+
+import com.lxzy.nomix.module.mes.dal.dataobject.qc.defectrecord.MesQcDefectRecordDO;
 
 import java.util.List;
 
 /**
  * MES 来料检验单行 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesQcIqcLineService {
 

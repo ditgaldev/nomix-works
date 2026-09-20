@@ -7,10 +7,11 @@ import com.lxzy.nomix.module.mes.dal.mysql.wm.arrivalnotice.MesWmArrivalNoticeMa
 import com.lxzy.nomix.module.mes.enums.wm.MesWmArrivalNoticeStatusEnum;
 import com.lxzy.nomix.module.mes.service.md.vendor.MesMdVendorService;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
+
 import java.math.BigDecimal;
 import java.util.Arrays;
 
@@ -25,7 +26,7 @@ import static org.mockito.Mockito.*;
 /**
  * {@link MesWmArrivalNoticeServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(MesWmArrivalNoticeServiceImpl.class)
 public class MesWmArrivalNoticeServiceImplTest extends BaseDbUnitTest {
@@ -36,9 +37,9 @@ public class MesWmArrivalNoticeServiceImplTest extends BaseDbUnitTest {
     @Resource
     private MesWmArrivalNoticeMapper arrivalNoticeMapper;
 
-    @MockBean
+    @MockitoBean
     private MesWmArrivalNoticeLineService arrivalNoticeLineService;
-    @MockBean
+    @MockitoBean
     private MesMdVendorService vendorService;
 
     @Test

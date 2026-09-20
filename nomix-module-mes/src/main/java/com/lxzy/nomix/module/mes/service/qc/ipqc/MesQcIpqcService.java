@@ -5,14 +5,14 @@ import com.lxzy.nomix.module.mes.controller.admin.qc.ipqc.vo.MesQcIpqcPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.qc.ipqc.vo.MesQcIpqcSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.defectrecord.MesQcDefectRecordDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.ipqc.MesQcIpqcDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * MES 过程检验单（IPQC） Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesQcIpqcService {
 

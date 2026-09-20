@@ -32,13 +32,13 @@ import com.lxzy.nomix.module.iot.service.ota.IotOtaTaskRecordService;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.google.common.base.Objects;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -51,7 +51,7 @@ import static com.lxzy.nomix.module.iot.enums.ErrorCodeConstants.DEVICE_DOWNSTRE
 /**
  * IoT 设备消息 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

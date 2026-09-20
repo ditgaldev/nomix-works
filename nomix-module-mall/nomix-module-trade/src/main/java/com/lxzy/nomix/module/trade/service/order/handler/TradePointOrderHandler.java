@@ -9,9 +9,9 @@ import com.lxzy.nomix.module.trade.dal.dataobject.order.TradeOrderDO;
 import com.lxzy.nomix.module.trade.dal.dataobject.order.TradeOrderItemDO;
 import com.lxzy.nomix.module.trade.enums.order.TradeOrderStatusEnum;
 import com.lxzy.nomix.module.trade.enums.order.TradeOrderTypeEnum;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Objects;
 

@@ -12,10 +12,10 @@ import com.lxzy.nomix.module.promotion.dal.dataobject.coupon.CouponTemplateDO;
 import com.lxzy.nomix.module.promotion.dal.mysql.coupon.CouponTemplateMapper;
 import com.lxzy.nomix.module.promotion.enums.common.PromotionProductScopeEnum;
 import com.lxzy.nomix.module.promotion.enums.coupon.CouponTakeTypeEnum;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
@@ -26,7 +26,7 @@ import static com.lxzy.nomix.module.promotion.enums.ErrorCodeConstants.*;
 /**
  * 优惠劵模板 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated
@@ -111,7 +111,7 @@ public class CouponTemplateServiceImpl implements CouponTemplateService {
     }
 
     private void validateTotalCountNotLessThanTakeLimitCount(Integer takeType, Integer totalCount, Integer takeLimitCount) {
-        // 修复  反馈
+        // 修复 https://gitee.com/nomixcode/nomix-mall-uniapp/issues/IJLP6Q 反馈
         if (CouponTakeTypeEnum.isUser(takeType)
                 && !isTakeLimitCountUnlimited(takeLimitCount)
                 && !isTotalCountUnlimited(totalCount)

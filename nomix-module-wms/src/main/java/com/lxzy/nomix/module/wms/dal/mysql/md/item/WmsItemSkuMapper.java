@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * WMS 商品 SKU Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface WmsItemSkuMapper extends BaseMapperX<WmsItemSkuDO> {

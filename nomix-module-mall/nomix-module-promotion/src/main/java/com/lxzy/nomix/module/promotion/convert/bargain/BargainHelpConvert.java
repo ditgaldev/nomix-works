@@ -15,7 +15,7 @@ import java.util.Map;
 /**
  * 砍价助力 Convert
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface BargainHelpConvert {

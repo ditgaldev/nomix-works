@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * FMS 首页财务指标 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface FmsFinanceIndicatorMapper extends BaseMapperX<FmsFinanceIndicatorDO> {

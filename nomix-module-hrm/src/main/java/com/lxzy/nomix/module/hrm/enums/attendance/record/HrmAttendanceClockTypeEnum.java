@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * HRM 考勤打卡类型
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

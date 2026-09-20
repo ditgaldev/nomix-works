@@ -30,14 +30,14 @@ import com.lxzy.nomix.module.system.service.dept.PostService;
 import com.lxzy.nomix.module.system.service.oauth2.OAuth2TokenService;
 import com.lxzy.nomix.module.system.service.permission.PermissionService;
 import com.lxzy.nomix.module.system.service.tenant.TenantService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.stubbing.Answer;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -71,23 +71,23 @@ public class AdminUserServiceImplTest extends BaseDbUnitTest {
     @Resource
     private UserPostMapper userPostMapper;
 
-    @MockBean
+    @MockitoBean
     private DeptService deptService;
-    @MockBean
+    @MockitoBean
     private PostService postService;
-    @MockBean
+    @MockitoBean
     private PermissionService permissionService;
-    @MockBean
+    @MockitoBean
     private PasswordEncoder passwordEncoder;
-    @MockBean
+    @MockitoBean
     private TenantService tenantService;
-    @MockBean
+    @MockitoBean
     private FileApi fileApi;
-    @MockBean
+    @MockitoBean
     private ConfigApi configApi;
-    @MockBean
+    @MockitoBean
     private OAuth2TokenService oauth2TokenService;
-    @MockBean
+    @MockitoBean
     private AdminUserProducer adminUserProducer;
 
     @BeforeEach
@@ -738,6 +738,35 @@ public class AdminUserServiceImplTest extends BaseDbUnitTest {
         // 断言
         assertEquals(1, result.size());
         assertEquals(user, result.get(0));
+    }
+
+    @Test
+    public void testValidateUser_success() {
+        // mock 数据
+        AdminUserDO user = randomAdminUserDO().setStatus(CommonStatusEnum.ENABLE.getStatus());
+        userMapper.insert(user);
+
+        // 调用
+        AdminUserDO result = userService.validateUser(user.getId());
+
+        // 断言
+        assertEquals(user, result);
+    }
+
+    @Test
+    public void testValidateUser_notFound() {
+        // 调用，并断言异常
+        assertServiceException(() -> userService.validateUser(randomLongId()), USER_NOT_EXISTS);
+    }
+
+    @Test
+    public void testValidateUser_notEnable() {
+        // mock 数据
+        AdminUserDO user = randomAdminUserDO().setStatus(CommonStatusEnum.DISABLE.getStatus());
+        userMapper.insert(user);
+
+        // 调用，并断言异常
+        assertServiceException(() -> userService.validateUser(user.getId()), USER_IS_DISABLE, user.getNickname());
     }
 
     @Test

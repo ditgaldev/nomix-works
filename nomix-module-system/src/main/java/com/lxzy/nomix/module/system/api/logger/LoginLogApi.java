@@ -2,12 +2,12 @@ package com.lxzy.nomix.module.system.api.logger;
 
 import com.lxzy.nomix.module.system.api.logger.dto.LoginLogCreateReqDTO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 登录日志的 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface LoginLogApi {
 

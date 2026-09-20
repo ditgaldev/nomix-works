@@ -47,7 +47,7 @@ public class MyBatisUtils {
     public static <T> Page<T> buildPage(PageParam pageParam, Collection<SortingField> sortingFields) {
         // 页码 + 数量
         Page<T> page = new Page<>(pageParam.getPageNo(), pageParam.getPageSize());
-        page.setOptimizeJoinOfCountSql(false); // 关联 issue：
+        page.setOptimizeJoinOfCountSql(false); // 关联 issue：https://gitee.com/ditgaldev/nomix-cloud/issues/ID2QLL
         // 排序字段
         if (CollUtil.isNotEmpty(sortingFields)) {
             for (SortingField sortingField : sortingFields) {
@@ -66,7 +66,7 @@ public class MyBatisUtils {
         if (CollUtil.isEmpty(sortingFields)) {
             return;
         }
-        if (wrapper instanceof QueryWrapper) {
+        if (wrapper instanceof QueryWrapper<T>) {
             QueryWrapper<T> query = (QueryWrapper<T>) wrapper;
             for (SortingField sortingField : sortingFields) {
                 String columnName = buildSafeOrderColumn(sortingField.getField());
@@ -75,7 +75,7 @@ public class MyBatisUtils {
                 }
                 query.orderBy(true, isAscOrder(sortingField.getOrder()), columnName);
             }
-        } else if (wrapper instanceof LambdaQueryWrapper) {
+        } else if (wrapper instanceof LambdaQueryWrapper<T>) {
             // LambdaQueryWrapper 不直接支持字符串字段排序，使用 last 方法拼接 ORDER BY
             LambdaQueryWrapper<T> lambdaQuery = (LambdaQueryWrapper<T>) wrapper;
             StringBuilder orderBy = new StringBuilder();
@@ -228,7 +228,7 @@ public class MyBatisUtils {
      * 将驼峰命名转换为下划线命名
      *
      * 使用场景：
-     * 1. <a href="">fix:修复"商品统计聚合函数的别名与排序字段不符"导致的 SQL 异常</a>
+     * 1. <a href="https://github.com/ditgaldev/nomix-works/pulls/1357/files">fix:修复"商品统计聚合函数的别名与排序字段不符"导致的 SQL 异常</a>
      *
      * @param func 字段名函数(驼峰命名)
      * @return 字段名(下划线命名)

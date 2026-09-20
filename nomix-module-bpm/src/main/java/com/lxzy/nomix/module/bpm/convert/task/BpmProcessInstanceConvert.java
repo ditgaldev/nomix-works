@@ -50,7 +50,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * 流程实例 Convert
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface BpmProcessInstanceConvert {

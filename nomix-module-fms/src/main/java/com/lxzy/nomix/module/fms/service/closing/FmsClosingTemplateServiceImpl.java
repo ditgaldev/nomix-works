@@ -17,7 +17,7 @@ import com.lxzy.nomix.module.fms.service.config.FmsFinanceParameterService;
 import com.lxzy.nomix.module.fms.service.config.FmsSubjectService;
 import com.mzt.logapi.context.LogRecordContext;
 import com.mzt.logapi.starter.annotation.LogRecord;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import lombok.Data;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
@@ -56,7 +56,7 @@ import static com.lxzy.nomix.module.fms.enums.LogRecordConstants.FMS_CLOSING_TYP
 /**
  * FMS 结账模板 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

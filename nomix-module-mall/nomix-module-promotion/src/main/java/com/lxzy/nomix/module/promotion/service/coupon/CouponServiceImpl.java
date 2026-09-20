@@ -19,13 +19,13 @@ import com.lxzy.nomix.module.promotion.dal.mysql.coupon.CouponMapper;
 import com.lxzy.nomix.module.promotion.enums.coupon.CouponStatusEnum;
 import com.lxzy.nomix.module.promotion.enums.coupon.CouponTakeTypeEnum;
 import com.lxzy.nomix.module.promotion.enums.coupon.CouponTemplateValidityTypeEnum;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -39,7 +39,7 @@ import static java.util.Arrays.asList;
 /**
  * 优惠劵 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 @Service

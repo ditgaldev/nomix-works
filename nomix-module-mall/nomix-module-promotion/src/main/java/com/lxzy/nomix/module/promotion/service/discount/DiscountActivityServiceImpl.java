@@ -17,11 +17,11 @@ import com.lxzy.nomix.module.promotion.dal.dataobject.discount.DiscountActivityD
 import com.lxzy.nomix.module.promotion.dal.dataobject.discount.DiscountProductDO;
 import com.lxzy.nomix.module.promotion.dal.mysql.discount.DiscountActivityMapper;
 import com.lxzy.nomix.module.promotion.dal.mysql.discount.DiscountProductMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -36,7 +36,7 @@ import static com.lxzy.nomix.module.promotion.enums.ErrorCodeConstants.*;
 /**
  * 限时折扣 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

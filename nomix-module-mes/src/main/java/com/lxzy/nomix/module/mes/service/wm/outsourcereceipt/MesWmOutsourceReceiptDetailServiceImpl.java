@@ -6,10 +6,10 @@ import com.lxzy.nomix.module.mes.dal.dataobject.wm.outsourcereceipt.MesWmOutsour
 import com.lxzy.nomix.module.mes.dal.mysql.wm.outsourcereceipt.MesWmOutsourceReceiptDetailMapper;
 import com.lxzy.nomix.module.mes.service.md.item.MesMdItemService;
 import com.lxzy.nomix.module.mes.service.wm.warehouse.MesWmWarehouseAreaService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;

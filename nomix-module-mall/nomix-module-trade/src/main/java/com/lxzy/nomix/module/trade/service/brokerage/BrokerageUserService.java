@@ -8,9 +8,8 @@ import com.lxzy.nomix.module.trade.controller.app.brokerage.vo.user.AppBrokerage
 import com.lxzy.nomix.module.trade.controller.app.brokerage.vo.user.AppBrokerageUserRankByUserCountRespVO;
 import com.lxzy.nomix.module.trade.controller.app.brokerage.vo.user.AppBrokerageUserRankPageReqVO;
 import com.lxzy.nomix.module.trade.dal.dataobject.brokerage.BrokerageUserDO;
-
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * 分销用户 Service 接口

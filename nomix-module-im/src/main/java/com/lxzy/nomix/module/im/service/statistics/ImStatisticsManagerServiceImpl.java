@@ -2,10 +2,10 @@ package com.lxzy.nomix.module.im.service.statistics;
 
 import cn.hutool.core.convert.Convert;
 import com.lxzy.nomix.module.im.dal.mysql.statistics.ImStatisticsManagerMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -16,7 +16,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * IM 数据看板 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

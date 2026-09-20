@@ -2,14 +2,14 @@ package com.lxzy.nomix.module.fms.controller.admin.config.vo.auxiliaryitem;
 
 import com.lxzy.nomix.framework.common.pojo.PageParam;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 /**
  * FMS 辅助核算项目分页 Request VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Schema(description = "管理后台 - FMS 辅助核算项目分页 Request VO")
 @Data

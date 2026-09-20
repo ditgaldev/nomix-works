@@ -4,13 +4,12 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.wms.controller.admin.order.shipment.vo.order.WmsShipmentOrderPageReqVO;
 import com.lxzy.nomix.module.wms.controller.admin.order.shipment.vo.order.WmsShipmentOrderSaveReqVO;
 import com.lxzy.nomix.module.wms.dal.dataobject.order.shipment.WmsShipmentOrderDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * WMS 出库单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface WmsShipmentOrderService {
 

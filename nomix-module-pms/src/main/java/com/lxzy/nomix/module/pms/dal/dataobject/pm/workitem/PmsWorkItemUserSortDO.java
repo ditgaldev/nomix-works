@@ -13,7 +13,7 @@ import lombok.ToString;
 /**
  * PMS 工作项个人排序 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("pms_work_item_user_sort")
 @KeySequence("pms_work_item_user_sort_seq")

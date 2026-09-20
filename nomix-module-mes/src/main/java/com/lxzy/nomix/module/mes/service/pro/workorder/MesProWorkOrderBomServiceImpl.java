@@ -13,11 +13,11 @@ import com.lxzy.nomix.module.mes.dal.dataobject.pro.workorder.MesProWorkOrderDO;
 import com.lxzy.nomix.module.mes.dal.mysql.pro.workorder.MesProWorkOrderBomMapper;
 import com.lxzy.nomix.module.mes.service.md.item.MesMdItemService;
 import com.lxzy.nomix.module.mes.service.md.item.MesMdProductBomService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -32,7 +32,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.PRO_WORK_ORDER_
 /**
  * MES 生产工单 BOM Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

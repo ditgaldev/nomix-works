@@ -13,12 +13,12 @@ import com.lxzy.nomix.module.iot.dal.mysql.ota.IotOtaFirmwareMapper;
 import com.lxzy.nomix.module.iot.dal.mysql.ota.IotOtaTaskMapper;
 import com.lxzy.nomix.module.iot.enums.ota.IotOtaTaskStatusEnum;
 import com.lxzy.nomix.module.iot.service.product.IotProductService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.io.ByteArrayInputStream;
 import java.util.Collection;
 import java.util.Collections;

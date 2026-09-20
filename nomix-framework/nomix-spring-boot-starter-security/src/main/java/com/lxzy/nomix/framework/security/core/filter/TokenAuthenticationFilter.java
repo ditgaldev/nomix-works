@@ -12,21 +12,21 @@ import com.lxzy.nomix.framework.security.core.LoginUser;
 import com.lxzy.nomix.framework.security.core.util.SecurityFrameworkUtils;
 import com.lxzy.nomix.framework.web.core.handler.GlobalExceptionHandler;
 import com.lxzy.nomix.framework.web.core.util.WebFrameworkUtils;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
  * Token 过滤器，验证 token 的有效性
  * 验证通过后，获得 {@link LoginUser} 信息，并加入到 Spring Security 上下文
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 public class TokenAuthenticationFilter extends OncePerRequestFilter {

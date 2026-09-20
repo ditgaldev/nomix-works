@@ -4,13 +4,12 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.pro.card.vo.process.MesProCardProcessPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.pro.card.vo.process.MesProCardProcessSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.pro.card.MesProCardProcessDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * MES 流转卡工序记录 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesProCardProcessService {
 

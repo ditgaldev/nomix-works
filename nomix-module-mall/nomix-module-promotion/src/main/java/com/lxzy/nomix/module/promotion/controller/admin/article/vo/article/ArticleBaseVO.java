@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.promotion.controller.admin.article.vo.article;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * 文章管理 Base VO，提供给添加、修改、详细的子 VO 使用
@@ -27,7 +27,7 @@ public class ArticleBaseVO {
     @Schema(description = "文章作者", requiredMode = Schema.RequiredMode.REQUIRED, example = "张三")
     private String author;
 
-    @Schema(description = "文章封面图片地址", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "文章封面图片地址", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn")
     @NotNull(message = "文章封面图片地址不能为空")
     private String picUrl;
 

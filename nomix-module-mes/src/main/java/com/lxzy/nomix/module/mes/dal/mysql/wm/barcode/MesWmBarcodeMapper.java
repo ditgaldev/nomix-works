@@ -12,7 +12,7 @@ import java.util.Collection;
 /**
  * MES 条码清单 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesWmBarcodeMapper extends BaseMapperX<MesWmBarcodeDO> {

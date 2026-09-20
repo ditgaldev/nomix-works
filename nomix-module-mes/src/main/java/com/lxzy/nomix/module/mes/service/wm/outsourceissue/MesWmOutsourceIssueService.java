@@ -4,13 +4,12 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.wm.outsourceissue.vo.MesWmOutsourceIssuePageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.wm.outsourceissue.vo.MesWmOutsourceIssueSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.outsourceissue.MesWmOutsourceIssueDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * MES 外协发料单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesWmOutsourceIssueService {
 

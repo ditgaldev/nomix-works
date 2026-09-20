@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * MES 物料消耗记录行 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesWmItemConsumeLineService {
 

@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 /**
  * IM 好友申请 Response VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Schema(description = "管理后台 - IM 好友申请 Response VO")
 @Data

@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * 代码生成 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface CodegenService {
 

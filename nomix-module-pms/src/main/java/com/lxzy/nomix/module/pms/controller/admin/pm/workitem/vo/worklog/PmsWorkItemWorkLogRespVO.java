@@ -31,7 +31,7 @@ public class PmsWorkItemWorkLogRespVO {
     @Schema(description = "登记人用户编号", example = "1")
     private Long creatorUserId;
 
-    @Schema(description = "登记人姓名", example = "Nomix")
+    @Schema(description = "登记人姓名", example = "Nomix源码")
     private String creatorUserName;
 
     @Schema(description = "登记时间", requiredMode = Schema.RequiredMode.REQUIRED)

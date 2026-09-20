@@ -15,7 +15,7 @@ import lombok.ToString;
 /**
  * HRM 社保方案 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("hrm_insurance_scheme")
 @KeySequence("hrm_insurance_scheme_seq")

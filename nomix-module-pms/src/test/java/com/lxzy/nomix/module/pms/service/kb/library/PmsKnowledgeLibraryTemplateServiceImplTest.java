@@ -8,11 +8,11 @@ import com.lxzy.nomix.module.pms.controller.admin.kb.library.vo.template.PmsKnow
 import com.lxzy.nomix.module.pms.dal.dataobject.kb.library.PmsKnowledgeLibraryTemplateDO;
 import com.lxzy.nomix.module.pms.dal.mysql.kb.library.PmsKnowledgeLibraryTemplateMapper;
 import com.lxzy.nomix.module.pms.service.kb.content.PmsKnowledgeDocumentService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -36,7 +36,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link PmsKnowledgeLibraryTemplateServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsKnowledgeLibraryTemplateServiceImpl.class)
 public class PmsKnowledgeLibraryTemplateServiceImplTest extends BaseDbUnitTest {
@@ -47,7 +47,7 @@ public class PmsKnowledgeLibraryTemplateServiceImplTest extends BaseDbUnitTest {
     @Resource
     private PmsKnowledgeLibraryTemplateMapper templateMapper;
 
-    @MockBean
+    @MockitoBean
     private PmsKnowledgeDocumentService documentService;
 
     @org.junit.jupiter.api.BeforeEach

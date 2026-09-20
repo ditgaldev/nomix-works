@@ -8,17 +8,17 @@ import com.lxzy.nomix.module.iot.dal.dataobject.alert.IotAlertConfigDO;
 import com.lxzy.nomix.module.iot.dal.dataobject.alert.IotAlertRecordDO;
 import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDeviceDO;
 import com.lxzy.nomix.module.iot.dal.mysql.alert.IotAlertRecordMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * IoT 告警记录 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

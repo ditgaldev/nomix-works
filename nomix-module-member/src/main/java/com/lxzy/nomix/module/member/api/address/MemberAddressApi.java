@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.member.api.address.dto.MemberAddressRespDTO;
 /**
  * 用户收件地址 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MemberAddressApi {
 

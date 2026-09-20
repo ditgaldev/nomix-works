@@ -21,7 +21,7 @@ import java.util.List;
  *
  * <p>模板只保存新建项目时使用的默认协作配置，项目创建后会生成自己的运行配置</p>
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "pms_project_template", autoResultMap = true)
 @KeySequence("pms_project_template_seq")

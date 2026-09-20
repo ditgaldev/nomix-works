@@ -15,7 +15,7 @@ import com.lxzy.nomix.module.trade.service.order.TradeOrderUpdateService;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;

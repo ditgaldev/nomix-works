@@ -13,6 +13,6 @@
  * +--------+                 +-------------+                   +---------+
  * </pre>
  *
- * @author Nomix
+ * @author Nomix源码
  */
 package com.lxzy.nomix.module.iot.gateway.protocol.emqx;

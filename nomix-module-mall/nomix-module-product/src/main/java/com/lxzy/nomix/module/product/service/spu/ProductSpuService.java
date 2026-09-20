@@ -7,9 +7,9 @@ import com.lxzy.nomix.module.product.controller.admin.spu.vo.ProductSpuSaveReqVO
 import com.lxzy.nomix.module.product.controller.admin.spu.vo.ProductSpuUpdateStatusReqVO;
 import com.lxzy.nomix.module.product.controller.app.spu.vo.AppProductSpuPageReqVO;
 import com.lxzy.nomix.module.product.dal.dataobject.spu.ProductSpuDO;
+import jakarta.validation.Valid;
 import org.springframework.scheduling.annotation.Async;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -17,7 +17,7 @@ import java.util.Map;
 /**
  * 商品 SPU Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ProductSpuService {
 

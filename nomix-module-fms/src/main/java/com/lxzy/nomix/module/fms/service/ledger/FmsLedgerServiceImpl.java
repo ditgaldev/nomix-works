@@ -30,7 +30,7 @@ import com.lxzy.nomix.module.fms.service.config.FmsAccountSetService;
 import com.lxzy.nomix.module.fms.service.config.FmsAuxiliaryItemService;
 import com.lxzy.nomix.module.fms.service.config.FmsFinanceParameterService;
 import com.lxzy.nomix.module.fms.service.config.FmsSubjectService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
@@ -70,7 +70,7 @@ import static com.lxzy.nomix.module.fms.enums.ErrorCodeConstants.VOUCHER_AUXILIA
 /**
  * FMS 账簿 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

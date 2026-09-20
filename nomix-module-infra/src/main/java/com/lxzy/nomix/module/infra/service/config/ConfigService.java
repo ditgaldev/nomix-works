@@ -4,14 +4,14 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.infra.controller.admin.config.vo.ConfigPageReqVO;
 import com.lxzy.nomix.module.infra.controller.admin.config.vo.ConfigSaveReqVO;
 import com.lxzy.nomix.module.infra.dal.dataobject.config.ConfigDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
 /**
  * 参数配置 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ConfigService {
 

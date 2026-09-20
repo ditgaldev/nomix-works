@@ -28,7 +28,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link ImFaceUserItemServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class ImFaceUserItemServiceImplTest extends BaseMockitoUnitTest {
 

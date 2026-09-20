@@ -18,13 +18,13 @@ import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
+import jakarta.annotation.Resource;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -41,7 +41,7 @@ import static com.lxzy.nomix.module.im.enums.ErrorCodeConstants.SENSITIVE_WORD_N
  * <p>
  * 词库匹配交给 houbb sensitive-word 库（trie 树 + 全/半角 / 大小写 / 繁简体 / 数字风格规范化）
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

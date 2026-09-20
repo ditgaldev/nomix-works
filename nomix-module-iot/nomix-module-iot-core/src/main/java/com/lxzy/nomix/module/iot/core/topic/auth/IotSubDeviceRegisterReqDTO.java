@@ -1,9 +1,8 @@
 package com.lxzy.nomix.module.iot.core.topic.auth;
 
 import com.lxzy.nomix.module.iot.core.enums.IotDeviceMessageMethodEnum;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
-
-import javax.validation.constraints.NotEmpty;
 
 /**
  * IoT 子设备动态注册 Request DTO
@@ -12,7 +11,7 @@ import javax.validation.constraints.NotEmpty;
  * <p>
  * 特殊：网关子设备的动态注册，必须已经创建好该网关子设备（不然哪来的 {@link #deviceName} 字段）。更多的好处，是设备不用提前烧录 deviceSecret 密钥。
  *
- * @author Nomix
+ * @author Nomix源码
  * @see <a href="https://help.aliyun.com/zh/iot/user-guide/register-devices">阿里云 - 动态注册子设备</a>
  */
 @Data

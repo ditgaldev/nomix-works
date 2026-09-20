@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.pms.service.pm.workitem;
 import cn.hutool.core.collection.CollUtil;
 import com.lxzy.nomix.module.pms.dal.dataobject.pm.workitem.PmsWorkItemBoardDO;
 import com.lxzy.nomix.module.pms.dal.mysql.pm.workitem.PmsWorkItemBoardMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * PMS 工作项看板列 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

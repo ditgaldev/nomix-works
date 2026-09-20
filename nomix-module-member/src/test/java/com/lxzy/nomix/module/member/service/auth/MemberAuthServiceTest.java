@@ -11,11 +11,11 @@ import com.lxzy.nomix.module.member.service.user.MemberUserService;
 import com.lxzy.nomix.module.system.api.logger.LoginLogApi;
 import com.lxzy.nomix.module.system.api.sms.SmsCodeApi;
 import com.lxzy.nomix.module.system.api.social.SocialUserApi;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Import;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.util.function.Consumer;
 
 import static cn.hutool.core.util.RandomUtil.randomEle;
@@ -36,17 +36,17 @@ public class MemberAuthServiceTest extends BaseDbAndRedisUnitTest {
     @Resource
     private MemberAuthServiceImpl authService;
 
-    @MockBean
+    @MockitoBean
     private MemberUserService userService;
-    @MockBean
+    @MockitoBean
     private SmsCodeApi smsCodeApi;
-    @MockBean
+    @MockitoBean
     private LoginLogApi loginLogApi;
-    @MockBean
+    @MockitoBean
     private OAuth2TokenCommonApi oauth2TokenApi;
-    @MockBean
+    @MockitoBean
     private SocialUserApi socialUserApi;
-    @MockBean
+    @MockitoBean
     private PasswordEncoder passwordEncoder;
 
     @Resource

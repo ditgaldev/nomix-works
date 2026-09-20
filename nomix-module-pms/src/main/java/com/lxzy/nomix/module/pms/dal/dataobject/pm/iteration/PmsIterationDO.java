@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 /**
  * PMS 项目迭代 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("pms_iteration")
 @KeySequence("pms_iteration_seq")

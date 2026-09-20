@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * FMS 报表取数规则枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

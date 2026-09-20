@@ -5,9 +5,9 @@ import com.lxzy.nomix.module.bpm.dal.dataobject.definition.BpmUserGroupDO;
 import com.lxzy.nomix.module.bpm.framework.flowable.core.candidate.BpmTaskCandidateStrategy;
 import com.lxzy.nomix.module.bpm.framework.flowable.core.enums.BpmTaskCandidateStrategyEnum;
 import com.lxzy.nomix.module.bpm.service.definition.BpmUserGroupService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;

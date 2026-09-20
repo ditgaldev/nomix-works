@@ -6,12 +6,12 @@ import com.lxzy.nomix.module.hrm.controller.admin.salary.vo.slip.sendrecord.HrmS
 import com.lxzy.nomix.module.hrm.controller.admin.salary.vo.slip.sendrecord.HrmSalarySlipSendReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.salary.monthrecord.HrmSalaryMonthEmployeeRecordDO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.salary.slip.HrmSalarySlipSendRecordDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * HRM 工资条发放记录 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmSalarySlipSendRecordService {
 

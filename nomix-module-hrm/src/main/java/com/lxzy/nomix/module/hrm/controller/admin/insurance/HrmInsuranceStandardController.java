@@ -8,8 +8,8 @@ import com.lxzy.nomix.module.hrm.controller.admin.insurance.vo.standard.HrmInsur
 import com.lxzy.nomix.module.hrm.service.insurance.config.HrmInsuranceStandardService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import javax.annotation.Resource;
-import javax.validation.Valid;
+import jakarta.annotation.Resource;
+import jakarta.validation.Valid;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;

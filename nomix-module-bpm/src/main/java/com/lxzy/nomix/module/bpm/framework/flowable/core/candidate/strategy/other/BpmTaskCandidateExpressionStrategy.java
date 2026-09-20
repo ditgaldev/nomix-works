@@ -19,7 +19,7 @@ import java.util.Set;
 /**
  * 流程表达式 {@link BpmTaskCandidateStrategy} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 @Slf4j

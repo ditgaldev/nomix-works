@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * 数据权限的自动配置类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @AutoConfiguration
 public class NomixDataPermissionAutoConfiguration {

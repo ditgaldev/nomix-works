@@ -4,11 +4,10 @@ import com.lxzy.nomix.module.member.api.level.dto.MemberLevelRespDTO;
 import com.lxzy.nomix.module.member.convert.level.MemberLevelConvert;
 import com.lxzy.nomix.module.member.enums.MemberExperienceBizTypeEnum;
 import com.lxzy.nomix.module.member.service.level.MemberLevelService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
-
-import javax.annotation.Resource;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static com.lxzy.nomix.module.member.enums.ErrorCodeConstants.EXPERIENCE_BIZ_NOT_SUPPORT;

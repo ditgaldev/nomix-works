@@ -3,14 +3,14 @@ package com.lxzy.nomix.module.iot.service.device;
 import com.lxzy.nomix.module.iot.controller.admin.device.vo.modbus.IotDeviceModbusConfigSaveReqVO;
 import com.lxzy.nomix.module.iot.core.biz.dto.IotModbusDeviceConfigListReqDTO;
 import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDeviceModbusConfigDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * IoT 设备 Modbus 连接配置 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface IotDeviceModbusConfigService {
 

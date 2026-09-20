@@ -18,7 +18,7 @@ import java.util.Objects;
 /**
  * ERP 销售退货 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ErpSaleReturnMapper extends BaseMapperX<ErpSaleReturnDO> {

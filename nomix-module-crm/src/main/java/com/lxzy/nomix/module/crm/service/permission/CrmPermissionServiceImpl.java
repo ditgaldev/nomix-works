@@ -22,12 +22,12 @@ import com.lxzy.nomix.module.crm.service.permission.bo.CrmPermissionTransferReqB
 import com.lxzy.nomix.module.crm.util.CrmPermissionUtils;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
 import com.lxzy.nomix.module.system.api.user.dto.AdminUserRespDTO;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.*;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;

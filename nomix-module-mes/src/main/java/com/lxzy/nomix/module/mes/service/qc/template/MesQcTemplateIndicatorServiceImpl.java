@@ -6,11 +6,11 @@ import com.lxzy.nomix.module.mes.controller.admin.qc.template.vo.indicator.MesQc
 import com.lxzy.nomix.module.mes.controller.admin.qc.template.vo.indicator.MesQcTemplateIndicatorSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.template.MesQcTemplateIndicatorDO;
 import com.lxzy.nomix.module.mes.dal.mysql.qc.template.MesQcTemplateIndicatorMapper;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -19,7 +19,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.QC_TEMPLATE_IND
 /**
  * MES 质检方案-检测指标项 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

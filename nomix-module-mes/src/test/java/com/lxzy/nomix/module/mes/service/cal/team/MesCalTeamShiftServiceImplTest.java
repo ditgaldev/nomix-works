@@ -13,21 +13,22 @@ import com.lxzy.nomix.module.mes.service.cal.plan.MesCalPlanService;
 import com.lxzy.nomix.module.mes.service.cal.plan.MesCalPlanShiftService;
 import com.lxzy.nomix.module.mes.service.cal.plan.MesCalPlanTeamService;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
+
 import java.time.LocalDateTime;
 import java.util.Comparator;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.when;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
 
 /**
  * {@link MesCalTeamShiftServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(MesCalTeamShiftServiceImpl.class)
 public class MesCalTeamShiftServiceImplTest extends BaseDbUnitTest {
@@ -38,11 +39,11 @@ public class MesCalTeamShiftServiceImplTest extends BaseDbUnitTest {
     @Resource
     private MesCalTeamShiftMapper teamShiftMapper;
 
-    @MockBean
+    @MockitoBean
     private MesCalPlanService planService;
-    @MockBean
+    @MockitoBean
     private MesCalPlanShiftService planShiftService;
-    @MockBean
+    @MockitoBean
     private MesCalPlanTeamService planTeamService;
 
     @Test

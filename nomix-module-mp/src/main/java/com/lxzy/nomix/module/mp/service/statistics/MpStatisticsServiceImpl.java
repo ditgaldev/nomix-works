@@ -11,7 +11,7 @@ import me.chanjar.weixin.mp.bean.datacube.WxDataCubeUserSummary;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -21,7 +21,7 @@ import static com.lxzy.nomix.module.mp.enums.ErrorCodeConstants.*;
 /**
  * 公众号统计 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class MpStatisticsServiceImpl implements MpStatisticsService {

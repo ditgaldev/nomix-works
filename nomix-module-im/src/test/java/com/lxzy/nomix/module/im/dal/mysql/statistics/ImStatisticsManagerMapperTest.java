@@ -12,7 +12,7 @@ import com.lxzy.nomix.module.im.dal.mysql.message.ImGroupMessageMapper;
 import com.lxzy.nomix.module.im.dal.mysql.message.ImPrivateMessageMapper;
 import com.lxzy.nomix.module.im.enums.message.ImMessageStatusEnum;
 import com.lxzy.nomix.module.im.enums.ImContentTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -27,7 +27,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link ImStatisticsManagerMapper} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class ImStatisticsManagerMapperTest extends BaseDbUnitTest {
 

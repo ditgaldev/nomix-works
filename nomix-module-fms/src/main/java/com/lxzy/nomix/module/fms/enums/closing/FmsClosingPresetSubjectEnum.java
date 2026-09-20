@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * FMS 预置结转科目编码枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

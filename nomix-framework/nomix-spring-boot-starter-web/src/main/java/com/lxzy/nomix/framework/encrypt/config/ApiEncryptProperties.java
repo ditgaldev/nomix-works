@@ -1,16 +1,15 @@
 package com.lxzy.nomix.framework.encrypt.config;
 
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.validation.annotation.Validated;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-
 /**
  * HTTP API 加解密配置
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @ConfigurationProperties(prefix = "nomix.api-encrypt")
 @Validated

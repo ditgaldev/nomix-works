@@ -25,7 +25,7 @@ import static com.lxzy.nomix.module.pay.framework.pay.core.client.impl.alipay.Al
  *
  * 文档：<a href="https://opendocs.alipay.com/open/194/105072">当面付</a>
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class AlipayBarPayClient extends AbstractAlipayPayClient {

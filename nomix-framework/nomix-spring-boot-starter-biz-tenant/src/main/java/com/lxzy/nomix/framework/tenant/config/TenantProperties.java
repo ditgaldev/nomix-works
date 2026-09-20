@@ -10,7 +10,7 @@ import java.util.Set;
 /**
  * 多租户配置
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @ConfigurationProperties(prefix = "nomix.tenant")
 @Data

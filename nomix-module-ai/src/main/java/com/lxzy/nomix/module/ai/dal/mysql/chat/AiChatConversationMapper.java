@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * AI 聊天对话 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface AiChatConversationMapper extends BaseMapperX<AiChatConversationDO> {

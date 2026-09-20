@@ -9,10 +9,9 @@ import com.lxzy.nomix.module.trade.enums.order.TradeOrderTypeEnum;
 import com.lxzy.nomix.module.trade.service.order.TradeOrderQueryService;
 import com.lxzy.nomix.module.trade.service.price.bo.TradePriceCalculateReqBO;
 import com.lxzy.nomix.module.trade.service.price.bo.TradePriceCalculateRespBO;
+import jakarta.annotation.Resource;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.Resource;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static com.lxzy.nomix.module.trade.enums.ErrorCodeConstants.PRICE_CALCULATE_SECKILL_TOTAL_LIMIT_COUNT;

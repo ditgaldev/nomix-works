@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * 砍价助力 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface BargainHelpService {
 

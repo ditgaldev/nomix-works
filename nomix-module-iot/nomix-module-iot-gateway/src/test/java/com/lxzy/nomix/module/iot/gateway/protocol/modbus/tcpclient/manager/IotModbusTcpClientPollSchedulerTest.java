@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link IotModbusTcpClientPollScheduler} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class IotModbusTcpClientPollSchedulerTest {
 

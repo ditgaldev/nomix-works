@@ -64,7 +64,7 @@ public class RedisPendingMessageResendJob {
     /**
      * 执行清理逻辑
      *
-     * @see <a href="">讨论</a>
+     * @see <a href="https://github.com/ditgaldev/nomix-works/pulls/480/files">讨论</a>
      */
     private void execute() {
         StreamOperations<String, Object, Object> ops = redisTemplate.getRedisTemplate().opsForStream();

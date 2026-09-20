@@ -7,9 +7,9 @@ import com.lxzy.nomix.module.mes.controller.admin.home.vo.MesHomeWorkOrderStatus
 import com.lxzy.nomix.module.mes.dal.mysql.home.MesHomeStatisticsMapper;
 import com.lxzy.nomix.module.mes.enums.dv.MesDvMachineryStatusEnum;
 import com.lxzy.nomix.module.mes.enums.pro.MesProWorkOrderStatusEnum;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -19,7 +19,7 @@ import java.util.*;
 /**
  * MES 首页统计 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class MesHomeStatisticsServiceImpl implements MesHomeStatisticsService {

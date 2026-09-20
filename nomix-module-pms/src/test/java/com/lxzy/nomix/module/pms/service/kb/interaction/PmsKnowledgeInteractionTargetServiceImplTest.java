@@ -29,7 +29,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link PmsKnowledgeInteractionTargetServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class PmsKnowledgeInteractionTargetServiceImplTest extends BaseMockitoUnitTest {
 

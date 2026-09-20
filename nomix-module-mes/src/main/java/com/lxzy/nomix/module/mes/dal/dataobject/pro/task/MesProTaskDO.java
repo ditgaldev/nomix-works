@@ -20,7 +20,7 @@ import com.lxzy.nomix.module.mes.enums.DictTypeConstants;
 /**
  * MES 生产任务 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_pro_task")
 @KeySequence("mes_pro_task_seq")

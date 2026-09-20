@@ -9,10 +9,10 @@ import com.lxzy.nomix.module.hrm.dal.mysql.employee.employment.HrmEmployeeContra
 import com.lxzy.nomix.module.hrm.dal.mysql.employee.info.HrmEmployeeMapper;
 import com.lxzy.nomix.module.hrm.enums.employee.employment.HrmEmployeeContractStatusEnum;
 import com.lxzy.nomix.module.hrm.enums.employee.info.HrmEmployeeEntryStatusEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -31,7 +31,7 @@ import static org.mockito.Mockito.verify;
 /**
  * {@link HrmEmployeeContractServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmEmployeeContractServiceImpl.class)
 public class HrmEmployeeContractServiceImplTest extends BaseDbUnitTest {
@@ -44,7 +44,7 @@ public class HrmEmployeeContractServiceImplTest extends BaseDbUnitTest {
     @Resource
     private HrmEmployeeMapper employeeMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmEmployeeService employeeService;
 
     @Test

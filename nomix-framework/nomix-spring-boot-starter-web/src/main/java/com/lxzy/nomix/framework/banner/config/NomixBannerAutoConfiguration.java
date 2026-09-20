@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 /**
  * Banner 的自动配置类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @AutoConfiguration
 public class NomixBannerAutoConfiguration {

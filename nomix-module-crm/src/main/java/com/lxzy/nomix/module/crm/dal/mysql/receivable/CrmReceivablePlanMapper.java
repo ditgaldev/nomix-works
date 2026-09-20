@@ -18,7 +18,7 @@ import java.util.Objects;
 /**
  * 回款计划 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface CrmReceivablePlanMapper extends BaseMapperX<CrmReceivablePlanDO> {

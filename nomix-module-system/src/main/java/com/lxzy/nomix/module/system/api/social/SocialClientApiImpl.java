@@ -9,13 +9,13 @@ import com.lxzy.nomix.module.system.api.social.dto.*;
 import com.lxzy.nomix.module.system.enums.social.SocialTypeEnum;
 import com.lxzy.nomix.module.system.service.social.SocialClientService;
 import com.lxzy.nomix.module.system.service.social.SocialUserService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import me.chanjar.weixin.common.bean.WxJsapiSignature;
 import me.chanjar.weixin.common.bean.subscribemsg.TemplateInfo;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static cn.hutool.core.collection.CollUtil.findOne;
@@ -24,7 +24,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * 社交应用的 API 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

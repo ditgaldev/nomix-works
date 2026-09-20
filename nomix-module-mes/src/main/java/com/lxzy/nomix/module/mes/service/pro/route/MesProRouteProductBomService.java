@@ -2,14 +2,14 @@ package com.lxzy.nomix.module.mes.service.pro.route;
 
 import com.lxzy.nomix.module.mes.controller.admin.pro.route.vo.productbom.MesProRouteProductBomSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.pro.route.MesProRouteProductBomDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * MES 工艺路线产品 BOM Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesProRouteProductBomService {
 

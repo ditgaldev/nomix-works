@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Xss 配置属性
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @ConfigurationProperties(prefix = "nomix.xss")
 @Validated

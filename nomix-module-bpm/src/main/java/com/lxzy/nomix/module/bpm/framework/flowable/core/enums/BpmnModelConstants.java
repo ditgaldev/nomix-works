@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.bpm.enums.definition.BpmModelTypeEnum;
 /**
  * BPMN XML 常量信息
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface BpmnModelConstants {
 

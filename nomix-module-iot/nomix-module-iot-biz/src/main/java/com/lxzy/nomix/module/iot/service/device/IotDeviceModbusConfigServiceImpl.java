@@ -6,21 +6,21 @@ import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.module.iot.controller.admin.device.vo.modbus.IotDeviceModbusConfigSaveReqVO;
 import com.lxzy.nomix.module.iot.core.biz.dto.IotModbusDeviceConfigListReqDTO;
 import com.lxzy.nomix.module.iot.core.enums.IotProtocolTypeEnum;
-import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDeviceDO;
 import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDeviceModbusConfigDO;
+import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDeviceDO;
 import com.lxzy.nomix.module.iot.dal.dataobject.product.IotProductDO;
 import com.lxzy.nomix.module.iot.dal.mysql.device.IotDeviceModbusConfigMapper;
 import com.lxzy.nomix.module.iot.service.product.IotProductService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
  * IoT 设备 Modbus 连接配置 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

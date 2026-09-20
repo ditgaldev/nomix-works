@@ -5,17 +5,17 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.wms.controller.admin.inventory.vo.history.WmsInventoryHistoryPageReqVO;
 import com.lxzy.nomix.module.wms.dal.dataobject.inventory.WmsInventoryHistoryDO;
 import com.lxzy.nomix.module.wms.dal.mysql.inventory.WmsInventoryHistoryMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
  * WMS 库存流水 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

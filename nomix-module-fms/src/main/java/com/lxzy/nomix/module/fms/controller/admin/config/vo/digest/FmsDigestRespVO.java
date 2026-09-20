@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 /**
  * FMS 常用摘要 Response VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Schema(description = "管理后台 - FMS 常用摘要 Response VO")
 @Data

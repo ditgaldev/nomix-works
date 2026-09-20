@@ -12,7 +12,7 @@ import java.util.Arrays;
  *
  * 用于定义传输层协议类型
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Getter

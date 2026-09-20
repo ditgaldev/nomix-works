@@ -10,7 +10,7 @@ import com.lxzy.nomix.module.pms.enums.pm.workitem.PmsWorkItemTypeEnum;
 import com.lxzy.nomix.module.pms.service.pm.iteration.PmsIterationService;
 import com.lxzy.nomix.module.pms.service.pm.project.PmsProjectMemberService;
 import com.lxzy.nomix.module.pms.service.pm.workitem.PmsWorkItemService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -20,7 +20,7 @@ import java.util.Map;
 /**
  * PMS 工作台 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

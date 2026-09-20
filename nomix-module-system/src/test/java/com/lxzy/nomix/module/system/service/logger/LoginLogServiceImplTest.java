@@ -9,7 +9,7 @@ import com.lxzy.nomix.module.system.dal.mysql.logger.LoginLogMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
 import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildTime;

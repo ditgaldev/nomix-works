@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * MES 过程检验单行 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesQcIpqcLineService {
 

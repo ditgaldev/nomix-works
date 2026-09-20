@@ -7,7 +7,7 @@ import com.lxzy.nomix.framework.common.util.json.JsonUtils;
  *
  * 对 WebSocketMessageSender 进行封装，提供给其它模块使用
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface WebSocketSenderApi {
 

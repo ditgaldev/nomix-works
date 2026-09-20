@@ -23,7 +23,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.fi
 /**
  * 区域工具类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 @UtilityClass

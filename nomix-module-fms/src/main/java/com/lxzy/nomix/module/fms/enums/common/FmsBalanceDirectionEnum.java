@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 /**
  * FMS 余额方向枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

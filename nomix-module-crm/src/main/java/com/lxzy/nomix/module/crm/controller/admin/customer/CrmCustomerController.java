@@ -25,13 +25,13 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Valid;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletResponse;
-import javax.validation.Valid;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.Arrays;
@@ -250,10 +250,10 @@ public class CrmCustomerController {
         // 手动创建导出 demo
         List<CrmCustomerImportExcelVO> list = Arrays.asList(
                 CrmCustomerImportExcelVO.builder().name("Nomix").industryId(1).level(1).source(1)
-                        .mobile("15601691300").telephone("").qq("").wechat("").email("nomix@example.com")
+                        .mobile("15601691300").telephone("").qq("").wechat("").email("nomix@nomix.cn")
                         .areaId(null).detailAddress("").remark("").build(),
                 CrmCustomerImportExcelVO.builder().name("源码").industryId(1).level(1).source(1)
-                        .mobile("15601691300").telephone("").qq("").wechat("").email("nomix@example.com")
+                        .mobile("15601691300").telephone("").qq("").wechat("").email("nomix@nomix.cn")
                         .areaId(null).detailAddress("").remark("").build()
         );
         // 输出

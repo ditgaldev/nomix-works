@@ -5,8 +5,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.crm.controller.admin.business.vo.status.CrmBusinessStatusSaveReqVO;
 import com.lxzy.nomix.module.crm.dal.dataobject.business.CrmBusinessStatusDO;
 import com.lxzy.nomix.module.crm.dal.dataobject.business.CrmBusinessStatusTypeDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;

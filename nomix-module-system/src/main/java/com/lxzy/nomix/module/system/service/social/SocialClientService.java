@@ -10,17 +10,17 @@ import com.lxzy.nomix.module.system.controller.admin.social.vo.client.SocialClie
 import com.lxzy.nomix.module.system.controller.admin.social.vo.client.SocialClientSaveReqVO;
 import com.lxzy.nomix.module.system.dal.dataobject.social.SocialClientDO;
 import com.lxzy.nomix.module.system.enums.social.SocialTypeEnum;
+import jakarta.validation.Valid;
 import me.chanjar.weixin.common.bean.WxJsapiSignature;
 import me.chanjar.weixin.common.bean.subscribemsg.TemplateInfo;
 import me.zhyd.oauth.model.AuthUser;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * 社交应用 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface SocialClientService {
 

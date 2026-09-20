@@ -18,11 +18,11 @@ import com.lxzy.nomix.module.trade.service.delivery.bo.DeliveryExpressTemplateRe
 import com.lxzy.nomix.module.trade.service.price.bo.TradePriceCalculateReqBO;
 import com.lxzy.nomix.module.trade.service.price.bo.TradePriceCalculateRespBO;
 import com.lxzy.nomix.module.trade.service.price.bo.TradePriceCalculateRespBO.OrderItem;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;

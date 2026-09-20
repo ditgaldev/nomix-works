@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * IoT 数据目的的类型枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Getter

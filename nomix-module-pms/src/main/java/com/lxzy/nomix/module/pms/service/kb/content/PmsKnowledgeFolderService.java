@@ -11,7 +11,7 @@ import java.util.Set;
 /**
  * PMS 知识库文件夹 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface PmsKnowledgeFolderService {
 

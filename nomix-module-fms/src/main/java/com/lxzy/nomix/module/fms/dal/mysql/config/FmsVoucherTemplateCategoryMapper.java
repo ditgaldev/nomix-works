@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * FMS 凭证模板分类 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface FmsVoucherTemplateCategoryMapper extends BaseMapperX<FmsVoucherTemplateCategoryDO> {

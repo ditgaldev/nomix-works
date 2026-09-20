@@ -5,12 +5,12 @@ import com.lxzy.nomix.module.mes.controller.admin.dv.checkrecord.vo.MesDvCheckRe
 import com.lxzy.nomix.module.mes.controller.admin.dv.checkrecord.vo.MesDvCheckRecordSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.dv.checkrecord.MesDvCheckRecordDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * MES 设备点检记录 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesDvCheckRecordService {
 

@@ -23,7 +23,7 @@ import com.lxzy.nomix.module.fms.service.config.FmsSubjectService;
 import com.lxzy.nomix.module.fms.service.report.FmsBalanceSheetService;
 import com.lxzy.nomix.module.fms.service.report.FmsIncomeStatementService;
 import com.lxzy.nomix.module.fms.service.report.FmsReportCommonService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -51,7 +51,7 @@ import static com.lxzy.nomix.module.fms.enums.ErrorCodeConstants.HOME_METRIC_INV
 /**
  * FMS 首页 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

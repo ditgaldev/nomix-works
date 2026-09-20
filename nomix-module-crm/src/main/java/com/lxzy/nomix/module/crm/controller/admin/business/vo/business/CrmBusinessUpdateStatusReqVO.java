@@ -3,10 +3,9 @@ package com.lxzy.nomix.module.crm.controller.admin.business.vo.business;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.crm.enums.business.CrmBusinessEndStatusEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.AssertTrue;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-
-import javax.validation.constraints.AssertTrue;
-import javax.validation.constraints.NotNull;
 
 @Schema(description = "管理后台 - CRM 商机更新状态 Request VO")
 @Data

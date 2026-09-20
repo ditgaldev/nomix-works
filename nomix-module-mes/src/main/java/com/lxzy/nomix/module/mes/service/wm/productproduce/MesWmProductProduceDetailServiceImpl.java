@@ -2,10 +2,10 @@ package com.lxzy.nomix.module.mes.service.wm.productproduce;
 
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.productproduce.MesWmProductProduceDetailDO;
 import com.lxzy.nomix.module.mes.dal.mysql.wm.productproduce.MesWmProductProduceDetailMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**

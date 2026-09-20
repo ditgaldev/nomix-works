@@ -9,9 +9,9 @@ import com.lxzy.nomix.module.system.controller.admin.dict.vo.type.DictTypeSaveRe
 import com.lxzy.nomix.module.system.dal.dataobject.dict.DictTypeDO;
 import com.lxzy.nomix.module.system.dal.mysql.dict.DictTypeMapper;
 import com.google.common.annotations.VisibleForTesting;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -21,7 +21,7 @@ import static com.lxzy.nomix.module.system.enums.ErrorCodeConstants.*;
 /**
  * 字典类型 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class DictTypeServiceImpl implements DictTypeService {

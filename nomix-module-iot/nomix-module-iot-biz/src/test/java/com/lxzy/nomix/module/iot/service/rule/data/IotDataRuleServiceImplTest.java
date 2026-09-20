@@ -12,11 +12,11 @@ import com.lxzy.nomix.module.iot.service.device.IotDeviceService;
 import com.lxzy.nomix.module.iot.service.product.IotProductService;
 import com.lxzy.nomix.module.iot.service.rule.data.action.IotDataRuleAction;
 import com.lxzy.nomix.module.iot.service.thingmodel.IotThingModelService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.util.Map;
 
 import static com.lxzy.nomix.framework.test.core.util.RandomUtils.randomLongId;
@@ -24,12 +24,14 @@ import static com.lxzy.nomix.framework.test.core.util.RandomUtils.randomPojo;
 import static java.util.Collections.singletonList;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 /**
  * {@link IotDataRuleServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(IotDataRuleServiceImpl.class)
 class IotDataRuleServiceImplTest extends BaseDbUnitTest {
@@ -40,15 +42,15 @@ class IotDataRuleServiceImplTest extends BaseDbUnitTest {
     @Resource
     private IotDataRuleMapper dataRuleMapper;
 
-    @MockBean
+    @MockitoBean
     private IotDataSinkService dataSinkService;
-    @MockBean
+    @MockitoBean
     private IotDataRuleAction dataRuleAction;
-    @MockBean
+    @MockitoBean
     private IotProductService productService;
-    @MockBean
+    @MockitoBean
     private IotDeviceService deviceService;
-    @MockBean
+    @MockitoBean
     private IotThingModelService thingModelService;
 
     @Test

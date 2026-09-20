@@ -9,7 +9,7 @@ import java.util.Date;
 /**
  * 时间工具类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class DateUtils {
 

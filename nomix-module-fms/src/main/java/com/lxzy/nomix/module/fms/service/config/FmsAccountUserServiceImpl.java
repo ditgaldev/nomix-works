@@ -10,7 +10,7 @@ import com.lxzy.nomix.module.fms.enums.config.FmsAccountUserLevelEnum;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
 import com.mzt.logapi.context.LogRecordContext;
 import com.mzt.logapi.starter.annotation.LogRecord;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -31,7 +31,7 @@ import static com.lxzy.nomix.module.fms.enums.LogRecordConstants.FMS_ACCOUNT_SET
 /**
  * FMS 账套用户 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -11,10 +11,10 @@ import com.lxzy.nomix.module.bpm.dal.dataobject.definition.BpmFormDO;
 import com.lxzy.nomix.module.bpm.dal.mysql.definition.BpmFormMapper;
 import com.lxzy.nomix.module.bpm.enums.ErrorCodeConstants;
 import com.lxzy.nomix.module.bpm.service.definition.dto.BpmFormFieldRespDTO;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.*;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;

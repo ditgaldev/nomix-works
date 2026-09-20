@@ -22,13 +22,13 @@ import com.lxzy.nomix.module.iot.service.device.IotDeviceService;
 import com.lxzy.nomix.module.iot.service.product.IotProductService;
 import com.lxzy.nomix.module.iot.service.rule.data.action.IotDataRuleAction;
 import com.lxzy.nomix.module.iot.service.thingmodel.IotThingModelService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.*;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -39,7 +39,7 @@ import static com.lxzy.nomix.module.iot.enums.ErrorCodeConstants.DATA_RULE_NOT_E
 /**
  * IoT 数据流转规则 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -7,9 +7,9 @@ import com.lxzy.nomix.module.iot.dal.dataobject.alert.IotAlertRecordDO;
 import com.lxzy.nomix.module.iot.dal.dataobject.rule.IotSceneRuleDO;
 import com.lxzy.nomix.module.iot.enums.rule.IotSceneRuleActionTypeEnum;
 import com.lxzy.nomix.module.iot.service.alert.IotAlertRecordService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.convertList;
@@ -17,7 +17,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * IoT 告警恢复的 {@link IotSceneRuleAction} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 public class IotAlertRecoverSceneRuleAction implements IotSceneRuleAction {

@@ -34,7 +34,7 @@ import com.lxzy.nomix.module.hrm.enums.salary.employee.HrmSalaryChangeRecordType
 import com.lxzy.nomix.module.hrm.enums.salary.employee.HrmSalaryEmployeeInfoChangeTypeEnum;
 import com.mzt.logapi.context.LogRecordContext;
 import com.mzt.logapi.starter.annotation.LogRecord;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -80,7 +80,7 @@ import static com.lxzy.nomix.module.hrm.util.HrmExcelUtils.parseDate;
 /**
  * HRM 员工薪资信息 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -17,7 +17,7 @@ import java.math.BigDecimal;
 /**
  * HRM 月度社保表 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("hrm_insurance_month_record")
 @KeySequence("hrm_insurance_month_record_seq")

@@ -22,7 +22,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
  *
  * @author yunlong.li
  * @author ZJQ
- * @author Nomix
+ * @author Nomix源码
  */
 public interface BpmProcessDefinitionService {
 

@@ -21,7 +21,7 @@ import static com.lxzy.nomix.framework.common.pojo.CommonResult.success;
  * <p>
  * 用于子设备的动态注册，需要网关认证
  *
- * @author Nomix
+ * @author Nomix源码
  * @see <a href="https://help.aliyun.com/zh/iot/user-guide/register-devices">阿里云 - 动态注册子设备</a>
  */
 @Slf4j

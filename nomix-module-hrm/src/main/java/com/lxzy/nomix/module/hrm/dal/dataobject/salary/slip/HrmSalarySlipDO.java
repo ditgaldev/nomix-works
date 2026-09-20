@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * HRM 工资条 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "hrm_salary_slip", autoResultMap = true)
 @KeySequence("hrm_salary_slip_seq")

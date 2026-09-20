@@ -5,9 +5,9 @@ import com.lxzy.nomix.module.mp.framework.mp.core.util.MpUtils.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import java.util.List;
 
 @Schema(description = "管理后台 - 公众号消息发送 Request VO")
@@ -49,10 +49,10 @@ public class MpMessageSendReqVO {
     @NotNull(message = "图文消息不能为空", groups = NewsMessageGroup.class)
     private List<MpMessageDO.Article> articles;
 
-    @Schema(description = "音乐链接 消息类型为 MUSIC 时", example = "")
+    @Schema(description = "音乐链接 消息类型为 MUSIC 时", example = "https://www.nomix.cn/music.mp3")
     private String musicUrl;
 
-    @Schema(description = "高质量音乐链接 消息类型为 MUSIC 时", example = "")
+    @Schema(description = "高质量音乐链接 消息类型为 MUSIC 时", example = "https://www.nomix.cn/music.mp3")
     private String hqMusicUrl;
 
 }

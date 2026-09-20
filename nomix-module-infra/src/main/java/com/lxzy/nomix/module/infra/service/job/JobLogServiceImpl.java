@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.infra.controller.admin.job.vo.log.JobLogPageReqVO;
 import com.lxzy.nomix.module.infra.dal.dataobject.job.JobLogDO;
 import com.lxzy.nomix.module.infra.dal.mysql.job.JobLogMapper;
 import com.lxzy.nomix.module.infra.enums.job.JobLogStatusEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 /**
  * Job 日志 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

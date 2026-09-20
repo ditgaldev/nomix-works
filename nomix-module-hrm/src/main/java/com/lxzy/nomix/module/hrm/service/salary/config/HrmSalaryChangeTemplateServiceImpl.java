@@ -8,7 +8,7 @@ import com.lxzy.nomix.module.hrm.dal.dataobject.salary.config.HrmSalaryChangeTem
 import com.lxzy.nomix.module.hrm.dal.dataobject.salary.config.HrmSalaryChangeTemplateDO.Option;
 import com.lxzy.nomix.module.hrm.dal.dataobject.salary.config.HrmSalaryOptionDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.salary.config.HrmSalaryChangeTemplateMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -28,7 +28,7 @@ import static com.lxzy.nomix.module.hrm.enums.ErrorCodeConstants.SALARY_CHANGE_T
 /**
  * HRM 调薪模板 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

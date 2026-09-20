@@ -8,7 +8,7 @@ import com.lxzy.nomix.module.mes.dal.dataobject.pro.workrecord.MesProWorkRecordL
 /**
  * MES 工作记录 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesProWorkRecordService {
 

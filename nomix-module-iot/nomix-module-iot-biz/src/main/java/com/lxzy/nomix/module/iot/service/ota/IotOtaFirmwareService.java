@@ -5,8 +5,7 @@ import com.lxzy.nomix.module.iot.controller.admin.ota.vo.firmware.IotOtaFirmware
 import com.lxzy.nomix.module.iot.controller.admin.ota.vo.firmware.IotOtaFirmwarePageReqVO;
 import com.lxzy.nomix.module.iot.controller.admin.ota.vo.firmware.IotOtaFirmwareUpdateReqVO;
 import com.lxzy.nomix.module.iot.dal.dataobject.ota.IotOtaFirmwareDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.Collection;
 import java.util.List;

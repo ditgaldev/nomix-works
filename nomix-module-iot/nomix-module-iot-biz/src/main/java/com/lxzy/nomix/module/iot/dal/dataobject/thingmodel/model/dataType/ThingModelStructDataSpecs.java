@@ -3,12 +3,12 @@ package com.lxzy.nomix.module.iot.dal.dataobject.thingmodel.model.dataType;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.iot.enums.thingmodel.IotThingModelAccessModeEnum;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Pattern;
 import java.util.List;
 
 /**

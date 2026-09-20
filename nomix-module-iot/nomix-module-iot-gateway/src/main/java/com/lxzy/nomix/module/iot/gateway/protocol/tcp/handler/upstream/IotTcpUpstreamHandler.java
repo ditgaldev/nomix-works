@@ -33,7 +33,7 @@ import static com.lxzy.nomix.module.iot.gateway.enums.ErrorCodeConstants.DEVICE_
 /**
  * TCP 上行消息处理器
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class IotTcpUpstreamHandler implements Handler<NetSocket> {

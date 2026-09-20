@@ -8,10 +8,10 @@ import com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils;
 import com.lxzy.nomix.module.iot.core.topic.IotDeviceIdentity;
 import com.lxzy.nomix.module.iot.core.util.IotDeviceAuthUtils;
 import com.lxzy.nomix.module.iot.gateway.config.IotGatewayProperties;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
@@ -24,7 +24,7 @@ import static com.lxzy.nomix.module.iot.gateway.enums.ErrorCodeConstants.DEVICE_
  *
  * 注意：目前仅 HTTP 协议使用
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Slf4j

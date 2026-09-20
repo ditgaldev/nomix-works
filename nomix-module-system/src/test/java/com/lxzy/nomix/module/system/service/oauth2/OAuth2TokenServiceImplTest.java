@@ -16,12 +16,12 @@ import com.lxzy.nomix.module.system.dal.mysql.oauth2.OAuth2AccessTokenMapper;
 import com.lxzy.nomix.module.system.dal.mysql.oauth2.OAuth2RefreshTokenMapper;
 import com.lxzy.nomix.module.system.dal.redis.oauth2.OAuth2AccessTokenRedisDAO;
 import com.lxzy.nomix.module.system.service.user.AdminUserService;
+import jakarta.annotation.Resource;
 import org.assertj.core.util.Lists;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -36,7 +36,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link OAuth2TokenServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import({OAuth2TokenServiceImpl.class, OAuth2AccessTokenRedisDAO.class})
 public class OAuth2TokenServiceImplTest extends BaseDbAndRedisUnitTest {
@@ -52,9 +52,9 @@ public class OAuth2TokenServiceImplTest extends BaseDbAndRedisUnitTest {
     @Resource
     private OAuth2AccessTokenRedisDAO oauth2AccessTokenRedisDAO;
 
-    @MockBean
+    @MockitoBean
     private OAuth2ClientService oauth2ClientService;
-    @MockBean
+    @MockitoBean
     private AdminUserService adminUserService;
 
     @Test

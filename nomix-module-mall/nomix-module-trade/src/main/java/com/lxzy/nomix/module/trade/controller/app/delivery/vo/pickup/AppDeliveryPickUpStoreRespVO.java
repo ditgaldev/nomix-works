@@ -2,9 +2,9 @@ package com.lxzy.nomix.module.trade.controller.app.delivery.vo.pickup;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
 import java.time.LocalTime;
 
 @Schema(description = "用户 App - 自提门店 Response VO")
@@ -17,7 +17,7 @@ public class AppDeliveryPickUpStoreRespVO {
     @Schema(description = "门店名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "李四")
     private String name;
 
-    @Schema(description = "门店 logo", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "门店 logo", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn/1.png")
     private String logo;
 
     @Schema(description = "门店手机", requiredMode = Schema.RequiredMode.REQUIRED, example = "15601892312")

@@ -10,7 +10,7 @@ import lombok.*;
 /**
  * WMS 商品分类 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("wms_item_category")
 @KeySequence("wms_item_category_seq")

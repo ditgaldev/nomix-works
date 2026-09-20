@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * FMS 现金流量扩展公式类型枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

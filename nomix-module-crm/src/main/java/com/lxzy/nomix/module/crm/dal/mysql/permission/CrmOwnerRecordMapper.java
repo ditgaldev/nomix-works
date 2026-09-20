@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * CRM 负责人变更记录 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface CrmOwnerRecordMapper extends BaseMapperX<CrmOwnerRecordDO> {

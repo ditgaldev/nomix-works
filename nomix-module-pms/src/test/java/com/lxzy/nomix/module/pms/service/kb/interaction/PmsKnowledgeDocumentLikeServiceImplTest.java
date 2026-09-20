@@ -4,10 +4,10 @@ import cn.hutool.core.collection.CollUtil;
 import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.pms.dal.mysql.kb.interaction.PmsKnowledgeDocumentLikeMapper;
 import com.lxzy.nomix.module.pms.enums.kb.PmsKnowledgeObjectTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.Collections;
 
@@ -20,7 +20,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link PmsKnowledgeDocumentLikeServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsKnowledgeDocumentLikeServiceImpl.class)
 public class PmsKnowledgeDocumentLikeServiceImplTest extends BaseDbUnitTest {
@@ -31,7 +31,7 @@ public class PmsKnowledgeDocumentLikeServiceImplTest extends BaseDbUnitTest {
     @Resource
     private PmsKnowledgeDocumentLikeMapper documentLikeMapper;
 
-    @MockBean
+    @MockitoBean
     private PmsKnowledgeInteractionTargetService interactionTargetService;
 
     @Test

@@ -3,7 +3,7 @@ package com.lxzy.nomix.framework.quartz.core.handler;
 /**
  * 任务处理器
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface JobHandler {
 

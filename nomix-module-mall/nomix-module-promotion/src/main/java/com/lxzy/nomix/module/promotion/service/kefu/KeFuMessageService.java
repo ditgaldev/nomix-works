@@ -5,8 +5,7 @@ import com.lxzy.nomix.module.promotion.controller.admin.kefu.vo.message.KeFuMess
 import com.lxzy.nomix.module.promotion.controller.app.kefu.vo.message.AppKeFuMessagePageReqVO;
 import com.lxzy.nomix.module.promotion.controller.app.kefu.vo.message.AppKeFuMessageSendReqVO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.kefu.KeFuMessageDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.List;
 

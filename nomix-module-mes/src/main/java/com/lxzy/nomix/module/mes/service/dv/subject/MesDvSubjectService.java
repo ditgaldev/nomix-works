@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.dv.subject.vo.MesDvSubjectPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.dv.subject.vo.MesDvSubjectSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.dv.subject.MesDvSubjectDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -15,7 +15,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * MES 点检保养项目 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesDvSubjectService {
 

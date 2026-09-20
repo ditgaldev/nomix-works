@@ -1,8 +1,8 @@
 package com.lxzy.nomix.module.mes.enums.pro;
 
 import com.lxzy.nomix.framework.common.core.ArrayValuable;
-import com.lxzy.nomix.framework.common.util.object.ObjectUtils;
 import com.lxzy.nomix.module.mes.enums.MesOrderStatusConstants;
+import com.lxzy.nomix.framework.common.util.object.ObjectUtils;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -11,7 +11,7 @@ import java.util.Arrays;
 /**
  * MES 生产任务状态枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

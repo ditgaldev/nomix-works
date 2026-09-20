@@ -9,7 +9,7 @@ import com.lxzy.nomix.module.iot.core.mq.message.IotDeviceMessage;
  * <p>
  * 用于统一管理 MQTT 协议中的主题常量，基于 Alink 协议规范
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public final class IotMqttTopicUtils {
 

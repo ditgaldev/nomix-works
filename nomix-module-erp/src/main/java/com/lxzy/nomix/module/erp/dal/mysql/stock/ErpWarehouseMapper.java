@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * ERP 仓库 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ErpWarehouseMapper extends BaseMapperX<ErpWarehouseDO> {

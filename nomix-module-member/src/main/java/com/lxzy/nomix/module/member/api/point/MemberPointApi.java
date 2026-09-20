@@ -2,7 +2,7 @@ package com.lxzy.nomix.module.member.api.point;
 
 import com.lxzy.nomix.module.member.enums.point.MemberPointBizTypeEnum;
 
-import javax.validation.constraints.Min;
+import jakarta.validation.constraints.Min;
 
 /**
  * 用户积分的 API 接口

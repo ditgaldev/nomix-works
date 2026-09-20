@@ -15,7 +15,7 @@ import com.lxzy.nomix.module.mes.enums.DictTypeConstants;
 /**
  * MES 外协发料单 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_wm_outsource_issue")
 @KeySequence("mes_wm_outsource_issue_seq")

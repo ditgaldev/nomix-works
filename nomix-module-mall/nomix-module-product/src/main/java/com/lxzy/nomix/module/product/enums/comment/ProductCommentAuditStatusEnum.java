@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * 商品评论的审批状态枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

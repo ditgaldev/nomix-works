@@ -19,11 +19,11 @@ import com.lxzy.nomix.module.promotion.dal.dataobject.combination.CombinationAct
 import com.lxzy.nomix.module.promotion.dal.dataobject.combination.CombinationProductDO;
 import com.lxzy.nomix.module.promotion.dal.mysql.combination.CombinationActivityMapper;
 import com.lxzy.nomix.module.promotion.dal.mysql.combination.CombinationProductMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;

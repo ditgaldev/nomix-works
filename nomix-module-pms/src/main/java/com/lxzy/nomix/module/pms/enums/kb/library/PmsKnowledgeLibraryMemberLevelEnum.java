@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * PMS 知识库成员等级枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

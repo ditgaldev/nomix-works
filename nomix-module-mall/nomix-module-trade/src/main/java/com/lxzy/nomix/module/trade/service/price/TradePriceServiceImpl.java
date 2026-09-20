@@ -18,11 +18,11 @@ import com.lxzy.nomix.module.trade.service.price.bo.TradePriceCalculateRespBO;
 import com.lxzy.nomix.module.trade.service.price.calculator.TradeDiscountActivityPriceCalculator;
 import com.lxzy.nomix.module.trade.service.price.calculator.TradePriceCalculator;
 import com.lxzy.nomix.module.trade.service.price.calculator.TradePriceCalculatorHelper;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
@@ -35,7 +35,7 @@ import static com.lxzy.nomix.module.trade.enums.ErrorCodeConstants.PRICE_CALCULA
 /**
  * 价格计算 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

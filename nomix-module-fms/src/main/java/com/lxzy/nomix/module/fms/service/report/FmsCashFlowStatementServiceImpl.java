@@ -38,7 +38,7 @@ import com.lxzy.nomix.module.fms.service.config.FmsSubjectService;
 import com.lxzy.nomix.module.fms.util.FmsPeriodUtils;
 import com.googlecode.aviator.AviatorEvaluator;
 import com.mzt.logapi.starter.annotation.LogRecord;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -74,7 +74,7 @@ import static com.lxzy.nomix.module.fms.enums.LogRecordConstants.FMS_CASH_FLOW_S
 /**
  * FMS 现金流量表 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

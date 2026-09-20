@@ -10,7 +10,7 @@ import static com.lxzy.nomix.framework.web.core.util.WebFrameworkUtils.HEADER_TE
 /**
  * 多租户 Util
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class TenantUtils {
 

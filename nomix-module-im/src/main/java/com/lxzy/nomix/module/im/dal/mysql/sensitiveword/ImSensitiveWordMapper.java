@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * IM 敏感词 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ImSensitiveWordMapper extends BaseMapperX<ImSensitiveWordDO> {

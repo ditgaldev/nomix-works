@@ -8,7 +8,7 @@ import com.lxzy.nomix.module.infra.dal.dataobject.job.JobLogDO;
 /**
  * Job 日志 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface JobLogService extends JobLogFrameworkService {
 

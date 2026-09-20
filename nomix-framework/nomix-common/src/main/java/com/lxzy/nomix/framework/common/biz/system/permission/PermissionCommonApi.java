@@ -5,7 +5,7 @@ import com.lxzy.nomix.framework.common.biz.system.permission.dto.DeptDataPermiss
 /**
  * 权限 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface PermissionCommonApi {
 

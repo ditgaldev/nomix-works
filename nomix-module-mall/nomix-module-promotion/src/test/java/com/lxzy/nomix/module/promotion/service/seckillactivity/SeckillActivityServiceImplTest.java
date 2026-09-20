@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.time.LocalDateTime;
 
 import static com.lxzy.nomix.framework.common.util.object.ObjectUtils.cloneIgnoreId;
@@ -26,7 +26,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
 * {@link SeckillActivityServiceImpl} 的单元测试类
 *
-* @author Nomix
+* @author Nomix源码
 */
 @Import(SeckillActivityServiceImpl.class)
 @Disabled // TODO Nomix：未来开启

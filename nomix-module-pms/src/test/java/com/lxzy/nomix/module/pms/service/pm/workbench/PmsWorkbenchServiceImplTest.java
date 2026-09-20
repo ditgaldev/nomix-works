@@ -11,10 +11,10 @@ import com.lxzy.nomix.module.pms.enums.pm.workitem.PmsWorkItemTypeEnum;
 import com.lxzy.nomix.module.pms.service.pm.iteration.PmsIterationService;
 import com.lxzy.nomix.module.pms.service.pm.project.PmsProjectMemberService;
 import com.lxzy.nomix.module.pms.service.pm.workitem.PmsWorkItemService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.time.LocalDateTime;
 import java.util.Collections;
@@ -28,18 +28,18 @@ import static org.mockito.Mockito.when;
 /**
  * {@link PmsWorkbenchServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsWorkbenchServiceImpl.class)
 public class PmsWorkbenchServiceImplTest extends BaseDbUnitTest {
 
     @Resource
     private PmsWorkbenchServiceImpl workbenchService;
-    @MockBean
+    @MockitoBean
     private PmsProjectMemberService projectMemberService;
-    @MockBean
+    @MockitoBean
     private PmsWorkItemService workItemService;
-    @MockBean
+    @MockitoBean
     private PmsIterationService iterationService;
 
     @Test

@@ -9,7 +9,7 @@ import com.lxzy.nomix.framework.security.core.handler.AuthenticationEntryPointIm
 import com.lxzy.nomix.framework.security.core.service.SecurityFrameworkService;
 import com.lxzy.nomix.framework.security.core.service.SecurityFrameworkServiceImpl;
 import com.lxzy.nomix.framework.web.core.handler.GlobalExceptionHandler;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.beans.factory.config.MethodInvokingFactoryBean;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.AutoConfigureOrder;
@@ -28,7 +28,7 @@ import org.springframework.security.web.access.AccessDeniedHandler;
  * 注意，不能和 {@link NomixWebSecurityConfigurerAdapter} 用一个，原因是会导致初始化报错。
  * 参见 https://stackoverflow.com/questions/53847050/spring-boot-delegatebuilder-cannot-be-null-on-autowiring-authenticationmanager 文档。
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @AutoConfiguration
 @AutoConfigureOrder(-1) // 目的：先于 Spring Security 自动配置，避免一键改包后，org.* 基础包无法生效
@@ -77,7 +77,7 @@ public class NomixSecurityAutoConfiguration {
     /**
      * Token 过滤器由 Spring Security FilterChain 管理，禁止 Spring Boot 再注册为 Servlet 全局 Filter
      *
-     * @see <a href="">Issue #1198</a>
+     * @see <a href="https://github.com/ditgaldev/nomix-works/issues/1198">Issue #1198</a>
      */
     @Bean
     public FilterRegistrationBean<TokenAuthenticationFilter> tokenAuthenticationFilterRegistration(

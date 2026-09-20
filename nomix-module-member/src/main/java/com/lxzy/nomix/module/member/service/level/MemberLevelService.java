@@ -8,7 +8,7 @@ import com.lxzy.nomix.module.member.controller.admin.user.vo.MemberUserUpdateLev
 import com.lxzy.nomix.module.member.dal.dataobject.level.MemberLevelDO;
 import com.lxzy.nomix.module.member.enums.MemberExperienceBizTypeEnum;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 

@@ -20,7 +20,7 @@ import java.math.BigDecimal;
 /**
  * HRM 计税规则 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("hrm_salary_tax_rule")
 @KeySequence("hrm_salary_tax_rule_seq")

@@ -4,14 +4,14 @@ import com.lxzy.nomix.framework.common.enums.UserTypeEnum;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.List;
 
 /**
  * OAuth2.0 访问令牌创建 Request DTO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class OAuth2AccessTokenCreateReqDTO implements Serializable {

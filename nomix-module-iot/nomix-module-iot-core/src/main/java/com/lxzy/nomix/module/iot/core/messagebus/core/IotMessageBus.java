@@ -5,7 +5,7 @@ package com.lxzy.nomix.module.iot.core.messagebus.core;
  *
  * 用于在 IoT 系统中发布和订阅消息，支持多种消息中间件实现
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface IotMessageBus {
 

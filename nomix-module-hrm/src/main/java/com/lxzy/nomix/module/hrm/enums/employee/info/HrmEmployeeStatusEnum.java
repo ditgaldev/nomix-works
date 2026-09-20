@@ -12,7 +12,7 @@ import java.util.Set;
 /**
  * HRM 员工状态枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.pay.api.transfer;
 import com.lxzy.nomix.module.pay.api.transfer.dto.PayTransferCreateReqDTO;
 import com.lxzy.nomix.module.pay.api.transfer.dto.PayTransferCreateRespDTO;
 import com.lxzy.nomix.module.pay.api.transfer.dto.PayTransferRespDTO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 转账单 API 接口

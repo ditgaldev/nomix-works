@@ -2,8 +2,8 @@ package com.lxzy.nomix.module.mes.service.wm.returnvendor;
 
 import com.lxzy.nomix.module.mes.controller.admin.wm.returnvendor.vo.detail.MesWmReturnVendorDetailSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.returnvendor.MesWmReturnVendorDetailDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**

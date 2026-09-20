@@ -4,14 +4,14 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.infra.controller.admin.demo.demo01.vo.Demo01ContactPageReqVO;
 import com.lxzy.nomix.module.infra.controller.admin.demo.demo01.vo.Demo01ContactSaveReqVO;
 import com.lxzy.nomix.module.infra.dal.dataobject.demo.demo01.Demo01ContactDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
 /**
  * 示例联系人 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface Demo01ContactService {
 

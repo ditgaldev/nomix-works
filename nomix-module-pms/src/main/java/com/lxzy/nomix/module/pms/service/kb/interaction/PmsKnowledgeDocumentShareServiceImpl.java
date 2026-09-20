@@ -14,7 +14,7 @@ import com.lxzy.nomix.module.system.api.notify.NotifyMessageSendApi;
 import com.lxzy.nomix.module.system.api.notify.dto.NotifySendSingleToUserReqDTO;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
 import com.google.common.collect.Maps;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -38,7 +38,7 @@ import static com.lxzy.nomix.module.pms.enums.MessageTemplateConstants.KNOWLEDGE
 /**
  * PMS 知识库文档分享 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

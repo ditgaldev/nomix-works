@@ -15,7 +15,7 @@ import lombok.ToString;
 /**
  * FMS 报表模板 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("fms_report_template")
 @KeySequence("fms_report_template_seq")

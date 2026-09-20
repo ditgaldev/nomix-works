@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.MockedStatic;
 import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.Collections;
 
 import static com.lxzy.nomix.framework.common.util.object.ObjectUtils.cloneIgnoreId;
@@ -27,7 +27,7 @@ import static org.mockito.Mockito.mockStatic;
 /**
  * {@link OAuth2ClientServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(OAuth2ClientServiceImpl.class)
 public class OAuth2ClientServiceImplTest extends BaseDbUnitTest {

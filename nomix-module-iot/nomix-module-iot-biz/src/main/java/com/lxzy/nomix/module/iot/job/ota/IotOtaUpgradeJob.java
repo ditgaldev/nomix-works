@@ -12,10 +12,10 @@ import com.lxzy.nomix.module.iot.enums.ota.IotOtaTaskRecordStatusEnum;
 import com.lxzy.nomix.module.iot.service.device.IotDeviceService;
 import com.lxzy.nomix.module.iot.service.ota.IotOtaFirmwareService;
 import com.lxzy.nomix.module.iot.service.ota.IotOtaTaskRecordService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -23,7 +23,7 @@ import java.util.Map;
 /**
  * IoT OTA 升级推送 Job：查询待推送的 OTA 升级记录，并推送给设备
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 @Slf4j

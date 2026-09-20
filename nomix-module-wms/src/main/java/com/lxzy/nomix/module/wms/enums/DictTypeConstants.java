@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.wms.enums;
 /**
  * WMS 字典类型常量
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface DictTypeConstants {
 

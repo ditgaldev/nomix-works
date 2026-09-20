@@ -15,7 +15,7 @@ public class MemberLevelSimpleRespVO {
     @Schema(description = "等级名称", example = "Nomix")
     private String name;
 
-    @Schema(description = "等级图标", example = "")
+    @Schema(description = "等级图标", example = "https://www.nomix.cn/nomix.jpg")
     private String icon;
 
 }

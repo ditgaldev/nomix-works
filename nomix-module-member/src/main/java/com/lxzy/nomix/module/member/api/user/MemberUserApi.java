@@ -11,7 +11,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * 会员用户的 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MemberUserApi {
 

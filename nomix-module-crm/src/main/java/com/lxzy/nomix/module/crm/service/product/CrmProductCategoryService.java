@@ -3,8 +3,8 @@ package com.lxzy.nomix.module.crm.service.product;
 import com.lxzy.nomix.module.crm.controller.admin.product.vo.category.CrmProductCategoryCreateReqVO;
 import com.lxzy.nomix.module.crm.controller.admin.product.vo.category.CrmProductCategoryListReqVO;
 import com.lxzy.nomix.module.crm.dal.dataobject.product.CrmProductCategoryDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;

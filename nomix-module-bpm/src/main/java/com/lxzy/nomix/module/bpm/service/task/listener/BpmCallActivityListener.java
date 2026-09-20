@@ -11,6 +11,7 @@ import com.lxzy.nomix.module.bpm.enums.definition.BpmChildProcessStartUserTypeEn
 import com.lxzy.nomix.module.bpm.framework.flowable.core.util.FlowableUtils;
 import com.lxzy.nomix.module.bpm.service.definition.BpmProcessDefinitionService;
 import com.lxzy.nomix.module.bpm.service.task.BpmProcessInstanceService;
+import jakarta.annotation.Resource;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.flowable.common.engine.api.delegate.Expression;
@@ -19,7 +20,6 @@ import org.flowable.engine.delegate.ExecutionListener;
 import org.flowable.engine.runtime.ProcessInstance;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**

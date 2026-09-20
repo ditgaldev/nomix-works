@@ -5,11 +5,11 @@ import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.framework.common.validation.Mobile;
 import com.lxzy.nomix.framework.common.validation.Telephone;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 @Schema(description = "管理后台 - ERP 供应商新增/修改 Request VO")
@@ -19,7 +19,7 @@ public class ErpSupplierSaveReqVO {
     @Schema(description = "供应商编号", requiredMode = Schema.RequiredMode.REQUIRED, example = "17791")
     private Long id;
 
-    @Schema(description = "供应商名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "Nomix")
+    @Schema(description = "供应商名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "Nomix源码")
     @NotEmpty(message = "供应商名称不能为空")
     private String name;
 

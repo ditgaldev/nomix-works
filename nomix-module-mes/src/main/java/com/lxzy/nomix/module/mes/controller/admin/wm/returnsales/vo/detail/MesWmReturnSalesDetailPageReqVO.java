@@ -8,7 +8,7 @@ import lombok.EqualsAndHashCode;
 /**
  * 管理后台 - MES 销售退货相关
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Schema(description = "管理后台 - MES 销售退货明细分页 Request VO")
 @Data

@@ -9,20 +9,20 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import me.chanjar.weixin.common.api.WxConsts;
 import me.chanjar.weixin.mp.builder.kefu.NewsBuilder;
 
-import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
 import java.util.List;
 
 /**
  * 公众号消息 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "mp_message", autoResultMap = true)
 @KeySequence("mp_message_seq") // 用于 Oracle、PostgreSQL、Kingbase、DB2、H2 数据库的主键自增。如果是 MySQL 等数据库，可不写。

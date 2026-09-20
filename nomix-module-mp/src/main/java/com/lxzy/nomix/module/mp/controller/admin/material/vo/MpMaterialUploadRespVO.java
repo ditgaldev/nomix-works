@@ -10,7 +10,7 @@ public class MpMaterialUploadRespVO {
     @Schema(description = "素材的 media_id", requiredMode = Schema.RequiredMode.REQUIRED, example = "123")
     private String mediaId;
 
-    @Schema(description = "素材的 URL", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "素材的 URL", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn/1.png")
     private String url;
 
 }

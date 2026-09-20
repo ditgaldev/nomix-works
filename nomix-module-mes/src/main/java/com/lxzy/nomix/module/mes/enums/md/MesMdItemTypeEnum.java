@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * MES 物料产品分类 - 物料/产品标识枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

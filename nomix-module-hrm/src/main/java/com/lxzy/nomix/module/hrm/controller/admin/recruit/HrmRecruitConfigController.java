@@ -5,8 +5,8 @@ import com.lxzy.nomix.module.hrm.controller.admin.recruit.vo.config.HrmRecruitEl
 import com.lxzy.nomix.module.hrm.service.recruit.config.HrmRecruitConfigService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import javax.annotation.Resource;
-import javax.validation.Valid;
+import jakarta.annotation.Resource;
+import jakarta.validation.Valid;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;

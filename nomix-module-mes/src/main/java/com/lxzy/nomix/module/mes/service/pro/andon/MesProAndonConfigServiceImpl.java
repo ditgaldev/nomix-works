@@ -8,10 +8,10 @@ import com.lxzy.nomix.module.mes.dal.dataobject.pro.andon.MesProAndonConfigDO;
 import com.lxzy.nomix.module.mes.dal.mysql.pro.andon.MesProAndonConfigMapper;
 import com.lxzy.nomix.module.system.api.permission.RoleApi;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collections;
 import java.util.List;
 
@@ -21,7 +21,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.PRO_ANDON_CONFI
 /**
  * MES 安灯呼叫配置 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

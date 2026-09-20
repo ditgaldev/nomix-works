@@ -6,10 +6,10 @@ import com.lxzy.nomix.module.hrm.controller.admin.employee.vo.file.HrmEmployeeFi
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.info.HrmEmployeeDO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.info.HrmEmployeeFileDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.employee.info.HrmEmployeeFileMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.Arrays;
 import java.util.List;
@@ -25,7 +25,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmEmployeeFileServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmEmployeeFileServiceImpl.class)
 public class HrmEmployeeFileServiceImplTest extends BaseDbUnitTest {
@@ -36,7 +36,7 @@ public class HrmEmployeeFileServiceImplTest extends BaseDbUnitTest {
     @Resource
     private HrmEmployeeFileMapper employeeFileMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmEmployeeService employeeService;
 
     @Test

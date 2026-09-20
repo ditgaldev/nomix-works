@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * FMS 账套 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface FmsAccountSetMapper extends BaseMapperX<FmsAccountSetDO> {

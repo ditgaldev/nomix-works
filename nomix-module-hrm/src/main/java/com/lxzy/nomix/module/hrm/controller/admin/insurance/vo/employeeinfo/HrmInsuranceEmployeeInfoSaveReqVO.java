@@ -1,8 +1,8 @@
 package com.lxzy.nomix.module.hrm.controller.admin.insurance.vo.employeeinfo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 import java.time.LocalDateTime;

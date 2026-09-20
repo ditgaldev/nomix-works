@@ -2,7 +2,7 @@ package com.lxzy.nomix.module.bpm.service.comment;
 
 import com.lxzy.nomix.module.bpm.controller.admin.comment.vo.BpmCommentCreateReqVO;
 import com.lxzy.nomix.module.bpm.enums.task.BpmCommentTypeEnum;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import org.flowable.engine.task.Comment;
 
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 流程评论 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface BpmCommentService {
 

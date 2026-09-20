@@ -30,7 +30,7 @@ import static com.lxzy.nomix.module.bpm.enums.ErrorCodeConstants.MODEL_DEPLOY_FA
 /**
  * {@link BpmTaskCandidateStrategy} 的调用者，用于调用对应的策略，实现任务的候选人的计算
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class BpmTaskCandidateInvoker {

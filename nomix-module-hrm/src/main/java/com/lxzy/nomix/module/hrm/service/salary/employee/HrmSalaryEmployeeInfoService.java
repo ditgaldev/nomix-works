@@ -9,7 +9,7 @@ import com.lxzy.nomix.module.hrm.controller.admin.salary.vo.employeeinfo.HrmSala
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.info.HrmEmployeeDO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.salary.employee.HrmSalaryEmployeeInfoDO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.salary.config.HrmSalaryOptionDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -22,7 +22,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * HRM 员工薪资信息 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmSalaryEmployeeInfoService {
 

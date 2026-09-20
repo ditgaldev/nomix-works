@@ -12,7 +12,7 @@ import java.util.Set;
 /**
  * PMS 知识库文档状态枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

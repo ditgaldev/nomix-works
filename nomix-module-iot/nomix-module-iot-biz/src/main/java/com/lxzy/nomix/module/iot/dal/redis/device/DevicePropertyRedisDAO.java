@@ -3,10 +3,10 @@ package com.lxzy.nomix.module.iot.dal.redis.device;
 import cn.hutool.core.collection.CollUtil;
 import com.lxzy.nomix.framework.common.util.json.JsonUtils;
 import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDevicePropertyDO;
+import jakarta.annotation.Resource;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Repository;
 
-import javax.annotation.Resource;
 import java.util.Collections;
 import java.util.Map;
 

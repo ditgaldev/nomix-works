@@ -7,7 +7,7 @@ tenant-id: {{adminTenantId}}
 {
   "knowledgeId": 2,
   "name": "测试文档",
-  "url": "",
+  "url": "https://static.nomix.cn/README.md",
   "segmentMaxTokens": 800
 }
 
@@ -22,12 +22,12 @@ tenant-id: {{adminTenantId}}
   "list": [
     {
       "name": "测试文档1",
-      "url": "",
+      "url": "https://static.nomix.cn/README.md",
       "segmentMaxTokens": 800
     },
     {
       "name": "测试文档2",
-      "url": "",
+      "url": "https://static.nomix.cn/README_nomix.md",
       "segmentMaxTokens": 400
     }
   ]

@@ -19,11 +19,11 @@ import com.lxzy.nomix.module.mes.service.md.workstation.MesMdWorkstationService;
 import com.lxzy.nomix.module.mes.service.pro.process.MesProProcessService;
 import com.lxzy.nomix.module.mes.service.pro.route.MesProRouteService;
 import com.lxzy.nomix.module.mes.service.pro.workorder.MesProWorkOrderService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Collection;
@@ -38,7 +38,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.PRO_TASK_NOT_EX
 /**
  * MES 生产任务 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

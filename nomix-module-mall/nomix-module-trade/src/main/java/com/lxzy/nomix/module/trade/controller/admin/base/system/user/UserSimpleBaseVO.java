@@ -13,7 +13,7 @@ public class UserSimpleBaseVO {
     @Schema(description = "用户昵称", requiredMode = Schema.RequiredMode.REQUIRED, example = "Nomix")
     private String nickname;
 
-    @Schema(description = "用户头像", example = "")
+    @Schema(description = "用户头像", example = "https://www.nomix.cn/1.png")
     private String avatar;
 
 }

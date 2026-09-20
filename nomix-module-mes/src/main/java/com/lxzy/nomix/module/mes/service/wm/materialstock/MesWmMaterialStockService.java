@@ -5,8 +5,8 @@ import com.lxzy.nomix.module.mes.controller.admin.wm.materialstock.vo.MesWmMater
 import com.lxzy.nomix.module.mes.controller.admin.wm.materialstock.vo.MesWmMaterialStockListReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.wm.materialstock.vo.MesWmMaterialStockPageReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.materialstock.MesWmMaterialStockDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Collection;

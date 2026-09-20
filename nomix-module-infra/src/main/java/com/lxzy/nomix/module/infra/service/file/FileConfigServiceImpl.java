@@ -17,8 +17,8 @@ import com.lxzy.nomix.module.infra.framework.file.core.client.FileClientFactory;
 import com.lxzy.nomix.module.infra.framework.file.core.enums.FileStorageEnum;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
-import javax.annotation.Resource;
-import javax.validation.Validator;
+import jakarta.annotation.Resource;
+import jakarta.validation.Validator;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -38,7 +38,7 @@ import static com.lxzy.nomix.module.infra.enums.ErrorCodeConstants.FILE_CONFIG_N
 /**
  * 文件配置 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

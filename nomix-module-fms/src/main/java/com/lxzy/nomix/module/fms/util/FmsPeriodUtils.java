@@ -8,7 +8,7 @@ import java.time.YearMonth;
 /**
  * FMS 会计期间工具类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @UtilityClass
 public final class FmsPeriodUtils {

@@ -1,14 +1,14 @@
 package com.lxzy.nomix.framework.common.biz.infra.logger.dto;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 
 /**
  * API 访问日志
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class ApiAccessLogCreateReqDTO {

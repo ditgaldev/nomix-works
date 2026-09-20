@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 限流注解
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)

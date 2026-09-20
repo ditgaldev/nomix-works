@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 批次管理 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesWmBatchService {
 

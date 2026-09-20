@@ -2,14 +2,14 @@ package com.lxzy.nomix.module.mes.service.md.workstation;
 
 import com.lxzy.nomix.module.mes.controller.admin.md.workstation.vo.machine.MesMdWorkstationMachineSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.md.workstation.MesMdWorkstationMachineDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * MES 设备资源 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesMdWorkstationMachineService {
 

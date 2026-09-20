@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * FMS 利润表配置 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface FmsIncomeStatementConfigMapper extends BaseMapperX<FmsIncomeStatementConfigDO> {

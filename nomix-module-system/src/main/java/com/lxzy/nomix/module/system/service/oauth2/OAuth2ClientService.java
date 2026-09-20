@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.system.controller.admin.oauth2.vo.client.OAuth2ClientPageReqVO;
 import com.lxzy.nomix.module.system.controller.admin.oauth2.vo.client.OAuth2ClientSaveReqVO;
 import com.lxzy.nomix.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
@@ -14,7 +14,7 @@ import java.util.List;
  *
  * 从功能上，和 JdbcClientDetailsService 的功能，提供客户端的操作
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface OAuth2ClientService {
 

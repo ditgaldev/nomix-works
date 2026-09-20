@@ -9,25 +9,25 @@ import com.lxzy.nomix.module.mes.dal.dataobject.qc.defectrecord.MesQcDefectRecor
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.rqc.MesQcRqcDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.template.MesQcTemplateItemDO;
 import com.lxzy.nomix.module.mes.dal.mysql.qc.rqc.MesQcRqcMapper;
-import com.lxzy.nomix.module.mes.enums.MesBizTypeConstants;
-import com.lxzy.nomix.module.mes.enums.qc.MesQcDefectLevelEnum;
 import com.lxzy.nomix.module.mes.enums.qc.MesQcStatusEnum;
+import com.lxzy.nomix.module.mes.enums.qc.MesQcDefectLevelEnum;
 import com.lxzy.nomix.module.mes.enums.qc.MesQcTypeEnum;
+import com.lxzy.nomix.module.mes.enums.MesBizTypeConstants;
 import com.lxzy.nomix.module.mes.service.md.item.MesMdItemService;
 import com.lxzy.nomix.module.mes.service.qc.defectrecord.MesQcDefectRecordService;
 import com.lxzy.nomix.module.mes.service.qc.indicatorresult.MesQcIndicatorResultService;
+import com.lxzy.nomix.module.mes.service.wm.returnissue.MesWmReturnIssueService;
+import com.lxzy.nomix.module.mes.service.wm.returnsales.MesWmReturnSalesService;
 import com.lxzy.nomix.module.mes.service.qc.template.MesQcTemplateItemService;
 import com.lxzy.nomix.module.mes.service.wm.returnissue.MesWmReturnIssueLineService;
-import com.lxzy.nomix.module.mes.service.wm.returnissue.MesWmReturnIssueService;
 import com.lxzy.nomix.module.mes.service.wm.returnsales.MesWmReturnSalesLineService;
-import com.lxzy.nomix.module.mes.service.wm.returnsales.MesWmReturnSalesService;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
@@ -39,7 +39,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 退货检验单（RQC） Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -4,10 +4,10 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.wm.productproduce.vo.MesWmProductProduceLinePageReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.productproduce.MesWmProductProduceLineDO;
 import com.lxzy.nomix.module.mes.dal.mysql.wm.productproduce.MesWmProductProduceLineMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;

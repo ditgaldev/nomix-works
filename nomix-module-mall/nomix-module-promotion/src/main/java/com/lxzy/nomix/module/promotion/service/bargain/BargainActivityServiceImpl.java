@@ -13,11 +13,11 @@ import com.lxzy.nomix.module.promotion.controller.admin.bargain.vo.activity.Barg
 import com.lxzy.nomix.module.promotion.convert.bargain.BargainActivityConvert;
 import com.lxzy.nomix.module.promotion.dal.dataobject.bargain.BargainActivityDO;
 import com.lxzy.nomix.module.promotion.dal.mysql.bargain.BargainActivityMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Set;

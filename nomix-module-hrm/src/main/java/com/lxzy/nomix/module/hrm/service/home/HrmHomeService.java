@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * HRM 首页 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmHomeService {
 

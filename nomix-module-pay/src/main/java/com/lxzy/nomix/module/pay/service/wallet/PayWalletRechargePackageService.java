@@ -6,7 +6,7 @@ import com.lxzy.nomix.module.pay.controller.admin.wallet.vo.rechargepackage.Wall
 import com.lxzy.nomix.module.pay.controller.admin.wallet.vo.rechargepackage.WalletRechargePackageUpdateReqVO;
 import com.lxzy.nomix.module.pay.dal.dataobject.wallet.PayWalletRechargePackageDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 

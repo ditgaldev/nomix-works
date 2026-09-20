@@ -6,12 +6,12 @@ import com.lxzy.nomix.module.report.controller.admin.goview.vo.project.GoViewPro
 import com.lxzy.nomix.module.report.controller.admin.goview.vo.project.GoViewProjectUpdateReqVO;
 import com.lxzy.nomix.module.report.dal.dataobject.goview.GoViewProjectDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * GoView 项目 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface GoViewProjectService {
 

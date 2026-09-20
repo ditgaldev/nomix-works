@@ -15,7 +15,7 @@ import org.aspectj.lang.annotation.Aspect;
  *
  * 整体逻辑的实现，和 {@link TenantUtils#executeIgnore(Runnable)} 需要保持一致
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Aspect
 @Slf4j

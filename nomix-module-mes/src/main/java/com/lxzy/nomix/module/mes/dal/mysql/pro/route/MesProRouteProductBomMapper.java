@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * MES 工艺路线产品 BOM Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesProRouteProductBomMapper extends BaseMapperX<MesProRouteProductBomDO> {

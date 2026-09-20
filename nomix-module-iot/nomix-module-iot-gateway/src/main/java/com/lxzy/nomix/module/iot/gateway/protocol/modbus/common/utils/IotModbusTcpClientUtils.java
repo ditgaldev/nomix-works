@@ -22,7 +22,7 @@ import static com.lxzy.nomix.module.iot.gateway.protocol.modbus.common.utils.Iot
  * 2. 通过 {@link IotModbusTcpClientConnectionManager.ModbusConnection} 执行事务
  * 3. 从响应中提取原始值
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @UtilityClass
 @Slf4j

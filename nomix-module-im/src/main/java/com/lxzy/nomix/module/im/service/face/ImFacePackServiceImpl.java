@@ -8,11 +8,11 @@ import com.lxzy.nomix.module.im.controller.admin.manager.face.vo.pack.ImFacePack
 import com.lxzy.nomix.module.im.controller.admin.manager.face.vo.pack.ImFacePackSaveReqVO;
 import com.lxzy.nomix.module.im.dal.dataobject.face.ImFacePackDO;
 import com.lxzy.nomix.module.im.dal.mysql.face.ImFacePackMapper;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -22,7 +22,7 @@ import static com.lxzy.nomix.module.im.enums.ErrorCodeConstants.FACE_PACK_NOT_EX
 /**
  * IM 表情包 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

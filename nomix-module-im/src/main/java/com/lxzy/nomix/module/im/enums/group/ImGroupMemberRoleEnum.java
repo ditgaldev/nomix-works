@@ -10,7 +10,7 @@ import java.util.Objects;
 /**
  * IM 群成员角色枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Getter

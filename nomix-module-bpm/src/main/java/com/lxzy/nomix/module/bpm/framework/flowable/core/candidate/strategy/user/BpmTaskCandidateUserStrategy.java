@@ -5,9 +5,9 @@ import com.lxzy.nomix.framework.common.util.string.StrUtils;
 import com.lxzy.nomix.module.bpm.framework.flowable.core.candidate.BpmTaskCandidateStrategy;
 import com.lxzy.nomix.module.bpm.framework.flowable.core.enums.BpmTaskCandidateStrategyEnum;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.LinkedHashSet;
 
 /**

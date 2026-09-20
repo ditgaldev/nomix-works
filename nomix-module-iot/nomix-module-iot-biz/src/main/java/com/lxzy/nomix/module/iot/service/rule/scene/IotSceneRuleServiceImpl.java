@@ -24,13 +24,13 @@ import com.lxzy.nomix.module.iot.service.rule.scene.action.IotSceneRuleAction;
 import com.lxzy.nomix.module.iot.service.rule.scene.matcher.IotSceneRuleMatcherManager;
 import com.lxzy.nomix.module.iot.service.rule.scene.timer.IotSceneRuleTimerHandler;
 import com.lxzy.nomix.module.iot.service.rule.scene.timer.IotTimerConditionEvaluator;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
@@ -42,7 +42,7 @@ import static com.lxzy.nomix.module.iot.enums.ErrorCodeConstants.RULE_SCENE_NOT_
 /**
  * IoT 规则场景 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

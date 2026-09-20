@@ -11,11 +11,11 @@ import com.lxzy.nomix.module.iot.dal.mysql.alert.IotAlertConfigMapper;
 import com.lxzy.nomix.module.iot.enums.alert.IotAlertReceiveTypeEnum;
 import com.lxzy.nomix.module.iot.service.rule.scene.IotSceneRuleService;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -27,7 +27,7 @@ import static com.lxzy.nomix.module.iot.enums.ErrorCodeConstants.ALERT_CONFIG_SM
 /**
  * IoT 告警配置 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

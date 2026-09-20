@@ -6,8 +6,8 @@ import com.lxzy.nomix.module.mes.controller.admin.md.vendor.vo.MesMdVendorImport
 import com.lxzy.nomix.module.mes.controller.admin.md.vendor.vo.MesMdVendorPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.md.vendor.vo.MesMdVendorSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.md.vendor.MesMdVendorDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -17,7 +17,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * MES 供应商 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesMdVendorService {
 

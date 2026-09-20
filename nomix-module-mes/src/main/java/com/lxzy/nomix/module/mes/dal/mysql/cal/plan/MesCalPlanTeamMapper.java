@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * MES 计划班组关联 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesCalPlanTeamMapper extends BaseMapperX<MesCalPlanTeamDO> {

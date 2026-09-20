@@ -43,7 +43,7 @@ import static com.lxzy.nomix.module.iot.gateway.protocol.coap.handler.upstream.I
  *     </li>
  * </ol>
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 @Disabled

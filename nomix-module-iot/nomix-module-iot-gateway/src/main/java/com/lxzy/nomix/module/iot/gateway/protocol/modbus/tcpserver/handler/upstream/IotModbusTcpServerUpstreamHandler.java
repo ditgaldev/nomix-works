@@ -46,7 +46,7 @@ import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUti
  * 1. 自定义 FC 认证
  * 2. 轮询响应 → 点位翻译 → thing.property.post
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class IotModbusTcpServerUpstreamHandler {

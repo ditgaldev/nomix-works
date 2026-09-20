@@ -5,8 +5,8 @@ import com.lxzy.nomix.module.mes.controller.admin.qc.iqc.vo.MesQcIqcPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.qc.iqc.vo.MesQcIqcSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.defectrecord.MesQcDefectRecordDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.iqc.MesQcIqcDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * MES 来料检验单（IQC） Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesQcIqcService {
 

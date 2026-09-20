@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * IM 加群申请记录 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ImGroupRequestMapper extends BaseMapperX<ImGroupRequestDO> {

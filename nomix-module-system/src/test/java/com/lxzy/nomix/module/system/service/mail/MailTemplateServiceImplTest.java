@@ -10,7 +10,7 @@ import com.lxzy.nomix.module.system.dal.mysql.mail.MailTemplateMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -28,7 +28,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link MailTemplateServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(MailTemplateServiceImpl.class)
 public class MailTemplateServiceImplTest extends BaseDbUnitTest {

@@ -5,8 +5,8 @@ import com.lxzy.nomix.module.wms.controller.admin.md.merchant.vo.WmsMerchantList
 import com.lxzy.nomix.module.wms.controller.admin.md.merchant.vo.WmsMerchantPageReqVO;
 import com.lxzy.nomix.module.wms.controller.admin.md.merchant.vo.WmsMerchantSaveReqVO;
 import com.lxzy.nomix.module.wms.dal.dataobject.md.merchant.WmsMerchantDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -16,7 +16,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * WMS 往来企业 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface WmsMerchantService {
 

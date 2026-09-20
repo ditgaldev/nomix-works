@@ -6,14 +6,14 @@ import com.lxzy.nomix.module.member.controller.admin.tag.vo.MemberTagPageReqVO;
 import com.lxzy.nomix.module.member.controller.admin.tag.vo.MemberTagUpdateReqVO;
 import com.lxzy.nomix.module.member.dal.dataobject.tag.MemberTagDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * 会员标签 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MemberTagService {
 

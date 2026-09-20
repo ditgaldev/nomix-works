@@ -1,9 +1,9 @@
 package com.lxzy.nomix.module.hrm.controller.admin.attendance.vo.leave;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 @Schema(description = "管理后台 - HRM 员工请假申请取消 Request VO")

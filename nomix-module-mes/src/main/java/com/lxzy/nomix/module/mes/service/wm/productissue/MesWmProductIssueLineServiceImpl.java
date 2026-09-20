@@ -11,11 +11,11 @@ import com.lxzy.nomix.module.mes.dal.dataobject.wm.productissue.MesWmProductIssu
 import com.lxzy.nomix.module.mes.dal.mysql.wm.productissue.MesWmProductIssueLineMapper;
 import com.lxzy.nomix.module.mes.service.md.item.MesMdItemService;
 import com.lxzy.nomix.module.mes.service.pro.workorder.MesProWorkOrderBomService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;

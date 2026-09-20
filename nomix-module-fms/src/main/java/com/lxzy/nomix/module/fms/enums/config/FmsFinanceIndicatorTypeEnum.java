@@ -11,7 +11,7 @@ import java.util.Arrays;
 /**
  * FMS 首页财务指标取数报表类型枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

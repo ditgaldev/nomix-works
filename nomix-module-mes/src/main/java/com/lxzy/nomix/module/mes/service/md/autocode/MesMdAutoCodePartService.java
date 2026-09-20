@@ -2,14 +2,14 @@ package com.lxzy.nomix.module.mes.service.md.autocode;
 
 import com.lxzy.nomix.module.mes.controller.admin.md.autocode.vo.part.MesMdAutoCodePartSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.md.autocode.MesMdAutoCodePartDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * MES 编码规则组成 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesMdAutoCodePartService {
 

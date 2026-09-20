@@ -13,7 +13,9 @@
 
     <name>${project.artifactId}</name>
     <description>服务监控，提供链路追踪、日志服务、指标收集等等功能</description>
-<dependencies>
+    <url>https://github.com/ditgaldev/nomix-works</url>
+
+    <dependencies>
         <dependency>
             <groupId>com.lxzy.nomix</groupId>
             <artifactId>nomix-common</artifactId>
@@ -33,8 +35,8 @@
         </dependency>
 
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
             <scope>provided</scope> <!-- 设置为 provided，只有 TraceFilter 使用 -->
         </dependency>
 

@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 import java.time.LocalDateTime;
 
@@ -24,7 +24,7 @@ import static com.lxzy.nomix.module.bpm.enums.ErrorCodeConstants.USER_GROUP_NOT_
 /**
  * {@link BpmUserGroupServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(BpmUserGroupServiceImpl.class)
 public class BpmUserGroupServiceTest extends BaseDbUnitTest {
@@ -102,7 +102,7 @@ public class BpmUserGroupServiceTest extends BaseDbUnitTest {
     public void testGetUserGroupPage() {
        // mock 数据
        BpmUserGroupDO dbUserGroup = RandomUtils.randomPojo(BpmUserGroupDO.class, o -> { // 等会查询到
-           o.setName("Nomix");
+           o.setName("Nomix源码");
            o.setStatus(CommonStatusEnum.ENABLE.getStatus());
            o.setCreateTime(buildTime(2021, 11, 11));
        });

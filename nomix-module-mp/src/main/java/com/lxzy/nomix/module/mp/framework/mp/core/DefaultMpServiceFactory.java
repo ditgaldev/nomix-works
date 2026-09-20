@@ -29,7 +29,7 @@ import java.util.Map;
 /**
  * 默认的 {@link MpServiceFactory} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 @RequiredArgsConstructor

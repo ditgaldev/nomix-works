@@ -6,10 +6,10 @@ import com.lxzy.nomix.module.fms.enums.common.FmsDebitCreditDirectionEnum;
 import com.lxzy.nomix.module.fms.enums.config.FmsSubjectCategoryEnum;
 import com.lxzy.nomix.module.fms.enums.config.FmsSubjectTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.AssertTrue;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.AssertTrue;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 import java.util.List;
@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * FMS 科目保存 Request VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Schema(description = "管理后台 - FMS 科目保存 Request VO")
 @Data

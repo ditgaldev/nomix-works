@@ -4,16 +4,16 @@ import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.framework.common.biz.system.dict.dto.DictDataRespDTO;
 import com.lxzy.nomix.module.system.dal.dataobject.dict.DictDataDO;
 import com.lxzy.nomix.module.system.service.dict.DictDataService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * 字典数据 API 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class DictDataApiImpl implements DictDataApi {

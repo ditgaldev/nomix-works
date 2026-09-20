@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * PMS 知识库回收站 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface PmsKnowledgeRecycleService {
 

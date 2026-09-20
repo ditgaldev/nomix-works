@@ -3,9 +3,9 @@ package com.lxzy.nomix.module.bpm.service.task;
 import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.bpm.controller.admin.task.vo.instance.BpmProcessInstanceCopyPageReqVO;
 import com.lxzy.nomix.module.bpm.dal.dataobject.task.BpmProcessInstanceCopyDO;
+import jakarta.validation.constraints.NotEmpty;
 import org.flowable.bpmn.model.FlowNode;
 
-import javax.validation.constraints.NotEmpty;
 import java.util.Collection;
 
 /**

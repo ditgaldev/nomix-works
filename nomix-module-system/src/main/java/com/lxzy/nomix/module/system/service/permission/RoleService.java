@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.system.controller.admin.permission.vo.role.RolePageReqVO;
 import com.lxzy.nomix.module.system.controller.admin.permission.vo.role.RoleSaveReqVO;
 import com.lxzy.nomix.module.system.dal.dataobject.permission.RoleDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
@@ -13,7 +13,7 @@ import java.util.Set;
 /**
  * 角色 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface RoleService {
 

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 /**
  * HRM 银行卡号脱敏的 {@link IParseFunction} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 public class HrmBankCardNumberParseFunction implements IParseFunction {

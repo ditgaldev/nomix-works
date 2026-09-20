@@ -4,17 +4,17 @@ import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.module.promotion.api.discount.dto.DiscountProductRespDTO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.discount.DiscountProductDO;
 import com.lxzy.nomix.module.promotion.service.discount.DiscountActivityService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * 限时折扣 API 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

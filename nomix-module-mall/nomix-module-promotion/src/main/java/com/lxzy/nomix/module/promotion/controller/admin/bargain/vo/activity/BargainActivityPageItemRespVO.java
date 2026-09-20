@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 
 @Schema(description = "管理后台 - 砍价活动的分页项 Response VO")
@@ -19,7 +19,7 @@ public class BargainActivityPageItemRespVO extends BargainActivityBaseVO {
 
     @Schema(description = "商品名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "618大促")
     private String spuName;
-    @Schema(description = "商品主图", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "商品主图", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn/xx.png")
     private String picUrl;
 
     @Schema(description = "活动状态", requiredMode = Schema.RequiredMode.REQUIRED, example = "0")

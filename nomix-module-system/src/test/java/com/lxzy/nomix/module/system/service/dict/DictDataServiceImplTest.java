@@ -9,11 +9,11 @@ import com.lxzy.nomix.module.system.controller.admin.dict.vo.data.DictDataSaveRe
 import com.lxzy.nomix.module.system.dal.dataobject.dict.DictDataDO;
 import com.lxzy.nomix.module.system.dal.dataobject.dict.DictTypeDO;
 import com.lxzy.nomix.module.system.dal.mysql.dict.DictDataMapper;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -35,7 +35,7 @@ public class DictDataServiceImplTest extends BaseDbUnitTest {
 
     @Resource
     private DictDataMapper dictDataMapper;
-    @MockBean
+    @MockitoBean
     private DictTypeService dictTypeService;
 
     @Test

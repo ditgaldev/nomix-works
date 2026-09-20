@@ -12,7 +12,7 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * WMS 库存流水 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface WmsInventoryHistoryMapper extends BaseMapperX<WmsInventoryHistoryDO> {

@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * WMS 首页统计 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface WmsHomeStatisticsMapper {

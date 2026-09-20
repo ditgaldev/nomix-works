@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * MES 工序关系类型枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

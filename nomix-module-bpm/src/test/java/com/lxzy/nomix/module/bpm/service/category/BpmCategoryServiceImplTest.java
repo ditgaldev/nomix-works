@@ -9,11 +9,10 @@ import com.lxzy.nomix.module.bpm.dal.dataobject.definition.BpmCategoryDO;
 import com.lxzy.nomix.module.bpm.dal.mysql.category.BpmCategoryMapper;
 import com.lxzy.nomix.module.bpm.service.definition.BpmCategoryServiceImpl;
 import com.lxzy.nomix.module.bpm.service.definition.BpmModelService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
-
-import javax.annotation.Resource;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
 import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildTime;
@@ -27,7 +26,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link BpmCategoryServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(BpmCategoryServiceImpl.class)
 public class BpmCategoryServiceImplTest extends BaseDbUnitTest {
@@ -35,7 +34,7 @@ public class BpmCategoryServiceImplTest extends BaseDbUnitTest {
     @Resource
     private BpmCategoryServiceImpl categoryService;
 
-    @MockBean
+    @MockitoBean
     private BpmModelService modelService;
 
     @Resource

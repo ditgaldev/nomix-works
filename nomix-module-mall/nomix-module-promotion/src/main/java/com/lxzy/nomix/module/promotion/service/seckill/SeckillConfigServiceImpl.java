@@ -14,7 +14,7 @@ import com.lxzy.nomix.module.promotion.dal.mysql.seckill.seckillconfig.SeckillCo
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.time.LocalTime;
 import java.util.Collection;
 import java.util.Comparator;

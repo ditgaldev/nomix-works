@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * HRM 绩效阶段类型枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

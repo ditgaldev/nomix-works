@@ -10,7 +10,7 @@ import lombok.*;
 /**
  * MES 点检保养方案项目 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_dv_check_plan_subject")
 @KeySequence("mes_dv_check_plan_subject_seq")

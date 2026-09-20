@@ -2,10 +2,9 @@ package com.lxzy.nomix.module.promotion.api.point;
 
 import com.lxzy.nomix.module.promotion.api.point.dto.PointValidateJoinRespDTO;
 import com.lxzy.nomix.module.promotion.service.point.PointActivityService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
-
-import javax.annotation.Resource;
 
 /**
  * 积分商城活动 Api 接口实现类

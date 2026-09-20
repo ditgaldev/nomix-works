@@ -10,13 +10,12 @@ import com.lxzy.nomix.module.member.dal.dataobject.signin.MemberSignInRecordDO;
 import com.lxzy.nomix.module.member.service.signin.MemberSignInRecordService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.annotation.Resource;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.annotation.Resource;
 
 import static com.lxzy.nomix.framework.common.pojo.CommonResult.success;
 import static com.lxzy.nomix.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;

@@ -1,6 +1,6 @@
 /**
  * justauth 三方登录的拓展
  *
- * @author Nomix
+ * @author Nomix源码
  */
 package com.lxzy.nomix.module.system.framework.justauth;

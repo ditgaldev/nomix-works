@@ -6,14 +6,14 @@ import com.lxzy.nomix.module.system.dal.dataobject.dept.DeptDO;
 import com.lxzy.nomix.module.system.service.dept.DeptService;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * 部门 API 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class DeptApiImpl implements DeptApi {

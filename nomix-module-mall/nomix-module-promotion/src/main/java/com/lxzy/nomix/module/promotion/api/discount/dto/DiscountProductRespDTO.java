@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 /**
  * 限时折扣活动商品 Response DTO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class DiscountProductRespDTO {

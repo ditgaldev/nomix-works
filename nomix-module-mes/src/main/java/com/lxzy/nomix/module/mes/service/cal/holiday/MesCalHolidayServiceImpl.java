@@ -4,17 +4,17 @@ import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.module.mes.controller.admin.cal.holiday.vo.MesCalHolidaySaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.cal.holiday.MesCalHolidayDO;
 import com.lxzy.nomix.module.mes.dal.mysql.cal.holiday.MesCalHolidayMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.List;
 
 /**
  * MES 假期设置 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

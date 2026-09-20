@@ -14,7 +14,7 @@ import com.lxzy.nomix.module.pms.enums.pm.workitem.PmsWorkItemPriorityEnum;
 import com.lxzy.nomix.module.pms.service.pm.iteration.PmsIterationService;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
 import com.lxzy.nomix.module.system.api.user.dto.AdminUserRespDTO;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
@@ -38,7 +38,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * PMS 工作项动态 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

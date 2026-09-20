@@ -1,8 +1,8 @@
 package com.lxzy.nomix.module.pms.controller.admin.pm.workitem.vo.workitem;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.util.List;

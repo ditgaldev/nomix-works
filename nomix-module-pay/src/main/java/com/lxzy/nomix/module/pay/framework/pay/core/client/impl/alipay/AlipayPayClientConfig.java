@@ -4,17 +4,15 @@ import com.lxzy.nomix.framework.common.util.validation.ValidationUtils;
 import com.lxzy.nomix.module.pay.framework.pay.core.client.PayClientConfig;
 import lombok.Data;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Validator;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import java.util.Set;
+import jakarta.validation.Validator;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * 支付宝的 PayClientConfig 实现类
  * 属性主要来自 {@link com.alipay.api.AlipayConfig} 的必要属性
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class AlipayPayClientConfig implements PayClientConfig {

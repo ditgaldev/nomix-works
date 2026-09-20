@@ -7,12 +7,12 @@ import com.lxzy.nomix.module.bpm.enums.definition.BpmAutoApproveTypeEnum;
 import com.lxzy.nomix.module.bpm.enums.definition.BpmModelFormTypeEnum;
 import com.lxzy.nomix.module.bpm.enums.definition.BpmModelTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import org.hibernate.validator.constraints.URL;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
@@ -23,12 +23,12 @@ import java.util.List;
  * {@link com.lxzy.nomix.module.bpm.dal.dataobject.definition.BpmProcessDefinitionInfoDO}
  * 是一致的
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class BpmModelMetaInfoVO {
 
-    @Schema(description = "流程图标", example = "")
+    @Schema(description = "流程图标", example = "https://www.nomix.cn/nomix.jpg")
     @URL(message = "流程图标格式不正确")
     private String icon;
 

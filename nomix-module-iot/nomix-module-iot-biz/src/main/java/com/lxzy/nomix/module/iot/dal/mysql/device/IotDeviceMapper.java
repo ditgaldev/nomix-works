@@ -10,9 +10,9 @@ import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDeviceDO;
 import com.lxzy.nomix.module.iot.enums.product.IotProductDeviceTypeEnum;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
+import jakarta.annotation.Nullable;
 import org.apache.ibatis.annotations.Mapper;
 
-import javax.annotation.Nullable;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 /**
  * IoT 设备 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface IotDeviceMapper extends BaseMapperX<IotDeviceDO> {

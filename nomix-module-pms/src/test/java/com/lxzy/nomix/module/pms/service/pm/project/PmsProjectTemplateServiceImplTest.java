@@ -7,7 +7,7 @@ import com.lxzy.nomix.module.pms.dal.mysql.pm.project.PmsProjectTemplateMapper;
 import com.lxzy.nomix.module.pms.enums.pm.project.PmsProjectTypeEnum;
 import com.lxzy.nomix.module.pms.enums.pm.workitem.PmsWorkItemStatusTypeEnum;
 import com.lxzy.nomix.module.pms.enums.pm.workitem.PmsWorkItemTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
@@ -24,7 +24,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 /**
  * {@link PmsProjectTemplateServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsProjectTemplateServiceImpl.class)
 public class PmsProjectTemplateServiceImplTest extends BaseDbUnitTest {

@@ -5,14 +5,14 @@ import com.lxzy.nomix.module.infra.controller.admin.file.vo.file.FileCreateReqVO
 import com.lxzy.nomix.module.infra.controller.admin.file.vo.file.FilePageReqVO;
 import com.lxzy.nomix.module.infra.controller.admin.file.vo.file.FilePresignedUrlRespVO;
 import com.lxzy.nomix.module.infra.dal.dataobject.file.FileDO;
-import javax.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotEmpty;
 
 import java.util.List;
 
 /**
  * 文件 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface FileService {
 

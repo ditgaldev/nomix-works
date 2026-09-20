@@ -3,10 +3,9 @@ package com.lxzy.nomix.module.system.job.token;
 import com.lxzy.nomix.framework.quartz.core.handler.JobHandler;
 import com.lxzy.nomix.framework.tenant.core.aop.TenantIgnore;
 import com.lxzy.nomix.module.system.service.oauth2.OAuth2TokenService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.Resource;
 
 /**
  * 物理删除过期 N 天的令牌的 Job

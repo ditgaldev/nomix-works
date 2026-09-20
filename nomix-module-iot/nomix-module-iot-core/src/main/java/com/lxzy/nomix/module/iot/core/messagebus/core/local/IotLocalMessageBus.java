@@ -18,7 +18,7 @@ import java.util.Map;
  *
  * 注意：仅适用于单机场景！！！
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Slf4j

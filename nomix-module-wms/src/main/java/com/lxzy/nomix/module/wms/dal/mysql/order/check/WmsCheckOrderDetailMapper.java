@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * WMS 盘库单明细 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface WmsCheckOrderDetailMapper extends BaseMapperX<WmsCheckOrderDetailDO> {

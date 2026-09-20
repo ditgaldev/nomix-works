@@ -6,8 +6,8 @@ import com.lxzy.nomix.module.mes.controller.admin.dv.machinery.vo.MesDvMachinery
 import com.lxzy.nomix.module.mes.controller.admin.dv.machinery.vo.MesDvMachineryPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.dv.machinery.vo.MesDvMachinerySaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.dv.machinery.MesDvMachineryDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
@@ -18,7 +18,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * MES 设备台账 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesDvMachineryService {
 

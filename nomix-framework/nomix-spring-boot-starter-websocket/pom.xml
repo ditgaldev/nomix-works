@@ -13,7 +13,10 @@
 
     <name>${project.artifactId}</name>
     <description>WebSocket 框架，支持多节点的广播</description>
-<dependencies>
+    <url>https://github.com/ditgaldev/nomix-works</url>
+
+
+    <dependencies>
         <dependency>
             <groupId>com.lxzy.nomix</groupId>
             <artifactId>nomix-common</artifactId>

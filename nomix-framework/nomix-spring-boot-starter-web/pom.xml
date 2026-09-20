@@ -13,7 +13,9 @@
 
     <name>${project.artifactId}</name>
     <description>Web 框架，全局异常、API 日志、脱敏、错误码等</description>
-<dependencies>
+    <url>https://github.com/ditgaldev/nomix-works</url>
+
+    <dependencies>
         <dependency>
             <groupId>com.lxzy.nomix</groupId>
             <artifactId>nomix-common</artifactId>
@@ -38,11 +40,11 @@
 
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
-            <artifactId>knife4j-openapi3-spring-boot-starter</artifactId>
+            <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-ui</artifactId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
         </dependency>
 
         <dependency>

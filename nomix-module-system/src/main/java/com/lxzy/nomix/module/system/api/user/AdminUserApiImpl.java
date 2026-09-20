@@ -10,9 +10,9 @@ import com.lxzy.nomix.module.system.dal.dataobject.dept.DeptDO;
 import com.lxzy.nomix.module.system.dal.dataobject.user.AdminUserDO;
 import com.lxzy.nomix.module.system.service.dept.DeptService;
 import com.lxzy.nomix.module.system.service.user.AdminUserService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -23,7 +23,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * Admin 用户 API 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class AdminUserApiImpl implements AdminUserApi {
@@ -34,7 +34,7 @@ public class AdminUserApiImpl implements AdminUserApi {
     private DeptService deptService;
 
     @Override
-    @DataPermission(enable = false) // 忽略数据权限，避免因为过滤，导致无法查询用户。类似：
+    @DataPermission(enable = false) // 忽略数据权限，避免因为过滤，导致无法查询用户。类似：https://github.com/ditgaldev/nomix-works/issues/1051
     public AdminUserRespDTO getUser(Long id) {
         AdminUserDO user = userService.getUser(id);
         return BeanUtils.toBean(user, AdminUserRespDTO.class);
@@ -91,6 +91,18 @@ public class AdminUserApiImpl implements AdminUserApi {
     public List<AdminUserRespDTO> getUserListByNickname(String nickname) {
         List<AdminUserDO> users = userService.getUserListByNickname(nickname);
         return BeanUtils.toBean(users, AdminUserRespDTO.class);
+    }
+
+    @Override
+    public List<AdminUserRespDTO> getUserListByStatus(Integer status) {
+        List<AdminUserDO> users = userService.getUserListByStatus(status);
+        return BeanUtils.toBean(users, AdminUserRespDTO.class);
+    }
+
+    @Override
+    public AdminUserRespDTO validateUser(Long id) {
+        AdminUserDO user = userService.validateUser(id);
+        return BeanUtils.toBean(user, AdminUserRespDTO.class);
     }
 
     @Override

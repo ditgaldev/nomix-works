@@ -6,12 +6,12 @@ import com.lxzy.nomix.module.member.service.address.AddressService;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * 用户收件地址 API 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

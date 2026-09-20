@@ -3,8 +3,8 @@ package com.lxzy.nomix.module.wms.service.inventory;
 import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.wms.controller.admin.inventory.vo.WmsInventoryPageReqVO;
-import com.lxzy.nomix.module.wms.dal.dataobject.inventory.WmsInventoryDO;
 import com.lxzy.nomix.module.wms.dal.dataobject.inventory.WmsInventoryHistoryDO;
+import com.lxzy.nomix.module.wms.dal.dataobject.inventory.WmsInventoryDO;
 import com.lxzy.nomix.module.wms.dal.dataobject.md.item.WmsItemDO;
 import com.lxzy.nomix.module.wms.dal.dataobject.md.item.WmsItemSkuDO;
 import com.lxzy.nomix.module.wms.dal.mysql.inventory.WmsInventoryHistoryMapper;
@@ -16,22 +16,29 @@ import com.lxzy.nomix.module.wms.service.inventory.dto.WmsInventoryChangeReqDTO;
 import com.lxzy.nomix.module.wms.service.inventory.dto.WmsInventoryCheckReqDTO;
 import com.lxzy.nomix.module.wms.service.md.item.WmsItemService;
 import com.lxzy.nomix.module.wms.service.md.item.WmsItemSkuService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.concurrent.*;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 
 import static com.lxzy.nomix.framework.test.core.util.AssertUtils.assertServiceException;
 import static com.lxzy.nomix.module.wms.enums.ErrorCodeConstants.CHECK_ORDER_INVENTORY_CHANGED;
 import static com.lxzy.nomix.module.wms.enums.ErrorCodeConstants.INVENTORY_QUANTITY_NOT_ENOUGH;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.mockito.Mockito.when;
 
 @Import({WmsInventoryServiceImpl.class, WmsInventoryHistoryServiceImpl.class})
@@ -49,9 +56,9 @@ public class WmsInventoryServiceImplTest extends BaseDbUnitTest {
     @Resource
     private WmsItemSkuMapper skuMapper;
 
-    @MockBean
+    @MockitoBean
     private WmsItemSkuService itemSkuService;
-    @MockBean
+    @MockitoBean
     private WmsItemService itemService;
 
     @Test

@@ -4,7 +4,7 @@ import com.lxzy.nomix.framework.common.pojo.PageParam;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.hrm.enums.salary.monthrecord.HrmSalaryMonthRecordStatusEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

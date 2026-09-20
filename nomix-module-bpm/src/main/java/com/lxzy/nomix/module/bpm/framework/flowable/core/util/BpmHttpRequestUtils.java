@@ -31,7 +31,7 @@ import static com.lxzy.nomix.module.bpm.enums.ErrorCodeConstants.PROCESS_INSTANC
 /**
  * 工作流发起 HTTP 请求工具类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class BpmHttpRequestUtils {
@@ -66,7 +66,7 @@ public class BpmHttpRequestUtils {
         }
         // 3.2 解析返回值, 返回值必须符合 CommonResult 规范。
         CommonResult<Map<String, Object>> respResult = JsonUtils.parseObjectQuietly(responseEntity.getBody(),
-                new TypeReference<CommonResult<Map<String, Object>>>() {});
+                new TypeReference<>() {});
         if (respResult == null || !respResult.isSuccess()) {
             return;
         }

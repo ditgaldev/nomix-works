@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * {@link GeminiChatModel} 集成测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class GeminiChatModelTests {
 

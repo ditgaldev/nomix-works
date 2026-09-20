@@ -4,7 +4,7 @@ import cn.hutool.core.collection.CollUtil;
 import com.lxzy.nomix.module.pms.dal.dataobject.pm.workitem.PmsWorkItemDO;
 import com.lxzy.nomix.module.pms.dal.dataobject.pm.workitem.PmsWorkItemUserSortDO;
 import com.lxzy.nomix.module.pms.dal.mysql.pm.workitem.PmsWorkItemUserSortMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -18,7 +18,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * PMS 工作项个人排序 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * 商品属性项的明细 Response DTO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class ProductPropertyValueDetailRespDTO {

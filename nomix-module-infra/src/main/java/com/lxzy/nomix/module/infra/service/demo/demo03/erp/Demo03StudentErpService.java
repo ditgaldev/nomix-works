@@ -7,14 +7,14 @@ import com.lxzy.nomix.module.infra.controller.admin.demo.demo03.erp.vo.Demo03Stu
 import com.lxzy.nomix.module.infra.dal.dataobject.demo.demo03.Demo03CourseDO;
 import com.lxzy.nomix.module.infra.dal.dataobject.demo.demo03.Demo03GradeDO;
 import com.lxzy.nomix.module.infra.dal.dataobject.demo.demo03.Demo03StudentDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
 /**
  * 学生 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface Demo03StudentErpService {
 

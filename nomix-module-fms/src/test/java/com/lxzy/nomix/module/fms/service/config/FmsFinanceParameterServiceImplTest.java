@@ -9,10 +9,10 @@ import com.lxzy.nomix.module.fms.dal.mysql.config.FmsFinanceParameterMapper;
 import com.lxzy.nomix.module.fms.enums.ledger.FmsLedgerBalanceModeEnum;
 import com.lxzy.nomix.module.fms.service.config.FmsAccountSetService;
 import com.lxzy.nomix.module.fms.service.config.FmsSubjectService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.Arrays;
 
@@ -36,9 +36,9 @@ public class FmsFinanceParameterServiceImplTest extends BaseDbUnitTest {
     @Resource
     private FmsFinanceParameterMapper financeParameterMapper;
 
-    @MockBean
+    @MockitoBean
     private FmsAccountSetService accountSetService;
-    @MockBean
+    @MockitoBean
     private FmsSubjectService subjectService;
 
     @Test

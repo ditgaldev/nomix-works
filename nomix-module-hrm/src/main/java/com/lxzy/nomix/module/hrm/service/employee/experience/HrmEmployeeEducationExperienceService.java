@@ -2,14 +2,14 @@ package com.lxzy.nomix.module.hrm.service.employee.experience;
 
 import com.lxzy.nomix.module.hrm.controller.admin.employee.vo.educationexperience.HrmEmployeeEducationExperienceSaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.experience.HrmEmployeeEducationExperienceDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
 /**
  * HRM 员工教育经历 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmEmployeeEducationExperienceService {
 

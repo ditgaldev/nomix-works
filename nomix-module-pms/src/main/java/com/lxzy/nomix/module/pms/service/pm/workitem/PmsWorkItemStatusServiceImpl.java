@@ -18,7 +18,7 @@ import com.lxzy.nomix.module.pms.enums.pm.project.PmsProjectTypeEnum;
 import com.lxzy.nomix.module.pms.enums.pm.workitem.PmsWorkItemStatusTypeEnum;
 import com.lxzy.nomix.module.pms.enums.pm.workitem.PmsWorkItemTypeEnum;
 import com.lxzy.nomix.module.pms.service.pm.project.PmsProjectMemberService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
@@ -52,7 +52,7 @@ import static com.lxzy.nomix.module.pms.enums.ErrorCodeConstants.WORK_ITEM_TYPE_
 /**
  * PMS 工作项看板状态 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

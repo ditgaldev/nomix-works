@@ -13,7 +13,7 @@ import com.lxzy.nomix.module.mes.enums.DictTypeConstants;
 /**
  * MES 销售退货单行 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_wm_return_sales_line")
 @KeySequence("mes_wm_return_sales_line_seq")

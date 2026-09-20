@@ -8,11 +8,11 @@ import com.lxzy.nomix.module.im.controller.admin.manager.face.vo.useritem.ImFace
 import com.lxzy.nomix.module.im.dal.dataobject.face.ImFaceUserItemDO;
 import com.lxzy.nomix.module.im.dal.mysql.face.ImFaceUserItemMapper;
 import com.lxzy.nomix.module.im.framework.config.ImProperties;
+import jakarta.annotation.Resource;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -24,7 +24,7 @@ import static com.lxzy.nomix.module.im.enums.ErrorCodeConstants.FACE_USER_ITEM_N
 /**
  * IM 用户私有表情 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

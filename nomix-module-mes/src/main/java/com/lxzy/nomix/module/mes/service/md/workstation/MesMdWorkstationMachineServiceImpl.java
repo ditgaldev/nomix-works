@@ -6,21 +6,20 @@ import com.lxzy.nomix.module.mes.dal.dataobject.md.workstation.MesMdWorkstationD
 import com.lxzy.nomix.module.mes.dal.dataobject.md.workstation.MesMdWorkstationMachineDO;
 import com.lxzy.nomix.module.mes.dal.mysql.md.workstation.MesMdWorkstationMachineMapper;
 import com.lxzy.nomix.module.mes.service.dv.machinery.MesDvMachineryService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.MD_WORKSTATION_MACHINE_EXISTS;
-import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.MD_WORKSTATION_MACHINE_NOT_EXISTS;
+import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 
 /**
  * MES 设备资源 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

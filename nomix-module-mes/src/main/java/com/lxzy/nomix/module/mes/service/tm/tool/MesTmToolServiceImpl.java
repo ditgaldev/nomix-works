@@ -11,11 +11,11 @@ import com.lxzy.nomix.module.mes.enums.tm.MesTmMaintenTypeEnum;
 import com.lxzy.nomix.module.mes.enums.wm.BarcodeBizTypeEnum;
 import com.lxzy.nomix.module.mes.service.wm.barcode.MesWmBarcodeService;
 import com.lxzy.nomix.module.mes.service.wm.batch.MesWmBatchService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -27,7 +27,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 工具台账 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

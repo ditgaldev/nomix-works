@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * FMS 会计科目 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "fms_subject", autoResultMap = true)
 @KeySequence("fms_subject_seq")

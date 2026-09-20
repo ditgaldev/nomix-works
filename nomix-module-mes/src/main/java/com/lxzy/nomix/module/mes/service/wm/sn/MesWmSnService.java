@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * MES SN 码 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesWmSnService {
 

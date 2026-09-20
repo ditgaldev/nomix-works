@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * MES 计划班次 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesCalPlanShiftMapper extends BaseMapperX<MesCalPlanShiftDO> {

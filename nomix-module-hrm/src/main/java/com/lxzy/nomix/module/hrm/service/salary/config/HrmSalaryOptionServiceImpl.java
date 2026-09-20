@@ -9,7 +9,7 @@ import com.lxzy.nomix.module.hrm.dal.mysql.salary.config.HrmSalaryOptionMapper;
 import com.lxzy.nomix.module.hrm.dal.mysql.salary.config.HrmSalaryOptionTemplateMapper;
 import com.mzt.logapi.context.LogRecordContext;
 import com.mzt.logapi.starter.annotation.LogRecord;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -35,7 +35,7 @@ import static com.lxzy.nomix.module.hrm.enums.LogRecordConstants.*;
 /**
  * HRM 工资表薪资项 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

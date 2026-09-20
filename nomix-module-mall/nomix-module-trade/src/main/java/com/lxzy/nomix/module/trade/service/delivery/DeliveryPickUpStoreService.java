@@ -4,7 +4,7 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.trade.controller.admin.delivery.vo.pickup.*;
 import com.lxzy.nomix.module.trade.dal.dataobject.delivery.DeliveryPickUpStoreDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 

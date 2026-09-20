@@ -22,12 +22,12 @@ import com.lxzy.nomix.module.mes.service.wm.itemreceipt.MesWmItemReceiptService;
 import com.lxzy.nomix.module.mes.service.wm.outsourceissue.MesWmOutsourceIssueService;
 import com.lxzy.nomix.module.mes.service.wm.outsourcereceipt.MesWmOutsourceReceiptService;
 import com.lxzy.nomix.module.mes.service.wm.returnvendor.MesWmReturnVendorService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -41,7 +41,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 供应商 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

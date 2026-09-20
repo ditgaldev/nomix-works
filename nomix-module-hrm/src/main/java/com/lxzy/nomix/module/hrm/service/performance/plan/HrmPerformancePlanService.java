@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.hrm.controller.admin.performance.vo.assessment.HrmP
 import com.lxzy.nomix.module.hrm.controller.admin.performance.vo.plan.HrmPerformancePlanPageReqVO;
 import com.lxzy.nomix.module.hrm.controller.admin.performance.vo.plan.HrmPerformancePlanSaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.performance.plan.HrmPerformancePlanDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.Collection;
 import java.util.List;
@@ -16,7 +16,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * HRM 绩效计划 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmPerformancePlanService {
 

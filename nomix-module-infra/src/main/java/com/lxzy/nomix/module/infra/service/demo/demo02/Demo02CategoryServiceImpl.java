@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.infra.controller.admin.demo.demo02.vo.Demo02Categor
 import com.lxzy.nomix.module.infra.controller.admin.demo.demo02.vo.Demo02CategorySaveReqVO;
 import com.lxzy.nomix.module.infra.dal.dataobject.demo.demo02.Demo02CategoryDO;
 import com.lxzy.nomix.module.infra.dal.mysql.demo.demo02.Demo02CategoryMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -18,7 +18,7 @@ import static com.lxzy.nomix.module.infra.enums.ErrorCodeConstants.*;
 /**
  * 示例分类 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

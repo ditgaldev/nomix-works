@@ -5,17 +5,17 @@ import com.lxzy.nomix.module.mes.controller.admin.wm.itemconsume.vo.MesWmItemCon
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.itemconsume.MesWmItemConsumeDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.itemconsume.MesWmItemConsumeLineDO;
 import com.lxzy.nomix.module.mes.dal.mysql.wm.itemconsume.MesWmItemConsumeLineMapper;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
  * MES 物料消耗记录行 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

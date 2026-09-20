@@ -2,16 +2,15 @@ package com.lxzy.nomix.module.mes.controller.admin.wm.packages.vo.line;
 
 import com.lxzy.nomix.framework.common.pojo.PageParam;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
-import javax.validation.constraints.NotNull;
-
 /**
  * MES 装箱明细分页 Request VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Schema(description = "管理后台 - MES 装箱明细分页 Request VO")
 @Data

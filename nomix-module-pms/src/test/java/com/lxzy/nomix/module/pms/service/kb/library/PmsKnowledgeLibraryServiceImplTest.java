@@ -9,10 +9,10 @@ import com.lxzy.nomix.module.pms.dal.mysql.kb.library.PmsKnowledgeLibraryMapper;
 import com.lxzy.nomix.module.pms.enums.kb.content.PmsKnowledgeDocumentStatusEnum;
 import com.lxzy.nomix.module.pms.service.kb.recycle.PmsKnowledgeRecycleService;
 import com.lxzy.nomix.module.system.api.permission.PermissionApi;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -30,7 +30,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link PmsKnowledgeLibraryServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsKnowledgeLibraryServiceImpl.class)
 public class PmsKnowledgeLibraryServiceImplTest extends BaseDbUnitTest {
@@ -41,15 +41,15 @@ public class PmsKnowledgeLibraryServiceImplTest extends BaseDbUnitTest {
     @Resource
     private PmsKnowledgeLibraryMapper libraryMapper;
 
-    @MockBean
+    @MockitoBean
     private PmsKnowledgeLibraryMemberService memberService;
-    @MockBean
+    @MockitoBean
     private PmsKnowledgeGroupService knowledgeGroupService;
-    @MockBean
+    @MockitoBean
     private PmsKnowledgeRecycleService recycleService;
-    @MockBean
+    @MockitoBean
     private PmsKnowledgeLibraryTemplateService libraryTemplateService;
-    @MockBean
+    @MockitoBean
     private PermissionApi permissionApi;
 
     @Test

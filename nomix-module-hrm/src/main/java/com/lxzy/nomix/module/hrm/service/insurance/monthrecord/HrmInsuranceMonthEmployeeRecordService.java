@@ -15,7 +15,7 @@ import java.util.Map;
 /**
  * HRM 员工月度社保 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmInsuranceMonthEmployeeRecordService {
 

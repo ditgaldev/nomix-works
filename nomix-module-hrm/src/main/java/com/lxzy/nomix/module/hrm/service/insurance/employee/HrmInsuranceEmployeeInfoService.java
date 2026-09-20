@@ -2,7 +2,7 @@ package com.lxzy.nomix.module.hrm.service.insurance.employee;
 
 import com.lxzy.nomix.module.hrm.controller.admin.insurance.vo.employeeinfo.HrmInsuranceEmployeeInfoSaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.insurance.employee.HrmInsuranceEmployeeInfoDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.time.LocalDateTime;
 import java.util.Collection;
@@ -14,7 +14,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * HRM 员工参保信息 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmInsuranceEmployeeInfoService {
 

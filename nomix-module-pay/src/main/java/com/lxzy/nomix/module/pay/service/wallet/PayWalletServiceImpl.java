@@ -14,13 +14,13 @@ import com.lxzy.nomix.module.pay.enums.wallet.PayWalletBizTypeEnum;
 import com.lxzy.nomix.module.pay.service.order.PayOrderService;
 import com.lxzy.nomix.module.pay.service.refund.PayRefundService;
 import com.lxzy.nomix.module.pay.service.wallet.bo.WalletTransactionCreateReqBO;
+import jakarta.annotation.Resource;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -63,7 +63,7 @@ public class PayWalletServiceImpl implements PayWalletService {
         PayWalletDO wallet = walletMapper.selectByUserIdAndType(userId, userType);
         if (wallet == null) {
             // 使用双重检查锁，保证钱包创建并发问题
-            // 
+            // https://github.com/ditgaldev/nomix-works/pulls/1475/files
             wallet = lockRedisDAO.lock(userId, UPDATE_TIMEOUT_MILLIS, () -> {
                 PayWalletDO newWallet = walletMapper.selectByUserIdAndType(userId, userType);
                 if (newWallet == null) {

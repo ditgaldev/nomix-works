@@ -17,11 +17,11 @@ import com.lxzy.nomix.module.pay.dal.dataobject.demo.PayDemoOrderDO;
 import com.lxzy.nomix.module.pay.dal.mysql.demo.PayDemoOrderMapper;
 import com.lxzy.nomix.module.pay.enums.order.PayOrderStatusEnum;
 import com.lxzy.nomix.module.pay.enums.refund.PayRefundStatusEnum;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.HashMap;
@@ -37,7 +37,7 @@ import static com.lxzy.nomix.module.pay.enums.ErrorCodeConstants.*;
 /**
  * 示例订单 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

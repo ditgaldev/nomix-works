@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * FMS 结转凭证类型枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

@@ -3,10 +3,10 @@ package com.lxzy.nomix.module.bpm.service.definition;
 import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.model.BpmModelSaveReqVO;
 import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.model.simple.BpmSimpleModelNodeVO;
 import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.model.simple.BpmSimpleModelUpdateReqVO;
+import jakarta.validation.Valid;
 import org.flowable.bpmn.model.BpmnModel;
 import org.flowable.engine.repository.Model;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**

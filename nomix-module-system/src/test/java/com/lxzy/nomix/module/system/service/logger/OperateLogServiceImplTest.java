@@ -8,10 +8,9 @@ import com.lxzy.nomix.module.system.api.logger.dto.OperateLogPageReqDTO;
 import com.lxzy.nomix.module.system.controller.admin.logger.vo.operatelog.OperateLogPageReqVO;
 import com.lxzy.nomix.module.system.dal.dataobject.logger.OperateLogDO;
 import com.lxzy.nomix.module.system.dal.mysql.logger.OperateLogMapper;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-
-import javax.annotation.Resource;
 
 import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
 import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildTime;

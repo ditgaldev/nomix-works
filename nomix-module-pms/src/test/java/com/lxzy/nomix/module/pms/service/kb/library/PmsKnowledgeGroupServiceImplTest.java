@@ -9,10 +9,10 @@ import com.lxzy.nomix.module.pms.dal.dataobject.kb.library.PmsKnowledgeLibraryDO
 import com.lxzy.nomix.module.pms.dal.mysql.kb.library.PmsKnowledgeGroupMapper;
 import com.lxzy.nomix.module.pms.dal.mysql.kb.library.PmsKnowledgeGroupRelationMapper;
 import com.lxzy.nomix.module.pms.enums.kb.library.PmsKnowledgeGroupTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -31,7 +31,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link PmsKnowledgeGroupServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsKnowledgeGroupServiceImpl.class)
 public class PmsKnowledgeGroupServiceImplTest extends BaseDbUnitTest {
@@ -44,7 +44,7 @@ public class PmsKnowledgeGroupServiceImplTest extends BaseDbUnitTest {
     @Resource
     private PmsKnowledgeGroupRelationMapper relationMapper;
 
-    @MockBean
+    @MockitoBean
     private PmsKnowledgeLibraryMemberService libraryMemberService;
 
     @Test

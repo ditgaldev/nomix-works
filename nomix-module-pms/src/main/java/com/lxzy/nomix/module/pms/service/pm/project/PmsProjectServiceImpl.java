@@ -19,7 +19,7 @@ import com.lxzy.nomix.module.pms.service.pm.workitem.PmsWorkItemStatusService;
 import com.lxzy.nomix.module.pms.service.pm.workitem.PmsWorkItemWorkLogService;
 import com.lxzy.nomix.module.system.api.permission.PermissionApi;
 import com.lxzy.nomix.module.system.enums.permission.RoleCodeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -44,7 +44,7 @@ import static com.lxzy.nomix.module.pms.enums.ErrorCodeConstants.PROJECT_STATUS_
 /**
  * PMS 项目 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

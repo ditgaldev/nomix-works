@@ -3,8 +3,8 @@ package com.lxzy.nomix.module.erp.service.product;
 import com.lxzy.nomix.module.erp.controller.admin.product.vo.category.ErpProductCategoryListReqVO;
 import com.lxzy.nomix.module.erp.controller.admin.product.vo.category.ErpProductCategorySaveReqVO;
 import com.lxzy.nomix.module.erp.dal.dataobject.product.ErpProductCategoryDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -14,7 +14,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * ERP 产品分类 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ErpProductCategoryService {
 

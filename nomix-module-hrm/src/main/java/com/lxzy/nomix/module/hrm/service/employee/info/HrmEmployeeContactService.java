@@ -2,14 +2,14 @@ package com.lxzy.nomix.module.hrm.service.employee.info;
 
 import com.lxzy.nomix.module.hrm.controller.admin.employee.vo.contact.HrmEmployeeContactSaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.info.HrmEmployeeContactDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
 /**
  * HRM 员工联系人 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmEmployeeContactService {
 

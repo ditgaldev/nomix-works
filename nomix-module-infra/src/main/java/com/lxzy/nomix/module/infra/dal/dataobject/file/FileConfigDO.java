@@ -23,7 +23,7 @@ import java.lang.reflect.Field;
 /**
  * 文件配置表
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "infra_file_config", autoResultMap = true)
 @KeySequence("infra_file_config_seq") // 用于 Oracle、PostgreSQL、Kingbase、DB2、H2 数据库的主键自增。如果是 MySQL 等数据库，可不写。
@@ -79,7 +79,7 @@ public class FileConfigDO extends BaseDO {
 
         @Override
         public Object parse(String json) {
-            FileClientConfig config = JsonUtils.parseObjectQuietly(json, new TypeReference<FileClientConfig>() {
+            FileClientConfig config = JsonUtils.parseObjectQuietly(json, new TypeReference<>() {
             });
             if (config != null) {
                 return config;

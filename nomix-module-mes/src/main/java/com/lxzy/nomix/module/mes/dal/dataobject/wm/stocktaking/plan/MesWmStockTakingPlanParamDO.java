@@ -11,7 +11,7 @@ import com.lxzy.nomix.module.mes.enums.DictTypeConstants;
 /**
  * MES 盘点方案参数 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_wm_stock_taking_plan_param")
 @KeySequence("mes_wm_stock_taking_plan_param_seq")

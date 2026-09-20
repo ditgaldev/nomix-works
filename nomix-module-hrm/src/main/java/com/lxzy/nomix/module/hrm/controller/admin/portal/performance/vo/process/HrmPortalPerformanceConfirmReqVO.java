@@ -3,8 +3,8 @@ package com.lxzy.nomix.module.hrm.controller.admin.portal.performance.vo.process
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.hrm.enums.performance.assessment.HrmPerformanceConfirmationResultEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 @Schema(description = "管理后台 - HRM 员工端绩效确认 Request VO")

@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 /**
  * HRM 员工个人备忘 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("hrm_employee_personal_note")
 @KeySequence("hrm_employee_personal_note_seq")

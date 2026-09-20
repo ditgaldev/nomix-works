@@ -8,8 +8,8 @@ import com.lxzy.nomix.module.promotion.controller.admin.seckill.vo.activity.Seck
 import com.lxzy.nomix.module.promotion.controller.app.seckill.vo.activity.AppSeckillActivityPageReqVO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.seckill.SeckillActivityDO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.seckill.SeckillProductDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 

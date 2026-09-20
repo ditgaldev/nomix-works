@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.bpm.framework.web.config;
 import com.lxzy.nomix.framework.common.enums.WebFilterOrderEnum;
 import com.lxzy.nomix.framework.swagger.config.NomixSwaggerAutoConfiguration;
 import com.lxzy.nomix.module.bpm.framework.web.core.FlowableWebFilter;
-import org.springdoc.core.GroupedOpenApi;
+import org.springdoc.core.models.GroupedOpenApi;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * bpm 模块的 web 组件的 Configuration
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Configuration(proxyBeanMethods = false)
 public class BpmWebConfiguration {

@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * FMS 币种 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface FmsCurrencyMapper extends BaseMapperX<FmsCurrencyDO> {

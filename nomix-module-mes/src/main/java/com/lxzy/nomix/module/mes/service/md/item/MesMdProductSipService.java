@@ -4,14 +4,14 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.sip.MesMdProductSipPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.sip.MesMdProductSipSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.md.item.MesMdProductSipDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * MES 产品SIP Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesMdProductSipService {
 

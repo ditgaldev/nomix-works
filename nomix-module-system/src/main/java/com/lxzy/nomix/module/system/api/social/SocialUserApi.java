@@ -4,12 +4,12 @@ import com.lxzy.nomix.framework.common.exception.ServiceException;
 import com.lxzy.nomix.module.system.api.social.dto.SocialUserBindReqDTO;
 import com.lxzy.nomix.module.system.api.social.dto.SocialUserRespDTO;
 import com.lxzy.nomix.module.system.api.social.dto.SocialUserUnbindReqDTO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 社交用户的 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface SocialUserApi {
 

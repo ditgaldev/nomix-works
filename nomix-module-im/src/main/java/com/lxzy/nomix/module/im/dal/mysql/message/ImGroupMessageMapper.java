@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * IM 群聊消息 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ImGroupMessageMapper extends BaseMapperX<ImGroupMessageDO> {

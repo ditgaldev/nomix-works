@@ -94,7 +94,7 @@ public class CrmBusinessRespVO {
     @Schema(description = "创建人", example = "1024")
     @ExcelProperty("创建人")
     private String creator;
-    @Schema(description = "创建人名字", example = "Nomix")
+    @Schema(description = "创建人名字", example = "Nomix源码")
     @ExcelProperty("创建人名字")
     private String creatorName;
 

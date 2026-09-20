@@ -6,8 +6,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.iot.controller.admin.device.vo.group.IotDeviceGroupPageReqVO;
 import com.lxzy.nomix.module.iot.controller.admin.device.vo.group.IotDeviceGroupSaveReqVO;
 import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDeviceGroupDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
@@ -16,7 +16,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * IoT 设备分组 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface IotDeviceGroupService {
 

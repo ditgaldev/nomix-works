@@ -7,7 +7,7 @@ import com.lxzy.nomix.module.pms.controller.admin.pm.workitem.vo.comment.PmsWork
 import com.lxzy.nomix.module.pms.dal.dataobject.pm.workitem.PmsWorkItemCommentDO;
 import com.lxzy.nomix.module.pms.dal.dataobject.pm.workitem.PmsWorkItemDO;
 import com.lxzy.nomix.module.pms.dal.mysql.pm.workitem.PmsWorkItemCommentMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -27,7 +27,7 @@ import static com.lxzy.nomix.module.pms.enums.pm.workitem.PmsWorkItemActivityCon
 /**
  * PMS 工作项评论 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

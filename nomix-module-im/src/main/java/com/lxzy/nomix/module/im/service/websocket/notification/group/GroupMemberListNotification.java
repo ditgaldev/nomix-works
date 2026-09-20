@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 群事件成员列表通知基类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public abstract class GroupMemberListNotification extends BaseGroupNotification {

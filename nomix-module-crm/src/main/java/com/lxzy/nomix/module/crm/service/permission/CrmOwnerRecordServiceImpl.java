@@ -8,7 +8,7 @@ import com.lxzy.nomix.module.crm.controller.admin.statistics.vo.customer.CrmStat
 import com.lxzy.nomix.module.crm.dal.dataobject.permission.CrmOwnerRecordDO;
 import com.lxzy.nomix.module.crm.dal.mysql.permission.CrmOwnerRecordMapper;
 import com.lxzy.nomix.module.crm.service.permission.bo.CrmOwnerRecordCreateReqBO;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * CRM 负责人变更记录 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

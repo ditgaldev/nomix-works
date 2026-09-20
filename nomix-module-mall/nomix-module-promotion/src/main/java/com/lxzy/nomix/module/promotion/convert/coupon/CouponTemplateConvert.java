@@ -18,7 +18,7 @@ import java.util.Map;
 /**
  * 优惠劵模板 Convert
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface CouponTemplateConvert {

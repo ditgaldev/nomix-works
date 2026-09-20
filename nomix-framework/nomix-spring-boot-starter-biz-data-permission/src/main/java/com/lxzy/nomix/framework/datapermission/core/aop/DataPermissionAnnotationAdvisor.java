@@ -12,7 +12,7 @@ import org.springframework.aop.support.annotation.AnnotationMatchingPointcut;
 /**
  * {@link com.lxzy.nomix.framework.datapermission.core.annotation.DataPermission} 注解的 Advisor 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @EqualsAndHashCode(callSuper = true)

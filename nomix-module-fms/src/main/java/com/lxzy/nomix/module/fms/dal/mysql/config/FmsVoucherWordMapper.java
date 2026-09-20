@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * FMS 凭证字 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface FmsVoucherWordMapper extends BaseMapperX<FmsVoucherWordDO> {

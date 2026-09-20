@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.member.service.config;
 import com.lxzy.nomix.module.member.controller.admin.config.vo.MemberConfigSaveReqVO;
 import com.lxzy.nomix.module.member.dal.dataobject.config.MemberConfigDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 会员配置 Service 接口

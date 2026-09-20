@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.crm.enums.common.CrmBizTypeEnum;
 import com.lxzy.nomix.module.crm.enums.permission.CrmPermissionLevelEnum;
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * crm 数据权限 Create Req BO

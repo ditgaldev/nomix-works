@@ -3,8 +3,8 @@ package com.lxzy.nomix.module.bpm.service.comment;
 import com.lxzy.nomix.module.bpm.controller.admin.comment.vo.BpmCommentCreateReqVO;
 import com.lxzy.nomix.module.bpm.enums.task.BpmCommentTypeEnum;
 import com.lxzy.nomix.module.bpm.service.task.BpmTaskService;
-import javax.annotation.Resource;
-import javax.validation.Valid;
+import jakarta.annotation.Resource;
+import jakarta.validation.Valid;
 import org.flowable.engine.TaskService;
 import org.flowable.engine.task.Comment;
 import org.flowable.task.api.Task;
@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * 流程评论 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class BpmCommentServiceImpl implements BpmCommentService {

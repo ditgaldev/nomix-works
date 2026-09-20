@@ -3,11 +3,20 @@ package com.lxzy.nomix.module.iot.gateway.service.device.remote;
 import cn.hutool.core.lang.Assert;
 import com.lxzy.nomix.framework.common.pojo.CommonResult;
 import com.lxzy.nomix.module.iot.core.biz.IotDeviceCommonApi;
-import com.lxzy.nomix.module.iot.core.biz.dto.*;
+import com.lxzy.nomix.module.iot.core.biz.dto.IotDeviceAuthReqDTO;
+import com.lxzy.nomix.module.iot.core.biz.dto.IotDeviceGetReqDTO;
+import com.lxzy.nomix.module.iot.core.biz.dto.IotDeviceRespDTO;
+import com.lxzy.nomix.module.iot.core.biz.dto.IotModbusDeviceConfigListReqDTO;
+import com.lxzy.nomix.module.iot.core.biz.dto.IotModbusDeviceConfigRespDTO;
+import com.lxzy.nomix.module.iot.core.biz.dto.IotSubDeviceRegisterFullReqDTO;
 import com.lxzy.nomix.module.iot.core.topic.auth.IotDeviceRegisterReqDTO;
 import com.lxzy.nomix.module.iot.core.topic.auth.IotDeviceRegisterRespDTO;
 import com.lxzy.nomix.module.iot.core.topic.auth.IotSubDeviceRegisterRespDTO;
 import com.lxzy.nomix.module.iot.gateway.config.IotGatewayProperties;
+
+import java.util.List;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.core.ParameterizedTypeReference;
@@ -17,8 +26,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.enums.GlobalErrorCodeConstants.INTERNAL_SERVER_ERROR;
@@ -26,7 +33,7 @@ import static com.lxzy.nomix.framework.common.exception.enums.GlobalErrorCodeCon
 /**
  * Iot 设备信息 Service 实现类：调用远程的 device http 接口，进行设备认证、设备获取等
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Slf4j
@@ -42,34 +49,34 @@ public class IotDeviceApiImpl implements IotDeviceCommonApi {
         IotGatewayProperties.RpcProperties rpc = gatewayProperties.getRpc();
         restTemplate = new RestTemplateBuilder()
                 .rootUri(rpc.getUrl())
-                .setConnectTimeout(rpc.getReadTimeout())
-                .setConnectTimeout(rpc.getConnectTimeout())
+                .readTimeout(rpc.getReadTimeout())
+                .connectTimeout(rpc.getConnectTimeout())
                 .build();
     }
 
     @Override
     public CommonResult<Boolean> authDevice(IotDeviceAuthReqDTO authReqDTO) {
-        return doPost("/rpc-api/iot/device/auth", authReqDTO, new ParameterizedTypeReference<CommonResult<Boolean>>() { });
+        return doPost("/rpc-api/iot/device/auth", authReqDTO, new ParameterizedTypeReference<>() { });
     }
 
     @Override
     public CommonResult<IotDeviceRespDTO> getDevice(IotDeviceGetReqDTO getReqDTO) {
-        return doPost("/rpc-api/iot/device/get", getReqDTO, new ParameterizedTypeReference<CommonResult<IotDeviceRespDTO>>() { });
+        return doPost("/rpc-api/iot/device/get", getReqDTO, new ParameterizedTypeReference<>() { });
     }
 
     @Override
     public CommonResult<List<IotModbusDeviceConfigRespDTO>> getModbusDeviceConfigList(IotModbusDeviceConfigListReqDTO listReqDTO) {
-        return doPost("/rpc-api/iot/modbus/config-list", listReqDTO, new ParameterizedTypeReference<CommonResult<List<IotModbusDeviceConfigRespDTO>>>() { });
+        return doPost("/rpc-api/iot/modbus/config-list", listReqDTO, new ParameterizedTypeReference<>() { });
     }
 
     @Override
     public CommonResult<IotDeviceRegisterRespDTO> registerDevice(IotDeviceRegisterReqDTO reqDTO) {
-        return doPost("/rpc-api/iot/device/register", reqDTO, new ParameterizedTypeReference<CommonResult<IotDeviceRegisterRespDTO>>() { });
+        return doPost("/rpc-api/iot/device/register", reqDTO, new ParameterizedTypeReference<>() { });
     }
 
     @Override
     public CommonResult<List<IotSubDeviceRegisterRespDTO>> registerSubDevices(IotSubDeviceRegisterFullReqDTO reqDTO) {
-        return doPost("/rpc-api/iot/device/register-sub", reqDTO, new ParameterizedTypeReference<CommonResult<List<IotSubDeviceRegisterRespDTO>>>() { });
+        return doPost("/rpc-api/iot/device/register-sub", reqDTO, new ParameterizedTypeReference<>() { });
     }
 
     private <T, R> CommonResult<R> doPost(String url, T body,

@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * WMS 移库单明细 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface WmsMovementOrderDetailMapper extends BaseMapperX<WmsMovementOrderDetailDO> {

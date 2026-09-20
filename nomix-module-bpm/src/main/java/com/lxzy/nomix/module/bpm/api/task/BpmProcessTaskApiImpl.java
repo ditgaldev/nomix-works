@@ -1,10 +1,9 @@
 package com.lxzy.nomix.module.bpm.api.task;
 
 import com.lxzy.nomix.module.bpm.service.task.BpmTaskService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
-
-import javax.annotation.Resource;
 
 /**
  * 流程任务 Api 实现类

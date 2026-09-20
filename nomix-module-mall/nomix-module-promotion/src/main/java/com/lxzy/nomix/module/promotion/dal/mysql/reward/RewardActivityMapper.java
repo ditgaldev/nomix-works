@@ -19,7 +19,7 @@ import java.util.stream.IntStream;
 /**
  * 满减送活动 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface RewardActivityMapper extends BaseMapperX<RewardActivityDO> {

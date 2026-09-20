@@ -17,12 +17,12 @@ import com.lxzy.nomix.module.system.framework.sms.core.client.SmsClient;
 import com.lxzy.nomix.module.system.framework.sms.core.client.dto.SmsTemplateRespDTO;
 import com.lxzy.nomix.module.system.framework.sms.core.enums.SmsTemplateAuditStatusEnum;
 import com.google.common.annotations.VisibleForTesting;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;

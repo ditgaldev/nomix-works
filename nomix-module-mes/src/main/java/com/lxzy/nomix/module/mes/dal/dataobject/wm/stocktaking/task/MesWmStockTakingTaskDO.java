@@ -15,7 +15,7 @@ import com.lxzy.nomix.module.mes.enums.DictTypeConstants;
 /**
  * MES 盘点任务 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_wm_stock_taking_task")
 @KeySequence("mes_wm_stock_taking_task_seq")

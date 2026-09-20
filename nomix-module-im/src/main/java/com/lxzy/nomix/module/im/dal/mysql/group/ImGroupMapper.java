@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * IM 群 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ImGroupMapper extends BaseMapperX<ImGroupDO> {

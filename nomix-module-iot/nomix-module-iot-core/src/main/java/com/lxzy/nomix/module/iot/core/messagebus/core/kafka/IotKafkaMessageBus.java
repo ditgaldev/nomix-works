@@ -4,6 +4,7 @@ import cn.hutool.core.util.TypeUtil;
 import com.lxzy.nomix.framework.common.util.json.JsonUtils;
 import com.lxzy.nomix.module.iot.core.messagebus.core.IotMessageBus;
 import com.lxzy.nomix.module.iot.core.messagebus.core.IotMessageSubscriber;
+import jakarta.annotation.PreDestroy;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
@@ -18,7 +19,6 @@ import org.springframework.kafka.listener.AcknowledgingMessageListener;
 import org.springframework.kafka.listener.ConcurrentMessageListenerContainer;
 import org.springframework.kafka.listener.ContainerProperties;
 
-import javax.annotation.PreDestroy;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,7 +29,7 @@ import java.util.concurrent.ExecutionException;
 /**
  * 基于 Kafka 的 {@link IotMessageBus} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class IotKafkaMessageBus implements IotMessageBus {

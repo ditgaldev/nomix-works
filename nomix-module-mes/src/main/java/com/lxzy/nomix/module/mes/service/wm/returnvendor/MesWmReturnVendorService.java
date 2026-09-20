@@ -4,8 +4,7 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.wm.returnvendor.vo.MesWmReturnVendorPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.wm.returnvendor.vo.MesWmReturnVendorSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.returnvendor.MesWmReturnVendorDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * MES 供应商退货单 Service 接口

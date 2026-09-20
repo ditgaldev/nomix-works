@@ -16,7 +16,7 @@ import lombok.ToString;
 /**
  * HRM 员工工资卡 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("hrm_employee_salary_card")
 @KeySequence("hrm_employee_salary_card_seq")

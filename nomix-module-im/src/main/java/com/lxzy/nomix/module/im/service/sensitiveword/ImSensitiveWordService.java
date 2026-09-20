@@ -4,14 +4,14 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.im.controller.admin.manager.sensitiveword.vo.ImSensitiveWordPageReqVO;
 import com.lxzy.nomix.module.im.controller.admin.manager.sensitiveword.vo.ImSensitiveWordSaveReqVO;
 import com.lxzy.nomix.module.im.dal.dataobject.sensitiveword.ImSensitiveWordDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * IM 敏感词 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ImSensitiveWordService {
 

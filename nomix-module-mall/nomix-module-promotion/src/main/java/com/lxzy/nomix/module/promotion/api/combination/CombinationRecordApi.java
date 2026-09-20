@@ -4,8 +4,7 @@ import com.lxzy.nomix.module.promotion.api.combination.dto.CombinationRecordCrea
 import com.lxzy.nomix.module.promotion.api.combination.dto.CombinationRecordCreateRespDTO;
 import com.lxzy.nomix.module.promotion.api.combination.dto.CombinationRecordRespDTO;
 import com.lxzy.nomix.module.promotion.api.combination.dto.CombinationValidateJoinRespDTO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 拼团记录 API 接口

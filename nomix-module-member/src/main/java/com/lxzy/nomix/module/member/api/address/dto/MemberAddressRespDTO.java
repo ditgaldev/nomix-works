@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * 用户收件地址 Response DTO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class MemberAddressRespDTO {

@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * MES 产品BOM Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesMdProductBomMapper extends BaseMapperX<MesMdProductBomDO> {

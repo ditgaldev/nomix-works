@@ -15,9 +15,9 @@ Nomix 是一个前后端分离的企业管理系统，包含 Java 后端、PC �
 | `nomix-server` | 后端应用启动与模块装配 | 是 |
 | `nomix-module-system` | 用户、部门、权限、租户、数据字典等系统功能 | 是 |
 | `nomix-module-infra` | 文件、任务、日志、代码生成、接口文档等基础设施 | 是 |
-| `nomix-module-member` | 会员、会员等级、积分与用户中心 | 是 |
-| `nomix-module-pay` | 商户、支付、退款与支付通知 | 是 |
-| `nomix-module-mall` | 商品、营销、交易与商城统计 | 是 |
+| `nomix-module-member` | 会员、会员等级、积分与用户中心 | 否 |
+| `nomix-module-pay` | 商户、支付、退款与支付通知 | 否 |
+| `nomix-module-mall` | 商品、营销、交易与商城统计 | 否 |
 | `nomix-module-ai` | 大模型聊天、绘图、音乐、写作和知识库 | 否 |
 | `nomix-module-bpm` | Flowable 工作流、流程表单、审批和任务中心 | 否 |
 | `nomix-module-report` | 报表、打印、图形和数据大屏 | 否 |
@@ -58,6 +58,7 @@ Nomix 是一个前后端分离的企业管理系统，包含 Java 后端、PC �
 ## 环境
 
 - JDK 17
+- Spring Boot 3.5.15
 - Maven 3.6+
 - MySQL 8
 - Redis 6+

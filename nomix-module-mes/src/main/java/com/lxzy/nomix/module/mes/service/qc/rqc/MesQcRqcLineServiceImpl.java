@@ -12,10 +12,10 @@ import com.lxzy.nomix.module.mes.dal.mysql.qc.rqc.MesQcRqcLineMapper;
 import com.lxzy.nomix.module.mes.enums.qc.MesQcDefectLevelEnum;
 import com.lxzy.nomix.module.mes.service.qc.indicator.MesQcIndicatorService;
 import com.lxzy.nomix.module.mes.service.qc.template.MesQcTemplateIndicatorService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -24,13 +24,12 @@ import java.util.Objects;
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.convertList;
 import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.convertSet;
-import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.QC_DEFECT_RECORD_LEVEL_UNKNOWN;
-import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.QC_RQC_LINE_NOT_EXISTS;
+import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 
 /**
  * MES 退货检验行 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

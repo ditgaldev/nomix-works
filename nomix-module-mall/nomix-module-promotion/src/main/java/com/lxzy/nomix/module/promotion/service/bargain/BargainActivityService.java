@@ -6,8 +6,8 @@ import com.lxzy.nomix.module.promotion.controller.admin.bargain.vo.activity.Barg
 import com.lxzy.nomix.module.promotion.controller.admin.bargain.vo.activity.BargainActivityPageReqVO;
 import com.lxzy.nomix.module.promotion.controller.admin.bargain.vo.activity.BargainActivityUpdateReqVO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.bargain.BargainActivityDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 import java.util.Set;
 

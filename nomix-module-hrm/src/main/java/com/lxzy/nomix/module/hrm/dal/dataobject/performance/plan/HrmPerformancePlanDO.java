@@ -37,7 +37,7 @@ import java.util.List;
 /**
  * HRM 绩效考核计划 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "hrm_performance_plan", autoResultMap = true)
 @KeySequence("hrm_performance_plan_seq")

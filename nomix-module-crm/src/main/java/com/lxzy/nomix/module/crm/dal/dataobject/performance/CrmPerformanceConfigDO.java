@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 /**
  * CRM 业绩目标 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("crm_performance_config")
 @KeySequence("crm_performance_config_seq")

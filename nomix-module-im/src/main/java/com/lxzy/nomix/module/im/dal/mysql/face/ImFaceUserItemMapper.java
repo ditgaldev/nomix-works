@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * IM 用户私有表情 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ImFaceUserItemMapper extends BaseMapperX<ImFaceUserItemDO> {

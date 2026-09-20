@@ -10,7 +10,7 @@ import com.lxzy.nomix.module.mes.enums.DictTypeConstants;
 /**
  * MES 条码清单 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_wm_barcode")
 @KeySequence("mes_wm_barcode_seq")

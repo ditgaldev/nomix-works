@@ -7,7 +7,7 @@ import com.lxzy.nomix.module.member.dal.mysql.level.MemberLevelRecordMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * 会员等级记录 Service 实现类

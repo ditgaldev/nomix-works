@@ -5,12 +5,12 @@ import com.lxzy.nomix.module.system.api.sms.dto.code.SmsCodeValidateReqDTO;
 import com.lxzy.nomix.module.system.api.sms.dto.code.SmsCodeSendReqDTO;
 import com.lxzy.nomix.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 短信验证码 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface SmsCodeApi {
 

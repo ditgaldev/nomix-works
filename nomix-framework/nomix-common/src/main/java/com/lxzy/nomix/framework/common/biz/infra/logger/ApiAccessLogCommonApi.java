@@ -1,14 +1,13 @@
 package com.lxzy.nomix.framework.common.biz.infra.logger;
 
 import com.lxzy.nomix.framework.common.biz.infra.logger.dto.ApiAccessLogCreateReqDTO;
+import jakarta.validation.Valid;
 import org.springframework.scheduling.annotation.Async;
-
-import javax.validation.Valid;
 
 /**
  * API 访问日志的 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ApiAccessLogCommonApi {
 

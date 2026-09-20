@@ -3,15 +3,15 @@ package com.lxzy.nomix.module.product.service.category;
 import com.lxzy.nomix.module.product.controller.admin.category.vo.ProductCategoryListReqVO;
 import com.lxzy.nomix.module.product.controller.admin.category.vo.ProductCategorySaveReqVO;
 import com.lxzy.nomix.module.product.dal.dataobject.category.ProductCategoryDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * 商品分类 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ProductCategoryService {
 

@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * MES 保养维护类型枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

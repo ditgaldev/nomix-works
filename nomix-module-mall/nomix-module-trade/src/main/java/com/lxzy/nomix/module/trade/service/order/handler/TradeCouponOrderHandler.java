@@ -7,17 +7,17 @@ import com.lxzy.nomix.module.trade.dal.dataobject.order.TradeOrderDO;
 import com.lxzy.nomix.module.trade.dal.dataobject.order.TradeOrderItemDO;
 import com.lxzy.nomix.module.trade.service.order.TradeOrderQueryService;
 import com.lxzy.nomix.module.trade.service.order.TradeOrderUpdateService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
  * 优惠劵的 {@link TradeOrderHandler} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 @Slf4j

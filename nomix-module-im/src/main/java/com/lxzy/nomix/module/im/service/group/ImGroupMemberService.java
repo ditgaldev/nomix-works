@@ -2,8 +2,8 @@ package com.lxzy.nomix.module.im.service.group;
 
 import com.lxzy.nomix.module.im.controller.admin.group.vo.member.ImGroupMemberUpdateReqVO;
 import com.lxzy.nomix.module.im.dal.dataobject.group.ImGroupMemberDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * 群成员 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ImGroupMemberService {
 

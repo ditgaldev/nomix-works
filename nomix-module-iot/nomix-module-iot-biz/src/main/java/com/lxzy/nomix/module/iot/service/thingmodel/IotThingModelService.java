@@ -5,8 +5,8 @@ import com.lxzy.nomix.module.iot.controller.admin.thingmodel.vo.IotThingModelLis
 import com.lxzy.nomix.module.iot.controller.admin.thingmodel.vo.IotThingModelPageReqVO;
 import com.lxzy.nomix.module.iot.controller.admin.thingmodel.vo.IotThingModelSaveReqVO;
 import com.lxzy.nomix.module.iot.dal.dataobject.thingmodel.IotThingModelDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
@@ -14,7 +14,7 @@ import java.util.Set;
 /**
  * IoT 产品物模型 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface IotThingModelService {
 

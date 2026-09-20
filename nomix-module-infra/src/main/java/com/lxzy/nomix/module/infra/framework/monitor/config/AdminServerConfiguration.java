@@ -1,6 +1,7 @@
 package com.lxzy.nomix.module.infra.framework.monitor.config;
 
 import de.codecentric.boot.admin.server.config.EnableAdminServer;
+import jakarta.servlet.DispatcherType;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.context.annotation.Bean;
@@ -17,8 +18,6 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
-import javax.servlet.DispatcherType;
-
 /**
  * Spring Boot Admin Server 配置
  *
@@ -26,7 +25,7 @@ import javax.servlet.DispatcherType;
  * 安全配置独立于 {@link com.lxzy.nomix.framework.security.config.NomixWebSecurityConfigurerAdapter}，
  * 使用 HTTP Basic 认证保护 Admin Server 端点，不影响现有的 Token 认证机制
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Configuration(proxyBeanMethods = false)
 @EnableAdminServer

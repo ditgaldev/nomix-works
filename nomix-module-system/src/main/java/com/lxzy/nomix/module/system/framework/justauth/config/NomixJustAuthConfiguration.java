@@ -5,6 +5,7 @@ import com.xkcoding.justauth.autoconfigure.JustAuthProperties;
 import com.xkcoding.justauth.support.cache.RedisStateCache;
 import me.zhyd.oauth.cache.AuthStateCache;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -12,12 +13,13 @@ import org.springframework.data.redis.core.RedisTemplate;
 /**
  * JustAuth 配置类 TODO Nomix：等 justauth 1.4.1 版本发布！！！
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Configuration(proxyBeanMethods = false)
+@EnableConfigurationProperties({JustAuthProperties.class})
 public class NomixJustAuthConfiguration {
 
-    @Bean(name = "authRequestFactory2") // TODO @Nomix：等 justauth1.4.1 发布，可以去掉
+    @Bean
     @ConditionalOnProperty(
             prefix = "justauth",
             value = {"enabled"},

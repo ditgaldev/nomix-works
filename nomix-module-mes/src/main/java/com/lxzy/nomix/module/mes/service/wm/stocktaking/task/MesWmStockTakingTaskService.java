@@ -4,13 +4,12 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.wm.stocktaking.task.vo.MesWmStockTakingTaskPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.wm.stocktaking.task.vo.MesWmStockTakingTaskSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.stocktaking.task.MesWmStockTakingTaskDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * MES 盘点任务 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesWmStockTakingTaskService {
 

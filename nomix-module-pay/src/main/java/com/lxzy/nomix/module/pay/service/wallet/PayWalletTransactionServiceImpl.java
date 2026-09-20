@@ -12,11 +12,11 @@ import com.lxzy.nomix.module.pay.dal.mysql.wallet.PayWalletTransactionMapper;
 import com.lxzy.nomix.module.pay.dal.redis.no.PayNoRedisDAO;
 import com.lxzy.nomix.module.pay.enums.wallet.PayWalletBizTypeEnum;
 import com.lxzy.nomix.module.pay.service.wallet.bo.WalletTransactionCreateReqBO;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 
 import static com.lxzy.nomix.module.pay.controller.app.wallet.vo.transaction.AppPayWalletTransactionPageReqVO.TYPE_EXPENSE;

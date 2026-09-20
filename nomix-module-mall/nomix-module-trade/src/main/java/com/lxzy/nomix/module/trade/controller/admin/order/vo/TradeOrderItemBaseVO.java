@@ -26,13 +26,13 @@ public class TradeOrderItemBaseVO {
     @Schema(description = "商品 SPU 编号", requiredMode = Schema.RequiredMode.REQUIRED, example = "1")
     private Long spuId;
 
-    @Schema(description = "商品 SPU 名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "Nomix")
+    @Schema(description = "商品 SPU 名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "Nomix源码")
     private String spuName;
 
     @Schema(description = "商品 SKU 编号", requiredMode = Schema.RequiredMode.REQUIRED, example = "1")
     private Long skuId;
 
-    @Schema(description = "商品图片", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "商品图片", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn/1.png")
     private String picUrl;
 
     @Schema(description = "购买数量", requiredMode = Schema.RequiredMode.REQUIRED, example = "1")

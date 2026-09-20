@@ -12,8 +12,8 @@ import com.lxzy.nomix.module.crm.dal.dataobject.business.CrmBusinessStatusDO;
 import com.lxzy.nomix.module.crm.dal.dataobject.contact.CrmContactDO;
 import com.lxzy.nomix.module.crm.dal.dataobject.customer.CrmCustomerDO;
 import com.lxzy.nomix.module.crm.enums.business.CrmBusinessEndStatusEnum;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;

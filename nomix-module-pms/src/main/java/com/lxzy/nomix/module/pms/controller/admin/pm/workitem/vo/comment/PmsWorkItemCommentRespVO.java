@@ -19,7 +19,7 @@ public class PmsWorkItemCommentRespVO {
     @Schema(description = "评论人用户编号", requiredMode = Schema.RequiredMode.REQUIRED, example = "1024")
     private Long userId;
 
-    @Schema(description = "评论人姓名", example = "Nomix")
+    @Schema(description = "评论人姓名", example = "Nomix源码")
     private String userName;
 
     @Schema(description = "主评论编号", example = "1024")

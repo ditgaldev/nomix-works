@@ -12,7 +12,7 @@ import java.util.Set;
 /**
  * HRM 招聘候选人状态枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

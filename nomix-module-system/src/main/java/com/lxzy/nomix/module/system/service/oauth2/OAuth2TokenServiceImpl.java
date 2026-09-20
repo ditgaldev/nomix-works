@@ -23,11 +23,11 @@ import com.lxzy.nomix.module.system.dal.mysql.oauth2.OAuth2AccessTokenMapper;
 import com.lxzy.nomix.module.system.dal.mysql.oauth2.OAuth2RefreshTokenMapper;
 import com.lxzy.nomix.module.system.dal.redis.oauth2.OAuth2AccessTokenRedisDAO;
 import com.lxzy.nomix.module.system.service.user.AdminUserService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.List;
@@ -39,7 +39,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * OAuth2.0 Token Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class OAuth2TokenServiceImpl implements OAuth2TokenService {

@@ -5,7 +5,7 @@ import com.lxzy.nomix.framework.common.exception.ErrorCode;
 /**
  * FMS 错误码常量
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ErrorCodeConstants {
 

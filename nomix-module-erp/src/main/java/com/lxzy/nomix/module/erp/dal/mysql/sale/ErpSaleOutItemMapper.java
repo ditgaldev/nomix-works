@@ -17,7 +17,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * ERP 销售出库项 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ErpSaleOutItemMapper extends BaseMapperX<ErpSaleOutItemDO> {

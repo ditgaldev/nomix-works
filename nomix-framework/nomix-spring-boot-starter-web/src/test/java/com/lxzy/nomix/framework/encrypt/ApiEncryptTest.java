@@ -14,7 +14,7 @@ import java.util.Objects;
 /**
  * 各种 API 加解密的测试类：不是单测，而是方便大家生成密钥、加密、解密等操作。
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @SuppressWarnings("ConstantValue")
 public class ApiEncryptTest {
@@ -57,7 +57,7 @@ public class ApiEncryptTest {
 
     @Test
     public void testEncrypt_aes() {
-        String key = "REPLACE_WITH_32_CHARACTER_KEY_00";
+        String key = "52549111389893486934626385991395";
         String body = "{\n" +
                 "  \"username\": \"admin\",\n" +
                 "  \"password\": \"admin123\",\n" +

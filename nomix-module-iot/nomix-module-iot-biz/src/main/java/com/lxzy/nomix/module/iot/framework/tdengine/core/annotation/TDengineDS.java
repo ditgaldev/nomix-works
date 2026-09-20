@@ -7,7 +7,7 @@ import java.lang.annotation.*;
 /**
  * TDEngine 数据源
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)

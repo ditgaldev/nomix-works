@@ -4,7 +4,7 @@ import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.hrm.controller.admin.employee.vo.quitinfo.HrmEmployeeQuitInfoSaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.employment.HrmEmployeeQuitInfoDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.employee.employment.HrmEmployeeQuitInfoMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
@@ -26,7 +26,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 /**
  * {@link HrmEmployeeQuitInfoServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmEmployeeQuitInfoServiceImpl.class)
 public class HrmEmployeeQuitInfoServiceImplTest extends BaseDbUnitTest {

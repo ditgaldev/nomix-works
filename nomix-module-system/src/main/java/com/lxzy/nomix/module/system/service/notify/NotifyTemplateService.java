@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.system.controller.admin.notify.vo.template.NotifyTemplatePageReqVO;
 import com.lxzy.nomix.module.system.controller.admin.notify.vo.template.NotifyTemplateSaveReqVO;
 import com.lxzy.nomix.module.system.dal.dataobject.notify.NotifyTemplateDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 import java.util.Map;
 

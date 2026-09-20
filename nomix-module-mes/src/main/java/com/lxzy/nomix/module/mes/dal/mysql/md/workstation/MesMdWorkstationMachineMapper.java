@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * MES 设备资源 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesMdWorkstationMachineMapper extends BaseMapperX<MesMdWorkstationMachineDO> {

@@ -5,15 +5,15 @@ import com.lxzy.nomix.module.erp.controller.admin.finance.vo.payment.ErpFinanceP
 import com.lxzy.nomix.module.erp.controller.admin.finance.vo.payment.ErpFinancePaymentSaveReqVO;
 import com.lxzy.nomix.module.erp.dal.dataobject.finance.ErpFinancePaymentDO;
 import com.lxzy.nomix.module.erp.dal.dataobject.finance.ErpFinancePaymentItemDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * ERP 付款单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ErpFinancePaymentService {
 

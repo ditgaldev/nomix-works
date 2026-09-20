@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * FMS 会计科目 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface FmsSubjectMapper extends BaseMapperX<FmsSubjectDO> {

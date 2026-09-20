@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.infra.framework.file.core.client;
 /**
  * 文件客户端
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface FileClient {
 

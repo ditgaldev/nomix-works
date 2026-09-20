@@ -1,16 +1,16 @@
 package com.lxzy.nomix.module.mes.controller.admin.wm.returnsales.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 
 /**
  * 管理后台 - MES 销售退货单新增/修改 Request VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Schema(description = "管理后台 - MES 销售退货单新增/修改 Request VO")
 @Data

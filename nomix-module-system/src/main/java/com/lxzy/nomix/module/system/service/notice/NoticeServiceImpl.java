@@ -7,9 +7,9 @@ import com.lxzy.nomix.module.system.controller.admin.notice.vo.NoticeSaveReqVO;
 import com.lxzy.nomix.module.system.dal.dataobject.notice.NoticeDO;
 import com.lxzy.nomix.module.system.dal.mysql.notice.NoticeMapper;
 import com.google.common.annotations.VisibleForTesting;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -18,7 +18,7 @@ import static com.lxzy.nomix.module.system.enums.ErrorCodeConstants.NOTICE_NOT_F
 /**
  * 通知公告 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class NoticeServiceImpl implements NoticeService {

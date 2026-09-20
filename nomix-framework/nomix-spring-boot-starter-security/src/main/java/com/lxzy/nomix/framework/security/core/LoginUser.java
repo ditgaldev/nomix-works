@@ -13,7 +13,7 @@ import java.util.Map;
 /**
  * 登录用户信息
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class LoginUser {

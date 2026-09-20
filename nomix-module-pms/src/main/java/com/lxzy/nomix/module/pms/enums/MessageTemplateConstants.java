@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.pms.enums;
 /**
  * PMS 消息模板常量
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MessageTemplateConstants {
 

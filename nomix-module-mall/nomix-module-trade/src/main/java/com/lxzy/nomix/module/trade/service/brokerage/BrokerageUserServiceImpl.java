@@ -28,11 +28,11 @@ import com.lxzy.nomix.module.trade.enums.brokerage.BrokerageRecordBizTypeEnum;
 import com.lxzy.nomix.module.trade.enums.brokerage.BrokerageRecordStatusEnum;
 import com.lxzy.nomix.module.trade.service.config.TradeConfigService;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.*;
 

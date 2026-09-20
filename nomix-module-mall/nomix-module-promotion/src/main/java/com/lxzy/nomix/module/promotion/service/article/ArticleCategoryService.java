@@ -6,7 +6,7 @@ import com.lxzy.nomix.module.promotion.controller.admin.article.vo.category.Arti
 import com.lxzy.nomix.module.promotion.controller.admin.article.vo.category.ArticleCategoryUpdateReqVO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.article.ArticleCategoryDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.List;
 
 /**

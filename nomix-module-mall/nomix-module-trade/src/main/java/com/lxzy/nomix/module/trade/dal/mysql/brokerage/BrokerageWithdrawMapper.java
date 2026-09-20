@@ -18,7 +18,7 @@ import java.util.Map;
 /**
  * 佣金提现 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface BrokerageWithdrawMapper extends BaseMapperX<BrokerageWithdrawDO> {

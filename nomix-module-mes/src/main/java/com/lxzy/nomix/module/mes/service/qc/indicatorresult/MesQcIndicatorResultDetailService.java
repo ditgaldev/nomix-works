@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * MES 检验结果明细 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesQcIndicatorResultDetailService {
 

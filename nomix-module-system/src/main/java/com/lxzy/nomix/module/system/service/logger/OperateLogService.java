@@ -9,7 +9,7 @@ import com.lxzy.nomix.module.system.dal.dataobject.logger.OperateLogDO;
 /**
  * 操作日志 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface OperateLogService {
 

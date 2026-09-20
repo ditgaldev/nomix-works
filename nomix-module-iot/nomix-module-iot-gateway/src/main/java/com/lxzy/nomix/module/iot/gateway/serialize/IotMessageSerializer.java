@@ -8,7 +8,7 @@ import com.lxzy.nomix.module.iot.core.mq.message.IotDeviceMessage;
  *
  * 用于序列化和反序列化设备消息
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface IotMessageSerializer {
 

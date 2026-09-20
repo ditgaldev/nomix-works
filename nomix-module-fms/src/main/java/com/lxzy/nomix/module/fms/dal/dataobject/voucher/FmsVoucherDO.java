@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * FMS 凭证 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "fms_voucher", autoResultMap = true)
 @KeySequence("fms_voucher_seq")

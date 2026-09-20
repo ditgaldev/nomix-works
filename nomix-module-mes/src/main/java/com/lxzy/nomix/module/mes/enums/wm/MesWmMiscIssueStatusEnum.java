@@ -12,7 +12,7 @@ import java.util.Arrays;
  *
  * 对应字典 mes_wm_misc_issue_status
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * MES 过程检验单行 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesQcIpqcLineMapper extends BaseMapperX<MesQcIpqcLineDO> {

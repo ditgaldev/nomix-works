@@ -18,7 +18,7 @@ import com.lxzy.nomix.module.crm.service.contract.CrmContractService;
 import com.lxzy.nomix.module.crm.service.customer.CrmCustomerService;
 import com.lxzy.nomix.module.crm.service.followup.bo.CrmFollowUpCreateReqBO;
 import com.lxzy.nomix.module.crm.service.permission.CrmPermissionService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
@@ -33,7 +33,7 @@ import static com.lxzy.nomix.module.crm.enums.ErrorCodeConstants.FOLLOW_UP_RECOR
 /**
  * 跟进记录 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

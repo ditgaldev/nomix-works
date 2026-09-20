@@ -1,9 +1,8 @@
 package com.lxzy.nomix.module.iot.core.topic.auth;
 
 import com.lxzy.nomix.module.iot.core.enums.IotDeviceMessageMethodEnum;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
-
-import javax.validation.constraints.NotEmpty;
 
 /**
  * IoT 设备动态注册 Request DTO
@@ -12,7 +11,7 @@ import javax.validation.constraints.NotEmpty;
  * <p>
  * 直连设备/网关的一型一密动态注册：使用 productSecret 验证，返回 deviceSecret
  *
- * @author Nomix
+ * @author Nomix源码
  * @see <a href="https://help.aliyun.com/zh/iot/user-guide/unique-certificate-per-product-verification">阿里云 - 一型一密</a>
  */
 @Data

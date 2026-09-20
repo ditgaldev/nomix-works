@@ -3,9 +3,9 @@ package com.lxzy.nomix.module.hrm.controller.admin.employee.vo.file;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.hrm.enums.employee.info.HrmEmployeeFileTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 import java.util.List;

@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.hrm.controller.admin.salary.vo.group.HrmSalaryGroup
 import com.lxzy.nomix.module.hrm.controller.admin.salary.vo.group.HrmSalaryGroupSaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.info.HrmEmployeeDO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.salary.config.HrmSalaryGroupDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -15,7 +15,7 @@ import java.util.Map;
 /**
  * HRM 薪资组 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmSalaryGroupService {
 

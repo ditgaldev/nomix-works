@@ -17,7 +17,7 @@ import com.lxzy.nomix.module.hrm.service.insurance.employee.HrmInsuranceEmployee
 import com.lxzy.nomix.module.hrm.service.insurance.monthrecord.HrmInsuranceMonthEmployeeRecordService;
 import com.mzt.logapi.context.LogRecordContext;
 import com.mzt.logapi.starter.annotation.LogRecord;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -53,7 +53,7 @@ import static com.lxzy.nomix.module.hrm.enums.LogRecordConstants.HRM_INSURANCE_S
 /**
  * HRM 社保方案 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

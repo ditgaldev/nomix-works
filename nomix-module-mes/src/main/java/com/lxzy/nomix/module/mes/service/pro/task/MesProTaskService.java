@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.pro.task.vo.MesProTaskPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.pro.task.vo.MesProTaskSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.pro.task.MesProTaskDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.List;
@@ -16,7 +16,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * MES 生产任务 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesProTaskService {
 

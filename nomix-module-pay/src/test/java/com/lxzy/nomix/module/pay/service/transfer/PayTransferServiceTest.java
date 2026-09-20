@@ -11,11 +11,10 @@ import com.lxzy.nomix.module.pay.framework.pay.core.client.dto.transfer.PayTrans
 import com.lxzy.nomix.module.pay.service.app.PayAppService;
 import com.lxzy.nomix.module.pay.service.channel.PayChannelService;
 import com.lxzy.nomix.module.pay.service.notify.PayNotifyService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
-
-import javax.annotation.Resource;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import static com.lxzy.nomix.framework.test.core.util.RandomUtils.randomPojo;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -23,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * {@link PayTransferServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import({PayTransferServiceImpl.class, PayNoRedisDAO.class})
 public class PayTransferServiceTest extends BaseDbAndRedisUnitTest {
@@ -34,13 +33,13 @@ public class PayTransferServiceTest extends BaseDbAndRedisUnitTest {
     @Resource
     private PayTransferMapper transferMapper;
 
-    @MockBean
+    @MockitoBean
     private PayProperties payProperties;
-    @MockBean
+    @MockitoBean
     private PayAppService appService;
-    @MockBean
+    @MockitoBean
     private PayChannelService channelService;
-    @MockBean
+    @MockitoBean
     private PayNotifyService notifyService;
 
     @Test

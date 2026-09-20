@@ -12,11 +12,11 @@ import com.lxzy.nomix.module.mes.dal.dataobject.wm.salesnotice.MesWmSalesNoticeL
 import com.lxzy.nomix.module.mes.dal.mysql.wm.salesnotice.MesWmSalesNoticeLineMapper;
 import com.lxzy.nomix.module.mes.service.md.item.MesMdItemService;
 import com.lxzy.nomix.module.mes.service.wm.batch.MesWmBatchService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;

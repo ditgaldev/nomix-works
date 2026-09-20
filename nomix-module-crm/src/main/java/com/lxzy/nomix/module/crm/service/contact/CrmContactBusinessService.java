@@ -3,14 +3,14 @@ package com.lxzy.nomix.module.crm.service.contact;
 import com.lxzy.nomix.module.crm.controller.admin.contact.vo.CrmContactBusiness2ReqVO;
 import com.lxzy.nomix.module.crm.controller.admin.contact.vo.CrmContactBusinessReqVO;
 import com.lxzy.nomix.module.crm.dal.dataobject.contact.CrmContactBusinessDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * CRM 联系人与商机的关联 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface CrmContactBusinessService {
 

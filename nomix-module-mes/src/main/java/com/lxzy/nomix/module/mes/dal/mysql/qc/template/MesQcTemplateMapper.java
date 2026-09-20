@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * MES 质检方案 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesQcTemplateMapper extends BaseMapperX<MesQcTemplateDO> {

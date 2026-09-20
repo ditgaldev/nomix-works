@@ -14,7 +14,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.fi
 /**
  * FMS 多栏账 Excel 构建工具
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class FmsLedgerMultiColumnExcelHelper {
 

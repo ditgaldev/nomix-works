@@ -18,7 +18,7 @@ import java.time.LocalDateTime;
  * - 接收方调 agree / refuse 处理（更新 handleResult / handleTime / handleContent）
  * - 申请通过后，displayName / addSource 同步写入 {@link ImFriendDO}
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("im_friend_request")
 @KeySequence("im_friend_request_seq")

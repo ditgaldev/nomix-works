@@ -24,7 +24,7 @@ public class PmsIterationRespVO {
     @Schema(description = "迭代状态", requiredMode = Schema.RequiredMode.REQUIRED, example = "1")
     private Integer status;
 
-    @Schema(description = "负责人姓名", example = "Nomix")
+    @Schema(description = "负责人姓名", example = "Nomix源码")
     private String ownerUserName;
 
     @Schema(description = "开始时间")

@@ -11,7 +11,7 @@ import com.lxzy.nomix.module.pms.dal.dataobject.kb.library.PmsKnowledgeGroupRela
 import com.lxzy.nomix.module.pms.dal.mysql.kb.library.PmsKnowledgeGroupMapper;
 import com.lxzy.nomix.module.pms.dal.mysql.kb.library.PmsKnowledgeGroupRelationMapper;
 import com.lxzy.nomix.module.pms.enums.kb.library.PmsKnowledgeGroupTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -38,7 +38,7 @@ import static com.lxzy.nomix.module.pms.enums.ErrorCodeConstants.KNOWLEDGE_GROUP
 /**
  * PMS 知识库分组 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

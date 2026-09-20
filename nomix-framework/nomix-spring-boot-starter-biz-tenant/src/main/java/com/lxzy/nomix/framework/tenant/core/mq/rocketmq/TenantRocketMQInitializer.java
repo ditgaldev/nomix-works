@@ -12,7 +12,7 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 /**
  * 多租户的 RocketMQ 初始化器
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class TenantRocketMQInitializer implements BeanPostProcessor {
 

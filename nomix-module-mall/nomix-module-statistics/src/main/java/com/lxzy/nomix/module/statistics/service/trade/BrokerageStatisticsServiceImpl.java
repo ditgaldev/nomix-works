@@ -7,7 +7,7 @@ import com.lxzy.nomix.module.trade.enums.brokerage.BrokerageWithdrawStatusEnum;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.time.LocalDateTime;
 
 /**

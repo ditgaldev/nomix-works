@@ -8,16 +8,16 @@ import com.lxzy.nomix.module.mes.enums.md.autocode.MesMdAutoCodeCycleMethodEnum;
 import com.lxzy.nomix.module.mes.enums.md.autocode.MesMdAutoCodePartTypeEnum;
 import com.lxzy.nomix.module.mes.service.md.autocode.strategy.MesMdAutoCodeContext;
 import com.lxzy.nomix.module.mes.service.md.autocode.strategy.MesMdAutoCodePartStrategy;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
 /**
  * MES 编码规则 - 流水号策略
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 public class MesMdAutoCodeSerialNumberPartStrategy implements MesMdAutoCodePartStrategy {

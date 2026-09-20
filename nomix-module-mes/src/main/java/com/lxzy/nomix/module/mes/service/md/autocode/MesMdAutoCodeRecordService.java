@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.mes.service.md.autocode;
 /**
  * MES 编码生成记录 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesMdAutoCodeRecordService {
 

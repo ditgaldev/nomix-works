@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * IM 频道素材内容类型枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

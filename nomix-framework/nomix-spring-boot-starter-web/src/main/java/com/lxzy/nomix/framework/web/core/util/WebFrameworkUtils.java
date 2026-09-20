@@ -5,17 +5,16 @@ import com.lxzy.nomix.framework.common.enums.TerminalEnum;
 import com.lxzy.nomix.framework.common.enums.UserTypeEnum;
 import com.lxzy.nomix.framework.common.pojo.CommonResult;
 import com.lxzy.nomix.framework.web.config.WebProperties;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import javax.servlet.ServletRequest;
-import javax.servlet.http.HttpServletRequest;
-
 /**
  * 专属于 web 包的工具类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class WebFrameworkUtils {
 

@@ -23,7 +23,7 @@ import static com.lxzy.nomix.module.pay.enums.PayChannelEnum.*;
 /**
  * 支付客户端的工厂实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class PayClientFactoryImpl implements PayClientFactory {

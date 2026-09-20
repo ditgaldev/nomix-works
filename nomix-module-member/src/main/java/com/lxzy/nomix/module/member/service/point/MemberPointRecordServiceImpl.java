@@ -10,6 +10,7 @@ import com.lxzy.nomix.module.member.dal.dataobject.user.MemberUserDO;
 import com.lxzy.nomix.module.member.dal.mysql.point.MemberPointRecordMapper;
 import com.lxzy.nomix.module.member.enums.point.MemberPointBizTypeEnum;
 import com.lxzy.nomix.module.member.service.user.MemberUserService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
@@ -17,7 +18,6 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Set;
 

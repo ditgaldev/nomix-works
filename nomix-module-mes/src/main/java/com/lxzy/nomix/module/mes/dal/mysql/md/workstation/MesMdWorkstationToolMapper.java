@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * MES 工装夹具资源 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesMdWorkstationToolMapper extends BaseMapperX<MesMdWorkstationToolDO> {

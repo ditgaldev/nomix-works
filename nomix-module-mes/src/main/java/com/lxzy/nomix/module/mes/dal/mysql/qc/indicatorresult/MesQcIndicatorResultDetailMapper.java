@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * MES 检验结果明细记录 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesQcIndicatorResultDetailMapper extends BaseMapperX<MesQcIndicatorResultDetailDO> {

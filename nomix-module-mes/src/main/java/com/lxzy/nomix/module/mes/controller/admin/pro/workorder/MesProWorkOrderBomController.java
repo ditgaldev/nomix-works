@@ -23,15 +23,14 @@ import com.lxzy.nomix.module.mes.service.pro.workorder.MesProWorkOrderBomService
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.annotation.Resource;
+import jakarta.validation.Valid;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
-import javax.validation.Valid;
 import java.math.BigDecimal;
 import java.util.*;
-
 import static com.lxzy.nomix.framework.common.pojo.CommonResult.success;
 import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.convertMultiMap;
 import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.convertSet;

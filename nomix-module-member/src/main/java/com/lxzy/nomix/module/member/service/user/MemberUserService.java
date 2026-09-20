@@ -8,14 +8,14 @@ import com.lxzy.nomix.module.member.controller.admin.user.vo.MemberUserUpdateReq
 import com.lxzy.nomix.module.member.controller.app.user.vo.*;
 import com.lxzy.nomix.module.member.dal.dataobject.user.MemberUserDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * 会员用户 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MemberUserService {
 

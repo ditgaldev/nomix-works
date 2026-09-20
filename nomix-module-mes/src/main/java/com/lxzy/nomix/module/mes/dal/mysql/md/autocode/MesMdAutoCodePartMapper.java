@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * MES 编码规则组成 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesMdAutoCodePartMapper extends BaseMapperX<MesMdAutoCodePartDO> {

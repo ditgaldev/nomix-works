@@ -7,13 +7,13 @@ import com.lxzy.nomix.module.trade.service.aftersale.bo.AfterSaleLogCreateReqBO;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 
 /**
  * 交易售后日志 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

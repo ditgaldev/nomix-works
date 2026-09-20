@@ -7,12 +7,12 @@ import com.lxzy.nomix.module.pay.dal.dataobject.order.PayOrderDO;
 import com.lxzy.nomix.module.pay.service.order.PayOrderService;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * 支付单 API 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class PayOrderApiImpl implements PayOrderApi {

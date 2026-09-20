@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 /**
  * ERP 销售统计 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ErpSaleStatisticsMapper {

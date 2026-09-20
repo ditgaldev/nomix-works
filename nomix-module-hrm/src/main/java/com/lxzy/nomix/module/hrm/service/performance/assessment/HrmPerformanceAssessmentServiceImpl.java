@@ -32,7 +32,7 @@ import com.lxzy.nomix.module.hrm.enums.performance.plan.HrmPerformanceQuotaSetti
 import com.lxzy.nomix.module.hrm.enums.performance.assessment.HrmPerformanceResultAuditStatusEnum;
 import com.lxzy.nomix.module.hrm.enums.performance.plan.HrmPerformanceStageTypeEnum;
 import com.lxzy.nomix.module.hrm.service.employee.info.HrmEmployeeService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -64,7 +64,7 @@ import static com.lxzy.nomix.module.hrm.enums.ErrorCodeConstants.PERFORMANCE_SCO
 /**
  * HRM 员工绩效考核 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

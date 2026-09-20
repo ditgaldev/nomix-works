@@ -18,7 +18,7 @@ import java.time.LocalDateTime;
  * <p>
  * 一通通话一行；状态机 CREATED → RUNNING → ENDED；和明细表 {@link ImRtcParticipantDO} 通过 {@link #room} 关联
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("im_rtc_call")
 @KeySequence("im_rtc_call_seq") // 用于 Oracle、PostgreSQL、Kingbase、DB2、H2 数据库的主键自增；MySQL 等数据库可不写

@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.system.controller.admin.mail.vo.template.MailTemplatePageReqVO;
 import com.lxzy.nomix.module.system.controller.admin.mail.vo.template.MailTemplateSaveReqVO;
 import com.lxzy.nomix.module.system.dal.dataobject.mail.MailTemplateDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 import java.util.Map;
 

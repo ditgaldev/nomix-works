@@ -20,7 +20,7 @@ import static com.lxzy.nomix.module.iot.gateway.enums.ErrorCodeConstants.DEVICE_
 /**
  * IoT 网关 CoAP 协议的【认证】处理器
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class IotCoapAuthHandler extends IotCoapAbstractHandler {

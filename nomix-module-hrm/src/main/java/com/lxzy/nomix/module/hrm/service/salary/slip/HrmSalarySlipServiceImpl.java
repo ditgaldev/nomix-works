@@ -16,7 +16,7 @@ import com.lxzy.nomix.module.system.api.notify.NotifyMessageSendApi;
 import com.lxzy.nomix.module.system.api.notify.dto.NotifySendSingleToUserReqDTO;
 import com.lxzy.nomix.module.hrm.enums.salary.slip.HrmSalarySlipReadStatusEnum;
 import com.lxzy.nomix.module.hrm.enums.salary.slip.HrmSalarySlipTemplateOptionTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -44,7 +44,7 @@ import static com.lxzy.nomix.module.hrm.enums.ErrorCodeConstants.SALARY_SLIP_ALR
 /**
  * HRM 工资条 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

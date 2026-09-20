@@ -2,7 +2,7 @@ package com.lxzy.nomix.module.pms.service.pm.project;
 
 import com.lxzy.nomix.module.pms.dal.dataobject.pm.project.PmsProjectFavoriteDO;
 import com.lxzy.nomix.module.pms.dal.mysql.pm.project.PmsProjectFavoriteMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * PMS 项目收藏 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

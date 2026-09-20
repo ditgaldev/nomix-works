@@ -5,11 +5,11 @@ import com.lxzy.nomix.module.erp.controller.admin.product.vo.category.ErpProduct
 import com.lxzy.nomix.module.erp.controller.admin.product.vo.category.ErpProductCategorySaveReqVO;
 import com.lxzy.nomix.module.erp.dal.dataobject.product.ErpProductCategoryDO;
 import com.lxzy.nomix.module.erp.dal.mysql.product.ErpProductCategoryMapper;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
@@ -20,7 +20,7 @@ import static com.lxzy.nomix.module.erp.enums.ErrorCodeConstants.*;
 /**
  * ERP 产品分类 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

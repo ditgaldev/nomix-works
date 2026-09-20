@@ -1,14 +1,13 @@
 package com.lxzy.nomix.framework.common.biz.system.logger;
 
 import com.lxzy.nomix.framework.common.biz.system.logger.dto.OperateLogCreateReqDTO;
+import jakarta.validation.Valid;
 import org.springframework.scheduling.annotation.Async;
-
-import javax.validation.Valid;
 
 /**
  * 操作日志 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface OperateLogCommonApi {
 

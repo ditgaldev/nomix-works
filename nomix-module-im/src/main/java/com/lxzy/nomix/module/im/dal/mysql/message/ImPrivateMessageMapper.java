@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * IM 私聊消息 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ImPrivateMessageMapper extends BaseMapperX<ImPrivateMessageDO> {

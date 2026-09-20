@@ -16,7 +16,7 @@ import java.util.List;
  * 注意：用户端「加好友」走 {@link ImFriendRequestService#applyFriend} 申请-审批流程，
  * 不再开放直接 add 接口；只有 {@link #becomeFriends} 是内部入口（被 agree 同意 / 管理员 import 触发）。
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ImFriendService {
 

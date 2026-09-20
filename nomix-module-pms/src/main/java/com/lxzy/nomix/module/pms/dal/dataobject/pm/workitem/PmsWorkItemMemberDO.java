@@ -13,7 +13,7 @@ import lombok.ToString;
 /**
  * PMS 工作项参与人 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("pms_work_item_member")
 @KeySequence("pms_work_item_member_seq")

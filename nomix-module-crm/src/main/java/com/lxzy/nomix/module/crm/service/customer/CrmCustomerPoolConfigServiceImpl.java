@@ -6,10 +6,10 @@ import com.lxzy.nomix.module.crm.dal.dataobject.customer.CrmCustomerPoolConfigDO
 import com.lxzy.nomix.module.crm.dal.mysql.customer.CrmCustomerPoolConfigMapper;
 import com.mzt.logapi.context.LogRecordContext;
 import com.mzt.logapi.starter.annotation.LogRecord;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Objects;
 
 import static com.lxzy.nomix.module.crm.enums.LogRecordConstants.*;

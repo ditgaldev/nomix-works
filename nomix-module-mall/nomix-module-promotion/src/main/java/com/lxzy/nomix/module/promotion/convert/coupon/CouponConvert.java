@@ -18,7 +18,7 @@ import java.util.Collection;
 /**
  * 优惠劵 Convert
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface CouponConvert {

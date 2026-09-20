@@ -4,8 +4,7 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.wm.transfer.vo.MesWmTransferPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.wm.transfer.vo.MesWmTransferSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.transfer.MesWmTransferDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * MES 转移单 Service 接口

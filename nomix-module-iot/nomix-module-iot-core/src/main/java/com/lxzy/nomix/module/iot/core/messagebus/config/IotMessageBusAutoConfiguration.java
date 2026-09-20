@@ -38,7 +38,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * IoT 消息总线自动配置
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @AutoConfiguration
 @EnableConfigurationProperties(IotMessageBusProperties.class)
@@ -139,7 +139,7 @@ public class IotMessageBusAutoConfiguration {
 
         private List<AbstractRedisStreamMessageListener<?>> getListeners(IotRedisMessageBus messageBus) {
             return convertList(messageBus.getSubscribers(), subscriber ->
-                    new AbstractRedisStreamMessageListener<AbstractRedisStreamMessage>(subscriber.getTopic(), subscriber.getGroup()) {
+                    new AbstractRedisStreamMessageListener<>(subscriber.getTopic(), subscriber.getGroup()) {
 
                         @Override
                         public void onMessage(AbstractRedisStreamMessage message) {

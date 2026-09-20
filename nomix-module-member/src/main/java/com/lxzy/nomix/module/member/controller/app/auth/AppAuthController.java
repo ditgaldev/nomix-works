@@ -18,10 +18,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
-import javax.annotation.security.PermitAll;
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
+import jakarta.annotation.Resource;
+import jakarta.annotation.security.PermitAll;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 
 import static com.lxzy.nomix.framework.common.pojo.CommonResult.success;
 import static com.lxzy.nomix.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;

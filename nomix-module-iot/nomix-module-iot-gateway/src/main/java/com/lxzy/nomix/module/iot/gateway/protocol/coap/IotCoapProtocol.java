@@ -35,7 +35,7 @@ import java.util.concurrent.TimeUnit;
  * 4. 属性上报：POST /topic/sys/{productKey}/{deviceName}/thing/property/post
  * 5. 事件上报：POST /topic/sys/{productKey}/{deviceName}/thing/event/post
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class IotCoapProtocol implements IotProtocol {

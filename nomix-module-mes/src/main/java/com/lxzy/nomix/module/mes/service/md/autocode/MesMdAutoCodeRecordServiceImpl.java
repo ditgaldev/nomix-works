@@ -11,12 +11,12 @@ import com.lxzy.nomix.module.mes.dal.mysql.md.autocode.MesMdAutoCodeRecordMapper
 import com.lxzy.nomix.module.mes.enums.md.autocode.MesMdAutoCodePaddedMethodEnum;
 import com.lxzy.nomix.module.mes.service.md.autocode.strategy.MesMdAutoCodeContext;
 import com.lxzy.nomix.module.mes.service.md.autocode.strategy.MesMdAutoCodePartStrategy;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
@@ -26,7 +26,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 编码生成记录 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

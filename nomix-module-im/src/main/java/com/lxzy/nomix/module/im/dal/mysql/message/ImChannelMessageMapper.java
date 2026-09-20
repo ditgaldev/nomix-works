@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * IM 频道消息 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ImChannelMessageMapper extends BaseMapperX<ImChannelMessageDO> {

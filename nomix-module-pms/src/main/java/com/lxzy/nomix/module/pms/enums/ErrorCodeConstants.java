@@ -7,7 +7,7 @@ import com.lxzy.nomix.framework.common.exception.ErrorCode;
  *
  * PMS 系统，使用 1-053-000-000 段
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ErrorCodeConstants {
 

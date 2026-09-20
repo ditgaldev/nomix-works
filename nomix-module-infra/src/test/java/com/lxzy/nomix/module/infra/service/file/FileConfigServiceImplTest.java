@@ -15,13 +15,13 @@ import com.lxzy.nomix.module.infra.framework.file.core.client.FileClientFactory;
 import com.lxzy.nomix.module.infra.framework.file.core.client.local.LocalFileClient;
 import com.lxzy.nomix.module.infra.framework.file.core.client.local.LocalFileClientConfig;
 import com.lxzy.nomix.module.infra.framework.file.core.enums.FileStorageEnum;
+import jakarta.annotation.Resource;
+import jakarta.validation.Validator;
 import lombok.Data;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
-import javax.validation.Validator;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Map;
@@ -42,7 +42,7 @@ import static org.mockito.Mockito.*;
 /**
  * {@link FileConfigServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(FileConfigServiceImpl.class)
 public class FileConfigServiceImplTest extends BaseDbUnitTest {
@@ -53,16 +53,16 @@ public class FileConfigServiceImplTest extends BaseDbUnitTest {
     @Resource
     private FileConfigMapper fileConfigMapper;
 
-    @MockBean
+    @MockitoBean
     private Validator validator;
-    @MockBean
+    @MockitoBean
     private FileClientFactory fileClientFactory;
 
     @Test
     public void testCreateFileConfig_success() {
         // 准备参数
         Map<String, Object> config = MapUtil.<String, Object>builder().put("basePath", "/nomix")
-                .put("domain", "").build();
+                .put("domain", "https://www.nomix.cn").build();
         FileConfigSaveReqVO reqVO = randomPojo(FileConfigSaveReqVO.class,
                 o -> o.setStorage(FileStorageEnum.LOCAL.getStorage()).setConfig(config))
                 .setId(null); // 避免 id 被赋值
@@ -76,7 +76,7 @@ public class FileConfigServiceImplTest extends BaseDbUnitTest {
         assertPojoEquals(reqVO, fileConfig, "id", "config");
         assertFalse(fileConfig.getMaster());
         assertEquals("/nomix", ((LocalFileClientConfig) fileConfig.getConfig()).getBasePath());
-        assertEquals("", ((LocalFileClientConfig) fileConfig.getConfig()).getDomain());
+        assertEquals("https://www.nomix.cn", ((LocalFileClientConfig) fileConfig.getConfig()).getDomain());
         // 验证 cache
         assertNull(fileConfigService.getClientCache().getIfPresent(fileConfigId));
     }
@@ -85,14 +85,14 @@ public class FileConfigServiceImplTest extends BaseDbUnitTest {
     public void testUpdateFileConfig_success() {
         // mock 数据
         FileConfigDO dbFileConfig = randomPojo(FileConfigDO.class, o -> o.setStorage(FileStorageEnum.LOCAL.getStorage())
-                .setConfig(new LocalFileClientConfig().setBasePath("/nomix").setDomain("")));
+                .setConfig(new LocalFileClientConfig().setBasePath("/nomix").setDomain("https://www.nomix.cn")));
         fileConfigMapper.insert(dbFileConfig);// @Sql: 先插入出一条存在的数据
         // 准备参数
         FileConfigSaveReqVO reqVO = randomPojo(FileConfigSaveReqVO.class, o -> {
             o.setId(dbFileConfig.getId()); // 设置更新的 ID
             o.setStorage(FileStorageEnum.LOCAL.getStorage());
             Map<String, Object> config = MapUtil.<String, Object>builder().put("basePath", "/nomix2")
-                    .put("domain", "").build();
+                    .put("domain", "https://doc.nomix.cn").build();
             o.setConfig(config);
         });
 
@@ -102,7 +102,7 @@ public class FileConfigServiceImplTest extends BaseDbUnitTest {
         FileConfigDO fileConfig = fileConfigMapper.selectById(reqVO.getId()); // 获取最新的
         assertPojoEquals(reqVO, fileConfig, "config");
         assertEquals("/nomix2", ((LocalFileClientConfig) fileConfig.getConfig()).getBasePath());
-        assertEquals("", ((LocalFileClientConfig) fileConfig.getConfig()).getDomain());
+        assertEquals("https://doc.nomix.cn", ((LocalFileClientConfig) fileConfig.getConfig()).getDomain());
         // 验证 cache
         assertNull(fileConfigService.getClientCache().getIfPresent(fileConfig.getId()));
     }
@@ -179,7 +179,7 @@ public class FileConfigServiceImplTest extends BaseDbUnitTest {
     @Test
     public void testGetFileConfigPage() {
         // mock 数据
-        FileConfigDO dbFileConfig = randomFileConfigDO().setName("Nomix")
+        FileConfigDO dbFileConfig = randomFileConfigDO().setName("Nomix源码")
                 .setStorage(FileStorageEnum.LOCAL.getStorage());
         dbFileConfig.setCreateTime(LocalDateTimeUtil.parse("2020-01-23", DatePattern.NORM_DATE_PATTERN));// 等会查询到
         fileConfigMapper.insert(dbFileConfig);
@@ -214,10 +214,10 @@ public class FileConfigServiceImplTest extends BaseDbUnitTest {
         // mock 获得 Client
         FileClient fileClient = mock(FileClient.class);
         when(fileClientFactory.getFileClient(eq(id))).thenReturn(fileClient);
-        when(fileClient.upload(any(), any(), any())).thenReturn("");
+        when(fileClient.upload(any(), any(), any())).thenReturn("https://www.nomix.cn");
 
         // 调用，并断言
-        assertEquals("", fileConfigService.testFileConfig(id));
+        assertEquals("https://www.nomix.cn", fileConfigService.testFileConfig(id));
     }
 
     @Test

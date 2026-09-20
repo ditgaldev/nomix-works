@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.system.api.logger.dto.LoginLogCreateReqDTO;
 import com.lxzy.nomix.module.system.controller.admin.logger.vo.loginlog.LoginLogPageReqVO;
 import com.lxzy.nomix.module.system.dal.dataobject.logger.LoginLogDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 登录日志 Service 接口

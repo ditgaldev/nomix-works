@@ -9,12 +9,12 @@ import com.lxzy.nomix.module.iot.controller.admin.rule.vo.data.sink.IotDataSinkS
 import com.lxzy.nomix.module.iot.dal.dataobject.rule.IotDataSinkDO;
 import com.lxzy.nomix.module.iot.dal.mysql.rule.IotDataSinkMapper;
 import com.lxzy.nomix.module.iot.dal.redis.RedisKeyConstants;
+import jakarta.annotation.Resource;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 

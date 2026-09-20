@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * IM 好友关系 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ImFriendMapper extends BaseMapperX<ImFriendDO> {

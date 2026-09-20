@@ -11,10 +11,10 @@ import com.lxzy.nomix.module.iot.service.device.IotDeviceService;
 import com.lxzy.nomix.module.iot.service.device.property.IotDevicePropertyService;
 import com.lxzy.nomix.module.iot.service.rule.scene.IotSceneRuleTimeHelper;
 import com.lxzy.nomix.module.iot.service.rule.scene.matcher.IotSceneRuleMatcherHelper;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.Map;
 
 /**

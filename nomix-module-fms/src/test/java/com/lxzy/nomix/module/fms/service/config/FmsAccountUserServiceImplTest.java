@@ -7,10 +7,10 @@ import com.lxzy.nomix.module.fms.dal.dataobject.config.FmsAccountUserDO;
 import com.lxzy.nomix.module.fms.dal.mysql.config.FmsAccountUserMapper;
 import com.lxzy.nomix.module.fms.enums.config.FmsAccountUserLevelEnum;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -33,9 +33,9 @@ public class FmsAccountUserServiceImplTest extends BaseDbUnitTest {
     @Resource
     private FmsAccountUserMapper accountUserMapper;
 
-    @MockBean
+    @MockitoBean
     private FmsAccountSetService accountSetService;
-    @MockBean
+    @MockitoBean
     private AdminUserApi adminUserApi;
 
     @Test

@@ -19,11 +19,11 @@ import com.lxzy.nomix.module.mes.service.md.autocode.MesMdAutoCodeRecordService;
 import com.lxzy.nomix.module.mes.service.md.item.MesMdItemBatchConfigService;
 import com.lxzy.nomix.module.mes.service.md.item.MesMdItemService;
 import com.lxzy.nomix.module.mes.service.wm.barcode.MesWmBarcodeService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -34,7 +34,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link MesWmBatchServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(MesWmBatchServiceImpl.class)
 public class MesWmBatchServiceImplTest extends BaseDbUnitTest {
@@ -58,13 +58,13 @@ public class MesWmBatchServiceImplTest extends BaseDbUnitTest {
     @Resource
     private MesWmProductProduceDetailMapper produceDetailMapper;
 
-    @MockBean
+    @MockitoBean
     private MesMdItemService itemService;
-    @MockBean
+    @MockitoBean
     private MesMdItemBatchConfigService itemBatchConfigService;
-    @MockBean
+    @MockitoBean
     private MesMdAutoCodeRecordService autoCodeRecordService;
-    @MockBean
+    @MockitoBean
     private MesWmBarcodeService barcodeService;
 
     // ==================== 向前追溯 ====================

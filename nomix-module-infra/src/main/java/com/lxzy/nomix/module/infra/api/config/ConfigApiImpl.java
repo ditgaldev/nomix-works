@@ -2,15 +2,14 @@ package com.lxzy.nomix.module.infra.api.config;
 
 import com.lxzy.nomix.module.infra.dal.dataobject.config.ConfigDO;
 import com.lxzy.nomix.module.infra.service.config.ConfigService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
-
-import javax.annotation.Resource;
 
 /**
  * 参数配置 API 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -1,15 +1,14 @@
 package com.lxzy.nomix.module.iot.dal.redis.device;
 
 import com.lxzy.nomix.module.iot.dal.redis.RedisKeyConstants;
+import jakarta.annotation.Resource;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Repository;
-
-import javax.annotation.Resource;
 
 /**
  * 设备关联的网关 serverId 的 Redis DAO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Repository
 public class DeviceServerIdRedisDAO {

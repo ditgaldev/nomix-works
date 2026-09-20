@@ -14,7 +14,7 @@ import com.lxzy.nomix.module.pms.dal.dataobject.kb.library.PmsKnowledgeLibraryTe
 import com.lxzy.nomix.module.pms.dal.mysql.kb.library.PmsKnowledgeLibraryTemplateMapper;
 import com.lxzy.nomix.module.pms.enums.kb.content.PmsKnowledgeDocumentTypeEnum;
 import com.lxzy.nomix.module.pms.service.kb.content.PmsKnowledgeDocumentService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -31,7 +31,7 @@ import static com.lxzy.nomix.module.pms.enums.ErrorCodeConstants.KNOWLEDGE_LIBRA
 /**
  * PMS 知识库模板 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -3,13 +3,13 @@ package com.lxzy.nomix.module.mes.service.pro.process;
 import com.lxzy.nomix.module.mes.controller.admin.pro.process.vo.content.MesProProcessContentSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.pro.process.MesProProcessContentDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.List;
 
 /**
  * MES 生产工序内容 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesProProcessContentService {
 

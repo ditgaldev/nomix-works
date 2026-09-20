@@ -4,8 +4,7 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.iot.controller.admin.ota.vo.task.IotOtaTaskCreateReqVO;
 import com.lxzy.nomix.module.iot.controller.admin.ota.vo.task.IotOtaTaskPageReqVO;
 import com.lxzy.nomix.module.iot.dal.dataobject.ota.IotOtaTaskDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * IoT OTA 升级任务 Service 接口

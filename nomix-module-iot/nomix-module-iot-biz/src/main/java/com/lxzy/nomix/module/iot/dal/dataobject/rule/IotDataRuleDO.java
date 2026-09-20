@@ -11,12 +11,12 @@ import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.NotEmpty;
 import java.util.List;
 
 /**
@@ -24,7 +24,7 @@ import java.util.List;
  *
  * 监听 {@link SourceConfig} 数据源，转发到 {@link IotDataSinkDO} 数据目的
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "iot_data_rule", autoResultMap = true)
 @KeySequence("iot_data_rule_seq") // 用于 Oracle、PostgreSQL、Kingbase、DB2、H2 数据库的主键自增。如果是 MySQL 等数据库，可不写。

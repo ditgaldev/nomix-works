@@ -16,10 +16,10 @@ import com.lxzy.nomix.module.statistics.service.pay.PayWalletStatisticsService;
 import com.lxzy.nomix.module.statistics.service.pay.bo.RechargeSummaryRespBO;
 import com.lxzy.nomix.module.statistics.service.trade.TradeOrderStatisticsService;
 import com.lxzy.nomix.module.statistics.service.trade.TradeStatisticsService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.List;

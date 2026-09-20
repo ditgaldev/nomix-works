@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.pay.api.order;
 import com.lxzy.nomix.module.pay.api.order.dto.PayOrderCreateReqDTO;
 import com.lxzy.nomix.module.pay.api.order.dto.PayOrderRespDTO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 支付单 API 接口

@@ -5,9 +5,9 @@ import com.lxzy.nomix.module.crm.enums.receivable.CrmReceivableReturnTypeEnum;
 import com.lxzy.nomix.module.crm.framework.operatelog.core.*;
 import com.mzt.logapi.starter.annotation.DiffLogField;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 

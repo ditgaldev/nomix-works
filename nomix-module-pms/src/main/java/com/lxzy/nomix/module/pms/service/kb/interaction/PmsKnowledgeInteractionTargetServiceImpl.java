@@ -12,7 +12,7 @@ import com.lxzy.nomix.module.pms.service.kb.content.PmsKnowledgeContentPermissio
 import com.lxzy.nomix.module.pms.service.kb.content.PmsKnowledgeDocumentService;
 import com.lxzy.nomix.module.pms.service.kb.library.PmsKnowledgeLibraryMemberService;
 import com.lxzy.nomix.module.pms.service.kb.library.PmsKnowledgeLibraryService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
@@ -32,7 +32,7 @@ import static com.lxzy.nomix.module.pms.enums.ErrorCodeConstants.KNOWLEDGE_INTER
 /**
  * PMS 知识互动对象 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

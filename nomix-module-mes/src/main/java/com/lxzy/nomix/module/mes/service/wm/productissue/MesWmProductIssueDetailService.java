@@ -2,8 +2,8 @@ package com.lxzy.nomix.module.mes.service.wm.productissue;
 
 import com.lxzy.nomix.module.mes.controller.admin.wm.productissue.vo.detail.MesWmProductIssueDetailSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.productissue.MesWmProductIssueDetailDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**

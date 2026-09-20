@@ -16,7 +16,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -35,7 +35,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
 * {@link DiscountActivityServiceImpl} 的单元测试类
 *
-* @author Nomix
+* @author Nomix源码
 */
 @Disabled // TODO Nomix：后续 fix 补充的单测
 @Import(DiscountActivityServiceImpl.class)

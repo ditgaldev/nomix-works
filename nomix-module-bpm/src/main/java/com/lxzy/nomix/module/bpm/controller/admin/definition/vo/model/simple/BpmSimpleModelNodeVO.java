@@ -7,13 +7,13 @@ import com.lxzy.nomix.module.bpm.framework.flowable.core.enums.BpmTaskCandidateS
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import org.flowable.bpmn.model.IOParameter;
 import org.hibernate.validator.constraints.URL;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -35,7 +35,7 @@ public class BpmSimpleModelNodeVO {
     @Schema(description = "模型节点名称", example = "领导审批")
     private String name;
 
-    @Schema(description = "节点展示内容", example = "指定成员: Nomix")
+    @Schema(description = "节点展示内容", example = "指定成员: Nomix源码")
     private String showText;
 
     @Schema(description = "子节点")

@@ -9,7 +9,7 @@ import lombok.*;
 /**
  * MES 工艺路线 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_pro_route")
 @KeySequence("mes_pro_route_seq")

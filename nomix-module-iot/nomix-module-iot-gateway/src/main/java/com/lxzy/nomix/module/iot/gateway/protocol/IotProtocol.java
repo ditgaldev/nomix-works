@@ -7,7 +7,7 @@ import com.lxzy.nomix.module.iot.core.enums.IotProtocolTypeEnum;
  *
  * 定义传输层协议的生命周期管理
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface IotProtocol {
 

@@ -2,7 +2,7 @@ package com.lxzy.nomix.module.hrm.service.employee.employment;
 
 import com.lxzy.nomix.module.hrm.controller.admin.employee.vo.quitinfo.HrmEmployeeQuitInfoSaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.employment.HrmEmployeeQuitInfoDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.time.LocalDateTime;
 import java.util.Collection;
@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * HRM 员工离职信息 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmEmployeeQuitInfoService {
 

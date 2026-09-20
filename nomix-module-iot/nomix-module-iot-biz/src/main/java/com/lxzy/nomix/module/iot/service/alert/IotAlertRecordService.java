@@ -6,16 +6,16 @@ import com.lxzy.nomix.module.iot.core.mq.message.IotDeviceMessage;
 import com.lxzy.nomix.module.iot.dal.dataobject.alert.IotAlertConfigDO;
 import com.lxzy.nomix.module.iot.dal.dataobject.alert.IotAlertRecordDO;
 import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDeviceDO;
+import jakarta.annotation.Nullable;
+import jakarta.validation.constraints.NotNull;
 
-import javax.annotation.Nullable;
-import javax.validation.constraints.NotNull;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * IoT 告警记录 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface IotAlertRecordService {
 

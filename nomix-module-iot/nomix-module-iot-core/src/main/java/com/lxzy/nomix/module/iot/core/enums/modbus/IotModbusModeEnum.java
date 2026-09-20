@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * IoT Modbus 工作模式枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @RequiredArgsConstructor

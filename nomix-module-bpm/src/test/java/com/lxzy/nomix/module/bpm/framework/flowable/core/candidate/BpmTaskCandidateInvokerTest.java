@@ -41,7 +41,7 @@ import static org.mockito.Mockito.*;
 /**
  * {@link BpmTaskCandidateInvoker} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class BpmTaskCandidateInvokerTest extends BaseMockitoUnitTest {
 

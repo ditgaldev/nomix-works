@@ -16,7 +16,7 @@ import lombok.ToString;
 /**
  * HRM 员工材料附件 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("hrm_employee_file")
 @KeySequence("hrm_employee_file_seq")

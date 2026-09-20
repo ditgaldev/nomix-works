@@ -43,7 +43,7 @@ public class PmsWorkItemRespVO {
     @Schema(description = "负责人用户编号", example = "1024")
     private Long assigneeUserId;
 
-    @Schema(description = "负责人姓名", example = "Nomix")
+    @Schema(description = "负责人姓名", example = "Nomix源码")
     @ExcelProperty("负责人")
     private String assigneeUserName;
 

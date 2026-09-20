@@ -23,7 +23,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link OAuth2GrantServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class OAuth2GrantServiceImplTest extends BaseMockitoUnitTest {
 

@@ -3,17 +3,17 @@ package com.lxzy.nomix.module.bpm.framework.flowable.core.candidate.expression;
 import com.lxzy.nomix.framework.common.util.collection.SetUtils;
 import com.lxzy.nomix.framework.common.util.number.NumberUtils;
 import com.lxzy.nomix.module.bpm.service.task.BpmProcessInstanceService;
+import jakarta.annotation.Resource;
 import org.flowable.engine.impl.persistence.entity.ExecutionEntityImpl;
 import org.flowable.engine.runtime.ProcessInstance;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.Set;
 
 /**
  * 分配给发起人审批的 Expression 流程表达式
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 @Deprecated // 仅仅是表达式的示例，建议使用 BpmTaskCandidateStartUserStrategy 替代

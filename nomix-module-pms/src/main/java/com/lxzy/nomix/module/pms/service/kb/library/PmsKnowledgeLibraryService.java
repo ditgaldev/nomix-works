@@ -15,7 +15,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * PMS 知识库 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface PmsKnowledgeLibraryService {
 

@@ -25,12 +25,12 @@ import com.lxzy.nomix.module.iot.framework.tdengine.core.TDengineTableField;
 import com.lxzy.nomix.module.iot.service.device.IotDeviceService;
 import com.lxzy.nomix.module.iot.service.product.IotProductService;
 import com.lxzy.nomix.module.iot.service.thingmodel.IotThingModelService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.*;
@@ -41,7 +41,7 @@ import static com.lxzy.nomix.framework.common.util.collection.MapUtils.getBigDec
 /**
  * IoT 设备【属性】数据 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Slf4j

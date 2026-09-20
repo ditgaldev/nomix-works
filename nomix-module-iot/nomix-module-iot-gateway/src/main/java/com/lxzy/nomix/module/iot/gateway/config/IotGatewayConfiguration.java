@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * IoT 网关配置类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Configuration
 @EnableConfigurationProperties(IotGatewayProperties.class)

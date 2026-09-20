@@ -7,7 +7,7 @@ import com.lxzy.nomix.module.trade.controller.admin.delivery.vo.express.Delivery
 import com.lxzy.nomix.module.trade.controller.admin.delivery.vo.express.DeliveryExpressUpdateReqVO;
 import com.lxzy.nomix.module.trade.dal.dataobject.delivery.DeliveryExpressDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.List;
 
 /**

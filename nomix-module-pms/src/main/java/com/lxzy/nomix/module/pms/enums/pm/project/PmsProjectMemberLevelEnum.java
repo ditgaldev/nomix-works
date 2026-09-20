@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * PMS 项目成员权限级别枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

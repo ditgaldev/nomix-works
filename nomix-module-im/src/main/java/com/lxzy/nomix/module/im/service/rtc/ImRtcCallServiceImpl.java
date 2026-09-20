@@ -33,6 +33,7 @@ import com.lxzy.nomix.module.im.service.websocket.ImWebSocketService;
 import com.lxzy.nomix.module.im.service.websocket.notification.rtc.*;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
 import com.lxzy.nomix.module.system.api.user.dto.AdminUserRespDTO;
+import jakarta.annotation.Resource;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DuplicateKeyException;
@@ -40,7 +41,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.*;
@@ -63,7 +63,7 @@ import static com.lxzy.nomix.module.im.enums.ErrorCodeConstants.*;
  * <p>
  * 职责边界：媒体协商完全交给 LiveKit；后端只做会话状态机、Token 签发、来电信令推送、通话历史落消息流；房内媒体流变化交给 LiveKit 客户端事件（TrackSubscribed 等），后端不重复推
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

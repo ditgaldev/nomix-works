@@ -9,8 +9,8 @@ import com.lxzy.nomix.module.product.dal.mysql.favorite.ProductFavoriteMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
-import javax.validation.Valid;
+import jakarta.annotation.Resource;
+import jakarta.validation.Valid;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static com.lxzy.nomix.module.product.enums.ErrorCodeConstants.FAVORITE_EXISTS;

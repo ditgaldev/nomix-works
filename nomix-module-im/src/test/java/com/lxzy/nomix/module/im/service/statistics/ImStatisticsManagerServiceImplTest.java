@@ -21,7 +21,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link ImStatisticsManagerServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class ImStatisticsManagerServiceImplTest extends BaseMockitoUnitTest {
 

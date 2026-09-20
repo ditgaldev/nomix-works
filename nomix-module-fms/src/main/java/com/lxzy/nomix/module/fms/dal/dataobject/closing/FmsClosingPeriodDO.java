@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 /**
  * FMS 结账期间 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("fms_closing_period")
 @KeySequence("fms_closing_period_seq")

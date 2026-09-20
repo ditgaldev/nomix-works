@@ -6,17 +6,16 @@ import com.lxzy.nomix.module.mes.dal.dataobject.md.autocode.MesMdAutoCodeRuleDO;
 import com.lxzy.nomix.module.mes.dal.redis.md.autocode.MesMdAutoCodeRedisDAO;
 import com.lxzy.nomix.module.mes.enums.md.autocode.MesMdAutoCodeCycleMethodEnum;
 import com.lxzy.nomix.module.mes.service.md.autocode.strategy.MesMdAutoCodeContext;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-
-import javax.annotation.Resource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * {@link MesMdAutoCodeSerialNumberPartStrategy} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import({MesMdAutoCodeSerialNumberPartStrategy.class, MesMdAutoCodeRedisDAO.class})
 public class MesMdAutoCodeSerialNumberPartStrategyTest extends BaseRedisUnitTest {

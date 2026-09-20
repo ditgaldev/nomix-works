@@ -12,11 +12,11 @@ import com.lxzy.nomix.module.pms.service.kb.content.PmsKnowledgeContentPermissio
 import com.lxzy.nomix.module.system.api.notify.NotifyMessageSendApi;
 import com.lxzy.nomix.module.system.api.notify.dto.NotifySendSingleToUserReqDTO;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -38,7 +38,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link PmsKnowledgeDocumentShareServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsKnowledgeDocumentShareServiceImpl.class)
 public class PmsKnowledgeDocumentShareServiceImplTest extends BaseDbUnitTest {
@@ -53,11 +53,11 @@ public class PmsKnowledgeDocumentShareServiceImplTest extends BaseDbUnitTest {
     @Resource
     private PmsKnowledgeLibraryMapper libraryMapper;
 
-    @MockBean
+    @MockitoBean
     private PmsKnowledgeContentPermissionService contentPermissionService;
-    @MockBean
+    @MockitoBean
     private NotifyMessageSendApi notifyMessageSendApi;
-    @MockBean
+    @MockitoBean
     private AdminUserApi adminUserApi;
 
     @Test

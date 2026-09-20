@@ -20,7 +20,7 @@ import com.lxzy.nomix.module.im.service.websocket.ImWebSocketService;
 import com.lxzy.nomix.module.im.service.websocket.notification.message.ImChannelMessageNotification;
 import com.lxzy.nomix.module.im.service.websocket.notification.message.ImMessageReadNotification;
 import com.lxzy.nomix.module.im.dal.dataobject.message.content.MaterialMessage;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -37,7 +37,7 @@ import static com.lxzy.nomix.module.im.enums.ErrorCodeConstants.IM_CHANNEL_MESSA
 /**
  * IM 频道消息 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

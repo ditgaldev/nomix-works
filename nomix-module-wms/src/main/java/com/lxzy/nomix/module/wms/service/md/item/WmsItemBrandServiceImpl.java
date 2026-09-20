@@ -8,10 +8,10 @@ import com.lxzy.nomix.module.wms.controller.admin.md.item.vo.brand.WmsItemBrandP
 import com.lxzy.nomix.module.wms.controller.admin.md.item.vo.brand.WmsItemBrandSaveReqVO;
 import com.lxzy.nomix.module.wms.dal.dataobject.md.item.WmsItemBrandDO;
 import com.lxzy.nomix.module.wms.dal.mysql.md.item.WmsItemBrandMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -25,7 +25,7 @@ import static com.lxzy.nomix.module.wms.enums.ErrorCodeConstants.ITEM_BRAND_NOT_
 /**
  * WMS 商品品牌 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

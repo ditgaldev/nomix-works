@@ -8,12 +8,11 @@ import com.lxzy.nomix.framework.security.core.util.SecurityFrameworkUtils;
 import com.lxzy.nomix.framework.tenant.config.TenantProperties;
 import com.lxzy.nomix.framework.tenant.core.context.TenantContextHolder;
 import com.lxzy.nomix.framework.web.core.util.WebFrameworkUtils;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.servlet.HandlerInterceptor;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception0;
 

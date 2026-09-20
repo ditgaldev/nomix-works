@@ -14,7 +14,7 @@ import com.lxzy.nomix.module.member.service.user.MemberUserService;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 
@@ -24,7 +24,7 @@ import static com.lxzy.nomix.module.member.enums.ErrorCodeConstants.*;
 /**
  * 会员标签 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

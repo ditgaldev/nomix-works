@@ -10,12 +10,12 @@ import com.lxzy.nomix.module.product.dal.mysql.sku.ProductSkuMapper;
 import com.lxzy.nomix.module.product.service.property.ProductPropertyService;
 import com.lxzy.nomix.module.product.service.property.ProductPropertyValueService;
 import com.lxzy.nomix.module.product.service.spu.ProductSpuService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.util.Arrays;
 import java.util.List;
 
@@ -32,7 +32,7 @@ import static org.mockito.Mockito.verify;
 /**
  * {@link ProductSkuServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Disabled // TODO Nomix：后续 fix 补充的单测
 @Import(ProductSkuServiceImpl.class)
@@ -44,11 +44,11 @@ public class ProductSkuServiceTest extends BaseDbUnitTest {
     @Resource
     private ProductSkuMapper productSkuMapper;
 
-    @MockBean
+    @MockitoBean
     private ProductSpuService productSpuService;
-    @MockBean
+    @MockitoBean
     private ProductPropertyService productPropertyService;
-    @MockBean
+    @MockitoBean
     private ProductPropertyValueService productPropertyValueService;
 
     public Long generateId() {

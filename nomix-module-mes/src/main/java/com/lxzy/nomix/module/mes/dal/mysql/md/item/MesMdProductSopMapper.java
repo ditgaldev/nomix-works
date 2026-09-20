@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * MES 产品SOP Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesMdProductSopMapper extends BaseMapperX<MesMdProductSopDO> {

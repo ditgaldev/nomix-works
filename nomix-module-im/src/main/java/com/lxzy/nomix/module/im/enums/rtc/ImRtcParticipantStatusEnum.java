@@ -18,7 +18,7 @@ import java.util.Objects;
  * 2、INVITING → REJECTED（接通前点拒接）；
  * 3、INVITING → NO_ANSWER（通话结束仍未应答）
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Getter

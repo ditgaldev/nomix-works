@@ -1,19 +1,20 @@
 package com.lxzy.nomix.module.mes.service.wm.outsourceissue;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.util.ObjUtil;
+
 import cn.hutool.core.util.StrUtil;
+import cn.hutool.core.util.ObjUtil;
 import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.framework.common.util.collection.CollectionUtils;
 import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.framework.common.util.object.ObjectUtils;
 import com.lxzy.nomix.module.mes.controller.admin.wm.outsourceissue.vo.MesWmOutsourceIssuePageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.wm.outsourceissue.vo.MesWmOutsourceIssueSaveReqVO;
-import com.lxzy.nomix.module.mes.dal.dataobject.pro.workorder.MesProWorkOrderDO;
-import com.lxzy.nomix.module.mes.dal.dataobject.wm.outsourceissue.MesWmOutsourceIssueDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.outsourceissue.MesWmOutsourceIssueDetailDO;
+import com.lxzy.nomix.module.mes.dal.dataobject.wm.outsourceissue.MesWmOutsourceIssueDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.outsourceissue.MesWmOutsourceIssueLineDO;
 import com.lxzy.nomix.module.mes.dal.mysql.wm.outsourceissue.MesWmOutsourceIssueMapper;
+import com.lxzy.nomix.module.mes.dal.dataobject.pro.workorder.MesProWorkOrderDO;
 import com.lxzy.nomix.module.mes.enums.MesBizTypeConstants;
 import com.lxzy.nomix.module.mes.enums.md.autocode.MesMdAutoCodeRuleCodeEnum;
 import com.lxzy.nomix.module.mes.enums.pro.MesProWorkOrderTypeEnum;
@@ -24,11 +25,11 @@ import com.lxzy.nomix.module.mes.service.md.vendor.MesMdVendorService;
 import com.lxzy.nomix.module.mes.service.pro.workorder.MesProWorkOrderService;
 import com.lxzy.nomix.module.mes.service.wm.transaction.MesWmTransactionService;
 import com.lxzy.nomix.module.mes.service.wm.transaction.dto.MesWmTransactionSaveReqDTO;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.Collections;
 import java.util.List;
@@ -41,7 +42,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 外协发料单 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

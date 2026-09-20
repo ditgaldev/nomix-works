@@ -15,7 +15,7 @@ import java.util.Map;
 /**
  * ERP 收款单项 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ErpFinanceReceiptItemMapper extends BaseMapperX<ErpFinanceReceiptItemDO> {

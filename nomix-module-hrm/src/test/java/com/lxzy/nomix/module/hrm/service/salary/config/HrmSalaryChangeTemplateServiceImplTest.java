@@ -7,10 +7,10 @@ import com.lxzy.nomix.module.hrm.controller.admin.salary.vo.changetemplate.HrmSa
 import com.lxzy.nomix.module.hrm.dal.dataobject.salary.config.HrmSalaryChangeTemplateDO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.salary.config.HrmSalaryOptionDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.salary.config.HrmSalaryChangeTemplateMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -26,7 +26,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmSalaryChangeTemplateServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmSalaryChangeTemplateServiceImpl.class)
 public class HrmSalaryChangeTemplateServiceImplTest extends BaseDbUnitTest {
@@ -35,7 +35,7 @@ public class HrmSalaryChangeTemplateServiceImplTest extends BaseDbUnitTest {
     private HrmSalaryChangeTemplateServiceImpl salaryChangeTemplateService;
     @Resource
     private HrmSalaryChangeTemplateMapper salaryChangeTemplateMapper;
-    @MockBean
+    @MockitoBean
     private HrmSalaryOptionService salaryOptionService;
 
     @Test

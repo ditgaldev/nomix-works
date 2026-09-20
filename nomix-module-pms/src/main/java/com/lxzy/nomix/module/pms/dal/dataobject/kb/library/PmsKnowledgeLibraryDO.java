@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 /**
  * PMS 知识库 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("pms_knowledge_library")
 @KeySequence("pms_knowledge_library_seq")

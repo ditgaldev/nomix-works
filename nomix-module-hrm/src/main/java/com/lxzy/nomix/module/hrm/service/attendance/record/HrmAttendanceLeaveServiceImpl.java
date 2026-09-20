@@ -16,7 +16,7 @@ import com.lxzy.nomix.module.hrm.dal.dataobject.attendance.record.HrmAttendanceL
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.info.HrmEmployeeDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.attendance.record.HrmAttendanceLeaveMapper;
 import com.lxzy.nomix.module.hrm.service.employee.info.HrmEmployeeService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -38,7 +38,7 @@ import static com.lxzy.nomix.module.hrm.enums.ErrorCodeConstants.ATTENDANCE_LEAV
 /**
  * HRM 考勤请假 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -11,7 +11,7 @@ import java.util.Arrays;
  * <p>
  * 由发起方调用 apply 接口时传入；同意后同步写入 im_friend.add_source（双向）
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Getter

@@ -5,15 +5,15 @@ import com.lxzy.nomix.module.crm.controller.admin.followup.vo.CrmFollowUpRecordP
 import com.lxzy.nomix.module.crm.controller.admin.followup.vo.CrmFollowUpRecordSaveReqVO;
 import com.lxzy.nomix.module.crm.dal.dataobject.followup.CrmFollowUpRecordDO;
 import com.lxzy.nomix.module.crm.service.followup.bo.CrmFollowUpCreateReqBO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * 跟进记录 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface CrmFollowUpRecordService {
 

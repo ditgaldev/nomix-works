@@ -6,7 +6,7 @@ import com.lxzy.nomix.module.promotion.controller.admin.seckill.vo.config.Seckil
 import com.lxzy.nomix.module.promotion.controller.admin.seckill.vo.config.SeckillConfigUpdateReqVO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.seckill.SeckillConfigDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 

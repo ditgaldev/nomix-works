@@ -9,8 +9,8 @@ import com.lxzy.nomix.framework.excel.core.convert.StringListConvert;
 import com.lxzy.nomix.module.pms.enums.DictTypeConstants;
 import com.lxzy.nomix.module.pms.enums.pm.workitem.PmsWorkItemTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.AssertTrue;
-import javax.validation.constraints.Min;
+import jakarta.validation.constraints.AssertTrue;
+import jakarta.validation.constraints.Min;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * PMS 工作项 Excel 导入 VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Schema(description = "管理后台 - PMS 工作项 Excel 导入 VO")
 @Data

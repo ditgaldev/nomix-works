@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.hrm.dal.dataobject.salary.employee.HrmSalaryChangeR
 import com.lxzy.nomix.module.hrm.dal.mysql.salary.employee.HrmSalaryChangeRecordMapper;
 import com.lxzy.nomix.module.hrm.enums.salary.employee.HrmSalaryChangeRecordStatusEnum;
 import com.lxzy.nomix.module.hrm.enums.salary.employee.HrmSalaryChangeRecordTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
@@ -25,7 +25,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 /**
  * {@link HrmSalaryChangeRecordServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmSalaryChangeRecordServiceImpl.class)
 public class HrmSalaryChangeRecordServiceImplTest extends BaseDbUnitTest {

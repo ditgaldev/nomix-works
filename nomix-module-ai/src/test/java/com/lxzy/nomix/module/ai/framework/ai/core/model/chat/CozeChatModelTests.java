@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * 基于 {@link OpenAiChatModel} 集成 Coze 测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class CozeChatModelTests {
 

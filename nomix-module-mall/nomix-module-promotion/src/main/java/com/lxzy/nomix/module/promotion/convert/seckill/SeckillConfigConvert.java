@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * 秒杀时段 Convert
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface SeckillConfigConvert {

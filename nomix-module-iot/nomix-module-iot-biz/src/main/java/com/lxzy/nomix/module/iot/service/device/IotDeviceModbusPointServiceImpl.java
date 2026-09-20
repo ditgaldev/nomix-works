@@ -11,10 +11,10 @@ import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDeviceModbusPointDO;
 import com.lxzy.nomix.module.iot.dal.dataobject.thingmodel.IotThingModelDO;
 import com.lxzy.nomix.module.iot.dal.mysql.device.IotDeviceModbusPointMapper;
 import com.lxzy.nomix.module.iot.service.thingmodel.IotThingModelService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -27,7 +27,7 @@ import static com.lxzy.nomix.module.iot.enums.ErrorCodeConstants.*;
 /**
  * IoT 设备 Modbus 点位配置 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

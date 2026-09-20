@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 /**
  * HRM 员工培训经历 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("hrm_employee_training_experience")
 @KeySequence("hrm_employee_training_experience_seq")

@@ -3,14 +3,13 @@ package com.lxzy.nomix.module.crm.job.customer;
 import com.lxzy.nomix.framework.quartz.core.handler.JobHandler;
 import com.lxzy.nomix.framework.tenant.core.job.TenantJob;
 import com.lxzy.nomix.module.crm.service.customer.CrmCustomerService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.Resource;
 
 /**
  * 客户自动掉入公海 Job
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 public class CrmCustomerAutoPutPoolJob implements JobHandler {

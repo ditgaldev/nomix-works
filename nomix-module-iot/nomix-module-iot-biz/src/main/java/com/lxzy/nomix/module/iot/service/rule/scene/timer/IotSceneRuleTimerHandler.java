@@ -8,11 +8,11 @@ import com.lxzy.nomix.module.iot.dal.dataobject.rule.IotSceneRuleDO;
 import com.lxzy.nomix.module.iot.enums.rule.IotSceneRuleTriggerTypeEnum;
 import com.lxzy.nomix.module.iot.framework.job.core.IotSchedulerManager;
 import com.lxzy.nomix.module.iot.job.rule.IotSceneRuleJob;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.quartz.SchedulerException;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.filterList;

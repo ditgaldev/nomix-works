@@ -9,9 +9,9 @@ import com.lxzy.nomix.module.fms.service.config.FmsVoucherWordService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import javax.annotation.Resource;
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
+import jakarta.annotation.Resource;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -32,7 +32,7 @@ import static com.lxzy.nomix.framework.security.core.util.SecurityFrameworkUtils
 /**
  * FMS 凭证字 Controller
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Tag(name = "管理后台 - FMS 凭证字")
 @RestController

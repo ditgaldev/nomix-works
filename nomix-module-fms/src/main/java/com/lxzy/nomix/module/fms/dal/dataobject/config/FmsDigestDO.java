@@ -11,7 +11,7 @@ import lombok.ToString;
 /**
  * FMS 常用摘要 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("fms_digest")
 @KeySequence("fms_digest_seq")

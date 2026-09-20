@@ -11,17 +11,17 @@ import com.lxzy.nomix.module.wms.controller.admin.order.shipment.vo.order.WmsShi
 import com.lxzy.nomix.module.wms.dal.dataobject.order.shipment.WmsShipmentOrderDO;
 import com.lxzy.nomix.module.wms.dal.dataobject.order.shipment.WmsShipmentOrderDetailDO;
 import com.lxzy.nomix.module.wms.dal.mysql.order.shipment.WmsShipmentOrderMapper;
-import com.lxzy.nomix.module.wms.enums.order.WmsOrderStatusEnum;
 import com.lxzy.nomix.module.wms.enums.order.WmsOrderTypeEnum;
+import com.lxzy.nomix.module.wms.enums.order.WmsOrderStatusEnum;
 import com.lxzy.nomix.module.wms.service.inventory.WmsInventoryService;
 import com.lxzy.nomix.module.wms.service.inventory.dto.WmsInventoryChangeReqDTO;
 import com.lxzy.nomix.module.wms.service.md.merchant.WmsMerchantService;
 import com.lxzy.nomix.module.wms.service.md.warehouse.WmsWarehouseService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -32,7 +32,7 @@ import static com.lxzy.nomix.module.wms.enums.ErrorCodeConstants.*;
 /**
  * WMS 出库单 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

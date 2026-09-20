@@ -8,10 +8,10 @@ import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.infra.controller.admin.logger.vo.apiaccesslog.ApiAccessLogPageReqVO;
 import com.lxzy.nomix.module.infra.dal.dataobject.logger.ApiAccessLogDO;
 import com.lxzy.nomix.module.infra.dal.mysql.logger.ApiAccessLogMapper;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
 import java.time.Duration;
 import java.util.List;
 

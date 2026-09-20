@@ -2,9 +2,9 @@ package com.lxzy.nomix.module.promotion.controller.admin.point.vo.activity;
 
 import com.lxzy.nomix.module.promotion.controller.admin.point.vo.product.PointProductSaveReqVO;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Schema(description = "管理后台 - 积分商城活动新增/修改 Request VO")

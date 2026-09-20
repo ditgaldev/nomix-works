@@ -28,11 +28,11 @@ import com.lxzy.nomix.module.mes.service.qc.indicatorresult.MesQcIndicatorResult
 import com.lxzy.nomix.module.mes.service.qc.template.MesQcTemplateItemService;
 import com.lxzy.nomix.module.mes.service.wm.productproduce.MesWmProductProduceLineService;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 
 import static com.lxzy.nomix.framework.test.core.util.RandomUtils.randomLongId;
@@ -44,7 +44,7 @@ import static org.mockito.Mockito.*;
 /**
  * {@link MesQcIpqcServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(MesQcIpqcServiceImpl.class)
 public class MesQcIpqcServiceImplTest extends BaseDbUnitTest {
@@ -55,31 +55,31 @@ public class MesQcIpqcServiceImplTest extends BaseDbUnitTest {
     @Resource
     private MesQcIpqcMapper ipqcMapper;
 
-    @MockBean
+    @MockitoBean
     private MesQcTemplateItemService templateItemService;
-    @MockBean
+    @MockitoBean
     private MesQcIpqcLineService ipqcLineService;
-    @MockBean
+    @MockitoBean
     private MesProWorkOrderService workOrderService;
-    @MockBean
+    @MockitoBean
     private MesMdWorkstationService workstationService;
-    @MockBean
+    @MockitoBean
     private MesMdItemService itemService;
-    @MockBean
+    @MockitoBean
     private MesQcDefectRecordService defectRecordService;
-    @MockBean
+    @MockitoBean
     private AdminUserApi adminUserApi;
-    @MockBean
+    @MockitoBean
     private MesProFeedbackService feedbackService;
-    @MockBean
+    @MockitoBean
     private MesProRouteProductService routeProductService;
-    @MockBean
+    @MockitoBean
     private MesProRouteProcessService routeProcessService;
-    @MockBean
+    @MockitoBean
     private MesProTaskService taskService;
-    @MockBean
+    @MockitoBean
     private MesQcIndicatorResultService indicatorResultService;
-    @MockBean
+    @MockitoBean
     private MesWmProductProduceLineService productProduceLineService;
 
     @Test

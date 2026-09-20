@@ -4,7 +4,7 @@ import com.lxzy.nomix.module.product.service.category.ProductCategoryService;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.Collection;
 
 /**

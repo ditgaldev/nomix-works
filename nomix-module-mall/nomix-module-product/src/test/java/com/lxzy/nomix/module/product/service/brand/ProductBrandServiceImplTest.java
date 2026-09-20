@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 import java.time.LocalDateTime;
 
@@ -28,7 +28,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
 * {@link ProductBrandServiceImpl} 的单元测试类
 *
-* @author Nomix
+* @author Nomix源码
 */
 @Disabled // TODO Nomix：后续 fix 补充的单测
 @Import(ProductBrandServiceImpl.class)
@@ -107,7 +107,7 @@ public class ProductBrandServiceImplTest extends BaseDbUnitTest {
     public void testGetBrandPage() {
        // mock 数据
        ProductBrandDO dbBrand = randomPojo(ProductBrandDO.class, o -> { // 等会查询到
-           o.setName("Nomix");
+           o.setName("Nomix源码");
            o.setStatus(CommonStatusEnum.ENABLE.getStatus());
            o.setCreateTime(buildTime(2022, 2, 1));
        });

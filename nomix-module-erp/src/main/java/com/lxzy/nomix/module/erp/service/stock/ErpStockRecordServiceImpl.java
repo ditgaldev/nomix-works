@@ -6,17 +6,17 @@ import com.lxzy.nomix.module.erp.controller.admin.stock.vo.record.ErpStockRecord
 import com.lxzy.nomix.module.erp.dal.dataobject.stock.ErpStockRecordDO;
 import com.lxzy.nomix.module.erp.dal.mysql.stock.ErpStockRecordMapper;
 import com.lxzy.nomix.module.erp.service.stock.bo.ErpStockRecordCreateReqBO;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 
 /**
  * ERP 产品库存明细 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

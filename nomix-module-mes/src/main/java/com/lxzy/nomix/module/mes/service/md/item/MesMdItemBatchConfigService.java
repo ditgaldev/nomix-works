@@ -2,13 +2,12 @@ package com.lxzy.nomix.module.mes.service.md.item;
 
 import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.batchconfig.MesMdItemBatchConfigSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.md.item.MesMdItemBatchConfigDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * MES 物料批次属性配置 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesMdItemBatchConfigService {
 

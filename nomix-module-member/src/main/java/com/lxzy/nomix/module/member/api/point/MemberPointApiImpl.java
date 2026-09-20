@@ -3,11 +3,10 @@ package com.lxzy.nomix.module.member.api.point;
 import cn.hutool.core.lang.Assert;
 import com.lxzy.nomix.module.member.enums.point.MemberPointBizTypeEnum;
 import com.lxzy.nomix.module.member.service.point.MemberPointRecordService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
-
-import javax.annotation.Resource;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static com.lxzy.nomix.module.member.enums.ErrorCodeConstants.POINT_RECORD_BIZ_NOT_SUPPORT;

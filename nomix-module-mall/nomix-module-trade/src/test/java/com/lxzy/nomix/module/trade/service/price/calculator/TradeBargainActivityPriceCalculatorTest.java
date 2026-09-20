@@ -22,7 +22,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link TradeBargainActivityPriceCalculator} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class TradeBargainActivityPriceCalculatorTest extends BaseMockitoUnitTest {
 

@@ -3,12 +3,12 @@ package com.lxzy.nomix.module.pay.api.refund;
 import com.lxzy.nomix.module.pay.api.refund.dto.PayRefundCreateReqDTO;
 import com.lxzy.nomix.module.pay.api.refund.dto.PayRefundRespDTO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 退款单 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface PayRefundApi {
 

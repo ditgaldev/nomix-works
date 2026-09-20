@@ -5,15 +5,15 @@ import com.lxzy.nomix.module.erp.controller.admin.stock.vo.move.ErpStockMovePage
 import com.lxzy.nomix.module.erp.controller.admin.stock.vo.move.ErpStockMoveSaveReqVO;
 import com.lxzy.nomix.module.erp.dal.dataobject.stock.ErpStockMoveDO;
 import com.lxzy.nomix.module.erp.dal.dataobject.stock.ErpStockMoveItemDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * ERP 库存调拨单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ErpStockMoveService {
 

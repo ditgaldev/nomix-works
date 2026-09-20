@@ -1,9 +1,9 @@
 package com.lxzy.nomix.module.erp.controller.admin.purchase.vo.order;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -32,7 +32,7 @@ public class ErpPurchaseOrderSaveReqVO {
     @Schema(description = "定金金额，单位：元", example = "7127")
     private BigDecimal depositPrice;
 
-    @Schema(description = "附件地址", example = "")
+    @Schema(description = "附件地址", example = "https://www.nomix.cn")
     private String fileUrl;
 
     @Schema(description = "备注", example = "你猜")

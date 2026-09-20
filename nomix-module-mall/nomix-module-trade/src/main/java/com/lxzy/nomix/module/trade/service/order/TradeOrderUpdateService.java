@@ -9,8 +9,8 @@ import com.lxzy.nomix.module.trade.controller.app.order.vo.AppTradeOrderSettleme
 import com.lxzy.nomix.module.trade.controller.app.order.vo.AppTradeOrderSettlementRespVO;
 import com.lxzy.nomix.module.trade.controller.app.order.vo.item.AppTradeOrderItemCommentCreateReqVO;
 import com.lxzy.nomix.module.trade.dal.dataobject.order.TradeOrderDO;
+import jakarta.validation.constraints.NotNull;
 
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**

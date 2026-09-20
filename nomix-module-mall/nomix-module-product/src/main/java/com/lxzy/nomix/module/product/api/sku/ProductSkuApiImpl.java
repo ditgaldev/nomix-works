@@ -5,10 +5,10 @@ import com.lxzy.nomix.module.product.api.sku.dto.ProductSkuRespDTO;
 import com.lxzy.nomix.module.product.api.sku.dto.ProductSkuUpdateStockReqDTO;
 import com.lxzy.nomix.module.product.dal.dataobject.sku.ProductSkuDO;
 import com.lxzy.nomix.module.product.service.sku.ProductSkuService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 

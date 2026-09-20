@@ -7,8 +7,8 @@ import com.lxzy.nomix.module.promotion.controller.admin.combination.vo.activity.
 import com.lxzy.nomix.module.promotion.controller.admin.combination.vo.activity.CombinationActivityUpdateReqVO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.combination.CombinationActivityDO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.combination.CombinationProductDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;

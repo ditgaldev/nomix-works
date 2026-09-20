@@ -53,7 +53,7 @@ public class ErpStockOutRespVO {
     @ExcelProperty("备注")
     private String remark;
 
-    @Schema(description = "附件 URL", example = "")
+    @Schema(description = "附件 URL", example = "https://www.nomix.cn/1.doc")
     private String fileUrl;
 
     @Schema(description = "创建人", example = "Nomix")

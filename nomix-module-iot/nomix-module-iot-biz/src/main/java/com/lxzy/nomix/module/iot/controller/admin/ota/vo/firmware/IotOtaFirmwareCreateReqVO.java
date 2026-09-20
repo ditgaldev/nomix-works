@@ -1,11 +1,10 @@
 package com.lxzy.nomix.module.iot.controller.admin.ota.vo.firmware;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import org.hibernate.validator.constraints.URL;
-
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 
 @Schema(description = "管理后台 - IoT OTA 固件创建 Request VO")
 @Data
@@ -26,7 +25,7 @@ public class IotOtaFirmwareCreateReqVO {
     @NotNull(message = "产品编号不能为空")
     private Long productId;
 
-    @Schema(description = "固件文件 URL", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "固件文件 URL", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn/1.zip")
     @NotEmpty(message = "固件文件 URL 不能为空")
     @URL(message = "固件文件 URL 格式错误")
     private String fileUrl;

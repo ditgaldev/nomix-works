@@ -12,7 +12,7 @@ import com.lxzy.nomix.module.infra.dal.dataobject.demo.demo03.Demo03StudentDO;
 import com.lxzy.nomix.module.infra.dal.mysql.demo.demo03.erp.Demo03CourseErpMapper;
 import com.lxzy.nomix.module.infra.dal.mysql.demo.demo03.erp.Demo03GradeErpMapper;
 import com.lxzy.nomix.module.infra.dal.mysql.demo.demo03.erp.Demo03StudentErpMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -25,7 +25,7 @@ import static com.lxzy.nomix.module.infra.enums.ErrorCodeConstants.*;
 /**
  * 学生 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

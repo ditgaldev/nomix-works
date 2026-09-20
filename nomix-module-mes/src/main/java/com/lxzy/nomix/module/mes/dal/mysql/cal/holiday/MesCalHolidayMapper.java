@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * MES 假期设置 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesCalHolidayMapper extends BaseMapperX<MesCalHolidayDO> {

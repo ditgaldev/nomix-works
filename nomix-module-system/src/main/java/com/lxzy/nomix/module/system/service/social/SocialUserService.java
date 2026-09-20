@@ -8,13 +8,13 @@ import com.lxzy.nomix.module.system.controller.admin.social.vo.user.SocialUserPa
 import com.lxzy.nomix.module.system.dal.dataobject.social.SocialUserDO;
 import com.lxzy.nomix.module.system.enums.social.SocialTypeEnum;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.List;
 
 /**
  * 社交用户 Service 接口，例如说社交平台的授权登录
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface SocialUserService {
 

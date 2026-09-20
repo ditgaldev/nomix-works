@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.erp.controller.admin.sale.vo.customer.ErpCustomerPageReqVO;
 import com.lxzy.nomix.module.erp.controller.admin.sale.vo.customer.ErpCustomerSaveReqVO;
 import com.lxzy.nomix.module.erp.dal.dataobject.sale.ErpCustomerDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -15,7 +15,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * ERP 客户 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ErpCustomerService {
 

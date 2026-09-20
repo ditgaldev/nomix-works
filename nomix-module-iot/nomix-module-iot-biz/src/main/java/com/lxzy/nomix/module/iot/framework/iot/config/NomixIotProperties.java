@@ -8,7 +8,7 @@ import java.time.Duration;
 /**
  * Nomix IoT 全局配置类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 @Data

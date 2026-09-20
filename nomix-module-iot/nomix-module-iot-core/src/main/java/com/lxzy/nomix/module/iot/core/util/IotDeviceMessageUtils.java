@@ -17,7 +17,7 @@ import java.util.Set;
 /**
  * IoT 设备【消息】的工具类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class IotDeviceMessageUtils {
 
@@ -84,7 +84,7 @@ public class IotDeviceMessageUtils {
         if (params instanceof Map) {
             return ((Map<?, ?>) params).get(fieldName);
         }
-        // 跳过 JDK 内置类型，避免依赖 String 等类型的内部字段实现
+        // 跳过 JDK 内置类型，避免反射读取到内部字段（例如 JDK8 下 String#value 会返回 char[]）
         if (ClassUtil.isJdkClass(params.getClass())) {
             return null;
         }

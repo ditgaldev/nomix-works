@@ -9,7 +9,7 @@
     "businessName" : "demo",
     "className" : "InfraStudent",
     "classComment" : "学生",
-    "author" : "Nomix"
+    "author" : "Nomix源码"
   },
   "columns": [ {
     "id" : 100,
@@ -92,7 +92,7 @@
     "columnComment" : "头像",
     "javaType" : "String",
     "javaField" : "avatar",
-    "example" : "",
+    "example" : "https://www.nomix.cn/1.png",
     "createOperation" : true,
     "updateOperation" : true,
     "listOperationResult" : true,
@@ -103,7 +103,7 @@
     "columnComment" : "附件",
     "javaType" : "String",
     "javaField" : "video",
-    "example" : "",
+    "example" : "https://www.nomix.cn/1.mp4",
     "createOperation" : true,
     "updateOperation" : true,
     "listOperationResult" : true,

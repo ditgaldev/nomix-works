@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.crm.controller.admin.product.vo.product.CrmProductPageReqVO;
 import com.lxzy.nomix.module.crm.controller.admin.product.vo.product.CrmProductSaveReqVO;
 import com.lxzy.nomix.module.crm.dal.dataobject.product.CrmProductDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;

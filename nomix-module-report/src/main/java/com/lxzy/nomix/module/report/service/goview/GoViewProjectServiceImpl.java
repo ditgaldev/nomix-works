@@ -11,7 +11,7 @@ import com.lxzy.nomix.module.report.dal.mysql.goview.GoViewProjectMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static com.lxzy.nomix.module.report.enums.ErrorCodeConstants.GO_VIEW_PROJECT_NOT_EXISTS;
@@ -19,7 +19,7 @@ import static com.lxzy.nomix.module.report.enums.ErrorCodeConstants.GO_VIEW_PROJ
 /**
  * GoView 项目 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

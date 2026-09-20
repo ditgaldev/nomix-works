@@ -1,7 +1,7 @@
 package com.lxzy.nomix.module.hrm.controller.admin.recruit.vo.candidate;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 @Schema(description = "管理后台 - HRM 招聘候选人渠道修改 Request VO")

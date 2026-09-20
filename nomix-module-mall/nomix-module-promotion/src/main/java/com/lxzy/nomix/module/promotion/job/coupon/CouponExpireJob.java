@@ -6,7 +6,7 @@ import com.lxzy.nomix.framework.tenant.core.job.TenantJob;
 import com.lxzy.nomix.module.promotion.service.coupon.CouponService;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * 优惠券过期 Job

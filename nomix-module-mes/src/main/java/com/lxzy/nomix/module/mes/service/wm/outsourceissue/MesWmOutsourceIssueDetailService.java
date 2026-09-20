@@ -2,14 +2,14 @@ package com.lxzy.nomix.module.mes.service.wm.outsourceissue;
 
 import com.lxzy.nomix.module.mes.controller.admin.wm.outsourceissue.vo.detail.MesWmOutsourceIssueDetailSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.outsourceissue.MesWmOutsourceIssueDetailDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * MES 外协发料单明细 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesWmOutsourceIssueDetailService {
 

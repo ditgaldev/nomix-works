@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 /**
  * MES 编码规则 - 输入字符策略
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 public class MesMdAutoCodeInputCharPartStrategy implements MesMdAutoCodePartStrategy {

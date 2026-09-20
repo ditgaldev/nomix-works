@@ -6,7 +6,7 @@ import com.lxzy.nomix.module.system.dal.dataobject.tenant.TenantDO;
  * 租户信息处理
  * 目的：尽量减少租户逻辑耦合到系统中
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface TenantInfoHandler {
 

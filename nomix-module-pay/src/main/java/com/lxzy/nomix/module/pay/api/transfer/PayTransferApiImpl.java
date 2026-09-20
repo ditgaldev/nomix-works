@@ -9,10 +9,9 @@ import com.lxzy.nomix.module.pay.dal.dataobject.channel.PayChannelDO;
 import com.lxzy.nomix.module.pay.dal.dataobject.transfer.PayTransferDO;
 import com.lxzy.nomix.module.pay.service.channel.PayChannelService;
 import com.lxzy.nomix.module.pay.service.transfer.PayTransferService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
-
-import javax.annotation.Resource;
 
 /**
  * 转账单 API 实现类

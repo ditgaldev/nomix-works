@@ -12,11 +12,11 @@ import com.lxzy.nomix.module.system.dal.dataobject.tenant.TenantPackageDO;
 import com.lxzy.nomix.module.system.dal.mysql.tenant.TenantPackageMapper;
 import com.baomidou.dynamic.datasource.annotation.DSTransactional;
 import com.google.common.annotations.VisibleForTesting;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -25,7 +25,7 @@ import static com.lxzy.nomix.module.system.enums.ErrorCodeConstants.*;
 /**
  * 租户套餐 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

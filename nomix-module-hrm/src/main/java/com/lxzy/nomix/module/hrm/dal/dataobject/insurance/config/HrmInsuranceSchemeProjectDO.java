@@ -17,7 +17,7 @@ import java.math.BigDecimal;
 /**
  * HRM 社保方案项目 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("hrm_insurance_scheme_project")
 @KeySequence("hrm_insurance_scheme_project_seq")

@@ -6,10 +6,10 @@ import com.lxzy.nomix.module.fms.controller.admin.config.vo.digest.FmsDigestSave
 import com.lxzy.nomix.module.fms.dal.dataobject.config.FmsDigestDO;
 import com.lxzy.nomix.module.fms.dal.mysql.config.FmsDigestMapper;
 import com.lxzy.nomix.module.fms.service.config.FmsAccountSetService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.List;
 
@@ -28,7 +28,7 @@ public class FmsDigestServiceImplTest extends BaseDbUnitTest {
     @Resource
     private FmsDigestMapper digestMapper;
 
-    @MockBean
+    @MockitoBean
     private FmsAccountSetService accountSetService;
 
     @Test

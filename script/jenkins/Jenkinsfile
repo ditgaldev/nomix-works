@@ -19,7 +19,7 @@ pipeline {
         //  DockerHub 账号名
         DOCKERHUB_NAMESPACE = 'docker_username'
         // GitHub 账号名
-        GITHUB_ACCOUNT = ''
+        GITHUB_ACCOUNT = 'https://github.com/ditgaldev/nomix-works'
         // 应用名称
         APP_NAME = 'nomix-server'
         // 应用部署路径
@@ -29,7 +29,7 @@ pipeline {
     stages {
         stage('检出') {
             steps {
-                git url: "https://gitee.com/will-we/nomix-vue-pro.git",
+                git url: "https://gitee.com/will-we/nomix-works.git",
                         branch: "devops"
             }
         }

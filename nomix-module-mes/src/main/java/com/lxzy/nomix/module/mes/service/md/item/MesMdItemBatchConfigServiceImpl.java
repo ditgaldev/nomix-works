@@ -4,11 +4,10 @@ import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.batchconfig.MesMdItemBatchConfigSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.md.item.MesMdItemBatchConfigDO;
 import com.lxzy.nomix.module.mes.dal.mysql.md.item.MesMdItemBatchConfigMapper;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
-
-import javax.annotation.Resource;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.MD_ITEM_BATCH_CONFIG_NOT_EXISTS;
@@ -17,7 +16,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.MD_ITEM_NOT_EXI
 /**
  * MES 物料批次属性配置 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

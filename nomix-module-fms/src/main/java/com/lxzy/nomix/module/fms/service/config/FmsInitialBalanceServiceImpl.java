@@ -22,7 +22,7 @@ import com.lxzy.nomix.module.fms.enums.common.FmsDebitCreditDirectionEnum;
 import com.lxzy.nomix.module.fms.enums.config.FmsSubjectTypeEnum;
 import com.lxzy.nomix.module.fms.service.closing.FmsClosingPeriodService;
 import com.mzt.logapi.starter.annotation.LogRecord;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -64,7 +64,7 @@ import static com.lxzy.nomix.module.fms.enums.LogRecordConstants.*;
 /**
  * FMS 初始余额 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

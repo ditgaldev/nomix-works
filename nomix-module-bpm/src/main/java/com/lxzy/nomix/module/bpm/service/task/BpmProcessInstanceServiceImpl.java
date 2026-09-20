@@ -43,6 +43,8 @@ import com.lxzy.nomix.module.system.api.dept.DeptApi;
 import com.lxzy.nomix.module.system.api.dept.dto.DeptRespDTO;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
 import com.lxzy.nomix.module.system.api.user.dto.AdminUserRespDTO;
+import jakarta.annotation.Resource;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.flowable.bpmn.constants.BpmnXMLConstants;
 import org.flowable.bpmn.model.*;
@@ -65,8 +67,6 @@ import org.springframework.transaction.support.TransactionSynchronization;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
-import javax.validation.Valid;
 import java.util.*;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -90,7 +90,7 @@ import static org.flowable.bpmn.constants.BpmnXMLConstants.*;
  * <p>
  * 简单来说，前者 = 历史 + 运行中的流程实例，后者仅是运行中的流程实例
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated
@@ -758,7 +758,7 @@ public class BpmProcessInstanceServiceImpl implements BpmProcessInstanceService 
 
     @Override
     @Transactional(rollbackFor = Exception.class)
-    @DataPermission(enable = false) // 关闭数据权限，避免查询不到用户数据。相关案例：
+    @DataPermission(enable = false) // 关闭数据权限，避免查询不到用户数据。相关案例：https://gitee.com/ditgaldev/nomix-cloud/issues/ID1UYA
     public String createProcessInstance(Long userId, @Valid BpmProcessInstanceCreateReqVO createReqVO) {
         // 获得流程定义
         ProcessDefinition definition = processDefinitionService
@@ -769,7 +769,7 @@ public class BpmProcessInstanceServiceImpl implements BpmProcessInstanceService 
     }
 
     @Override
-    @DataPermission(enable = false) // 关闭数据权限，避免查询不到用户数据。相关案例：
+    @DataPermission(enable = false) // 关闭数据权限，避免查询不到用户数据。相关案例：https://gitee.com/ditgaldev/nomix-cloud/issues/ID1UYA
     public String createProcessInstance(Long userId, @Valid BpmProcessInstanceCreateReqDTO createReqDTO) {
         return FlowableUtils.executeAuthenticatedUserId(userId, () -> {
             // 获得流程定义
@@ -886,7 +886,7 @@ public class BpmProcessInstanceServiceImpl implements BpmProcessInstanceService 
     }
 
     @Override
-    @DataPermission(enable = false) // 关闭数据权限，避免查询不到用户数据。相关案例：
+    @DataPermission(enable = false) // 关闭数据权限，避免查询不到用户数据。相关案例：https://gitee.com/ditgaldev/nomix-cloud/issues/ID1UYA
     public void cancelProcessInstanceByStartUser(Long userId, @Valid BpmProcessInstanceCancelReqVO cancelReqVO) {
         // 1.1 校验流程实例存在
         ProcessInstance instance = getProcessInstance(cancelReqVO.getId());
@@ -916,7 +916,7 @@ public class BpmProcessInstanceServiceImpl implements BpmProcessInstanceService 
     }
 
     @Override
-    @DataPermission(enable = false) // 关闭数据权限，避免查询不到用户数据。相关案例：
+    @DataPermission(enable = false) // 关闭数据权限，避免查询不到用户数据。相关案例：https://gitee.com/ditgaldev/nomix-cloud/issues/ID1UYA
     public void cancelProcessInstanceByAdmin(Long userId, BpmProcessInstanceCancelReqVO cancelReqVO) {
         // 1.1 校验流程实例存在
         ProcessInstance instance = getProcessInstance(cancelReqVO.getId());

@@ -10,10 +10,10 @@ import com.lxzy.nomix.module.hrm.dal.mysql.insurance.employee.HrmInsuranceEmploy
 import com.lxzy.nomix.module.hrm.enums.employee.info.HrmEmployeeEntryStatusEnum;
 import com.lxzy.nomix.module.hrm.enums.employee.info.HrmEmployeeStatusEnum;
 import com.lxzy.nomix.module.hrm.service.employee.info.HrmEmployeeService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
@@ -39,7 +39,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmInsuranceEmployeeInfoServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmInsuranceEmployeeInfoServiceImpl.class)
 public class HrmInsuranceEmployeeInfoServiceImplTest extends BaseDbUnitTest {
@@ -50,9 +50,9 @@ public class HrmInsuranceEmployeeInfoServiceImplTest extends BaseDbUnitTest {
     @Resource
     private HrmInsuranceEmployeeInfoMapper insuranceEmployeeInfoMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmEmployeeService employeeService;
-    @MockBean
+    @MockitoBean
     private HrmInsuranceSchemeService insuranceSchemeService;
 
     @Test

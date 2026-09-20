@@ -21,11 +21,11 @@ import com.lxzy.nomix.module.erp.service.purchase.ErpPurchaseInService;
 import com.lxzy.nomix.module.erp.service.purchase.ErpPurchaseReturnService;
 import com.lxzy.nomix.module.erp.service.purchase.ErpSupplierService;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.Collections;
@@ -40,7 +40,7 @@ import static com.lxzy.nomix.module.erp.enums.ErrorCodeConstants.*;
 /**
  * ERP 付款单 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

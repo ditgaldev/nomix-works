@@ -7,7 +7,7 @@ import com.lxzy.nomix.module.fms.dal.dataobject.config.FmsFinanceParameterDO;
 /**
  * FMS 财务参数 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface FmsFinanceParameterService {
 

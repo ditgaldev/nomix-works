@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.im.service.conversation;
 import cn.hutool.core.collection.CollUtil;
 import com.lxzy.nomix.module.im.dal.dataobject.conversation.ImConversationReadDO;
 import com.lxzy.nomix.module.im.dal.mysql.conversation.ImConversationReadMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
@@ -19,7 +19,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * IM 会话读位置 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Slf4j

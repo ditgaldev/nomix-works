@@ -15,10 +15,10 @@ import com.lxzy.nomix.module.hrm.enums.attendance.record.HrmAttendanceClockButto
 import com.lxzy.nomix.module.hrm.enums.attendance.record.HrmAttendanceClockSourceEnum;
 import com.lxzy.nomix.module.hrm.enums.attendance.record.HrmAttendanceClockStatusEnum;
 import com.lxzy.nomix.module.hrm.service.employee.info.HrmEmployeeService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -40,7 +40,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmAttendanceClockServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmAttendanceClockServiceImpl.class)
 public class HrmAttendanceClockServiceImplTest extends BaseDbUnitTest {
@@ -51,9 +51,9 @@ public class HrmAttendanceClockServiceImplTest extends BaseDbUnitTest {
     @Resource
     private HrmAttendanceClockMapper attendanceClockMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmEmployeeService employeeService;
-    @MockBean
+    @MockitoBean
     private HrmAttendanceGroupService attendanceGroupService;
 
     @Test

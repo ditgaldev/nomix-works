@@ -10,8 +10,8 @@ import com.lxzy.nomix.module.pay.controller.admin.order.vo.PayOrderSubmitRespVO;
 import com.lxzy.nomix.module.pay.dal.dataobject.order.PayOrderDO;
 import com.lxzy.nomix.module.pay.dal.dataobject.order.PayOrderExtensionDO;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;

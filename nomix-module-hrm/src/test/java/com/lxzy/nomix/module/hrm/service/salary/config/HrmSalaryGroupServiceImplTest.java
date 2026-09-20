@@ -12,10 +12,10 @@ import com.lxzy.nomix.module.hrm.dal.mysql.salary.config.HrmSalaryGroupMapper;
 import com.lxzy.nomix.module.hrm.service.employee.info.HrmEmployeeService;
 import com.lxzy.nomix.module.system.api.dept.DeptApi;
 import com.lxzy.nomix.module.system.api.dept.dto.DeptRespDTO;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -36,7 +36,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmSalaryGroupServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmSalaryGroupServiceImpl.class)
 public class HrmSalaryGroupServiceImplTest extends BaseDbUnitTest {
@@ -47,11 +47,11 @@ public class HrmSalaryGroupServiceImplTest extends BaseDbUnitTest {
     @Resource
     private HrmSalaryGroupMapper salaryGroupMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmSalaryTaxRuleService salaryTaxRuleService;
-    @MockBean
+    @MockitoBean
     private HrmEmployeeService employeeService;
-    @MockBean
+    @MockitoBean
     private DeptApi deptApi;
 
     @Test

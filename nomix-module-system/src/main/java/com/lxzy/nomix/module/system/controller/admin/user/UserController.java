@@ -19,14 +19,15 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Valid;
+import java.util.Collections;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletResponse;
-import javax.validation.Valid;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collections;
@@ -176,9 +177,9 @@ public class UserController {
     public void importTemplate(HttpServletResponse response) throws IOException {
         // 手动创建导出 demo
         List<UserImportExcelVO> list = Arrays.asList(
-                UserImportExcelVO.builder().username("nomix").deptId(1L).email("nomix@example.com").mobile("15601691300")
+                UserImportExcelVO.builder().username("nomix").deptId(1L).email("nomix@nomix.cn").mobile("15601691300")
                         .nickname("Nomix").status(CommonStatusEnum.ENABLE.getStatus()).sex(SexEnum.MALE.getSex()).build(),
-                UserImportExcelVO.builder().username("yuanma").deptId(2L).email("yuanma@example.com").mobile("15601701300")
+                UserImportExcelVO.builder().username("yuanma").deptId(2L).email("yuanma@nomix.cn").mobile("15601701300")
                         .nickname("源码").status(CommonStatusEnum.DISABLE.getStatus()).sex(SexEnum.FEMALE.getSex()).build()
         );
         // 输出

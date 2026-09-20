@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.hrm.service.config;
 import cn.hutool.core.collection.CollUtil;
 import com.lxzy.nomix.module.hrm.dal.dataobject.config.HrmConfigDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.config.HrmConfigMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -16,7 +16,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * HRM 配置 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

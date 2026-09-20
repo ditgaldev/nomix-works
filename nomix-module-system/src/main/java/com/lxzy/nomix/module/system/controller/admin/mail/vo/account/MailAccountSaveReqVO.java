@@ -3,8 +3,8 @@ package com.lxzy.nomix.module.system.controller.admin.mail.vo.account;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
 
 @Schema(description = "管理后台 - 邮箱账号创建/修改 Request VO")
 @Data
@@ -26,7 +26,7 @@ public class MailAccountSaveReqVO {
     @NotNull(message = "密码必填")
     private String password;
 
-    @Schema(description = "SMTP 服务器域名", requiredMode = Schema.RequiredMode.REQUIRED, example = "www.example.com")
+    @Schema(description = "SMTP 服务器域名", requiredMode = Schema.RequiredMode.REQUIRED, example = "www.nomix.cn")
     @NotNull(message = "SMTP 服务器域名不能为空")
     private String host;
 

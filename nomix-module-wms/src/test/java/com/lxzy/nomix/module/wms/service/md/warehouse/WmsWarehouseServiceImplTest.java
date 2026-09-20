@@ -9,11 +9,10 @@ import com.lxzy.nomix.module.wms.service.order.check.WmsCheckOrderService;
 import com.lxzy.nomix.module.wms.service.order.movement.WmsMovementOrderService;
 import com.lxzy.nomix.module.wms.service.order.receipt.WmsReceiptOrderService;
 import com.lxzy.nomix.module.wms.service.order.shipment.WmsShipmentOrderService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
-
-import javax.annotation.Resource;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import static com.lxzy.nomix.framework.test.core.util.AssertUtils.assertServiceException;
 import static com.lxzy.nomix.module.wms.enums.ErrorCodeConstants.WAREHOUSE_CODE_DUPLICATE;
@@ -30,15 +29,15 @@ public class WmsWarehouseServiceImplTest extends BaseDbUnitTest {
     @Resource
     private WmsWarehouseMapper warehouseMapper;
 
-    @MockBean
+    @MockitoBean
     private WmsInventoryService inventoryService;
-    @MockBean
+    @MockitoBean
     private WmsReceiptOrderService receiptOrderService;
-    @MockBean
+    @MockitoBean
     private WmsShipmentOrderService shipmentOrderService;
-    @MockBean
+    @MockitoBean
     private WmsMovementOrderService movementOrderService;
-    @MockBean
+    @MockitoBean
     private WmsCheckOrderService checkOrderService;
 
     @Test

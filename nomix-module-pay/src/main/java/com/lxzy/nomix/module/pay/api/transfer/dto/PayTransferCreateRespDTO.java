@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * 转账单创建 Response DTO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class PayTransferCreateRespDTO {

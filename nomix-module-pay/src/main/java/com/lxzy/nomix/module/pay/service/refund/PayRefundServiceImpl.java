@@ -25,12 +25,12 @@ import com.lxzy.nomix.module.pay.service.app.PayAppService;
 import com.lxzy.nomix.module.pay.service.channel.PayChannelService;
 import com.lxzy.nomix.module.pay.service.notify.PayNotifyService;
 import com.lxzy.nomix.module.pay.service.order.PayOrderService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;

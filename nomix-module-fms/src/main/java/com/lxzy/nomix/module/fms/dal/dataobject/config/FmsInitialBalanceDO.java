@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * FMS 科目期初余额 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "fms_initial_balance", autoResultMap = true)
 @KeySequence("fms_initial_balance_seq")

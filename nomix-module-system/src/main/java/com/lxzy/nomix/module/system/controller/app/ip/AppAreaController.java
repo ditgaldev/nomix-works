@@ -8,12 +8,12 @@ import com.lxzy.nomix.framework.ip.core.utils.AreaUtils;
 import com.lxzy.nomix.module.system.controller.app.ip.vo.AppAreaNodeRespVO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.annotation.security.PermitAll;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.security.PermitAll;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.pojo.CommonResult.success;

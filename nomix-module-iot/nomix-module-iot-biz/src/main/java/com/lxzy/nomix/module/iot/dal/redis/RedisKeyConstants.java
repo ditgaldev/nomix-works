@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDevicePropertyDO;
 /**
  * IoT Redis Key 枚举类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface RedisKeyConstants {
 

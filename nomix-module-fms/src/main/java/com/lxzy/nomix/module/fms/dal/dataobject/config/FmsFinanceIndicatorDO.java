@@ -12,7 +12,7 @@ import lombok.ToString;
 /**
  * FMS 首页财务指标 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("fms_finance_indicator")
 @KeySequence("fms_finance_indicator_seq")

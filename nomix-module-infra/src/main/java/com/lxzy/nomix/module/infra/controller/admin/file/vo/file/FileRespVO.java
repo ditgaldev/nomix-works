@@ -21,7 +21,7 @@ public class FileRespVO {
     @Schema(description = "原文件名", requiredMode = Schema.RequiredMode.REQUIRED, example = "nomix.jpg")
     private String name;
 
-    @Schema(description = "文件 URL", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "文件 URL", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn/nomix.jpg")
     private String url;
 
     @Schema(description = "文件MIME类型", example = "application/octet-stream")

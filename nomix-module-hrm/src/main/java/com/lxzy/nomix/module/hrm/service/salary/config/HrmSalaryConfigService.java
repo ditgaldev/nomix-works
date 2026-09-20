@@ -7,7 +7,7 @@ import com.lxzy.nomix.module.hrm.dal.dataobject.salary.config.HrmSalaryConfigDO;
 /**
  * HRM 计薪配置 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmSalaryConfigService {
 

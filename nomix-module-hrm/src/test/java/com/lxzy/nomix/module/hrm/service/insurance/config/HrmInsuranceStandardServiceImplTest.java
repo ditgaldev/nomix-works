@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 /**
  * {@link HrmInsuranceStandardServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class HrmInsuranceStandardServiceImplTest {
 

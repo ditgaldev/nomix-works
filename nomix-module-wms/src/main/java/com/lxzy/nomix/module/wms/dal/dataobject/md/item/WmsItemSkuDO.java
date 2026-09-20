@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 /**
  * WMS 商品 SKU DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("wms_item_sku")
 @KeySequence("wms_item_sku_seq")

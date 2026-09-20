@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * MES 当前绑定状态（快照） Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesProWorkRecordMapper extends BaseMapperX<MesProWorkRecordDO> {

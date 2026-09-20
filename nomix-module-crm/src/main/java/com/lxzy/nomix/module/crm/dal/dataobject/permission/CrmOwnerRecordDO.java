@@ -10,7 +10,7 @@ import lombok.*;
 /**
  * CRM 负责人变更记录 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("crm_owner_record")
 @KeySequence("crm_owner_record_seq")

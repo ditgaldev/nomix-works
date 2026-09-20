@@ -7,7 +7,7 @@ import com.lxzy.nomix.module.infra.dal.dataobject.db.DataSourceConfigDO;
 import com.lxzy.nomix.module.infra.dal.mysql.db.DataSourceConfigMapper;
 import com.baomidou.dynamic.datasource.creator.DataSourceProperty;
 import com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -21,7 +21,7 @@ import static com.lxzy.nomix.module.infra.enums.ErrorCodeConstants.DATA_SOURCE_C
 /**
  * 数据源配置 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

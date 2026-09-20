@@ -6,7 +6,7 @@ import com.lxzy.nomix.module.mp.controller.admin.account.vo.MpAccountPageReqVO;
 import com.lxzy.nomix.module.mp.controller.admin.account.vo.MpAccountUpdateReqVO;
 import com.lxzy.nomix.module.mp.dal.dataobject.account.MpAccountDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -15,7 +15,7 @@ import static com.lxzy.nomix.module.mp.enums.ErrorCodeConstants.ACCOUNT_NOT_EXIS
 /**
  * 公众号账号 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MpAccountService {
 

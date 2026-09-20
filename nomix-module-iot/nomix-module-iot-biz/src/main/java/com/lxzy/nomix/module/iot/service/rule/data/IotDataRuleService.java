@@ -5,14 +5,14 @@ import com.lxzy.nomix.module.iot.controller.admin.rule.vo.data.rule.IotDataRuleP
 import com.lxzy.nomix.module.iot.controller.admin.rule.vo.data.rule.IotDataRuleSaveReqVO;
 import com.lxzy.nomix.module.iot.core.mq.message.IotDeviceMessage;
 import com.lxzy.nomix.module.iot.dal.dataobject.rule.IotDataRuleDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * IoT 数据流转规则 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface IotDataRuleService {
 

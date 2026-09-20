@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * 代码生成的前端类型枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @AllArgsConstructor
 @Getter

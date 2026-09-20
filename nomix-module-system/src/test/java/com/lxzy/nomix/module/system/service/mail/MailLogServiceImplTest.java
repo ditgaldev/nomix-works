@@ -14,13 +14,13 @@ import org.assertj.core.util.Lists;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.Collection;
 import java.util.Map;
 
 import static cn.hutool.core.util.RandomUtil.randomEle;
-import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
 import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildTime;
+import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
 import static com.lxzy.nomix.framework.common.util.object.ObjectUtils.cloneIgnoreId;
 import static com.lxzy.nomix.framework.test.core.util.AssertUtils.assertPojoEquals;
 import static com.lxzy.nomix.framework.test.core.util.RandomUtils.*;
@@ -29,7 +29,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link MailLogServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(MailLogServiceImpl.class)
 public class MailLogServiceImplTest extends BaseDbUnitTest {

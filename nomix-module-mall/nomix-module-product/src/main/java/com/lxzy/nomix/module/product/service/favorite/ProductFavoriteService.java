@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.product.controller.admin.favorite.vo.ProductFavorit
 import com.lxzy.nomix.module.product.controller.app.favorite.vo.AppFavoritePageReqVO;
 import com.lxzy.nomix.module.product.dal.dataobject.favorite.ProductFavoriteDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 商品收藏 Service 接口

@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.pms.job.kb;
 import com.lxzy.nomix.framework.quartz.core.handler.JobHandler;
 import com.lxzy.nomix.framework.tenant.core.job.TenantJob;
 import com.lxzy.nomix.module.pms.service.kb.recycle.PmsKnowledgeRecycleService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 /**
  * PMS 知识库回收站到期清理 Job
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 @Slf4j

@@ -7,7 +7,7 @@ import com.lxzy.nomix.module.pms.enums.pm.workitem.PmsWorkItemPriorityEnum;
 import com.lxzy.nomix.module.pms.enums.pm.workitem.PmsWorkItemStatusTypeEnum;
 import com.lxzy.nomix.module.pms.enums.pm.workitem.PmsWorkItemTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;

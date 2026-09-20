@@ -10,7 +10,7 @@ import lombok.*;
 /**
  * IM 表情包 DO（运营配置的系统表情包元数据）
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("im_face_pack")
 @KeySequence("im_face_pack_seq")

@@ -12,13 +12,12 @@ import com.lxzy.nomix.module.pay.enums.wallet.PayWalletBizTypeEnum;
 import com.lxzy.nomix.module.pay.service.wallet.PayWalletService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.annotation.Resource;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
-import javax.annotation.Resource;
-import javax.validation.Valid;
 
 import static com.lxzy.nomix.framework.common.enums.UserTypeEnum.MEMBER;
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;

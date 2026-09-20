@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * IM 频道素材 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ImChannelMaterialMapper extends BaseMapperX<ImChannelMaterialDO> {

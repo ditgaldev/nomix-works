@@ -3,10 +3,10 @@ package com.lxzy.nomix.module.bpm.dal.redis;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.StrUtil;
 import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.model.BpmModelMetaInfoVO;
+import jakarta.annotation.Resource;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Repository;
 
-import javax.annotation.Resource;
 import java.time.Duration;
 import java.time.LocalDateTime;
 

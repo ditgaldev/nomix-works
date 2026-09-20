@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * PMS 知识互动对象 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface PmsKnowledgeInteractionTargetService {
 

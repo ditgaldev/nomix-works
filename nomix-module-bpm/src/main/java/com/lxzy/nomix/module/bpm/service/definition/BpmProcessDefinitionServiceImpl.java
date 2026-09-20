@@ -14,6 +14,7 @@ import com.lxzy.nomix.module.bpm.framework.flowable.core.enums.BpmnModelConstant
 import com.lxzy.nomix.module.bpm.framework.flowable.core.util.FlowableUtils;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
 import com.lxzy.nomix.module.system.api.user.dto.AdminUserRespDTO;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.flowable.bpmn.model.BpmnModel;
 import org.flowable.common.engine.impl.db.SuspensionState;
@@ -25,7 +26,6 @@ import org.flowable.engine.repository.ProcessDefinitionQuery;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.*;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -39,7 +39,7 @@ import static java.util.Collections.emptyList;
  *
  * @author yunlongn
  * @author ZJQ
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

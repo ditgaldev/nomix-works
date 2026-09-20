@@ -7,10 +7,7 @@ import cn.hutool.core.util.StrUtil;
 import com.lxzy.nomix.framework.common.enums.CommonStatusEnum;
 import uk.co.jemos.podam.api.PodamFactory;
 import uk.co.jemos.podam.api.PodamFactoryImpl;
-import uk.co.jemos.podam.common.AttributeStrategy;
 
-import javax.validation.constraints.Email;
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -25,7 +22,7 @@ import java.util.stream.Stream;
 /**
  * 随机工具类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class RandomUtils {
 
@@ -116,7 +113,7 @@ public class RandomUtils {
     }
 
     public static String randomURL() {
-        return "" + randomString();
+        return "https://www.nomix.cn/" + randomString();
     }
 
     @SafeVarargs

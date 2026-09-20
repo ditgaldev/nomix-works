@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 /**
  * API 错误日志 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ApiErrorLogMapper extends BaseMapperX<ApiErrorLogDO> {

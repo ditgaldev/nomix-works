@@ -12,10 +12,10 @@ import com.lxzy.nomix.module.hrm.enums.employee.info.HrmEmployeeEntryStatusEnum;
 import com.lxzy.nomix.module.hrm.enums.recruit.post.HrmRecruitPostStatusEnum;
 import com.lxzy.nomix.module.hrm.service.employee.info.HrmEmployeeService;
 import com.lxzy.nomix.module.system.api.dept.DeptApi;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -50,7 +50,7 @@ import static org.mockito.Mockito.verifyNoInteractions;
 /**
  * {@link HrmRecruitPostServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmRecruitPostServiceImpl.class)
 public class HrmRecruitPostServiceImplTest extends BaseDbUnitTest {
@@ -61,11 +61,11 @@ public class HrmRecruitPostServiceImplTest extends BaseDbUnitTest {
     @Resource
     private HrmRecruitPostMapper recruitPostMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmRecruitPostTypeService recruitPostTypeService;
-    @MockBean
+    @MockitoBean
     private HrmEmployeeService employeeService;
-    @MockBean
+    @MockitoBean
     private DeptApi deptApi;
 
     @Test

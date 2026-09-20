@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * PMS 工作项 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "pms_work_item", autoResultMap = true)
 @KeySequence("pms_work_item_seq")

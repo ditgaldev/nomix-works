@@ -15,7 +15,7 @@ import static com.lxzy.nomix.framework.common.pojo.CommonResult.success;
  * <p>
  * 用于直连设备/网关的一型一密动态注册，不需要认证
  *
- * @author Nomix
+ * @author Nomix源码
  * @see <a href="https://help.aliyun.com/zh/iot/user-guide/unique-certificate-per-product-verification">阿里云 - 一型一密</a>
  */
 public class IotHttpRegisterHandler extends IotHttpAbstractHandler {

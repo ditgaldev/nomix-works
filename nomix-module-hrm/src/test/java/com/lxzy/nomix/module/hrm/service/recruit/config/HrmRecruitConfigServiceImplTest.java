@@ -4,10 +4,10 @@ import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.hrm.controller.admin.recruit.vo.config.HrmRecruitEliminateReasonSaveReqVO;
 import com.lxzy.nomix.module.hrm.service.config.HrmConfigService;
 import com.lxzy.nomix.module.hrm.enums.config.HrmConfigTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.Arrays;
 import java.util.List;
@@ -19,14 +19,14 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmRecruitConfigServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmRecruitConfigServiceImpl.class)
 public class HrmRecruitConfigServiceImplTest extends BaseDbUnitTest {
 
     @Resource
     private HrmRecruitConfigServiceImpl recruitConfigService;
-    @MockBean
+    @MockitoBean
     private HrmConfigService configService;
 
     @Test

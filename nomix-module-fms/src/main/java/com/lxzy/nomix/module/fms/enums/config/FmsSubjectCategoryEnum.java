@@ -8,7 +8,7 @@ import java.util.Arrays;
 /**
  * FMS 科目类别枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

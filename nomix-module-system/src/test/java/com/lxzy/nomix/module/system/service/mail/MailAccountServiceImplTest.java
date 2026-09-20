@@ -6,11 +6,11 @@ import com.lxzy.nomix.module.system.controller.admin.mail.vo.account.MailAccount
 import com.lxzy.nomix.module.system.controller.admin.mail.vo.account.MailAccountSaveReqVO;
 import com.lxzy.nomix.module.system.dal.dataobject.mail.MailAccountDO;
 import com.lxzy.nomix.module.system.dal.mysql.mail.MailAccountMapper;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.util.object.ObjectUtils.cloneIgnoreId;
@@ -25,7 +25,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link MailAccountServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(MailAccountServiceImpl.class)
 public class MailAccountServiceImplTest extends BaseDbUnitTest {
@@ -36,7 +36,7 @@ public class MailAccountServiceImplTest extends BaseDbUnitTest {
     @Resource
     private MailAccountMapper mailAccountMapper;
 
-    @MockBean
+    @MockitoBean
     private MailTemplateService mailTemplateService;
 
     @Test

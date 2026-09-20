@@ -1,8 +1,8 @@
 package com.lxzy.nomix.module.hrm.controller.admin.insurance.vo.monthrecord.employee;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.util.List;

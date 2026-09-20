@@ -10,11 +10,11 @@ import com.lxzy.nomix.module.mes.controller.admin.qc.template.vo.item.MesQcTempl
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.template.MesQcTemplateDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.template.MesQcTemplateItemDO;
 import com.lxzy.nomix.module.mes.dal.mysql.qc.template.MesQcTemplateItemMapper;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Objects;
 
@@ -26,7 +26,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 质检方案-产品关联 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

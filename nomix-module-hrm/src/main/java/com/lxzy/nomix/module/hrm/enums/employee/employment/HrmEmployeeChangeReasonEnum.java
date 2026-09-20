@@ -12,7 +12,7 @@ import java.util.Set;
 /**
  * HRM 员工异动原因枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

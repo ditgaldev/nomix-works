@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * HRM 绩效申诉超期处理动作枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

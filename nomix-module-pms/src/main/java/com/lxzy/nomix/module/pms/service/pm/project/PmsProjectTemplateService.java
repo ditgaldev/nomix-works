@@ -8,7 +8,7 @@ import com.lxzy.nomix.module.pms.dal.dataobject.pm.project.PmsProjectTemplateDO;
 /**
  * PMS 项目模板 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface PmsProjectTemplateService {
 

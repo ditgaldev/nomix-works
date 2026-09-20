@@ -10,7 +10,7 @@ import java.time.LocalDate;
 /**
  * FMS 明细账导出 Response VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 @ExcelIgnoreUnannotated

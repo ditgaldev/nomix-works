@@ -28,7 +28,7 @@ public class BargainRecordPageItemRespVO extends BargainRecordBaseVO {
     @Schema(description = "用户昵称", example = "老Nomix")
     private String nickname;
 
-    @Schema(description = "用户头像", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "用户头像", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn/xxx.jpg")
     private String avatar;
 
     // ========== 活动相关 ==========

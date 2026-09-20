@@ -13,10 +13,10 @@ import com.lxzy.nomix.module.pms.dal.dataobject.pm.workitem.PmsWorkItemWorkLogDO
 import com.lxzy.nomix.module.pms.dal.mysql.pm.workitem.PmsWorkItemWorkLogMapper;
 import com.lxzy.nomix.module.pms.service.pm.iteration.PmsIterationService;
 import com.lxzy.nomix.module.pms.service.pm.project.PmsProjectMemberService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -35,7 +35,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link PmsWorkItemWorkLogServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsWorkItemWorkLogServiceImpl.class)
 public class PmsWorkItemWorkLogServiceImplTest extends BaseDbUnitTest {
@@ -46,13 +46,13 @@ public class PmsWorkItemWorkLogServiceImplTest extends BaseDbUnitTest {
     @Resource
     private PmsWorkItemWorkLogMapper workLogMapper;
 
-    @MockBean
+    @MockitoBean
     private PmsWorkItemService workItemService;
-    @MockBean
+    @MockitoBean
     private PmsProjectMemberService projectMemberService;
-    @MockBean
+    @MockitoBean
     private PmsWorkItemActivityService workItemActivityService;
-    @MockBean
+    @MockitoBean
     private PmsIterationService iterationService;
 
     @Test

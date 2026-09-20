@@ -1,14 +1,13 @@
 package com.lxzy.nomix.module.iot.gateway.protocol.udp;
 
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
 
 /**
  * IoT UDP 协议配置
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class IotUdpConfig {

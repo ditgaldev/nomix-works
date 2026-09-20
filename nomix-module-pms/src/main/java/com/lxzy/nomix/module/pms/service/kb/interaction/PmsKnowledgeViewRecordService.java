@@ -7,7 +7,7 @@ import java.util.Collection;
 /**
  * PMS 知识浏览记录 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface PmsKnowledgeViewRecordService {
 

@@ -34,6 +34,7 @@ import com.lxzy.nomix.module.im.service.websocket.notification.message.ImMessage
 import com.lxzy.nomix.module.im.dal.dataobject.message.content.QuoteMessage;
 import com.lxzy.nomix.module.im.dal.dataobject.message.content.RecallMessage;
 import com.lxzy.nomix.module.im.util.ImMessageUtils;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.scheduling.annotation.Async;
@@ -41,7 +42,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.*;
 
@@ -52,7 +52,7 @@ import static com.lxzy.nomix.module.im.enums.ErrorCodeConstants.*;
 /**
  * IM 群聊消息 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

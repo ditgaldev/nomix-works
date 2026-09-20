@@ -2,10 +2,10 @@ package com.lxzy.nomix.module.iot.core.topic.topo;
 
 import com.lxzy.nomix.module.iot.core.enums.IotDeviceMessageMethodEnum;
 import com.lxzy.nomix.module.iot.core.topic.IotDeviceIdentity;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
 import java.util.List;
 
 /**
@@ -13,7 +13,7 @@ import java.util.List;
  * <p>
  * 用于 {@link IotDeviceMessageMethodEnum#TOPO_DELETE} 消息的 params 参数
  *
- * @author Nomix
+ * @author Nomix源码
  * @see <a href="https://help.aliyun.com/zh/marketplace/delete-a-topological-relationship">阿里云 - 删除拓扑关系</a>
  */
 @Data

@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * 多租户的 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface TenantCommonApi {
 

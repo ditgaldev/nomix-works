@@ -6,7 +6,7 @@ import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.module.pms.controller.admin.pm.workitem.vo.label.PmsWorkItemLabelSaveReqVO;
 import com.lxzy.nomix.module.pms.dal.dataobject.pm.workitem.PmsWorkItemLabelDO;
 import com.lxzy.nomix.module.pms.dal.mysql.pm.workitem.PmsWorkItemLabelMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -22,7 +22,7 @@ import static com.lxzy.nomix.module.pms.enums.ErrorCodeConstants.WORK_ITEM_LABEL
 /**
  * PMS 工作项标签 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

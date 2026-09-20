@@ -16,7 +16,7 @@ import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUti
  *
  * 另外，jobHandlerName 对应到 Spring Bean 的名字，直接调用
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class SchedulerManager {
 
@@ -143,7 +143,7 @@ public class SchedulerManager {
     private void validateScheduler() {
         if (scheduler == null) {
             throw exception0(NOT_IMPLEMENTED.getCode(),
-                    "[定时任务 - 已禁用][参考  开启]");
+                    "[定时任务 - 已禁用][参考 https://doc.nomix.cn/job/ 开启]");
         }
     }
 

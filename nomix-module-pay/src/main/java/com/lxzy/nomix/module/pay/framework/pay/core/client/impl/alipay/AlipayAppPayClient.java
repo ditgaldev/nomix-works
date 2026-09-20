@@ -17,7 +17,7 @@ import lombok.extern.slf4j.Slf4j;
  *
  * // TODO Nomix：未详细测试，因为手头没 App
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class AlipayAppPayClient extends AbstractAlipayPayClient {

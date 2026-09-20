@@ -10,7 +10,7 @@ import com.lxzy.nomix.module.hrm.dal.dataobject.employee.employment.HrmEmployeeQ
 import com.lxzy.nomix.module.hrm.service.employee.employment.HrmEmployeeChangeRecordService;
 import com.lxzy.nomix.module.hrm.service.employee.employment.HrmEmployeeQuitInfoService;
 import com.lxzy.nomix.module.hrm.service.employee.info.HrmEmployeeService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -23,7 +23,7 @@ import java.util.Set;
 /**
  * HRM 员工异动生效 Job
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 @Slf4j

@@ -13,7 +13,9 @@
 
     <name>${project.artifactId}</name>
     <description>Excel 拓展</description>
-<dependencies>
+    <url>https://github.com/ditgaldev/nomix-works</url>
+
+    <dependencies>
         <dependency>
             <groupId>com.lxzy.nomix</groupId>
             <artifactId>nomix-common</artifactId>

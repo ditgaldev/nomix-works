@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * IM 消息状态枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Getter

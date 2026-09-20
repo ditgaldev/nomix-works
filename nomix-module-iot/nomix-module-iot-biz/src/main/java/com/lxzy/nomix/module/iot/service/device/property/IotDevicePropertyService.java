@@ -5,8 +5,8 @@ import com.lxzy.nomix.module.iot.controller.admin.device.vo.property.IotDevicePr
 import com.lxzy.nomix.module.iot.core.mq.message.IotDeviceMessage;
 import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDeviceDO;
 import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDevicePropertyDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
@@ -15,7 +15,7 @@ import java.util.Set;
 /**
  * IoT 设备【属性】数据 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface IotDevicePropertyService {
 

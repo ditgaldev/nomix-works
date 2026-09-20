@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * MES 来料检验单（IQC） Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesQcIqcMapper extends BaseMapperX<MesQcIqcDO> {

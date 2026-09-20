@@ -12,10 +12,10 @@ import com.lxzy.nomix.module.hrm.controller.admin.recruit.vo.channel.HrmRecruitC
 import com.lxzy.nomix.module.hrm.dal.dataobject.recruit.config.HrmRecruitChannelDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.recruit.config.HrmRecruitChannelMapper;
 import com.lxzy.nomix.module.hrm.service.employee.info.HrmEmployeeService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.HashSet;
 import java.util.List;
@@ -37,7 +37,7 @@ import static org.mockito.Mockito.verifyNoInteractions;
 /**
  * {@link HrmRecruitChannelServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmRecruitChannelServiceImpl.class)
 public class HrmRecruitChannelServiceImplTest extends BaseDbUnitTest {
@@ -48,9 +48,9 @@ public class HrmRecruitChannelServiceImplTest extends BaseDbUnitTest {
     @Resource
     private HrmRecruitChannelMapper recruitChannelMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmEmployeeService employeeService;
-    @MockBean
+    @MockitoBean
     private HrmRecruitCandidateService recruitCandidateService;
 
     @Test

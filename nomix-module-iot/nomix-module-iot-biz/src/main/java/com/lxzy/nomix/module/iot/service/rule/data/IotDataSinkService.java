@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.iot.controller.admin.rule.vo.data.sink.IotDataSinkPageReqVO;
 import com.lxzy.nomix.module.iot.controller.admin.rule.vo.data.sink.IotDataSinkSaveReqVO;
 import com.lxzy.nomix.module.iot.dal.dataobject.rule.IotDataSinkDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 

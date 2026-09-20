@@ -5,15 +5,15 @@ import com.lxzy.nomix.module.erp.controller.admin.stock.vo.out.ErpStockOutPageRe
 import com.lxzy.nomix.module.erp.controller.admin.stock.vo.out.ErpStockOutSaveReqVO;
 import com.lxzy.nomix.module.erp.dal.dataobject.stock.ErpStockOutDO;
 import com.lxzy.nomix.module.erp.dal.dataobject.stock.ErpStockOutItemDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * ERP 其它出库单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ErpStockOutService {
 

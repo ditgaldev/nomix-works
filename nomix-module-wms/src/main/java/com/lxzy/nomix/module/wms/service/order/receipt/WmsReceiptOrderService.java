@@ -4,13 +4,12 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.wms.controller.admin.order.receipt.vo.order.WmsReceiptOrderPageReqVO;
 import com.lxzy.nomix.module.wms.controller.admin.order.receipt.vo.order.WmsReceiptOrderSaveReqVO;
 import com.lxzy.nomix.module.wms.dal.dataobject.order.receipt.WmsReceiptOrderDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * WMS 入库单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface WmsReceiptOrderService {
 

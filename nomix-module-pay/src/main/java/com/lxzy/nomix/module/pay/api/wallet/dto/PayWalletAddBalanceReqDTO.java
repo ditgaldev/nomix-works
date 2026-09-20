@@ -1,14 +1,13 @@
 package com.lxzy.nomix.module.pay.api.wallet.dto;
 
 import com.lxzy.nomix.framework.common.enums.UserTypeEnum;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-
-import javax.validation.constraints.NotNull;
 
 /**
  * 钱包余额增加 Request DTO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class PayWalletAddBalanceReqDTO {

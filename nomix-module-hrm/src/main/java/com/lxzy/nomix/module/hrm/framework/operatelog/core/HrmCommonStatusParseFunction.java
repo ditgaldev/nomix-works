@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 /**
  * HRM 通用状态的 {@link IParseFunction} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 @Slf4j

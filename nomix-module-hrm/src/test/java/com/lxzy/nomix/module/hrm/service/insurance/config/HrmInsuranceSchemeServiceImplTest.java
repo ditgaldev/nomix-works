@@ -12,10 +12,10 @@ import com.lxzy.nomix.module.hrm.dal.mysql.insurance.config.HrmInsuranceSchemeMa
 import com.lxzy.nomix.module.hrm.enums.insurance.config.HrmInsuranceProjectTypeEnum;
 import com.lxzy.nomix.module.hrm.enums.insurance.config.HrmInsuranceSchemeTypeEnum;
 import com.lxzy.nomix.module.hrm.service.insurance.employee.HrmInsuranceEmployeeInfoService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
@@ -38,7 +38,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmInsuranceSchemeServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmInsuranceSchemeServiceImpl.class)
 public class HrmInsuranceSchemeServiceImplTest extends BaseDbUnitTest {
@@ -51,9 +51,9 @@ public class HrmInsuranceSchemeServiceImplTest extends BaseDbUnitTest {
     @Resource
     private HrmInsuranceSchemeProjectMapper insuranceSchemeProjectMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmInsuranceEmployeeInfoService insuranceEmployeeInfoService;
-    @MockBean
+    @MockitoBean
     private HrmInsuranceMonthEmployeeRecordService insuranceMonthEmployeeRecordService;
 
     @Test

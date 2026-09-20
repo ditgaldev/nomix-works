@@ -20,7 +20,7 @@ import static com.lxzy.nomix.module.ai.enums.ErrorCodeConstants.API_KEY_NOT_EXIS
 /**
  * AI API 密钥 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

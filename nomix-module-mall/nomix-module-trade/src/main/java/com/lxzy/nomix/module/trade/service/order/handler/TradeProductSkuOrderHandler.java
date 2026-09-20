@@ -7,7 +7,7 @@ import com.lxzy.nomix.module.trade.dal.dataobject.order.TradeOrderDO;
 import com.lxzy.nomix.module.trade.dal.dataobject.order.TradeOrderItemDO;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 
 import static java.util.Collections.singletonList;
@@ -15,7 +15,7 @@ import static java.util.Collections.singletonList;
 /**
  * 商品 SKU 库存的 {@link TradeOrderHandler} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 public class TradeProductSkuOrderHandler implements TradeOrderHandler {

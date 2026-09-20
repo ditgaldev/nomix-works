@@ -45,7 +45,7 @@ import static com.lxzy.nomix.framework.excel.core.util.PoiExcelUtils.writeText;
 /**
  * FMS 初始余额 Excel 工具
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @UtilityClass
 public final class FmsInitialBalanceExcelHelper {

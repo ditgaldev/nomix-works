@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * BPM 模型的类型的枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

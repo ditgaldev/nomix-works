@@ -18,7 +18,9 @@
         从而实现提供 RESTful API 给 nomix-ui-admin、nomix-ui-user 等前端项目。
         本质上来说，它就是个空壳（容器）！
     </description>
-<dependencies>
+    <url>https://github.com/ditgaldev/nomix-works</url>
+
+    <dependencies>
         <dependency>
             <groupId>com.lxzy.nomix</groupId>
             <artifactId>nomix-module-system</artifactId>
@@ -31,11 +33,11 @@
         </dependency>
 
         <!-- 会员中心。默认注释，保证编译速度 -->
-        <dependency>
-            <groupId>com.lxzy.nomix</groupId>
-            <artifactId>nomix-module-member</artifactId>
-            <version>${revision}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.lxzy.nomix</groupId>-->
+<!--            <artifactId>nomix-module-member</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
 
         <!-- 数据报表。默认注释，保证编译速度 -->
 <!--        <dependency>-->
@@ -50,11 +52,11 @@
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
         <!-- 支付服务。默认注释，保证编译速度 -->
-        <dependency>
-            <groupId>com.lxzy.nomix</groupId>
-            <artifactId>nomix-module-pay</artifactId>
-            <version>${revision}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.lxzy.nomix</groupId>-->
+<!--            <artifactId>nomix-module-pay</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
 
         <!-- 微信公众号模块。默认注释，保证编译速度 -->
 <!--        <dependency>-->
@@ -64,26 +66,26 @@
 <!--        </dependency>-->
 
         <!-- 商城相关模块。默认注释，保证编译速度-->
-        <dependency>
-            <groupId>com.lxzy.nomix</groupId>
-            <artifactId>nomix-module-product</artifactId>
-            <version>${revision}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.lxzy.nomix</groupId>
-            <artifactId>nomix-module-promotion</artifactId>
-            <version>${revision}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.lxzy.nomix</groupId>
-            <artifactId>nomix-module-trade</artifactId>
-            <version>${revision}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.lxzy.nomix</groupId>
-            <artifactId>nomix-module-statistics</artifactId>
-            <version>${revision}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.lxzy.nomix</groupId>-->
+<!--            <artifactId>nomix-module-product</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.lxzy.nomix</groupId>-->
+<!--            <artifactId>nomix-module-promotion</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.lxzy.nomix</groupId>-->
+<!--            <artifactId>nomix-module-trade</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.lxzy.nomix</groupId>-->
+<!--            <artifactId>nomix-module-statistics</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
 
         <!-- CRM 相关模块。默认注释，保证编译速度 -->
 <!--        <dependency>-->
@@ -145,6 +147,13 @@
 <!--        <dependency>-->
 <!--            <groupId>com.lxzy.nomix</groupId>-->
 <!--            <artifactId>nomix-module-pms</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
+
+        <!-- OA 办公自动化模块。默认注释，保证编译速度 -->
+<!--        <dependency>-->
+<!--            <groupId>com.lxzy.nomix</groupId>-->
+<!--            <artifactId>nomix-module-oa</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 

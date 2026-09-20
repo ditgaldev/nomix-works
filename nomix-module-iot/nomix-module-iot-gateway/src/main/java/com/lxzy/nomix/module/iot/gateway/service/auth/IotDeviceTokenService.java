@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.iot.core.topic.IotDeviceIdentity;
 /**
  * IoT 设备 Token Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface IotDeviceTokenService {
 

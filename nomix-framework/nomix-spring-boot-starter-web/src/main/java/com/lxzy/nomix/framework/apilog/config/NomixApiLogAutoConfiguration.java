@@ -6,7 +6,7 @@ import com.lxzy.nomix.framework.common.biz.infra.logger.ApiAccessLogCommonApi;
 import com.lxzy.nomix.framework.common.enums.WebFilterOrderEnum;
 import com.lxzy.nomix.framework.web.config.WebProperties;
 import com.lxzy.nomix.framework.web.config.NomixWebAutoConfiguration;
-import javax.servlet.Filter;
+import jakarta.servlet.Filter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;

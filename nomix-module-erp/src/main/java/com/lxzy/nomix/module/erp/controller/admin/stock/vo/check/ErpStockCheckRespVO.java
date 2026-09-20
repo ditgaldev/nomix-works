@@ -5,7 +5,7 @@ import com.lxzy.nomix.framework.excel.core.convert.DictConvert;
 import cn.idev.excel.annotation.ExcelIgnoreUnannotated;
 import cn.idev.excel.annotation.ExcelProperty;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -48,7 +48,7 @@ public class ErpStockCheckRespVO {
     @ExcelProperty("备注")
     private String remark;
 
-    @Schema(description = "附件 URL", example = "")
+    @Schema(description = "附件 URL", example = "https://www.nomix.cn/1.doc")
     private String fileUrl;
 
     @Schema(description = "创建人", example = "Nomix")

@@ -1,16 +1,15 @@
 package com.lxzy.nomix.module.infra.framework.file.core.client.ftp;
 
 import com.lxzy.nomix.module.infra.framework.file.core.client.FileClientConfig;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import org.hibernate.validator.constraints.URL;
-
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 
 /**
  * Ftp 文件客户端的配置类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class FtpFileClientConfig implements FileClientConfig {

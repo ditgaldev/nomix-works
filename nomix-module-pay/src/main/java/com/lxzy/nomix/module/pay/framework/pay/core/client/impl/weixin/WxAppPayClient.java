@@ -22,7 +22,7 @@ import static com.lxzy.nomix.framework.common.util.json.JsonUtils.toJsonString;
  *
  * // TODO Nomix：未详细测试，因为手头没 App
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class WxAppPayClient extends AbstractWxPayClient {

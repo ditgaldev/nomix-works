@@ -7,7 +7,7 @@ import lombok.Getter;
 /**
  * PMS 工作项动态内容枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

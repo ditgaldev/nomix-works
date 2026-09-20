@@ -3,9 +3,9 @@ package com.lxzy.nomix.module.hrm.controller.admin.recruit.vo.interview;
 import com.lxzy.nomix.module.hrm.enums.recruit.candidate.HrmRecruitInterviewResultEnum;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.AssertTrue;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.AssertTrue;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 import static com.lxzy.nomix.framework.common.util.object.ObjectUtils.equalsAny;

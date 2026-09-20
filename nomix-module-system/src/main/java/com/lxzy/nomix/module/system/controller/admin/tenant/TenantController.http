@@ -1,5 +1,5 @@
 ### 获取租户编号 /admin-api/system/get-id-by-name
-GET {{baseUrl}}/system/tenant/get-id-by-name?name=Nomix
+GET {{baseUrl}}/system/tenant/get-id-by-name?name=Nomix源码
 
 ### 创建租户 /admin-api/system/tenant/create
 POST {{baseUrl}}/system/tenant/create
@@ -12,7 +12,7 @@ tenant-id: {{adminTenantId}}
   "contactName": "Nomix",
   "contactMobile": "15601691300",
   "status": 0,
-  "domain": "",
+  "domain": "https://www.nomix.cn",
   "packageId": 110,
   "expireTime": 1699545600000,
   "accountCount": 20,

@@ -10,10 +10,10 @@ public class AppSocialUserRespVO {
     @Schema(description = "社交用户的 openid", requiredMode = Schema.RequiredMode.REQUIRED, example = "IPRmJ0wvBptiPIlGEZiPewGwiEiE")
     private String openid;
 
-    @Schema(description = "社交用户的昵称", requiredMode = Schema.RequiredMode.REQUIRED, example = "Nomix")
+    @Schema(description = "社交用户的昵称", requiredMode = Schema.RequiredMode.REQUIRED, example = "Nomix源码")
     private String nickname;
 
-    @Schema(description = "社交用户的头像", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "社交用户的头像", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn/1.png")
     private String avatar;
 
 }

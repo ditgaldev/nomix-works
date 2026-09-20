@@ -15,10 +15,10 @@ import com.lxzy.nomix.module.mes.service.qc.oqc.MesQcOqcLineService;
 import com.lxzy.nomix.module.mes.service.qc.rqc.MesQcRqcLineService;
 import com.lxzy.nomix.module.mes.service.qc.template.MesQcTemplateIndicatorService;
 import org.springframework.context.annotation.Lazy;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -30,7 +30,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 计量单位 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

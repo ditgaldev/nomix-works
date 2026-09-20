@@ -14,7 +14,7 @@ import lombok.ToString;
 /**
  * PMS 知识最近浏览记录 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("pms_knowledge_view_record")
 @KeySequence("pms_knowledge_view_record_seq")

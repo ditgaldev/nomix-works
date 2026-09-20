@@ -22,11 +22,11 @@ import com.lxzy.nomix.module.system.api.notify.NotifyMessageSendApi;
 import com.lxzy.nomix.module.system.api.notify.dto.NotifySendSingleToUserReqDTO;
 import com.lxzy.nomix.module.system.api.sms.SmsSendApi;
 import com.lxzy.nomix.module.system.api.sms.dto.send.SmsSendSingleToUserReqDTO;
+import jakarta.annotation.Nullable;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Nullable;
-import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -34,7 +34,7 @@ import java.util.Map;
 /**
  * IoT 告警触发的 {@link IotSceneRuleAction} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 @Slf4j

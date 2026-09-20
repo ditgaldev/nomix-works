@@ -32,7 +32,7 @@ import com.lxzy.nomix.module.hrm.enums.performance.plan.HrmPerformanceStageTypeE
 import com.lxzy.nomix.module.hrm.service.employee.info.HrmEmployeeService;
 import com.lxzy.nomix.module.system.api.dept.DeptApi;
 import com.lxzy.nomix.module.system.api.dept.dto.DeptRespDTO;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -53,7 +53,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.fi
 /**
  * HRM 员工绩效考核查询 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class HrmPerformanceAssessmentQueryServiceImpl

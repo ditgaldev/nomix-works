@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.im.enums;
 /**
  * IM 通用常量
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ImCommonConstants {
 

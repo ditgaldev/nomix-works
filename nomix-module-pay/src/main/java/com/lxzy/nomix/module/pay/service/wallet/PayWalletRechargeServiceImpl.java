@@ -27,12 +27,12 @@ import com.lxzy.nomix.module.pay.service.order.PayOrderService;
 import com.lxzy.nomix.module.system.api.social.SocialClientApi;
 import com.lxzy.nomix.module.system.api.social.dto.SocialWxaOrderUploadShippingInfoReqDTO;
 import com.lxzy.nomix.module.system.api.social.dto.SocialWxaSubscribeMessageSendReqDTO;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.Resource;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Objects;

@@ -6,8 +6,8 @@ import com.lxzy.nomix.module.iot.core.mq.message.IotDeviceMessage;
 import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDeviceDO;
 import com.lxzy.nomix.module.iot.dal.dataobject.ota.IotOtaFirmwareDO;
 import com.lxzy.nomix.module.iot.dal.dataobject.ota.IotOtaTaskRecordDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;

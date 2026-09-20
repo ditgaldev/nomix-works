@@ -6,7 +6,7 @@ import lombok.Data;
 /**
  * FMS 辅助核算类别 Response VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Schema(description = "管理后台 - FMS 辅助核算类别 Response VO")
 @Data

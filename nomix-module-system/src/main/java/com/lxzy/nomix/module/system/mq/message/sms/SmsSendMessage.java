@@ -3,13 +3,13 @@ package com.lxzy.nomix.module.system.mq.message.sms;
 import com.lxzy.nomix.framework.common.core.KeyValue;
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import java.util.List;
 
 /**
  * 短信发送消息
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class SmsSendMessage {

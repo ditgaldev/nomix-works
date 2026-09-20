@@ -9,7 +9,7 @@ import com.lxzy.nomix.module.pms.dal.dataobject.kb.interaction.PmsKnowledgeDocum
 import com.lxzy.nomix.module.pms.dal.mysql.kb.interaction.PmsKnowledgeDocumentCommentMapper;
 import com.lxzy.nomix.module.pms.enums.kb.content.PmsKnowledgeDocumentTypeEnum;
 import com.lxzy.nomix.module.pms.service.kb.content.PmsKnowledgeDocumentService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -27,7 +27,7 @@ import static com.lxzy.nomix.module.pms.enums.ErrorCodeConstants.KNOWLEDGE_DOCUM
 /**
  * PMS 知识库文档评论 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

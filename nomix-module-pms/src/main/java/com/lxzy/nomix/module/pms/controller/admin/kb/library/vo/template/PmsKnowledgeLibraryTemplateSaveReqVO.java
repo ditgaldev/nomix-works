@@ -3,12 +3,12 @@ package com.lxzy.nomix.module.pms.controller.admin.kb.library.vo.template;
 import com.lxzy.nomix.framework.common.enums.CommonStatusEnum;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.Valid;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.PositiveOrZero;
-import javax.validation.constraints.Size;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.PositiveOrZero;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 import java.util.List;

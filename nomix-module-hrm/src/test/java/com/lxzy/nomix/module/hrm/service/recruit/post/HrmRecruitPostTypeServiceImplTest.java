@@ -5,7 +5,7 @@ import com.lxzy.nomix.framework.common.util.collection.ArrayUtils;
 import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.hrm.dal.dataobject.recruit.post.HrmRecruitPostTypeDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.recruit.post.HrmRecruitPostTypeMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
@@ -25,7 +25,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link HrmRecruitPostTypeServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmRecruitPostTypeServiceImpl.class)
 public class HrmRecruitPostTypeServiceImplTest extends BaseDbUnitTest {

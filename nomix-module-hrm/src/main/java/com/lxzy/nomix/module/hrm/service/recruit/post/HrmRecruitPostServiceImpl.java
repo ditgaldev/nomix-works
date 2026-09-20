@@ -16,7 +16,7 @@ import com.lxzy.nomix.module.system.api.dept.DeptApi;
 import com.mzt.logapi.context.LogRecordContext;
 import com.mzt.logapi.service.impl.DiffParseFunction;
 import com.mzt.logapi.starter.annotation.LogRecord;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -34,7 +34,7 @@ import static com.lxzy.nomix.module.hrm.enums.LogRecordConstants.*;
 /**
  * 招聘职位 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

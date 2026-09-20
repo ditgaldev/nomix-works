@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.trade.service.cart;
 import com.lxzy.nomix.module.trade.controller.app.cart.vo.*;
 import com.lxzy.nomix.module.trade.dal.dataobject.cart.CartDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
@@ -11,7 +11,7 @@ import java.util.Set;
 /**
  * 购物车 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface CartService {
 

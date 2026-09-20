@@ -10,7 +10,7 @@ import lombok.*;
 /**
  * MES 计划班组关联 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_cal_plan_team")
 @KeySequence("mes_cal_plan_team_seq")

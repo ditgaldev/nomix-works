@@ -3,17 +3,17 @@ package com.lxzy.nomix.module.iot.job.rule;
 import cn.hutool.core.map.MapUtil;
 import com.lxzy.nomix.module.iot.enums.rule.IotSceneRuleTriggerTypeEnum;
 import com.lxzy.nomix.module.iot.service.rule.scene.IotSceneRuleService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.quartz.JobExecutionContext;
 import org.springframework.scheduling.quartz.QuartzJobBean;
 
-import javax.annotation.Resource;
 import java.util.Map;
 
 /**
  * IoT 规则场景 Job，用于执行 {@link IotSceneRuleTriggerTypeEnum#TIMER} 类型的规则场景
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class IotSceneRuleJob extends QuartzJobBean {

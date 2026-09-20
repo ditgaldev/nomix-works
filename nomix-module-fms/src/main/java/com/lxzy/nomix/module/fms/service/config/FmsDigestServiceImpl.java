@@ -8,7 +8,7 @@ import com.lxzy.nomix.module.fms.dal.mysql.config.FmsDigestMapper;
 import com.lxzy.nomix.module.fms.service.config.FmsAccountSetService;
 import com.mzt.logapi.context.LogRecordContext;
 import com.mzt.logapi.starter.annotation.LogRecord;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -27,7 +27,7 @@ import static com.lxzy.nomix.module.fms.enums.LogRecordConstants.FMS_DIGEST_UPDA
 /**
  * FMS 常用摘要 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

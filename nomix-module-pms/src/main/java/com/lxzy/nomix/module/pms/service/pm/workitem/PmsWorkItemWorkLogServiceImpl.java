@@ -16,7 +16,7 @@ import com.lxzy.nomix.module.pms.dal.dataobject.pm.workitem.PmsWorkItemWorkLogDO
 import com.lxzy.nomix.module.pms.dal.mysql.pm.workitem.PmsWorkItemWorkLogMapper;
 import com.lxzy.nomix.module.pms.service.pm.iteration.PmsIterationService;
 import com.lxzy.nomix.module.pms.service.pm.project.PmsProjectMemberService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -45,7 +45,7 @@ import static com.lxzy.nomix.module.pms.enums.pm.workitem.PmsWorkItemActivityCon
 /**
  * PMS 工作项工时记录 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

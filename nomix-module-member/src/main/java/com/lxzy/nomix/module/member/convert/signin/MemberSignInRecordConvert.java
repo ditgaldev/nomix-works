@@ -22,7 +22,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * 签到记录 Convert
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MemberSignInRecordConvert {

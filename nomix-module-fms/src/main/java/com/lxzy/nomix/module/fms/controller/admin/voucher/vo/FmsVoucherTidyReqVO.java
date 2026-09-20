@@ -3,10 +3,10 @@ package com.lxzy.nomix.module.fms.controller.admin.voucher.vo;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.fms.enums.voucher.FmsVoucherTidyTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 
 @Schema(description = "管理后台 - FMS 凭证整理 Request VO")

@@ -7,7 +7,7 @@ import com.lxzy.nomix.module.promotion.controller.admin.diy.vo.page.DiyPagePrope
 import com.lxzy.nomix.module.promotion.controller.admin.diy.vo.page.DiyPageUpdateReqVO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.diy.DiyPageDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 

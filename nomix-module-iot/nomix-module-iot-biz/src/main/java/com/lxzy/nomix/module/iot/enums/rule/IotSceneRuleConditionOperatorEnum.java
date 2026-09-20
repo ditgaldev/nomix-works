@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * IoT 场景触发条件的操作符枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Getter

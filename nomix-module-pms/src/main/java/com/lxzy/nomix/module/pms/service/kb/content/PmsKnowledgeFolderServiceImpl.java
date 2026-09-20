@@ -14,7 +14,7 @@ import com.lxzy.nomix.module.pms.service.kb.interaction.PmsKnowledgeFavoriteServ
 import com.lxzy.nomix.module.pms.service.kb.interaction.PmsKnowledgeViewRecordService;
 import com.lxzy.nomix.module.pms.service.kb.library.PmsKnowledgeLibraryMemberService;
 import com.lxzy.nomix.module.pms.service.kb.recycle.PmsKnowledgeRecycleService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -37,7 +37,7 @@ import static com.lxzy.nomix.module.pms.enums.ErrorCodeConstants.KNOWLEDGE_FOLDE
 /**
  * PMS 知识库文件夹 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -23,7 +23,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * IoT Modbus TCP Server 配置缓存：认证时按需加载，断连时清理，定时刷新已连接设备
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Slf4j

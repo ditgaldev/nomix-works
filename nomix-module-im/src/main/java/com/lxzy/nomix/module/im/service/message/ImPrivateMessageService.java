@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * IM 私聊消息 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ImPrivateMessageService {
 

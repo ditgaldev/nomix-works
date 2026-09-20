@@ -1,12 +1,12 @@
 package com.lxzy.nomix.module.im.dal.redis.rtc;
 
 import com.lxzy.nomix.module.im.enums.ImConversationTypeEnum;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.stereotype.Repository;
 
-import javax.annotation.Resource;
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
 
@@ -19,7 +19,7 @@ import static com.lxzy.nomix.module.im.enums.ErrorCodeConstants.RTC_INVITE_BUSY;
  * <p>
  * invite 入口包一层；锁内做「SELECT 已有活跃通话 → 命中即加入分支；否则 INSERT 新通话」
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Repository
 @Slf4j

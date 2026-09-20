@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * 品牌 Convert
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ProductBrandConvert {

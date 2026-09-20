@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.qc.template.vo.MesQcTemplatePageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.qc.template.vo.MesQcTemplateSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.template.MesQcTemplateDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -15,7 +15,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * MES 质检方案 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesQcTemplateService {
 

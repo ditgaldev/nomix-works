@@ -24,7 +24,7 @@ import com.lxzy.nomix.module.hrm.enums.attendance.record.HrmAttendanceClockStatu
 import com.lxzy.nomix.module.hrm.enums.attendance.record.HrmAttendanceClockTypeEnum;
 import com.lxzy.nomix.module.hrm.service.attendance.config.HrmAttendanceGroupService;
 import com.lxzy.nomix.module.hrm.service.employee.info.HrmEmployeeService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -53,7 +53,7 @@ import static com.lxzy.nomix.module.hrm.enums.ErrorCodeConstants.ATTENDANCE_CLOC
 /**
  * HRM 考勤打卡 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

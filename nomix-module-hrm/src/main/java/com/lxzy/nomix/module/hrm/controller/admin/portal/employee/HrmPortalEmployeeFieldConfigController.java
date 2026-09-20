@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.hrm.controller.admin.employee.vo.config.HrmEmployee
 import com.lxzy.nomix.module.hrm.service.employee.config.HrmEmployeeFieldConfigService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;

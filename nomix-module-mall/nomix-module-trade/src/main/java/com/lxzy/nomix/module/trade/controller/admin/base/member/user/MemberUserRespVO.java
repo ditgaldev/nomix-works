@@ -10,10 +10,10 @@ public class MemberUserRespVO {
     @Schema(description = "用户 ID", requiredMode = Schema.RequiredMode.REQUIRED, example = "1")
     private Long id;
 
-    @Schema(description = "用户昵称", requiredMode = Schema.RequiredMode.REQUIRED, example = "Nomix")
+    @Schema(description = "用户昵称", requiredMode = Schema.RequiredMode.REQUIRED, example = "Nomix源码")
     private String nickname;
 
-    @Schema(description = "用户头像", example = "")
+    @Schema(description = "用户头像", example = "https://www.nomix.cn/xxx.png")
     private String avatar;
 
 }

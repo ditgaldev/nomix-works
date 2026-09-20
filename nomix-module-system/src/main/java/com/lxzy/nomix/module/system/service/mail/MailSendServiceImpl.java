@@ -3,8 +3,6 @@ package com.lxzy.nomix.module.system.service.mail;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.lang.Validator;
 import cn.hutool.core.util.StrUtil;
-import cn.hutool.extra.mail.MailAccount;
-import cn.hutool.extra.mail.MailUtil;
 import com.lxzy.nomix.framework.common.enums.CommonStatusEnum;
 import com.lxzy.nomix.framework.common.enums.UserTypeEnum;
 import com.lxzy.nomix.module.system.dal.dataobject.mail.MailAccountDO;
@@ -15,11 +13,13 @@ import com.lxzy.nomix.module.system.mq.producer.mail.MailProducer;
 import com.lxzy.nomix.module.system.service.member.MemberService;
 import com.lxzy.nomix.module.system.service.user.AdminUserService;
 import com.google.common.annotations.VisibleForTesting;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
+import org.dromara.hutool.extra.mail.MailAccount;
+import org.dromara.hutool.extra.mail.MailUtil;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.io.File;
 import java.util.Collection;
 import java.util.LinkedHashSet;
@@ -137,7 +137,7 @@ public class MailSendServiceImpl implements MailSendService {
     private MailAccount buildMailAccount(MailAccountDO account, String nickname) {
         String from = StrUtil.isNotEmpty(nickname) ? nickname + " <" + account.getMail() + ">" : account.getMail();
         return new MailAccount().setFrom(from).setAuth(true)
-                .setUser(account.getUsername()).setPass(account.getPassword())
+                .setUser(account.getUsername()).setPass(account.getPassword().toCharArray())
                 .setHost(account.getHost()).setPort(account.getPort())
                 .setSslEnable(account.getSslEnable()).setStarttlsEnable(account.getStarttlsEnable());
     }

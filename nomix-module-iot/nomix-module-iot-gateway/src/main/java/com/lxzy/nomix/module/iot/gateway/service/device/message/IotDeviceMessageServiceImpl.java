@@ -10,10 +10,10 @@ import com.lxzy.nomix.module.iot.core.util.IotDeviceMessageUtils;
 import com.lxzy.nomix.module.iot.gateway.serialize.IotMessageSerializer;
 import com.lxzy.nomix.module.iot.gateway.serialize.IotMessageSerializerManager;
 import com.lxzy.nomix.module.iot.gateway.service.device.IotDeviceService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -22,7 +22,7 @@ import static com.lxzy.nomix.module.iot.gateway.enums.ErrorCodeConstants.DEVICE_
 /**
  * IoT 设备消息 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Slf4j

@@ -5,10 +5,10 @@ import com.lxzy.nomix.module.erp.controller.admin.stock.vo.stock.ErpStockPageReq
 import com.lxzy.nomix.module.erp.dal.dataobject.stock.ErpStockDO;
 import com.lxzy.nomix.module.erp.dal.mysql.stock.ErpStockMapper;
 import com.lxzy.nomix.module.erp.service.product.ErpProductService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -18,7 +18,7 @@ import static com.lxzy.nomix.module.erp.enums.ErrorCodeConstants.STOCK_COUNT_NEG
 /**
  * ERP 产品库存 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

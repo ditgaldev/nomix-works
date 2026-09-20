@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.pay.enums;
 /**
  * Pay 字典类型的枚举类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface DictTypeConstants {
 

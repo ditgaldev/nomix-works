@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * PMS 知识库文档分享 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "pms_knowledge_document_share", autoResultMap = true)
 @KeySequence("pms_knowledge_document_share_seq")

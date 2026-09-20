@@ -8,11 +8,11 @@ import com.lxzy.nomix.module.wms.controller.admin.order.check.vo.order.WmsCheckO
 import com.lxzy.nomix.module.wms.dal.dataobject.order.check.WmsCheckOrderDetailDO;
 import com.lxzy.nomix.module.wms.dal.mysql.order.check.WmsCheckOrderDetailMapper;
 import com.lxzy.nomix.module.wms.service.md.item.WmsItemSkuService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 
@@ -24,7 +24,7 @@ import static com.lxzy.nomix.module.wms.enums.ErrorCodeConstants.*;
 /**
  * WMS 盘库单明细 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

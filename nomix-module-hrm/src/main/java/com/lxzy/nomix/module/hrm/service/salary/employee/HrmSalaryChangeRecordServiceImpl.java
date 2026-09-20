@@ -6,7 +6,7 @@ import com.lxzy.nomix.module.hrm.dal.dataobject.salary.employee.HrmSalaryChangeR
 import com.lxzy.nomix.module.hrm.dal.mysql.salary.employee.HrmSalaryChangeRecordMapper;
 import com.lxzy.nomix.module.hrm.enums.salary.employee.HrmSalaryChangeRecordStatusEnum;
 import com.lxzy.nomix.module.hrm.enums.salary.employee.HrmSalaryChangeRecordTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -21,7 +21,7 @@ import static com.lxzy.nomix.module.hrm.enums.ErrorCodeConstants.SALARY_CHANGE_R
 /**
  * HRM 定薪/调薪记录 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * ERP 库存明细 - 业务类型枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Getter

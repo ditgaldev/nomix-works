@@ -23,11 +23,11 @@ import com.lxzy.nomix.module.hrm.enums.salary.employee.HrmSalaryChangeReasonEnum
 import com.lxzy.nomix.module.hrm.enums.salary.employee.HrmSalaryChangeRecordStatusEnum;
 import com.lxzy.nomix.module.hrm.enums.salary.employee.HrmSalaryChangeRecordTypeEnum;
 import com.lxzy.nomix.module.hrm.enums.salary.employee.HrmSalaryEmployeeInfoChangeTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -53,7 +53,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmSalaryEmployeeInfoServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmSalaryEmployeeInfoServiceImpl.class)
 public class HrmSalaryEmployeeInfoServiceImplTest extends BaseDbUnitTest {
@@ -64,13 +64,13 @@ public class HrmSalaryEmployeeInfoServiceImplTest extends BaseDbUnitTest {
     @Resource
     private HrmSalaryEmployeeInfoMapper salaryEmployeeInfoMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmSalaryOptionService salaryOptionService;
-    @MockBean
+    @MockitoBean
     private HrmSalaryChangeRecordService salaryChangeRecordService;
-    @MockBean
+    @MockitoBean
     private HrmSalaryMonthRecordService salaryMonthRecordService;
-    @MockBean
+    @MockitoBean
     private HrmEmployeeService employeeService;
 
     @Test

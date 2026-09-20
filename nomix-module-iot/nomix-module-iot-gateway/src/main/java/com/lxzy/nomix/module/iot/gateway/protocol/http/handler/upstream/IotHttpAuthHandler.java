@@ -23,7 +23,7 @@ import static com.lxzy.nomix.module.iot.gateway.enums.ErrorCodeConstants.DEVICE_
  *
  * 参考 <a href="阿里云 IoT —— HTTPS 连接通信">https://help.aliyun.com/zh/iot/user-guide/establish-connections-over-https</a>
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class IotHttpAuthHandler extends IotHttpAbstractHandler {
 

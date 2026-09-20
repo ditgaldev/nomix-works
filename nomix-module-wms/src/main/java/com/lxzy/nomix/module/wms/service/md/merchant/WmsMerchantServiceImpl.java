@@ -14,11 +14,11 @@ import com.lxzy.nomix.module.wms.enums.md.WmsMerchantTypeEnum;
 import com.lxzy.nomix.module.wms.enums.order.WmsOrderTypeEnum;
 import com.lxzy.nomix.module.wms.service.order.receipt.WmsReceiptOrderService;
 import com.lxzy.nomix.module.wms.service.order.shipment.WmsShipmentOrderService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 
@@ -28,7 +28,7 @@ import static com.lxzy.nomix.module.wms.enums.ErrorCodeConstants.*;
 /**
  * WMS 往来企业 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

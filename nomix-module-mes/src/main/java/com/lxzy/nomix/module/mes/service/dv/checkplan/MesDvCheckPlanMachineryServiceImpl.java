@@ -8,11 +8,11 @@ import com.lxzy.nomix.module.mes.dal.dataobject.dv.checkplan.MesDvCheckPlanDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.dv.checkplan.MesDvCheckPlanMachineryDO;
 import com.lxzy.nomix.module.mes.dal.mysql.dv.checkplan.MesDvCheckPlanMachineryMapper;
 import com.lxzy.nomix.module.mes.service.dv.machinery.MesDvMachineryService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -22,7 +22,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 点检保养方案设备 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

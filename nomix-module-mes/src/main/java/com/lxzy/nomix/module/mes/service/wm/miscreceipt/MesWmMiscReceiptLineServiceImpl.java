@@ -8,12 +8,12 @@ import com.lxzy.nomix.module.mes.dal.dataobject.wm.miscreceipt.MesWmMiscReceiptL
 import com.lxzy.nomix.module.mes.dal.mysql.wm.miscreceipt.MesWmMiscReceiptLineMapper;
 import com.lxzy.nomix.module.mes.service.md.item.MesMdItemService;
 import com.lxzy.nomix.module.mes.service.wm.warehouse.MesWmWarehouseAreaService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;

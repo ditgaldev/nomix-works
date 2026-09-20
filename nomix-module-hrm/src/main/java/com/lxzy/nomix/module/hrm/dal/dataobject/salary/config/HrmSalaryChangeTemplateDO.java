@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * HRM 调薪模板 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "hrm_salary_change_template", autoResultMap = true)
 @KeySequence("hrm_salary_change_template_seq")

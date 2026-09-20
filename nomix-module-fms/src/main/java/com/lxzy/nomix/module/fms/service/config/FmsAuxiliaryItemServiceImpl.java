@@ -21,8 +21,8 @@ import com.lxzy.nomix.module.fms.service.voucher.FmsVoucherService;
 import com.lxzy.nomix.module.fms.service.config.FmsVoucherTemplateService;
 import com.mzt.logapi.context.LogRecordContext;
 import com.mzt.logapi.starter.annotation.LogRecord;
-import javax.annotation.Resource;
-import javax.validation.ConstraintViolationException;
+import jakarta.annotation.Resource;
+import jakarta.validation.ConstraintViolationException;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -46,7 +46,7 @@ import static com.lxzy.nomix.module.fms.enums.LogRecordConstants.*;
 /**
  * FMS 辅助核算项目 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

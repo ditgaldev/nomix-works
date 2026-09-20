@@ -6,7 +6,7 @@ import lombok.experimental.Accessors;
 /**
  * IM 消息已读同步通知
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 @Accessors(chain = true)

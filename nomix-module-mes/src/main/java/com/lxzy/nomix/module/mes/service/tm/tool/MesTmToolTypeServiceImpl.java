@@ -1,7 +1,6 @@
 package com.lxzy.nomix.module.mes.service.tm.tool;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.util.ObjUtil;
 import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.module.mes.controller.admin.tm.tool.vo.type.MesTmToolTypePageReqVO;
@@ -9,11 +8,13 @@ import com.lxzy.nomix.module.mes.controller.admin.tm.tool.vo.type.MesTmToolTypeS
 import com.lxzy.nomix.module.mes.dal.dataobject.tm.tool.MesTmToolTypeDO;
 import com.lxzy.nomix.module.mes.dal.mysql.tm.tool.MesTmToolTypeMapper;
 import com.lxzy.nomix.module.mes.service.md.workstation.MesMdWorkstationToolService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
+import cn.hutool.core.util.ObjUtil;
+
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -24,7 +25,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 工具类型 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

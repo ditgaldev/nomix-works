@@ -4,10 +4,10 @@ import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.hrm.controller.admin.employee.vo.personalnote.HrmEmployeePersonalNoteCreateReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.info.HrmEmployeePersonalNoteDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.employee.info.HrmEmployeePersonalNoteMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -25,7 +25,7 @@ import static org.mockito.Mockito.verify;
 /**
  * {@link HrmEmployeePersonalNoteServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmEmployeePersonalNoteServiceImpl.class)
 public class HrmEmployeePersonalNoteServiceImplTest extends BaseDbUnitTest {
@@ -35,7 +35,7 @@ public class HrmEmployeePersonalNoteServiceImplTest extends BaseDbUnitTest {
     @Resource
     private HrmEmployeePersonalNoteMapper personalNoteMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmEmployeeService employeeService;
 
     @Test

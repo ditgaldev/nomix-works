@@ -8,10 +8,10 @@ import com.lxzy.nomix.module.im.controller.admin.manager.channel.vo.material.ImC
 import com.lxzy.nomix.module.im.dal.dataobject.channel.ImChannelMaterialDO;
 import com.lxzy.nomix.module.im.dal.mysql.channel.ImChannelMaterialMapper;
 import com.lxzy.nomix.module.im.dal.mysql.message.ImChannelMessageMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -23,7 +23,7 @@ import static com.lxzy.nomix.module.im.enums.ErrorCodeConstants.IM_CHANNEL_MATER
 /**
  * IM 频道素材 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -39,7 +39,7 @@ import com.lxzy.nomix.module.fms.service.voucher.FmsVoucherService;
 import com.lxzy.nomix.module.fms.service.config.FmsVoucherWordService;
 import com.lxzy.nomix.module.fms.util.FmsPeriodUtils;
 import com.mzt.logapi.starter.annotation.LogRecord;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -70,7 +70,7 @@ import static com.lxzy.nomix.module.fms.enums.LogRecordConstants.*;
 /**
  * FMS 结转凭证 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

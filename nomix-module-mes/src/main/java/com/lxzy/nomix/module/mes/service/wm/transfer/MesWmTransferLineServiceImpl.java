@@ -2,18 +2,18 @@ package com.lxzy.nomix.module.mes.service.wm.transfer;
 
 import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.module.mes.controller.admin.wm.transfer.vo.line.MesWmTransferLineSaveReqVO;
-import com.lxzy.nomix.module.mes.dal.dataobject.wm.materialstock.MesWmMaterialStockDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.transfer.MesWmTransferLineDO;
 import com.lxzy.nomix.module.mes.dal.mysql.wm.transfer.MesWmTransferLineMapper;
+import com.lxzy.nomix.module.mes.dal.dataobject.wm.materialstock.MesWmMaterialStockDO;
 import com.lxzy.nomix.module.mes.service.md.item.MesMdItemService;
 import com.lxzy.nomix.module.mes.service.wm.materialstock.MesWmMaterialStockService;
 import com.lxzy.nomix.module.mes.service.wm.warehouse.MesWmWarehouseAreaService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;

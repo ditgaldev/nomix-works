@@ -14,7 +14,7 @@ import java.util.Set;
 /**
  * IoT OTA 升级任务记录的状态枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Getter

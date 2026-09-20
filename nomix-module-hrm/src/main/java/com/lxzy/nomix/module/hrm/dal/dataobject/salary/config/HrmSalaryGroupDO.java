@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * HRM 薪资组 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "hrm_salary_group", autoResultMap = true)
 @KeySequence("hrm_salary_group_seq")

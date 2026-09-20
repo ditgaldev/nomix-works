@@ -8,11 +8,11 @@ import com.lxzy.nomix.module.system.controller.admin.tenant.vo.packages.TenantPa
 import com.lxzy.nomix.module.system.dal.dataobject.tenant.TenantDO;
 import com.lxzy.nomix.module.system.dal.dataobject.tenant.TenantPackageDO;
 import com.lxzy.nomix.module.system.dal.mysql.tenant.TenantPackageMapper;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
@@ -31,7 +31,7 @@ import static org.mockito.Mockito.when;
 /**
 * {@link TenantPackageServiceImpl} 的单元测试类
 *
-* @author Nomix
+* @author Nomix源码
 */
 @Import(TenantPackageServiceImpl.class)
 public class TenantPackageServiceImplTest extends BaseDbUnitTest {
@@ -42,7 +42,7 @@ public class TenantPackageServiceImplTest extends BaseDbUnitTest {
     @Resource
     private TenantPackageMapper tenantPackageMapper;
 
-    @MockBean
+    @MockitoBean
     private TenantService tenantService;
 
     @Test
@@ -141,7 +141,7 @@ public class TenantPackageServiceImplTest extends BaseDbUnitTest {
     public void testGetTenantPackagePage() {
        // mock 数据
        TenantPackageDO dbTenantPackage = randomPojo(TenantPackageDO.class, o -> { // 等会查询到
-           o.setName("Nomix");
+           o.setName("Nomix源码");
            o.setStatus(CommonStatusEnum.ENABLE.getStatus());
            o.setRemark("源码解析");
            o.setCreateTime(buildTime(2022, 10, 10));

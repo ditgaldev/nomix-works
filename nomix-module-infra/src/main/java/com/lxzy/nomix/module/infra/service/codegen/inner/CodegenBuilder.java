@@ -205,7 +205,7 @@ public class CodegenBuilder {
         }
         // url
         if (StrUtil.endWithIgnoreCase(column.getColumnName(), "url")) {
-            column.setExample("");
+            column.setExample("https://www.nomix.cn");
             return;
         }
         // reason

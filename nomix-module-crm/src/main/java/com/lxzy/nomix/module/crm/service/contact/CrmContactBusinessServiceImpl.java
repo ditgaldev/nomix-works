@@ -11,11 +11,11 @@ import com.lxzy.nomix.module.crm.enums.common.CrmBizTypeEnum;
 import com.lxzy.nomix.module.crm.enums.permission.CrmPermissionLevelEnum;
 import com.lxzy.nomix.module.crm.framework.permission.core.annotations.CrmPermission;
 import com.lxzy.nomix.module.crm.service.business.CrmBusinessService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +26,7 @@ import static com.lxzy.nomix.module.crm.enums.ErrorCodeConstants.CONTACT_NOT_EXI
 /**
  * 联系人与商机的关联 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

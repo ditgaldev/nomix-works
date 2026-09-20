@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 /**
  * MES 装箱明细 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_wm_package_line")
 @KeySequence("mes_wm_package_line_seq")

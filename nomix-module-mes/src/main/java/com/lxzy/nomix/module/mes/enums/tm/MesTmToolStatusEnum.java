@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * MES 工具状态枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

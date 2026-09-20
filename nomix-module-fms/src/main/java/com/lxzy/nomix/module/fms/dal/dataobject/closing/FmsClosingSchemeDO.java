@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * FMS 结账方案 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "fms_closing", autoResultMap = true)
 @KeySequence("fms_closing_seq")

@@ -12,7 +12,7 @@ import com.lxzy.nomix.module.mes.enums.DictTypeConstants;
 /**
  * MES 上下工记录流水 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_pro_work_record_log")
 @KeySequence("mes_pro_work_record_log_seq")

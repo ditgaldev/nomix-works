@@ -4,12 +4,12 @@ import com.lxzy.nomix.framework.common.biz.system.oauth2.dto.OAuth2AccessTokenCh
 import com.lxzy.nomix.framework.common.biz.system.oauth2.dto.OAuth2AccessTokenCreateReqDTO;
 import com.lxzy.nomix.framework.common.biz.system.oauth2.dto.OAuth2AccessTokenRespDTO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * OAuth2.0 Token API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface OAuth2TokenCommonApi {
 

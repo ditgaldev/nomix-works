@@ -16,7 +16,7 @@ import com.lxzy.nomix.module.mes.enums.DictTypeConstants;
 /**
  * MES 退货检验单（RQC, Return Quality Control） DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_qc_rqc")
 @KeySequence("mes_qc_rqc_seq")

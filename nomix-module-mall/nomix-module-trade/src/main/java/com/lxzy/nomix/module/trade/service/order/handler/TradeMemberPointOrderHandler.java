@@ -11,7 +11,7 @@ import com.lxzy.nomix.module.trade.dal.dataobject.order.TradeOrderItemDO;
 import com.lxzy.nomix.module.trade.service.aftersale.AfterSaleService;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.getSumValue;

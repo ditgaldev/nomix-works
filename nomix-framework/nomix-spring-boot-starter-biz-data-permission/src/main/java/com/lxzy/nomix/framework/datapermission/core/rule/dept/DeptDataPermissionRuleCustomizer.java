@@ -3,7 +3,7 @@ package com.lxzy.nomix.framework.datapermission.core.rule.dept;
 /**
  * {@link DeptDataPermissionRule} 的自定义配置接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @FunctionalInterface
 public interface DeptDataPermissionRuleCustomizer {

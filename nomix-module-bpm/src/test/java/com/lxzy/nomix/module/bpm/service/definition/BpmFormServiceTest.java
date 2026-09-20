@@ -12,7 +12,7 @@ import com.lxzy.nomix.module.bpm.service.definition.dto.BpmFormFieldRespDTO;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -28,7 +28,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link BpmFormServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(BpmFormServiceImpl.class)
 public class BpmFormServiceTest extends BaseDbUnitTest {
@@ -117,7 +117,7 @@ public class BpmFormServiceTest extends BaseDbUnitTest {
     public void testGetFormPage() {
         // mock 数据
         BpmFormDO dbForm = randomPojo(BpmFormDO.class, o -> { // 等会查询到
-            o.setName("Nomix");
+            o.setName("Nomix源码");
         });
         formMapper.insert(dbForm);
         // 测试 name 不匹配

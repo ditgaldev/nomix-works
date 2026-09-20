@@ -5,12 +5,11 @@ import com.lxzy.nomix.framework.websocket.config.WebSocketProperties;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer;
-import org.springframework.security.config.annotation.web.configurers.ExpressionUrlAuthorizationConfigurer;
 
 /**
  * WebSocket 的权限自定义
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 public class WebSocketAuthorizeRequestsCustomizer extends AuthorizeRequestsCustomizer {

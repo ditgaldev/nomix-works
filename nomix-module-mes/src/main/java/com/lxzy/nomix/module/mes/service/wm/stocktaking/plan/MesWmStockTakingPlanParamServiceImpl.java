@@ -6,11 +6,11 @@ import com.lxzy.nomix.module.mes.controller.admin.wm.stocktaking.plan.vo.param.M
 import com.lxzy.nomix.module.mes.controller.admin.wm.stocktaking.plan.vo.param.MesWmStockTakingPlanParamSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.stocktaking.plan.MesWmStockTakingPlanParamDO;
 import com.lxzy.nomix.module.mes.dal.mysql.wm.stocktaking.plan.MesWmStockTakingPlanParamMapper;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -19,7 +19,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.WM_STOCK_TAKING
 /**
  * MES 盘点方案参数 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

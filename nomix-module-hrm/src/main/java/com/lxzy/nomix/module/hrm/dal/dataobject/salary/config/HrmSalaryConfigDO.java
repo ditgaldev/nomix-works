@@ -15,7 +15,7 @@ import lombok.ToString;
 /**
  * HRM 计薪配置 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("hrm_salary_config")
 @KeySequence("hrm_salary_config_seq")

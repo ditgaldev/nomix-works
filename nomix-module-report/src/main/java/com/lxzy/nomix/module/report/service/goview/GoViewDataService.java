@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.report.controller.admin.goview.vo.data.GoViewDataRe
 /**
  * GoView 数据 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface GoViewDataService {
 

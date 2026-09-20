@@ -9,10 +9,10 @@ import com.lxzy.nomix.module.system.controller.admin.notify.vo.message.NotifyMes
 import com.lxzy.nomix.module.system.dal.dataobject.notify.NotifyMessageDO;
 import com.lxzy.nomix.module.system.dal.dataobject.notify.NotifyTemplateDO;
 import com.lxzy.nomix.module.system.dal.mysql.notify.NotifyMessageMapper;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
@@ -29,7 +29,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
 * {@link NotifyMessageServiceImpl} 的单元测试类
 *
-* @author Nomix
+* @author Nomix源码
 */
 @Import(NotifyMessageServiceImpl.class)
 public class NotifyMessageServiceImplTest extends BaseDbUnitTest {

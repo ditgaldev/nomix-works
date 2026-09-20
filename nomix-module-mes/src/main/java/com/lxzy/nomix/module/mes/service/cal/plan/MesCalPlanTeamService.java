@@ -2,14 +2,14 @@ package com.lxzy.nomix.module.mes.service.cal.plan;
 
 import com.lxzy.nomix.module.mes.controller.admin.cal.plan.vo.team.MesCalPlanTeamSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.cal.plan.MesCalPlanTeamDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * MES 计划班组关联 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesCalPlanTeamService {
 

@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 /**
  * MES 装箱明细 Response VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Schema(description = "管理后台 - MES 装箱明细 Response VO")
 @Data

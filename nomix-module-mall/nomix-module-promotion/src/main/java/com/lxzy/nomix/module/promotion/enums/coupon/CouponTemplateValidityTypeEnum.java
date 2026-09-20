@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * 优惠劵模板的有限期类型的枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @AllArgsConstructor
 @Getter

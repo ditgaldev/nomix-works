@@ -14,7 +14,7 @@ import lombok.ToString;
 /**
  * FMS 资产负债表配置 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("fms_balance_sheet_config")
 @KeySequence("fms_balance_sheet_config_seq")

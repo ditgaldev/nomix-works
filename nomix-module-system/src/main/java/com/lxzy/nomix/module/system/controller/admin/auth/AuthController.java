@@ -24,14 +24,14 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.annotation.Resource;
+import jakarta.annotation.security.PermitAll;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
-import javax.annotation.security.PermitAll;
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
@@ -129,7 +129,7 @@ public class AuthController {
     @PostMapping("/sms-login")
     @PermitAll
     @Operation(summary = "使用短信验证码登录")
-    // 可按需开启限流：
+    // 可按需开启限流：https://github.com/ditgaldev/nomix-works/issues/851
     // @RateLimiter(time = 60, count = 6, keyResolver = ExpressionRateLimiterKeyResolver.class, keyArg = "#reqVO.mobile")
     public CommonResult<AuthLoginRespVO> smsLogin(@RequestBody @Valid AuthSmsLoginReqVO reqVO) {
         return success(authService.smsLogin(reqVO));

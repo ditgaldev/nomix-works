@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * ERP 产品单位 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ErpProductUnitMapper extends BaseMapperX<ErpProductUnitDO> {

@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 数据库表 Service
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface DatabaseTableService {
 

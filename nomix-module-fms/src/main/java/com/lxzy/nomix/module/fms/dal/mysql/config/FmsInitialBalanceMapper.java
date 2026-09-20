@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * FMS 科目期初余额 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface FmsInitialBalanceMapper extends BaseMapperX<FmsInitialBalanceDO> {

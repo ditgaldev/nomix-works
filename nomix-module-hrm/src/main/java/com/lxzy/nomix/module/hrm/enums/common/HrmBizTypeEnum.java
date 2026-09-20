@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * HRM 业务类型枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @RequiredArgsConstructor

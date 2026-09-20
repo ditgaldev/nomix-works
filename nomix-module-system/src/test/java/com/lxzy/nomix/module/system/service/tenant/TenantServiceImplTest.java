@@ -20,12 +20,12 @@ import com.lxzy.nomix.module.system.service.permission.RoleService;
 import com.lxzy.nomix.module.system.service.tenant.handler.TenantInfoHandler;
 import com.lxzy.nomix.module.system.service.tenant.handler.TenantMenuHandler;
 import com.lxzy.nomix.module.system.service.user.AdminUserService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Collections;
@@ -50,7 +50,7 @@ import static org.mockito.Mockito.*;
 /**
  * {@link TenantServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(TenantServiceImpl.class)
 public class TenantServiceImplTest extends BaseDbUnitTest {
@@ -61,17 +61,17 @@ public class TenantServiceImplTest extends BaseDbUnitTest {
     @Resource
     private TenantMapper tenantMapper;
 
-    @MockBean
+    @MockitoBean
     private TenantProperties tenantProperties;
-    @MockBean
+    @MockitoBean
     private TenantPackageService tenantPackageService;
-    @MockBean
+    @MockitoBean
     private AdminUserService userService;
-    @MockBean
+    @MockitoBean
     private RoleService roleService;
-    @MockBean
+    @MockitoBean
     private MenuService menuService;
-    @MockBean
+    @MockitoBean
     private PermissionService permissionService;
 
     @BeforeEach
@@ -156,7 +156,7 @@ public class TenantServiceImplTest extends BaseDbUnitTest {
             o.setContactMobile("15601691300");
             o.setPackageId(100L);
             o.setStatus(randomCommonStatus());
-            o.setWebsites(singletonList(""));
+            o.setWebsites(singletonList("https://www.nomix.cn"));
             o.setUsername("nomix");
             o.setPassword("yuanma");
         }).setId(null); // 设置为 null，方便后面校验
@@ -287,7 +287,7 @@ public class TenantServiceImplTest extends BaseDbUnitTest {
     public void testGetTenantPage() {
         // mock 数据
         TenantDO dbTenant = randomPojo(TenantDO.class, o -> { // 等会查询到
-            o.setName("Nomix");
+            o.setName("Nomix源码");
             o.setContactName("Nomix");
             o.setContactMobile("15601691300");
             o.setStatus(CommonStatusEnum.ENABLE.getStatus());
@@ -335,11 +335,11 @@ public class TenantServiceImplTest extends BaseDbUnitTest {
     @Test
     public void testGetTenantByWebsite() {
         // mock 数据
-        TenantDO dbTenant = randomPojo(TenantDO.class, o -> o.setWebsites(singletonList("")));
+        TenantDO dbTenant = randomPojo(TenantDO.class, o -> o.setWebsites(singletonList("https://www.nomix.cn")));
         tenantMapper.insert(dbTenant);// @Sql: 先插入出一条存在的数据
 
         // 调用
-        TenantDO result = tenantService.getTenantByWebsite("");
+        TenantDO result = tenantService.getTenantByWebsite("https://www.nomix.cn");
         // 校验存在
         assertPojoEquals(result, dbTenant);
     }

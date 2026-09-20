@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.hrm.controller.admin.recruit.vo.channel;
 import com.lxzy.nomix.framework.common.enums.CommonStatusEnum;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 @Schema(description = "管理后台 - HRM 招聘渠道状态修改 Request VO")

@@ -38,7 +38,7 @@ import com.lxzy.nomix.module.hrm.enums.salary.config.HrmSalaryTaxRateEnum;
 import com.lxzy.nomix.module.hrm.enums.salary.config.HrmSalaryTaxTypeEnum;
 import com.mzt.logapi.context.LogRecordContext;
 import com.mzt.logapi.starter.annotation.LogRecord;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.context.annotation.Lazy;
@@ -79,7 +79,7 @@ import static com.lxzy.nomix.module.hrm.enums.LogRecordConstants.HRM_SALARY_MONT
 /**
  * HRM 员工月度工资 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

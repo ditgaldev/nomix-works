@@ -11,7 +11,7 @@ import java.util.Arrays;
 /**
  * PMS 知识内容协作等级枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

@@ -7,9 +7,9 @@ import lombok.Data;
 import org.hibernate.validator.constraints.Range;
 import org.hibernate.validator.constraints.URL;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Positive;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 
 /**
  * 会员等级 Base VO，提供给添加、修改、详细的子 VO 使用
@@ -37,11 +37,11 @@ public class MemberLevelBaseVO {
     @Range(min = 0, max = 100, message = "享受折扣的范围为 0-100")
     private Integer discountPercent;
 
-    @Schema(description = "等级图标", example = "")
+    @Schema(description = "等级图标", example = "https://www.nomix.cn/nomix.jpg")
     @URL(message = "等级图标必须是 URL 格式")
     private String icon;
 
-    @Schema(description = "等级背景图", example = "")
+    @Schema(description = "等级背景图", example = "https://www.nomix.cn/nomix.jpg")
     @URL(message = "等级背景图必须是 URL 格式")
     private String backgroundUrl;
 

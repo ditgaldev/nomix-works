@@ -4,9 +4,9 @@ import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.crm.enums.common.CrmBizTypeEnum;
 import com.lxzy.nomix.module.crm.enums.permission.CrmPermissionLevelEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 import java.util.Set;
 

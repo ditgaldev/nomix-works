@@ -13,12 +13,12 @@ import com.lxzy.nomix.module.mes.enums.dv.MesDvMaintenRecordStatusEnum;
 import com.lxzy.nomix.module.mes.enums.dv.MesDvCheckPlanTypeEnum;
 import com.lxzy.nomix.module.mes.service.dv.checkplan.MesDvCheckPlanService;
 import com.lxzy.nomix.module.mes.service.dv.machinery.MesDvMachineryService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -27,7 +27,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 设备保养记录 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

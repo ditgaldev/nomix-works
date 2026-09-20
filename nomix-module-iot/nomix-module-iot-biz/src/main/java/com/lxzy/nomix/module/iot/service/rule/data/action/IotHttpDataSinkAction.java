@@ -8,13 +8,13 @@ import com.lxzy.nomix.module.iot.core.mq.message.IotDeviceMessage;
 import com.lxzy.nomix.module.iot.dal.dataobject.rule.IotDataSinkDO;
 import com.lxzy.nomix.module.iot.dal.dataobject.rule.config.IotDataSinkHttpConfig;
 import com.lxzy.nomix.module.iot.enums.rule.IotDataSinkTypeEnum;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.*;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
 

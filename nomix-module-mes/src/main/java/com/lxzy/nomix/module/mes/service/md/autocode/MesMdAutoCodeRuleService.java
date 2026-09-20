@@ -4,14 +4,14 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.md.autocode.vo.rule.MesMdAutoCodeRulePageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.md.autocode.vo.rule.MesMdAutoCodeRuleSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.md.autocode.MesMdAutoCodeRuleDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * MES 编码规则 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesMdAutoCodeRuleService {
 

@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * WMS 商品 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface WmsItemMapper extends BaseMapperX<WmsItemDO> {

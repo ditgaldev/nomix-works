@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * 限时折扣活动 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface DiscountActivityMapper extends BaseMapperX<DiscountActivityDO> {

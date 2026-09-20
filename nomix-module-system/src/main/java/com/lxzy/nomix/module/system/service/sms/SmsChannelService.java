@@ -5,8 +5,8 @@ import com.lxzy.nomix.module.system.controller.admin.sms.vo.channel.SmsChannelPa
 import com.lxzy.nomix.module.system.controller.admin.sms.vo.channel.SmsChannelSaveReqVO;
 import com.lxzy.nomix.module.system.dal.dataobject.sms.SmsChannelDO;
 import com.lxzy.nomix.module.system.framework.sms.core.client.SmsClient;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**

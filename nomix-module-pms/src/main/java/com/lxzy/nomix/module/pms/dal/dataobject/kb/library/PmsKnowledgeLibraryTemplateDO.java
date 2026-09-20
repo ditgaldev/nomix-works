@@ -18,7 +18,7 @@ import java.util.List;
  *
  * <p>模板只保存新建知识库时使用的默认文档，知识库创建后会生成独立的文档内容</p>
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "pms_knowledge_library_template", autoResultMap = true)
 @KeySequence("pms_knowledge_library_template_seq")

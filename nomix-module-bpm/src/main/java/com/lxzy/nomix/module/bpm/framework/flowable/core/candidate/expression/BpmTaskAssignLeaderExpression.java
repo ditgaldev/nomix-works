@@ -11,7 +11,7 @@ import org.flowable.engine.runtime.ProcessInstance;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.Set;
 
 import static com.lxzy.nomix.framework.common.util.collection.SetUtils.asSet;
@@ -21,7 +21,7 @@ import static java.util.Collections.emptySet;
  * 分配给发起人的 Leader 审批的 Expression 流程表达式
  * 目前 Leader 的定义是，发起人所在部门的 Leader
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 @Deprecated // 仅仅是表达式的示例，建议使用 BpmTaskCandidateStartUserDeptLeaderStrategy 替代

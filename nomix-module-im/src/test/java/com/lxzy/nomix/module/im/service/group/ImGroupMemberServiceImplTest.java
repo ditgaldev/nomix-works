@@ -26,7 +26,7 @@ import static org.mockito.Mockito.*;
 /**
  * {@link ImGroupMemberServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class ImGroupMemberServiceImplTest extends BaseMockitoUnitTest {
 

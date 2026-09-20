@@ -6,7 +6,7 @@ import com.lxzy.nomix.module.pay.controller.admin.channel.vo.PayChannelCreateReq
 import com.lxzy.nomix.module.pay.controller.admin.channel.vo.PayChannelUpdateReqVO;
 import com.lxzy.nomix.module.pay.dal.dataobject.channel.PayChannelDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 

@@ -7,13 +7,12 @@ import com.lxzy.nomix.module.trade.controller.admin.brokerage.vo.withdraw.Broker
 import com.lxzy.nomix.module.trade.dal.dataobject.brokerage.BrokerageWithdrawDO;
 import com.lxzy.nomix.module.trade.dal.mysql.brokerage.BrokerageWithdrawMapper;
 import com.lxzy.nomix.module.trade.service.config.TradeConfigService;
+import jakarta.annotation.Resource;
+import jakarta.validation.Validator;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
-
-import javax.annotation.Resource;
-import javax.validation.Validator;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
 import static com.lxzy.nomix.framework.common.util.object.ObjectUtils.cloneIgnoreId;
@@ -25,7 +24,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * {@link BrokerageWithdrawServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Disabled // TODO Nomix：后续 fix 补充的单测
 @Import(BrokerageWithdrawServiceImpl.class)
@@ -37,14 +36,14 @@ public class BrokerageWithdrawServiceImplTest extends BaseDbUnitTest {
     @Resource
     private BrokerageWithdrawMapper brokerageWithdrawMapper;
 
-    @MockBean
+    @MockitoBean
     private BrokerageRecordService brokerageRecordService;
-    @MockBean
+    @MockitoBean
     private BrokerageUserService brokerageUserService;
-    @MockBean
+    @MockitoBean
     private TradeConfigService tradeConfigService;
 
-    @MockBean
+    @MockitoBean
     private NotifyMessageSendApi notifyMessageSendApi;
 
     @Resource

@@ -29,7 +29,7 @@ import org.springframework.cache.annotation.Caching;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.*;
 import java.util.function.Supplier;
 
@@ -39,7 +39,7 @@ import static com.lxzy.nomix.framework.common.util.json.JsonUtils.toJsonString;
 /**
  * 权限 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Slf4j

@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * WMS 商品品牌 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface WmsItemBrandMapper extends BaseMapperX<WmsItemBrandDO> {

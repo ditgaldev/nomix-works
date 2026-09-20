@@ -27,7 +27,7 @@ public class PmsKnowledgeLibraryRespVO {
     @Schema(description = "创建人用户编号", example = "1")
     private Long creatorUserId;
 
-    @Schema(description = "创建人姓名", example = "Nomix")
+    @Schema(description = "创建人姓名", example = "Nomix源码")
     private String creatorUserName;
 
     @Schema(description = "成员数量", requiredMode = Schema.RequiredMode.REQUIRED, example = "5")

@@ -1,8 +1,7 @@
 package com.lxzy.nomix.module.system.api.message.user;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-
-import javax.validation.constraints.NotNull;
 
 /**
  * 管理员用户资料（昵称 / 头像）变更消息
@@ -10,7 +9,7 @@ import javax.validation.constraints.NotNull;
  * 仅当 nickname 或 avatar 真的发生变化时才发送；订阅方据此做下游分发，
  * 例如 IM 模块向该用户的所有好友推送 FRIEND_INFO_UPDATED 通知
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class AdminUserProfileUpdateMessage {

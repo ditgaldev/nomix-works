@@ -9,7 +9,7 @@ import lombok.*;
 /**
  * MES 计划班次 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_cal_plan_shift")
 @KeySequence("mes_cal_plan_shift_seq")

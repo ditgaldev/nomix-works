@@ -4,10 +4,10 @@ import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.hrm.controller.admin.employee.vo.contact.HrmEmployeeContactSaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.info.HrmEmployeeContactDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.employee.info.HrmEmployeeContactMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.List;
 
@@ -24,7 +24,7 @@ import static org.mockito.Mockito.verify;
 /**
  * {@link HrmEmployeeContactServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmEmployeeContactServiceImpl.class)
 public class HrmEmployeeContactServiceImplTest extends BaseDbUnitTest {
@@ -35,7 +35,7 @@ public class HrmEmployeeContactServiceImplTest extends BaseDbUnitTest {
     @Resource
     private HrmEmployeeContactMapper contactMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmEmployeeService employeeService;
 
     @Test

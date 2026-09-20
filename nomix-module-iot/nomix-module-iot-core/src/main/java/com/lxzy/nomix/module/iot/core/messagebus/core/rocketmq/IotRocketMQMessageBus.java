@@ -4,6 +4,7 @@ import cn.hutool.core.util.TypeUtil;
 import com.lxzy.nomix.framework.common.util.json.JsonUtils;
 import com.lxzy.nomix.module.iot.core.messagebus.core.IotMessageBus;
 import com.lxzy.nomix.module.iot.core.messagebus.core.IotMessageSubscriber;
+import jakarta.annotation.PreDestroy;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -15,7 +16,6 @@ import org.apache.rocketmq.common.message.MessageExt;
 import org.apache.rocketmq.spring.autoconfigure.RocketMQProperties;
 import org.apache.rocketmq.spring.core.RocketMQTemplate;
 
-import javax.annotation.PreDestroy;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,7 @@ import java.util.List;
 /**
  * 基于 RocketMQ 的 {@link IotMessageBus} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Slf4j

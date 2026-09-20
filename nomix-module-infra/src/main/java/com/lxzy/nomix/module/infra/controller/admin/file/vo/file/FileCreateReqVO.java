@@ -1,9 +1,8 @@
 package com.lxzy.nomix.module.infra.controller.admin.file.vo.file;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-
-import javax.validation.constraints.NotNull;
 
 @Schema(description = "管理后台 - 文件创建 Request VO")
 @Data
@@ -22,7 +21,7 @@ public class FileCreateReqVO {
     private String name;
 
     @NotNull(message = "文件 URL不能为空")
-    @Schema(description = "文件 URL", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "文件 URL", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn/nomix.jpg")
     private String url;
 
     @Schema(description = "文件 MIME 类型", example = "application/octet-stream")

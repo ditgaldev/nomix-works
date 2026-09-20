@@ -37,6 +37,7 @@ import com.lxzy.nomix.module.im.service.message.ImGroupMessageService;
 import com.lxzy.nomix.module.im.service.message.dto.ImGroupMessageSendDTO;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
 import com.lxzy.nomix.module.system.api.user.dto.AdminUserRespDTO;
+import jakarta.annotation.Resource;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.context.annotation.Lazy;
@@ -44,7 +45,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -57,7 +57,7 @@ import static com.lxzy.nomix.module.im.enums.ErrorCodeConstants.*;
 /**
  * 用户群 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

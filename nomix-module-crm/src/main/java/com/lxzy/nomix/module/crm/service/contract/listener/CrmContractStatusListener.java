@@ -4,9 +4,8 @@ import com.lxzy.nomix.module.bpm.api.event.BpmProcessInstanceStatusEvent;
 import com.lxzy.nomix.module.bpm.api.event.BpmProcessInstanceStatusEventListener;
 import com.lxzy.nomix.module.crm.service.contract.CrmContractService;
 import com.lxzy.nomix.module.crm.service.contract.CrmContractServiceImpl;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.Resource;
 
 /**
  * 合同审批的结果的监听器实现类

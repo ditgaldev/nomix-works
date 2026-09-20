@@ -18,11 +18,11 @@ import com.lxzy.nomix.module.promotion.enums.combination.CombinationRecordStatus
 import com.lxzy.nomix.module.system.api.social.SocialClientApi;
 import com.lxzy.nomix.module.trade.api.order.TradeOrderApi;
 import com.lxzy.nomix.module.trade.enums.order.TradeOrderCancelTypeEnum;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.function.Consumer;
@@ -37,7 +37,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link CombinationRecordServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(CombinationRecordServiceImpl.class)
 public class CombinationRecordServiceImplTest extends BaseDbUnitTest {
@@ -54,17 +54,17 @@ public class CombinationRecordServiceImplTest extends BaseDbUnitTest {
     @Resource
     private CombinationRecordMapper combinationRecordMapper;
 
-    @MockBean
+    @MockitoBean
     private CombinationActivityService combinationActivityService;
-    @MockBean
+    @MockitoBean
     private MemberUserApi memberUserApi;
-    @MockBean
+    @MockitoBean
     private ProductSpuApi productSpuApi;
-    @MockBean
+    @MockitoBean
     private ProductSkuApi productSkuApi;
-    @MockBean
+    @MockitoBean
     private TradeOrderApi tradeOrderApi;
-    @MockBean
+    @MockitoBean
     private SocialClientApi socialClientApi;
 
     @Test
@@ -243,7 +243,7 @@ public class CombinationRecordServiceImplTest extends BaseDbUnitTest {
             o.setId(SKU_ID);
             o.setSpuId(SPU_ID);
             o.setStock(stock);
-            o.setPicUrl("");
+            o.setPicUrl("https://www.nomix.cn/sku.png");
         });
         when(combinationActivityService.selectByActivityIdAndSkuId(ACTIVITY_ID, SKU_ID)).thenReturn(product);
         when(productSkuApi.getSku(SKU_ID)).thenReturn(sku);
@@ -269,14 +269,14 @@ public class CombinationRecordServiceImplTest extends BaseDbUnitTest {
     private void mockCreateContext() {
         MemberUserRespDTO user = randomPojo(MemberUserRespDTO.class, o -> {
             o.setId(USER_ID);
-            o.setNickname("Nomix");
-            o.setAvatar("");
+            o.setNickname("Nomix源码");
+            o.setAvatar("https://www.nomix.cn/avatar.png");
         });
         when(memberUserApi.getUser(USER_ID)).thenReturn(user);
         ProductSpuRespDTO spu = randomPojo(ProductSpuRespDTO.class, o -> {
             o.setId(SPU_ID);
             o.setName("测试商品");
-            o.setPicUrl("");
+            o.setPicUrl("https://www.nomix.cn/spu.png");
         });
         when(productSpuApi.getSpu(SPU_ID)).thenReturn(spu);
     }
@@ -301,12 +301,12 @@ public class CombinationRecordServiceImplTest extends BaseDbUnitTest {
             o.setCombinationPrice(100);
             o.setSpuId(SPU_ID);
             o.setSpuName("测试商品");
-            o.setPicUrl("");
+            o.setPicUrl("https://www.nomix.cn/spu.png");
             o.setSkuId(SKU_ID);
             o.setCount(1);
             o.setUserId(USER_ID);
-            o.setNickname("Nomix");
-            o.setAvatar("");
+            o.setNickname("Nomix源码");
+            o.setAvatar("https://www.nomix.cn/avatar.png");
             o.setHeadId(CombinationRecordDO.HEAD_ID_GROUP);
             o.setStatus(CombinationRecordStatusEnum.IN_PROGRESS.getStatus());
             o.setOrderId(ORDER_ID);

@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * FMS 账簿凭证分录 VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class FmsLedgerEntryVO {

@@ -2,7 +2,7 @@ package com.lxzy.nomix.module.hrm.service.employee.employment;
 
 import com.lxzy.nomix.module.hrm.controller.admin.employee.vo.salarycard.HrmEmployeeSalaryCardSaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.employment.HrmEmployeeSalaryCardDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.Collection;
 import java.util.List;
@@ -13,7 +13,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * HRM 员工工资卡 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmEmployeeSalaryCardService {
 

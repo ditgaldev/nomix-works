@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 /**
  * FMS 币别 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("fms_currency")
 @KeySequence("fms_currency_seq")

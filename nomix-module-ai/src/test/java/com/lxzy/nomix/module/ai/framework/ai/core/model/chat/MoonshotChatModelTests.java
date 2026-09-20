@@ -23,7 +23,7 @@ import static com.lxzy.nomix.module.ai.util.AiUtils.validateApiKey;
 /**
  * {@link MoonshotChatModel} 的集成测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class MoonshotChatModelTests {
 

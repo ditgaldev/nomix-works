@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.bpm.dal.redis;
 /**
  * BPM Redis Key 枚举类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface RedisKeyConstants {
 

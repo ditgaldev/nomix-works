@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 /**
  * HRM 薪资个人所得税税率档位枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

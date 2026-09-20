@@ -35,10 +35,10 @@ public class BpmTaskRespVO {
     @Schema(description = "审批理由", requiredMode = Schema.RequiredMode.REQUIRED, example = "2")
     private String reason;
 
-    @Schema(description = "签名", example = "")
+    @Schema(description = "签名", example = "https://www.nomix.cn/sign.png")
     private String signPicUrl;
 
-    @Schema(description = "附件", example = "[]")
+    @Schema(description = "附件", example = "[https://test.nomix.nomix.cn/20260609/test.txt]")
     private List<String> attachments;
 
     @Schema(description = "任务负责人编号", requiredMode = Schema.RequiredMode.NOT_REQUIRED, example = "2048")

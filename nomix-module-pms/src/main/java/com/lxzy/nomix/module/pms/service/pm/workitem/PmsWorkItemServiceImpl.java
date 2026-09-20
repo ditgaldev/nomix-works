@@ -6,6 +6,7 @@ import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
 import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.framework.common.util.object.BeanUtils;
+import com.lxzy.nomix.framework.common.util.object.PageUtils;
 import com.lxzy.nomix.framework.common.util.validation.ValidationUtils;
 import com.lxzy.nomix.module.pms.controller.admin.pm.workbench.vo.PmsWorkbenchPageReqVO;
 import com.lxzy.nomix.module.pms.controller.admin.pm.workitem.vo.status.PmsWorkItemStatusRespVO;
@@ -44,7 +45,7 @@ import com.lxzy.nomix.module.system.api.notify.NotifyMessageSendApi;
 import com.lxzy.nomix.module.system.api.notify.dto.NotifySendSingleToUserReqDTO;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
 import com.google.common.collect.Maps;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
@@ -84,7 +85,7 @@ import static com.lxzy.nomix.module.pms.enums.MessageTemplateConstants.WORK_ITEM
 /**
  * PMS 工作项 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated
@@ -579,9 +580,7 @@ public class PmsWorkItemServiceImpl implements PmsWorkItemService {
         if (Boolean.TRUE.equals(pageReqVO.getPlanningOnly()) && Boolean.TRUE.equals(pageReqVO.getUnplannedOnly())) {
             List<PmsWorkItemDO> workItems = workItemMapper.selectListByPlanning(pageReqVO);
             workItemUserSortService.sortWorkItemList(workItems, pageReqVO.getProjectId(), userId);
-            int fromIndex = Math.min((pageReqVO.getPageNo() - 1) * pageReqVO.getPageSize(), workItems.size());
-            int toIndex = Math.min(fromIndex + pageReqVO.getPageSize(), workItems.size());
-            return new PageResult<>(new ArrayList<>(workItems.subList(fromIndex, toIndex)), (long) workItems.size());
+            return PageUtils.buildPageResult(pageReqVO, workItems);
         }
 
         // 3. 查询其他工作项分页

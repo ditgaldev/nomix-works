@@ -6,10 +6,9 @@ import com.lxzy.nomix.module.iot.core.enums.IotSerializeTypeEnum;
 import com.lxzy.nomix.module.iot.enums.product.IotNetTypeEnum;
 import com.lxzy.nomix.module.iot.enums.product.IotProductDeviceTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 
 @Schema(description = "管理后台 - IoT 产品新增/修改 Request VO")
 @Data
@@ -29,10 +28,10 @@ public class IotProductSaveReqVO {
     @NotNull(message = "产品分类编号不能为空")
     private Long categoryId;
 
-    @Schema(description = "产品图标", example = "")
+    @Schema(description = "产品图标", example = "https://nomix.cn/1.svg")
     private String icon;
 
-    @Schema(description = "产品图片", example = "")
+    @Schema(description = "产品图片", example = "https://nomix.cn/1.png")
     private String picUrl;
 
     @Schema(description = "产品描述", example = "描述")

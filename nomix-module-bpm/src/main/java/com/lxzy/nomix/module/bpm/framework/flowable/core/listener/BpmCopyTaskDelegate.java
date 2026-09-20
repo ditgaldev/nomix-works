@@ -4,12 +4,12 @@ import cn.hutool.core.collection.CollUtil;
 import com.lxzy.nomix.module.bpm.framework.flowable.core.candidate.BpmTaskCandidateInvoker;
 import com.lxzy.nomix.module.bpm.framework.flowable.core.util.FlowableUtils;
 import com.lxzy.nomix.module.bpm.service.task.BpmProcessInstanceCopyService;
+import jakarta.annotation.Resource;
 import org.flowable.bpmn.model.FlowElement;
 import org.flowable.engine.delegate.DelegateExecution;
 import org.flowable.engine.delegate.JavaDelegate;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.Set;
 
 import static com.lxzy.nomix.module.bpm.framework.flowable.core.listener.BpmCopyTaskDelegate.BEAN_NAME;

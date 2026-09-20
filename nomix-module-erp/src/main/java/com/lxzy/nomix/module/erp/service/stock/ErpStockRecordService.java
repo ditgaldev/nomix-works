@@ -4,13 +4,12 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.erp.controller.admin.stock.vo.record.ErpStockRecordPageReqVO;
 import com.lxzy.nomix.module.erp.dal.dataobject.stock.ErpStockRecordDO;
 import com.lxzy.nomix.module.erp.service.stock.bo.ErpStockRecordCreateReqBO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * ERP 产品库存明细 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ErpStockRecordService {
 

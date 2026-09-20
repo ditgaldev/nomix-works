@@ -4,13 +4,13 @@ import com.lxzy.nomix.module.mp.controller.admin.menu.vo.MpMenuSaveReqVO;
 import com.lxzy.nomix.module.mp.dal.dataobject.menu.MpMenuDO;
 import me.chanjar.weixin.mp.bean.message.WxMpXmlOutMessage;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.List;
 
 /**
  * 公众号菜单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MpMenuService {
 

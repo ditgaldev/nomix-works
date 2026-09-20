@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 import static com.lxzy.nomix.framework.common.util.object.ObjectUtils.cloneIgnoreId;
 import static com.lxzy.nomix.framework.test.core.util.AssertUtils.assertPojoEquals;

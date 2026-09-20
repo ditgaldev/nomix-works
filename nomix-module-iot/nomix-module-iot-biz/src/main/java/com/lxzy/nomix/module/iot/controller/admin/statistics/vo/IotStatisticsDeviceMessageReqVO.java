@@ -3,10 +3,10 @@ package com.lxzy.nomix.module.iot.controller.admin.statistics.vo;
 import com.lxzy.nomix.framework.common.enums.DateIntervalEnum;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
 
 import static com.lxzy.nomix.framework.common.util.date.DateUtils.FORMAT_YEAR_MONTH_DAY_HOUR_MINUTE_SECOND;

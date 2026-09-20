@@ -11,11 +11,11 @@ import com.lxzy.nomix.module.promotion.convert.diy.DiyPageConvert;
 import com.lxzy.nomix.module.promotion.convert.diy.DiyTemplateConvert;
 import com.lxzy.nomix.module.promotion.dal.dataobject.diy.DiyTemplateDO;
 import com.lxzy.nomix.module.promotion.dal.mysql.diy.DiyTemplateMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;

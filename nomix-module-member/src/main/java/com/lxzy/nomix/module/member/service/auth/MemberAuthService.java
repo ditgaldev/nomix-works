@@ -2,14 +2,14 @@ package com.lxzy.nomix.module.member.service.auth;
 
 import com.lxzy.nomix.module.member.controller.app.auth.vo.*;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 会员的认证 Service 接口
  *
  * 提供用户的账号密码登录、token 的校验等认证相关的功能
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MemberAuthService {
 

@@ -20,12 +20,12 @@ import com.lxzy.nomix.module.product.service.brand.ProductBrandService;
 import com.lxzy.nomix.module.product.service.category.ProductCategoryService;
 import com.lxzy.nomix.module.product.service.sku.ProductSkuService;
 import com.google.common.collect.Maps;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.*;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -36,7 +36,7 @@ import static com.lxzy.nomix.module.product.enums.ErrorCodeConstants.*;
 /**
  * 商品 SPU Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

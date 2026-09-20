@@ -12,10 +12,10 @@ import com.lxzy.nomix.module.pms.dal.mysql.kb.content.PmsKnowledgeDocumentMapper
 import com.lxzy.nomix.module.pms.enums.kb.content.PmsKnowledgeDocumentStatusEnum;
 import com.lxzy.nomix.module.pms.enums.kb.content.PmsKnowledgeDocumentTypeEnum;
 import com.lxzy.nomix.module.pms.service.kb.library.PmsKnowledgeLibraryMemberService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -33,7 +33,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link PmsKnowledgeDocumentLabelServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsKnowledgeDocumentLabelServiceImpl.class)
 public class PmsKnowledgeDocumentLabelServiceImplTest extends BaseDbUnitTest {
@@ -46,9 +46,9 @@ public class PmsKnowledgeDocumentLabelServiceImplTest extends BaseDbUnitTest {
     @Resource
     private PmsKnowledgeDocumentMapper documentMapper;
 
-    @MockBean
+    @MockitoBean
     private PmsKnowledgeLibraryMemberService libraryMemberService;
-    @MockBean
+    @MockitoBean
     private PmsKnowledgeContentPermissionService contentPermissionService;
 
     @Test

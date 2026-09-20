@@ -1,9 +1,8 @@
 package com.lxzy.nomix.module.trade.controller.admin.brokerage.vo.user;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-
-import javax.validation.constraints.NotNull;
 
 @Schema(description = "管理后台 - 分销用户创建 Request VO")
 @Data

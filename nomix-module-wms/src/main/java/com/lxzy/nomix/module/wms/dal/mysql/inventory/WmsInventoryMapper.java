@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * WMS 库存 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface WmsInventoryMapper extends BaseMapperX<WmsInventoryDO> {

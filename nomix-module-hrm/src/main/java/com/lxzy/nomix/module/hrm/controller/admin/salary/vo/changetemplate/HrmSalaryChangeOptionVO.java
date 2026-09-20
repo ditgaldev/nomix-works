@@ -1,7 +1,7 @@
 package com.lxzy.nomix.module.hrm.controller.admin.salary.vo.changetemplate;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 @Schema(description = "管理后台 - HRM 调薪项 VO")

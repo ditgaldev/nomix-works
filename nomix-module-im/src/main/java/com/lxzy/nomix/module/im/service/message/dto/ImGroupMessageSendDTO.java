@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.im.service.message.dto;
 import com.lxzy.nomix.module.im.dal.dataobject.message.ImGroupMessageDO;
 import com.lxzy.nomix.module.im.enums.ImContentTypeEnum;
 import com.lxzy.nomix.module.im.service.websocket.notification.group.*;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.util.ArrayList;
@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * IM 群聊消息发送 DTO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class ImGroupMessageSendDTO {

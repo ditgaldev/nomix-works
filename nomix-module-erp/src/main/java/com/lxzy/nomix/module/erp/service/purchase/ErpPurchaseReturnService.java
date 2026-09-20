@@ -5,8 +5,8 @@ import com.lxzy.nomix.module.erp.controller.admin.purchase.vo.returns.ErpPurchas
 import com.lxzy.nomix.module.erp.controller.admin.purchase.vo.returns.ErpPurchaseReturnSaveReqVO;
 import com.lxzy.nomix.module.erp.dal.dataobject.purchase.ErpPurchaseReturnDO;
 import com.lxzy.nomix.module.erp.dal.dataobject.purchase.ErpPurchaseReturnItemDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * ERP 采购退货 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ErpPurchaseReturnService {
 

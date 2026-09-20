@@ -16,7 +16,7 @@ import com.lxzy.nomix.module.mes.enums.DictTypeConstants;
 /**
  * MES 检验结果记录 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_qc_indicator_result")
 @KeySequence("mes_qc_indicator_result_seq")

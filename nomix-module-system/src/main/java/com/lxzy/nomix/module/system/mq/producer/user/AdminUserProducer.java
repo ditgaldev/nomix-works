@@ -1,16 +1,15 @@
 package com.lxzy.nomix.module.system.mq.producer.user;
 
 import com.lxzy.nomix.module.system.api.message.user.AdminUserProfileUpdateMessage;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
-
 /**
  * 管理员用户 Producer
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 @Component

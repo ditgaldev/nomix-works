@@ -10,11 +10,11 @@ import com.lxzy.nomix.module.mes.service.md.item.MesMdItemService;
 import com.lxzy.nomix.module.mes.service.md.item.MesMdItemTypeService;
 import com.lxzy.nomix.module.mes.service.wm.warehouse.MesWmWarehouseAreaService;
 import com.lxzy.nomix.module.mes.service.wm.warehouse.MesWmWarehouseService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.function.Consumer;
@@ -26,7 +26,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link MesWmMaterialStockServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(MesWmMaterialStockServiceImpl.class)
 public class MesWmMaterialStockServiceImplTest extends BaseDbUnitTest {
@@ -37,13 +37,13 @@ public class MesWmMaterialStockServiceImplTest extends BaseDbUnitTest {
     @Resource
     private MesWmMaterialStockMapper materialStockMapper;
 
-    @MockBean
+    @MockitoBean
     private MesMdItemService itemService;
-    @MockBean
+    @MockitoBean
     private MesMdItemTypeService itemTypeService;
-    @MockBean
+    @MockitoBean
     private MesWmWarehouseAreaService areaService;
-    @MockBean
+    @MockitoBean
     private MesWmWarehouseService warehouseService;
 
     @Test

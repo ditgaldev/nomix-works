@@ -3,9 +3,9 @@ package com.lxzy.nomix.module.im.dal.mysql.message;
 import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.im.dal.dataobject.message.ImPrivateMessageDO;
 import com.lxzy.nomix.module.im.enums.message.ImMessageStatusEnum;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link ImPrivateMessageMapper} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class ImPrivateMessageMapperTest extends BaseDbUnitTest {
 

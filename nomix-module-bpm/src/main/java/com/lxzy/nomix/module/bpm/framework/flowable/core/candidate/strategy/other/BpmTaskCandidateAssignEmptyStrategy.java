@@ -7,13 +7,13 @@ import com.lxzy.nomix.module.bpm.framework.flowable.core.candidate.BpmTaskCandid
 import com.lxzy.nomix.module.bpm.framework.flowable.core.enums.BpmTaskCandidateStrategyEnum;
 import com.lxzy.nomix.module.bpm.framework.flowable.core.util.BpmnModelUtils;
 import com.lxzy.nomix.module.bpm.service.definition.BpmProcessDefinitionService;
+import jakarta.annotation.Resource;
 import org.flowable.bpmn.model.BpmnModel;
 import org.flowable.bpmn.model.FlowElement;
 import org.flowable.engine.delegate.DelegateExecution;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Objects;

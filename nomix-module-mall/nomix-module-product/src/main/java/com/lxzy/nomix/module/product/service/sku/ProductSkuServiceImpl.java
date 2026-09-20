@@ -14,12 +14,12 @@ import com.lxzy.nomix.module.product.dal.mysql.sku.ProductSkuMapper;
 import com.lxzy.nomix.module.product.service.property.ProductPropertyService;
 import com.lxzy.nomix.module.product.service.property.ProductPropertyValueService;
 import com.lxzy.nomix.module.product.service.spu.ProductSpuService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -31,7 +31,7 @@ import static com.lxzy.nomix.module.product.enums.ErrorCodeConstants.*;
 /**
  * 商品 SKU Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

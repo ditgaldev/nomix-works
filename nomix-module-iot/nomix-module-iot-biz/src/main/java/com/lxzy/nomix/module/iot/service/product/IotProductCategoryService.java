@@ -4,9 +4,9 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.iot.controller.admin.product.vo.category.IotProductCategoryPageReqVO;
 import com.lxzy.nomix.module.iot.controller.admin.product.vo.category.IotProductCategorySaveReqVO;
 import com.lxzy.nomix.module.iot.dal.dataobject.product.IotProductCategoryDO;
+import jakarta.validation.Valid;
 
 import javax.annotation.Nullable;
-import javax.validation.Valid;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
@@ -17,7 +17,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * IoT 产品分类 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface IotProductCategoryService {
 

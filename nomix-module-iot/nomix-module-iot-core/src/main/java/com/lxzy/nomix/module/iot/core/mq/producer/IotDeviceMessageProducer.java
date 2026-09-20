@@ -8,7 +8,7 @@ import lombok.RequiredArgsConstructor;
 /**
  * IoT 设备消息生产者
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 public class IotDeviceMessageProducer {

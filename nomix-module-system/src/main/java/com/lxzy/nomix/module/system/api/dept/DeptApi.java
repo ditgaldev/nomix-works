@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * 部门 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface DeptApi {
 

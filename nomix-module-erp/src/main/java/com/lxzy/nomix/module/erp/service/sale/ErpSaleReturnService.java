@@ -5,8 +5,8 @@ import com.lxzy.nomix.module.erp.controller.admin.sale.vo.returns.ErpSaleReturnP
 import com.lxzy.nomix.module.erp.controller.admin.sale.vo.returns.ErpSaleReturnSaveReqVO;
 import com.lxzy.nomix.module.erp.dal.dataobject.sale.ErpSaleReturnDO;
 import com.lxzy.nomix.module.erp.dal.dataobject.sale.ErpSaleReturnItemDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * ERP 销售退货 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ErpSaleReturnService {
 

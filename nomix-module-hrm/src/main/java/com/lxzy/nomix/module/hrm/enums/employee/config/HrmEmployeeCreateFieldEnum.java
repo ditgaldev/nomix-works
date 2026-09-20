@@ -8,7 +8,7 @@ import lombok.Getter;
 /**
  * HRM 新建员工字段枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

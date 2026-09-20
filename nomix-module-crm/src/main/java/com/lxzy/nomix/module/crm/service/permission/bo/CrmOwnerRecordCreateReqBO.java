@@ -2,13 +2,13 @@ package com.lxzy.nomix.module.crm.service.permission.bo;
 
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.crm.enums.common.CrmBizTypeEnum;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 /**
  * CRM 负责人变更记录 Create Req BO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class CrmOwnerRecordCreateReqBO {

@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * HRM 员工教育经历教学方式枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

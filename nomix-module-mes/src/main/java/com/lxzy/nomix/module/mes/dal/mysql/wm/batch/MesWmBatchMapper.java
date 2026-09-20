@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * 批次管理 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesWmBatchMapper extends BaseMapperX<MesWmBatchDO> {

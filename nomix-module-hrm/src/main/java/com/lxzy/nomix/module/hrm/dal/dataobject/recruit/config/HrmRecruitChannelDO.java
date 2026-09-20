@@ -15,7 +15,7 @@ import lombok.ToString;
 /**
  * HRM 招聘渠道 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("hrm_recruit_channel")
 @KeySequence("hrm_recruit_channel_seq")

@@ -13,7 +13,7 @@ import com.lxzy.nomix.module.hrm.dal.mysql.salary.slip.HrmSalarySlipTemplateMapp
 import com.lxzy.nomix.module.hrm.enums.salary.config.HrmSalaryOptionCodeEnum;
 import com.lxzy.nomix.module.hrm.enums.salary.slip.HrmSalarySlipTemplateCategoryEnum;
 import com.lxzy.nomix.module.hrm.enums.salary.slip.HrmSalarySlipTemplateOptionTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -43,7 +43,7 @@ import static com.lxzy.nomix.module.hrm.enums.ErrorCodeConstants.SALARY_SLIP_TEM
 /**
  * HRM 工资条模板 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

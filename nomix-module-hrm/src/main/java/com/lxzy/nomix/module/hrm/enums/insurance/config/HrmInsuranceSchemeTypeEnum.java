@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * HRM 社保方案类型枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

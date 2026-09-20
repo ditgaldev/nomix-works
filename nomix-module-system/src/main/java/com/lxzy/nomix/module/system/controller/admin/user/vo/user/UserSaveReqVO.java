@@ -8,10 +8,10 @@ import com.lxzy.nomix.module.system.framework.operatelog.core.SexParseFunction;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.mzt.logapi.starter.annotation.DiffLogField;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.*;
 import lombok.Data;
 import org.hibernate.validator.constraints.Length;
 
-import javax.validation.constraints.*;
 import java.util.Set;
 
 @Schema(description = "管理后台 - 用户创建/修改 Request VO")
@@ -45,7 +45,7 @@ public class UserSaveReqVO {
     @DiffLogField(name = "岗位", function = PostParseFunction.NAME)
     private Set<Long> postIds;
 
-    @Schema(description = "用户邮箱", example = "nomix@example.com")
+    @Schema(description = "用户邮箱", example = "nomix@nomix.cn")
     @Email(message = "邮箱格式不正确")
     @Size(max = 50, message = "邮箱长度不能超过 50 个字符")
     @DiffLogField(name = "用户邮箱")
@@ -60,7 +60,7 @@ public class UserSaveReqVO {
     @DiffLogField(name = "用户性别", function = SexParseFunction.NAME)
     private Integer sex;
 
-    @Schema(description = "用户头像", example = "")
+    @Schema(description = "用户头像", example = "https://www.nomix.cn/xxx.png")
     @DiffLogField(name = "用户头像")
     private String avatar;
 

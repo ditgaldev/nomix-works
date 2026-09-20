@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link DataPermissionRuleFactoryImpl} 单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 class DataPermissionRuleFactoryImplTest extends BaseMockitoUnitTest {
 

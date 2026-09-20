@@ -7,7 +7,7 @@ import java.util.Collection;
 /**
  * {@link WebSocketSession} 管理器的接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface WebSocketSessionManager {
 

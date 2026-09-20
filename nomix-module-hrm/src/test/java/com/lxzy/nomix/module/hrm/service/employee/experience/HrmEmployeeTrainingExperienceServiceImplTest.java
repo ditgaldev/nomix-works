@@ -5,10 +5,10 @@ import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.hrm.controller.admin.employee.vo.trainingexperience.HrmEmployeeTrainingExperienceSaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.experience.HrmEmployeeTrainingExperienceDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.employee.experience.HrmEmployeeTrainingExperienceMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -26,7 +26,7 @@ import static org.mockito.Mockito.verify;
 /**
  * {@link HrmEmployeeTrainingExperienceServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmEmployeeTrainingExperienceServiceImpl.class)
 public class HrmEmployeeTrainingExperienceServiceImplTest extends BaseDbUnitTest {
@@ -37,7 +37,7 @@ public class HrmEmployeeTrainingExperienceServiceImplTest extends BaseDbUnitTest
     @Resource
     private HrmEmployeeTrainingExperienceMapper trainingExperienceMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmEmployeeService employeeService;
 
     @Test

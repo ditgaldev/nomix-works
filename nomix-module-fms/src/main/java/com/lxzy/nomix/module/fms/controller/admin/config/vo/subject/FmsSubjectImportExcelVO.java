@@ -1,7 +1,7 @@
 package com.lxzy.nomix.module.fms.controller.admin.config.vo.subject;
 
 import cn.idev.excel.annotation.ExcelProperty;
-import javax.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 /**
  * FMS 科目 Excel 导入 VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 @Builder

@@ -5,13 +5,12 @@ import com.lxzy.nomix.module.mes.controller.admin.dv.repair.vo.MesDvRepairConfir
 import com.lxzy.nomix.module.mes.controller.admin.dv.repair.vo.MesDvRepairPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.dv.repair.vo.MesDvRepairSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.dv.repair.MesDvRepairDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * MES 维修工单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesDvRepairService {
 

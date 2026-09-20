@@ -11,7 +11,7 @@ import com.lxzy.nomix.module.mes.enums.DictTypeConstants;
 /**
  * MES 安灯呼叫配置 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_pro_andon_config")
 @KeySequence("mes_pro_andon_config_seq")

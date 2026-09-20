@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 /**
  * {@link MesMdAutoCodeDatePartStrategy} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class MesMdAutoCodeDatePartStrategyTest {
 

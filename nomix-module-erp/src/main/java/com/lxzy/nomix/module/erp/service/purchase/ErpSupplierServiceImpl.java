@@ -7,21 +7,20 @@ import com.lxzy.nomix.module.erp.controller.admin.purchase.vo.supplier.ErpSuppli
 import com.lxzy.nomix.module.erp.controller.admin.purchase.vo.supplier.ErpSupplierSaveReqVO;
 import com.lxzy.nomix.module.erp.dal.dataobject.purchase.ErpSupplierDO;
 import com.lxzy.nomix.module.erp.dal.mysql.purchase.ErpSupplierMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static com.lxzy.nomix.module.erp.enums.ErrorCodeConstants.SUPPLIER_NOT_ENABLE;
-import static com.lxzy.nomix.module.erp.enums.ErrorCodeConstants.SUPPLIER_NOT_EXISTS;
+import static com.lxzy.nomix.module.erp.enums.ErrorCodeConstants.*;
 
 /**
  * ERP 供应商 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

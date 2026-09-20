@@ -12,7 +12,7 @@ import reactor.core.publisher.Flux;
 /**
  * 阶跃星辰 {@link ChatModel} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 @RequiredArgsConstructor

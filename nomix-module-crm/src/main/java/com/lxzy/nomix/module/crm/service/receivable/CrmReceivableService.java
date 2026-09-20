@@ -5,8 +5,8 @@ import com.lxzy.nomix.module.crm.controller.admin.receivable.vo.receivable.CrmRe
 import com.lxzy.nomix.module.crm.controller.admin.receivable.vo.receivable.CrmReceivableSaveReqVO;
 import com.lxzy.nomix.module.crm.dal.dataobject.customer.CrmCustomerDO;
 import com.lxzy.nomix.module.crm.dal.dataobject.receivable.CrmReceivableDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.List;

@@ -22,7 +22,7 @@ import com.google.common.annotations.VisibleForTesting;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -33,7 +33,7 @@ import static com.lxzy.nomix.module.system.enums.ErrorCodeConstants.*;
 /**
  * 短信发送 Service 发送的实现
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Slf4j

@@ -12,7 +12,7 @@ import java.util.Arrays;
  *
  * 状态流转：草稿 → 维修中 → 待验收 → 已确认
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

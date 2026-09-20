@@ -3,8 +3,8 @@ package com.lxzy.nomix.module.mes.service.md.item;
 import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.type.MesMdItemTypeListReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.type.MesMdItemTypeSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.md.item.MesMdItemTypeDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -14,7 +14,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * MES 物料产品分类 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesMdItemTypeService {
 

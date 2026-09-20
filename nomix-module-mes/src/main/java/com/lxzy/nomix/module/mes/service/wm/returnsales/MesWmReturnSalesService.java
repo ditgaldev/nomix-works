@@ -4,13 +4,12 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.wm.returnsales.vo.MesWmReturnSalesPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.wm.returnsales.vo.MesWmReturnSalesSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.returnsales.MesWmReturnSalesDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * MES 销售退货单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesWmReturnSalesService {
 

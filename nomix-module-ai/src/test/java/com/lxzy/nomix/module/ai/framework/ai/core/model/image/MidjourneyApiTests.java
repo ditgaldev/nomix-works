@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * {@link MidjourneyApi} 集成测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class MidjourneyApiTests {
 

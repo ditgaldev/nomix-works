@@ -2,9 +2,9 @@ package com.lxzy.nomix.framework.dict.validation;
 
 import cn.hutool.core.collection.CollUtil;
 import com.lxzy.nomix.framework.dict.core.DictFrameworkUtils;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
 import java.util.Collection;
 import java.util.List;
 

@@ -11,11 +11,15 @@ import io.swagger.v3.oas.models.media.StringSchema;
 import io.swagger.v3.oas.models.parameters.Parameter;
 import io.swagger.v3.oas.models.security.SecurityRequirement;
 import io.swagger.v3.oas.models.security.SecurityScheme;
-import org.springdoc.core.*;
 import org.springdoc.core.customizers.OpenApiBuilderCustomizer;
 import org.springdoc.core.customizers.OperationCustomizer;
 import org.springdoc.core.customizers.ServerBaseUrlCustomizer;
+import org.springdoc.core.models.GroupedOpenApi;
+import org.springdoc.core.properties.SpringDocConfigProperties;
 import org.springdoc.core.providers.JavadocProvider;
+import org.springdoc.core.service.OpenAPIService;
+import org.springdoc.core.service.SecurityService;
+import org.springdoc.core.utils.PropertyResolverUtils;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -39,9 +43,9 @@ import static com.lxzy.nomix.framework.web.core.util.WebFrameworkUtils.HEADER_TE
  * 1. Springdoc 文档地址：<a href="https://github.com/springdoc/springdoc-openapi">仓库</a>
  * 2. Swagger 规范，于 2015 更名为 OpenAPI 规范，本质是一个东西
  *
- * @author Nomix
+ * @author Nomix源码
  */
-@AutoConfiguration(before = Knife4jAutoConfiguration.class) // before 原因，保证覆写的 Knife4jOpenApiCustomizer 先生效！相关  讨论
+@AutoConfiguration(before = Knife4jAutoConfiguration.class) // before 原因，保证覆写的 Knife4jOpenApiCustomizer 先生效！相关 https://github.com/ditgaldev/nomix-works/issues/954 讨论
 @ConditionalOnClass({OpenAPI.class})
 @EnableConfigurationProperties(SwaggerProperties.class)
 @ConditionalOnProperty(prefix = "springdoc.api-docs", name = "enabled", havingValue = "true", matchIfMissing = true) // 设置为 false 时，禁用
@@ -160,7 +164,7 @@ public class NomixSwaggerAutoConfiguration {
     /**
      * 核心：自定义OperationId生成规则，组合「类名前缀 + 方法名」
      *
-     * @see <a href="">app-api 前缀不生效，都是使用 admin-api</a>
+     * @see <a href="https://github.com/ditgaldev/nomix-works/issues/957">app-api 前缀不生效，都是使用 admin-api</a>
      */
     private static OperationCustomizer buildOperationIdCustomizer() {
         return (operation, handlerMethod) -> {

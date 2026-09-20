@@ -4,14 +4,14 @@ import com.lxzy.nomix.framework.common.biz.system.permission.dto.DeptDataPermiss
 import com.lxzy.nomix.module.system.service.permission.PermissionService;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.Collection;
 import java.util.Set;
 
 /**
  * 权限 API 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class PermissionApiImpl implements PermissionApi {

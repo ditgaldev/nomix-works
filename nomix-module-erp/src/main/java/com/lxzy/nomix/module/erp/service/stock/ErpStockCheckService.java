@@ -5,15 +5,15 @@ import com.lxzy.nomix.module.erp.controller.admin.stock.vo.check.ErpStockCheckPa
 import com.lxzy.nomix.module.erp.controller.admin.stock.vo.check.ErpStockCheckSaveReqVO;
 import com.lxzy.nomix.module.erp.dal.dataobject.stock.ErpStockCheckDO;
 import com.lxzy.nomix.module.erp.dal.dataobject.stock.ErpStockCheckItemDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * ERP 库存盘点单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ErpStockCheckService {
 

@@ -19,7 +19,7 @@ import lombok.Getter;
 /**
  * 文件存储器枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @AllArgsConstructor
 @Getter

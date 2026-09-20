@@ -29,13 +29,13 @@ import com.lxzy.nomix.module.trade.framework.order.config.TradeOrderProperties;
 import com.lxzy.nomix.module.trade.service.brokerage.bo.BrokerageWithdrawSummaryRespBO;
 import com.lxzy.nomix.module.trade.service.config.TradeConfigService;
 import com.google.common.base.Objects;
+import jakarta.annotation.Resource;
+import jakarta.validation.Validator;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
-import javax.validation.Validator;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.Collections;
@@ -51,7 +51,7 @@ import static com.lxzy.nomix.module.trade.enums.ErrorCodeConstants.*;
 /**
  * 佣金提现 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

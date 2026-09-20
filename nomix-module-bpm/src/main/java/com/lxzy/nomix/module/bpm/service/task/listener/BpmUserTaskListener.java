@@ -4,6 +4,7 @@ import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.model.simple.Bpm
 import com.lxzy.nomix.module.bpm.enums.definition.BpmHttpRequestParamTypeEnum;
 import com.lxzy.nomix.module.bpm.framework.flowable.core.util.BpmHttpRequestUtils;
 import com.lxzy.nomix.module.bpm.service.task.BpmProcessInstanceService;
+import jakarta.annotation.Resource;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.flowable.common.engine.api.delegate.Expression;
@@ -12,8 +13,6 @@ import org.flowable.engine.runtime.ProcessInstance;
 import org.flowable.task.service.delegate.DelegateTask;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.Resource;
 
 import static com.lxzy.nomix.module.bpm.framework.flowable.core.util.BpmnModelUtils.parseListenerConfig;
 

@@ -1,8 +1,8 @@
 package com.lxzy.nomix.module.mes.service.wm.transaction;
 
 import com.lxzy.nomix.module.mes.service.wm.transaction.dto.MesWmTransactionSaveReqDTO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**

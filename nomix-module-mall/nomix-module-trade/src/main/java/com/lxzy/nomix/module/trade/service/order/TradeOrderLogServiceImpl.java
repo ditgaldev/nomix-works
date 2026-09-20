@@ -6,7 +6,7 @@ import com.lxzy.nomix.module.trade.dal.mysql.order.TradeOrderLogMapper;
 import com.lxzy.nomix.module.trade.service.order.bo.TradeOrderLogCreateReqBO;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 
 /**

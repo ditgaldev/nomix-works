@@ -5,7 +5,7 @@ package com.lxzy.nomix.module.iot.core.messagebus.core;
  *
  * 用于处理从消息总线接收到的消息
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface IotMessageSubscriber<T> {
 

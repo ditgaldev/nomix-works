@@ -5,7 +5,7 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.pay.controller.admin.demo.vo.withdraw.PayDemoWithdrawCreateReqVO;
 import com.lxzy.nomix.module.pay.dal.dataobject.demo.PayDemoWithdrawDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 示例提现单 Service 接口

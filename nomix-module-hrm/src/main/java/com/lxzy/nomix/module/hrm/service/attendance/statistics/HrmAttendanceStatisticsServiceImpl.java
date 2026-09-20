@@ -35,7 +35,7 @@ import com.lxzy.nomix.module.hrm.enums.attendance.config.HrmAttendanceLateEarlyD
 import com.lxzy.nomix.module.hrm.enums.attendance.statistics.HrmAttendanceResultEnum;
 import com.lxzy.nomix.module.hrm.service.employee.info.HrmEmployeeService;
 import com.google.common.annotations.VisibleForTesting;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.stereotype.Service;
@@ -69,7 +69,7 @@ import static com.lxzy.nomix.framework.common.util.number.MoneyUtils.priceScale;
 /**
  * HRM 考勤统计 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated
@@ -135,7 +135,7 @@ public class HrmAttendanceStatisticsServiceImpl implements HrmAttendanceStatisti
                 buildMonthSummaryList(reqVO.getYear(), reqVO.getMonth(), employeeList);
         List<HrmAttendanceMonthRecordRespVO> filteredMonthSummaryList = filterList(monthSummaryList,
                 record -> Objects.equals(record.getFullAttendance(), reqVO.getFullAttendance()));
-        return PageUtils.buildPageResult(filteredMonthSummaryList, reqVO);
+        return PageUtils.buildPageResult(reqVO, filteredMonthSummaryList);
     }
 
     @Override

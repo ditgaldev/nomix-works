@@ -9,12 +9,12 @@ import com.lxzy.nomix.module.wms.controller.admin.md.item.vo.item.WmsItemPageReq
 import com.lxzy.nomix.module.wms.controller.admin.md.item.vo.item.WmsItemSaveReqVO;
 import com.lxzy.nomix.module.wms.dal.dataobject.md.item.WmsItemDO;
 import com.lxzy.nomix.module.wms.dal.mysql.md.item.WmsItemMapper;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -25,7 +25,7 @@ import static com.lxzy.nomix.module.wms.enums.ErrorCodeConstants.*;
 /**
  * WMS 商品 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

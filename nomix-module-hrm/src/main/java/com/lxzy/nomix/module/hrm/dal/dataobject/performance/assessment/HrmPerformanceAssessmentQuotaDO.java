@@ -17,7 +17,7 @@ import java.math.BigDecimal;
 /**
  * HRM 员工绩效考核指标 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("hrm_performance_assessment_quota")
 @KeySequence("hrm_performance_assessment_quota_seq")

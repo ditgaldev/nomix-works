@@ -11,7 +11,7 @@ import com.lxzy.nomix.module.pay.dal.dataobject.wallet.PayWalletRechargePackageD
 import com.lxzy.nomix.module.pay.dal.mysql.wallet.PayWalletRechargePackageMapper;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 import java.util.List;
 

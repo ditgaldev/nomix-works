@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 /**
  * MES 班组排班 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_cal_team_shift")
 @KeySequence("mes_cal_team_shift_seq")

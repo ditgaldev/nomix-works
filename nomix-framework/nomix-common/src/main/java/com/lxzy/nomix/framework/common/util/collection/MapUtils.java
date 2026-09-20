@@ -17,7 +17,7 @@ import java.util.function.Consumer;
 /**
  * Map 工具类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class MapUtils {
 

@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * FMS 资产负债表配置 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface FmsBalanceSheetConfigMapper extends BaseMapperX<FmsBalanceSheetConfigDO> {

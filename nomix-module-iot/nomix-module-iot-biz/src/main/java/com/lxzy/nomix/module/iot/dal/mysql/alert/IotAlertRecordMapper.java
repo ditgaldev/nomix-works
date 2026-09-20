@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * IoT 告警记录 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface IotAlertRecordMapper extends BaseMapperX<IotAlertRecordDO> {

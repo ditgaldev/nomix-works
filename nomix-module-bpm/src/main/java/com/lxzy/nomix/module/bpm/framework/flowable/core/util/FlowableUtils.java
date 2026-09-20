@@ -41,7 +41,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * Flowable 相关的工具方法
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class FlowableUtils {
 

@@ -2,15 +2,15 @@ package com.lxzy.nomix.module.mes.service.pro.route;
 
 import com.lxzy.nomix.module.mes.controller.admin.pro.route.vo.process.MesProRouteProcessSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.pro.route.MesProRouteProcessDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * MES 工艺路线工序 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesProRouteProcessService {
 

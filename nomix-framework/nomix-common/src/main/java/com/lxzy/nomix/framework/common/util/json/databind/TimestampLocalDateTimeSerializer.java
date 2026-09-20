@@ -33,7 +33,7 @@ public class TimestampLocalDateTimeSerializer extends JsonSerializer<LocalDateTi
 
     @Override
     public void serialize(LocalDateTime value, JsonGenerator gen, SerializerProvider serializers) throws IOException {
-        // 情况一：有 JsonFormat 自定义注解，则使用它。
+        // 情况一：有 JsonFormat 自定义注解，则使用它。https://github.com/ditgaldev/nomix-works/pull/1019
         String fieldName = gen.getOutputContext().getCurrentName();
         if (fieldName != null) {
             Object currentValue = gen.getOutputContext().getCurrentValue();
@@ -41,7 +41,7 @@ public class TimestampLocalDateTimeSerializer extends JsonSerializer<LocalDateTi
                 Class<?> clazz = currentValue.getClass();
                 Map<String, Field> fieldMap = FIELD_CACHE.computeIfAbsent(clazz, this::buildFieldMap);
                 Field field = fieldMap.get(fieldName);
-                // 进一步修复：
+                // 进一步修复：https://github.com/ditgaldev/nomix-works/pulls/1480
                 if (field != null && field.isAnnotationPresent(JsonFormat.class)) {
                     JsonFormat jsonFormat = field.getAnnotation(JsonFormat.class);
                     try {

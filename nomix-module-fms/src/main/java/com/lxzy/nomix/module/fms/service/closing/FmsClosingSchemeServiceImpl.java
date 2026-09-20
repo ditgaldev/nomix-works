@@ -40,7 +40,7 @@ import com.lxzy.nomix.module.fms.service.report.FmsIncomeStatementService;
 import com.lxzy.nomix.module.fms.service.config.FmsVoucherWordService;
 import com.lxzy.nomix.module.fms.util.FmsPeriodUtils;
 import com.mzt.logapi.starter.annotation.LogRecord;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import lombok.Data;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
@@ -75,7 +75,7 @@ import static com.lxzy.nomix.module.fms.enums.LogRecordConstants.*;
 /**
  * FMS 结账方案 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

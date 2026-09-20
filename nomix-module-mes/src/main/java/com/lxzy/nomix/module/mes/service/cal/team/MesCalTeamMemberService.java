@@ -4,15 +4,15 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.cal.team.vo.member.MesCalTeamMemberPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.cal.team.vo.member.MesCalTeamMemberSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.cal.team.MesCalTeamMemberDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * MES 班组成员 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesCalTeamMemberService {
 

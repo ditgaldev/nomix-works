@@ -4,8 +4,7 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.wm.productreceipt.vo.MesWmProductReceiptPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.wm.productreceipt.vo.MesWmProductReceiptSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.productreceipt.MesWmProductReceiptDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * MES 产品收货单 Service 接口

@@ -4,15 +4,14 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.wm.barcode.vo.MesWmBarcodePageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.wm.barcode.vo.MesWmBarcodeSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.barcode.MesWmBarcodeDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.Collection;
 
 /**
  * MES 条码清单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesWmBarcodeService {
 

@@ -2,14 +2,14 @@ package com.lxzy.nomix.module.infra.service.db;
 
 import com.lxzy.nomix.module.infra.controller.admin.db.vo.DataSourceConfigSaveReqVO;
 import com.lxzy.nomix.module.infra.dal.dataobject.db.DataSourceConfigDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
 /**
  * 数据源配置 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface DataSourceConfigService {
 

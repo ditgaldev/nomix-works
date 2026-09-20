@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * FMS 辅助核算类别枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

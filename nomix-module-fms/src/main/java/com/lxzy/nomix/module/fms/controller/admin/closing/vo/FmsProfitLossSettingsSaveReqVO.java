@@ -3,11 +3,11 @@ package com.lxzy.nomix.module.fms.controller.admin.closing.vo;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.fms.enums.closing.FmsClosingVoucherTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 @Schema(description = "管理后台 - FMS 结转损益设置保存 Request VO")

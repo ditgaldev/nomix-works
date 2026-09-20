@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * HRM 标准参保数据 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmInsuranceStandardService {
 

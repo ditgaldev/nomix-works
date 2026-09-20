@@ -15,7 +15,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * 商品 SKU Convert
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ProductSkuConvert {

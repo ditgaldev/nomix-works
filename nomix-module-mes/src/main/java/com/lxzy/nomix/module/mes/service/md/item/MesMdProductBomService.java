@@ -4,15 +4,15 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.bom.MesMdProductBomPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.bom.MesMdProductBomSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.md.item.MesMdProductBomDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * MES 产品BOM Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesMdProductBomService {
 

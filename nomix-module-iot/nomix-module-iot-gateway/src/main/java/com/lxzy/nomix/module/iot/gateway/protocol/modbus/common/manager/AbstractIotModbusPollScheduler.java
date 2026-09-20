@@ -24,7 +24,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
  * 和 {@link #pollTask(Long, String)}。
  * <p>
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public abstract class AbstractIotModbusPollScheduler {

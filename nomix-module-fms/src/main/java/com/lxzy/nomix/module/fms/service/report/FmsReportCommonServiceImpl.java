@@ -25,7 +25,7 @@ import com.lxzy.nomix.module.fms.service.closing.FmsClosingVoucherService;
 import com.lxzy.nomix.module.fms.service.config.FmsSubjectService;
 import com.lxzy.nomix.module.fms.service.ledger.FmsLedgerService;
 import com.lxzy.nomix.module.fms.service.voucher.FmsVoucherService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
@@ -61,7 +61,7 @@ import static com.lxzy.nomix.module.fms.enums.ErrorCodeConstants.SUBJECT_NOT_EXI
 /**
  * FMS 报表共用 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

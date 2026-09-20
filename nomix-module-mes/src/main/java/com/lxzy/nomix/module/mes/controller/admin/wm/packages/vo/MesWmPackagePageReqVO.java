@@ -9,7 +9,7 @@ import lombok.ToString;
 /**
  * MES 装箱单分页 Request VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Schema(description = "管理后台 - MES 装箱单分页 Request VO")
 @Data

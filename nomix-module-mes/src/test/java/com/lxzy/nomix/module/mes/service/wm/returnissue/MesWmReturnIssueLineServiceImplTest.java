@@ -5,12 +5,13 @@ import com.lxzy.nomix.module.mes.dal.dataobject.wm.returnissue.MesWmReturnIssueL
 import com.lxzy.nomix.module.mes.dal.mysql.wm.returnissue.MesWmReturnIssueLineMapper;
 import com.lxzy.nomix.module.mes.enums.qc.MesQcCheckResultEnum;
 import com.lxzy.nomix.module.mes.enums.wm.MesWmQualityStatusEnum;
-import com.lxzy.nomix.module.mes.service.md.item.MesMdItemService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
+import com.lxzy.nomix.module.mes.service.md.item.MesMdItemService;
+
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -21,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 /**
  * {@link MesWmReturnIssueLineServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(MesWmReturnIssueLineServiceImpl.class)
 public class MesWmReturnIssueLineServiceImplTest extends BaseDbUnitTest {
@@ -32,10 +33,10 @@ public class MesWmReturnIssueLineServiceImplTest extends BaseDbUnitTest {
     @Resource
     private MesWmReturnIssueLineMapper returnIssueLineMapper;
 
-    @MockBean
+    @MockitoBean
     private MesWmReturnIssueService issueService;
 
-    @MockBean
+    @MockitoBean
     private MesMdItemService itemService;
 
     @Test

@@ -1,7 +1,6 @@
 package com.lxzy.nomix.module.mes.service.cal.plan;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.util.ObjUtil;
 import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.module.mes.controller.admin.cal.plan.vo.MesCalPlanPageReqVO;
@@ -12,12 +11,13 @@ import com.lxzy.nomix.module.mes.enums.cal.MesCalPlanStatusEnum;
 import com.lxzy.nomix.module.mes.enums.cal.MesCalShiftMethodEnum;
 import com.lxzy.nomix.module.mes.enums.cal.MesCalShiftTypeEnum;
 import com.lxzy.nomix.module.mes.service.cal.team.MesCalTeamShiftService;
+import cn.hutool.core.util.ObjUtil;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -28,7 +28,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 排班计划 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

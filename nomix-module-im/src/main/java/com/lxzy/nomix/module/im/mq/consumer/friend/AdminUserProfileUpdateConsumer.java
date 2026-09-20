@@ -8,19 +8,19 @@ import com.lxzy.nomix.module.im.service.friend.ImFriendService;
 import com.lxzy.nomix.module.im.service.websocket.ImWebSocketService;
 import com.lxzy.nomix.module.im.service.websocket.notification.friend.FriendInfoUpdatedNotification;
 import com.lxzy.nomix.module.system.api.message.user.AdminUserProfileUpdateMessage;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.event.TransactionPhase;
 import org.springframework.transaction.event.TransactionalEventListener;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
  * 监听 system 模块的 {@link AdminUserProfileUpdateMessage} 消息，向「资料被改的人」的所有好友推送 FRIEND_INFO_UPDATED 通知
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 @Component

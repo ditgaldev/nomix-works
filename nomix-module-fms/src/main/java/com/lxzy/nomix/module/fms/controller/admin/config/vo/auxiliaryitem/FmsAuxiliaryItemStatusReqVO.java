@@ -3,13 +3,13 @@ package com.lxzy.nomix.module.fms.controller.admin.config.vo.auxiliaryitem;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.framework.common.enums.CommonStatusEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 /**
  * FMS 辅助核算项目状态更新 Request VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Schema(description = "管理后台 - FMS 辅助核算项目状态更新 Request VO")
 @Data

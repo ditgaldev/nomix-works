@@ -4,7 +4,7 @@ import cn.hutool.core.util.StrUtil;
 import com.lxzy.nomix.framework.quartz.core.handler.JobHandler;
 import com.lxzy.nomix.framework.tenant.core.job.TenantJob;
 import com.lxzy.nomix.module.hrm.service.salary.employee.HrmSalaryEmployeeInfoService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * HRM 定薪调薪记录生效 Job
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 public class HrmSalaryChangeJob implements JobHandler {

@@ -4,7 +4,7 @@ import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.stereotype.Repository;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.concurrent.TimeUnit;
 
 import static com.lxzy.nomix.module.pay.dal.redis.RedisKeyConstants.PAY_NOTIFY_LOCK;
@@ -12,7 +12,7 @@ import static com.lxzy.nomix.module.pay.dal.redis.RedisKeyConstants.PAY_NOTIFY_L
 /**
  * 支付通知的锁 Redis DAO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Repository
 public class PayNotifyLockRedisDAO {

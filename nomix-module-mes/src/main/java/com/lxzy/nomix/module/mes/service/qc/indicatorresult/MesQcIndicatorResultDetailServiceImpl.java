@@ -3,16 +3,16 @@ package com.lxzy.nomix.module.mes.service.qc.indicatorresult;
 import com.lxzy.nomix.framework.mybatis.core.query.LambdaQueryWrapperX;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.indicatorresult.MesQcIndicatorResultDetailDO;
 import com.lxzy.nomix.module.mes.dal.mysql.qc.indicatorresult.MesQcIndicatorResultDetailMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
  * MES 检验结果明细 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

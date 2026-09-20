@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * FMS 账簿查询 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface FmsLedgerQueryMapper extends BaseMapperX<FmsVoucherEntryDO> {

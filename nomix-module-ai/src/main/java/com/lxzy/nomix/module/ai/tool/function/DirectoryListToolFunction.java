@@ -24,7 +24,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * 工具：列出指定目录的文件列表
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component("directory_list")
 public class DirectoryListToolFunction implements Function<DirectoryListToolFunction.Request, DirectoryListToolFunction.Response> {

@@ -9,7 +9,7 @@ import com.lxzy.nomix.module.crm.dal.mysql.performance.CrmPerformanceConfigMappe
 import com.lxzy.nomix.module.crm.enums.performance.CrmPerformanceConfigObjectTypeEnum;
 import com.lxzy.nomix.module.system.api.dept.DeptApi;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -27,7 +27,7 @@ import static java.util.Collections.singleton;
 /**
  * CRM 业绩目标设置 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

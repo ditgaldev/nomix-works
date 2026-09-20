@@ -10,7 +10,7 @@ import com.lxzy.nomix.module.system.dal.mysql.notify.NotifyTemplateMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,7 +27,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link NotifyTemplateServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(NotifyTemplateServiceImpl.class)
 public class NotifyTemplateServiceImplTest extends BaseDbUnitTest {

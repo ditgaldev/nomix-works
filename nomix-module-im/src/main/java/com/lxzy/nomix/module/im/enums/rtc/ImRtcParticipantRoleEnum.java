@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * IM 通话参与者角色枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Getter

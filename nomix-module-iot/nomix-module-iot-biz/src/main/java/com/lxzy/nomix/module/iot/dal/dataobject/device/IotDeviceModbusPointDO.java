@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 /**
  * IoT 设备 Modbus 点位配置 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("iot_device_modbus_point")
 @KeySequence("iot_device_modbus_point_seq")

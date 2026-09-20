@@ -55,7 +55,7 @@ import com.lxzy.nomix.module.system.api.dept.DeptApi;
 import com.lxzy.nomix.module.system.api.dept.dto.DeptRespDTO;
 import com.lxzy.nomix.module.system.enums.common.SexEnum;
 import com.lxzy.nomix.module.hrm.enums.recruit.candidate.HrmRecruitInterviewResultEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -91,7 +91,7 @@ import static com.lxzy.nomix.module.hrm.enums.ErrorCodeConstants.HOME_CALENDAR_D
 /**
  * HRM 首页 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

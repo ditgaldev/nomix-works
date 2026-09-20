@@ -9,7 +9,7 @@ import com.lxzy.nomix.module.pms.controller.admin.kb.interaction.vo.favorite.Pms
 import com.lxzy.nomix.module.pms.dal.dataobject.kb.interaction.PmsKnowledgeFavoriteDO;
 import com.lxzy.nomix.module.pms.dal.mysql.kb.interaction.PmsKnowledgeFavoriteMapper;
 import com.lxzy.nomix.module.pms.enums.kb.PmsKnowledgeObjectTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -29,7 +29,7 @@ import static com.lxzy.nomix.module.pms.enums.ErrorCodeConstants.KNOWLEDGE_FAVOR
 /**
  * PMS 知识收藏（关注）Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

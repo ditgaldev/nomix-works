@@ -4,14 +4,14 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.wm.stocktaking.plan.vo.param.MesWmStockTakingPlanParamPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.wm.stocktaking.plan.vo.param.MesWmStockTakingPlanParamSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.stocktaking.plan.MesWmStockTakingPlanParamDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * MES 盘点方案参数 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesWmStockTakingPlanParamService {
 

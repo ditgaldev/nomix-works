@@ -18,7 +18,7 @@ import java.util.Set;
 /**
  * 当 IdType 为 {@link IdType#NONE} 时，根据 PRIMARY 数据源所使用的数据库，自动设置
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class IdTypeEnvironmentPostProcessor implements EnvironmentPostProcessor {

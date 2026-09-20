@@ -16,10 +16,10 @@ import com.lxzy.nomix.module.promotion.enums.common.PromotionProductScopeEnum;
 import com.lxzy.nomix.module.promotion.enums.coupon.CouponTakeTypeEnum;
 import com.lxzy.nomix.module.promotion.enums.coupon.CouponTemplateValidityTypeEnum;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.function.Consumer;
 
@@ -36,7 +36,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
 * {@link CouponTemplateServiceImpl} 的单元测试类
 *
-* @author Nomix
+* @author Nomix源码
 */
 @Import(CouponTemplateServiceImpl.class)
 public class CouponTemplateServiceImplTest extends BaseDbUnitTest {
@@ -47,9 +47,9 @@ public class CouponTemplateServiceImplTest extends BaseDbUnitTest {
     @Resource
     private CouponTemplateMapper couponTemplateMapper;
 
-    @MockBean
+    @MockitoBean
     private ProductCategoryApi productCategoryApi;
-    @MockBean
+    @MockitoBean
     private ProductSpuApi productSpuApi;
 
     @Test

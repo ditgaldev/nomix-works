@@ -33,7 +33,7 @@ import static org.mockito.Mockito.*;
 /**
  * {@link BpmModelServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class BpmModelServiceImplTest extends BaseMockitoUnitTest {
 

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 /**
  * 地名的 {@link IParseFunction} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component("hrmAreaParseFunction")
 public class HrmAreaParseFunction implements IParseFunction {

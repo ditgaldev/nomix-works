@@ -3,10 +3,9 @@ package com.lxzy.nomix.module.im.controller.admin.group.vo.request;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.im.enums.group.ImGroupAddSourceEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
-
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 @Schema(description = "管理后台 - IM 加群申请发起 Request VO")
 @Data

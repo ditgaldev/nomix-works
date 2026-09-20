@@ -9,7 +9,7 @@ import lombok.*;
 /**
  * MES 班组 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_cal_team")
 @KeySequence("mes_cal_team_seq")

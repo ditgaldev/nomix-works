@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.ai.framework.ai.core.webserch;
 /**
  * 网络搜索客户端接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface AiWebSearchClient {
 

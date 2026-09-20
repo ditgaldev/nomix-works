@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * IoT 产品分类 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface IotProductCategoryMapper extends BaseMapperX<IotProductCategoryDO> {

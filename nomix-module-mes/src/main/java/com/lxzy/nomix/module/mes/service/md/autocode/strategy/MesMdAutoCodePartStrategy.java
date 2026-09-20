@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.mes.dal.dataobject.md.autocode.MesMdAutoCodePartDO;
 /**
  * MES 编码规则分段策略接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesMdAutoCodePartStrategy {
 

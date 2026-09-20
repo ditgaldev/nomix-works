@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.erp.controller.admin.stock.vo.warehouse.ErpWarehouseSaveReqVO;
 import com.lxzy.nomix.module.erp.controller.admin.stock.vo.warehouse.ErpWarehousePageReqVO;
 import com.lxzy.nomix.module.erp.dal.dataobject.stock.ErpWarehouseDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -15,7 +15,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * ERP 仓库 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ErpWarehouseService {
 

@@ -3,6 +3,7 @@ package com.lxzy.nomix.module.mes.service.dv.machinery;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjUtil;
 import cn.hutool.core.util.StrUtil;
+import com.lxzy.nomix.framework.common.enums.CommonStatusEnum;
 import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.module.mes.controller.admin.dv.machinery.vo.MesDvMachineryImportExcelVO;
@@ -20,12 +21,12 @@ import com.lxzy.nomix.module.mes.service.dv.maintenrecord.MesDvMaintenRecordServ
 import com.lxzy.nomix.module.mes.service.dv.repair.MesDvRepairService;
 import com.lxzy.nomix.module.mes.service.md.workstation.MesMdWorkshopService;
 import com.lxzy.nomix.module.mes.service.wm.barcode.MesWmBarcodeService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -37,7 +38,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 设备台账 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -15,7 +15,7 @@ import static com.lxzy.nomix.module.mp.enums.ErrorCodeConstants.USER_NOT_EXISTS;
 /**
  * 公众号粉丝 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MpUserService {
 

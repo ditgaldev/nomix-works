@@ -4,10 +4,10 @@ import com.lxzy.nomix.module.trade.api.order.dto.TradeOrderRespDTO;
 import com.lxzy.nomix.module.trade.convert.order.TradeOrderConvert;
 import com.lxzy.nomix.module.trade.service.order.TradeOrderQueryService;
 import com.lxzy.nomix.module.trade.service.order.TradeOrderUpdateService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 

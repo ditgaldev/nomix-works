@@ -12,7 +12,7 @@ import lombok.ToString;
 /**
  * HRM 员工绩效考核申诉记录 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("hrm_performance_assessment_appeal_record")
 @KeySequence("hrm_performance_assessment_appeal_record_seq")

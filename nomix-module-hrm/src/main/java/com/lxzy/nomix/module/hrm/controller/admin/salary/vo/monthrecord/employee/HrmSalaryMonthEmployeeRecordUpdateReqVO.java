@@ -2,8 +2,8 @@ package com.lxzy.nomix.module.hrm.controller.admin.salary.vo.monthrecord.employe
 
 import com.lxzy.nomix.module.hrm.controller.admin.salary.vo.option.HrmSalaryOptionValueVO;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.util.List;

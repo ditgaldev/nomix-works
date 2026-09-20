@@ -5,15 +5,14 @@ import com.lxzy.nomix.module.pay.api.refund.dto.PayRefundCreateReqDTO;
 import com.lxzy.nomix.module.pay.api.refund.dto.PayRefundRespDTO;
 import com.lxzy.nomix.module.pay.dal.dataobject.refund.PayRefundDO;
 import com.lxzy.nomix.module.pay.service.refund.PayRefundService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
-
-import javax.annotation.Resource;
 
 /**
  * 退款单 API 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

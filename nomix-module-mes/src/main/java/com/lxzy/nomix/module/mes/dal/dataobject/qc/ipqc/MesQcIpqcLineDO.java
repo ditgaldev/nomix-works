@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 /**
  * MES 过程检验单行 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_qc_ipqc_line")
 @KeySequence("mes_qc_ipqc_line_seq")

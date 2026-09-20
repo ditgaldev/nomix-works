@@ -16,19 +16,19 @@ import com.lxzy.nomix.module.mes.service.pro.route.MesProRouteProductService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.annotation.Resource;
+import jakarta.validation.Valid;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
-import javax.validation.Valid;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
 import static com.lxzy.nomix.framework.common.pojo.CommonResult.success;
-import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.convertMap;
 import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.convertSet;
+import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.convertMap;
 
 @Tag(name = "管理后台 - MES 工艺路线产品")
 @RestController

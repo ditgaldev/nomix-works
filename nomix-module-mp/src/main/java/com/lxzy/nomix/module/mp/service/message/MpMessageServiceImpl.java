@@ -18,6 +18,8 @@ import com.lxzy.nomix.module.mp.service.account.MpAccountService;
 import com.lxzy.nomix.module.mp.service.material.MpMaterialService;
 import com.lxzy.nomix.module.mp.service.message.bo.MpMessageSendOutReqBO;
 import com.lxzy.nomix.module.mp.service.user.MpUserService;
+import jakarta.annotation.Resource;
+import jakarta.validation.Validator;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import me.chanjar.weixin.common.api.WxConsts;
@@ -31,8 +33,6 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
-import javax.validation.Validator;
 import java.util.concurrent.TimeUnit;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -41,7 +41,7 @@ import static com.lxzy.nomix.module.mp.enums.ErrorCodeConstants.MESSAGE_SEND_FAI
 /**
  * 粉丝消息 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

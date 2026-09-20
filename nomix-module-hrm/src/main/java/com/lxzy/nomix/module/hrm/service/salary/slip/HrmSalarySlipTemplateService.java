@@ -3,14 +3,14 @@ package com.lxzy.nomix.module.hrm.service.salary.slip;
 import com.lxzy.nomix.module.hrm.controller.admin.salary.vo.slip.template.HrmSalarySlipTemplateOptionVO;
 import com.lxzy.nomix.module.hrm.controller.admin.salary.vo.slip.template.HrmSalarySlipTemplateSaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.salary.slip.HrmSalarySlipTemplateDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
 /**
  * HRM 工资条模板 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmSalarySlipTemplateService {
 

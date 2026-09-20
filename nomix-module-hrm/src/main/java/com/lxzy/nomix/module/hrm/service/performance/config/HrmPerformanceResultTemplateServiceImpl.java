@@ -9,7 +9,7 @@ import com.lxzy.nomix.module.hrm.controller.admin.performance.vo.resulttemplate.
 import com.lxzy.nomix.module.hrm.controller.admin.performance.vo.resulttemplate.HrmPerformanceResultTemplateSaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.performance.config.HrmPerformanceResultTemplateDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.performance.config.HrmPerformanceResultTemplateMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,7 +26,7 @@ import static com.lxzy.nomix.module.hrm.enums.ErrorCodeConstants.PERFORMANCE_RES
 /**
  * HRM 绩效结果模板 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

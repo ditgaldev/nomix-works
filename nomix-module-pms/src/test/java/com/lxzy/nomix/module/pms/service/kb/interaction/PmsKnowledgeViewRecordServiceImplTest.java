@@ -8,10 +8,10 @@ import com.lxzy.nomix.module.pms.dal.dataobject.kb.interaction.PmsKnowledgeViewR
 import com.lxzy.nomix.module.pms.dal.mysql.kb.interaction.PmsKnowledgeViewRecordMapper;
 import com.lxzy.nomix.module.pms.enums.kb.PmsKnowledgeObjectTypeEnum;
 import com.lxzy.nomix.module.pms.service.kb.library.PmsKnowledgeLibraryMemberService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
@@ -29,7 +29,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link PmsKnowledgeViewRecordServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsKnowledgeViewRecordServiceImpl.class)
 public class PmsKnowledgeViewRecordServiceImplTest extends BaseDbUnitTest {
@@ -40,9 +40,9 @@ public class PmsKnowledgeViewRecordServiceImplTest extends BaseDbUnitTest {
     @Resource
     private PmsKnowledgeViewRecordMapper viewRecordMapper;
 
-    @MockBean
+    @MockitoBean
     private PmsKnowledgeInteractionTargetService interactionTargetService;
-    @MockBean
+    @MockitoBean
     private PmsKnowledgeLibraryMemberService libraryMemberService;
 
     @Test

@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * 专属于 web 包的工具类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class WebSocketFrameworkUtils {
 

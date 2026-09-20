@@ -24,7 +24,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * 砍价记录 Convert
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface BargainRecordConvert {

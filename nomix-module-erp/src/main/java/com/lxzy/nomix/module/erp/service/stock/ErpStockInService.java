@@ -5,15 +5,15 @@ import com.lxzy.nomix.module.erp.controller.admin.stock.vo.in.ErpStockInPageReqV
 import com.lxzy.nomix.module.erp.controller.admin.stock.vo.in.ErpStockInSaveReqVO;
 import com.lxzy.nomix.module.erp.dal.dataobject.stock.ErpStockInDO;
 import com.lxzy.nomix.module.erp.dal.dataobject.stock.ErpStockInItemDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * ERP 其它入库单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ErpStockInService {
 

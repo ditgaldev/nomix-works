@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * FMS 报表期间类型枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

@@ -268,7 +268,7 @@ public interface TradeOrderConvert {
                 .setBasePrice(item.getPayPrice())
                 .setTitle(StrUtil.format("{}成功购买{}", user.getNickname(), item.getSpuName()));
         if (BooleanUtil.isTrue(spu.getSubCommissionType())) {
-            // 特殊：单独设置的佣金需要乘以购买数量。关联 
+            // 特殊：单独设置的佣金需要乘以购买数量。关联 https://gitee.com/nomixcode/nomix-mall-uniapp/issues/ICY7SJ
             bo.setFirstFixedPrice(ObjectUtil.defaultIfNull(sku.getFirstBrokeragePrice(), 0) * item.getCount())
                     .setSecondFixedPrice(ObjectUtil.defaultIfNull(sku.getSecondBrokeragePrice(), 0) * item.getCount());
         }

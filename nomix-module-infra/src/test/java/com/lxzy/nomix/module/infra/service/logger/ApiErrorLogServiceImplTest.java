@@ -11,7 +11,7 @@ import com.lxzy.nomix.module.infra.enums.logger.ApiErrorLogProcessStatusEnum;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.time.Duration;
 import java.util.List;
 

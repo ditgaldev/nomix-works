@@ -9,12 +9,11 @@ import com.lxzy.nomix.module.bpm.dal.dataobject.definition.BpmProcessListenerDO;
 import com.lxzy.nomix.module.bpm.dal.mysql.definition.BpmProcessListenerMapper;
 import com.lxzy.nomix.module.bpm.enums.definition.BpmProcessListenerTypeEnum;
 import com.lxzy.nomix.module.bpm.enums.definition.BpmProcessListenerValueTypeEnum;
+import jakarta.annotation.Resource;
 import org.flowable.engine.delegate.JavaDelegate;
 import org.flowable.engine.delegate.TaskListener;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
-
-import javax.annotation.Resource;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static com.lxzy.nomix.module.bpm.enums.ErrorCodeConstants.*;
@@ -22,7 +21,7 @@ import static com.lxzy.nomix.module.bpm.enums.ErrorCodeConstants.*;
 /**
  * BPM 流程监听器 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

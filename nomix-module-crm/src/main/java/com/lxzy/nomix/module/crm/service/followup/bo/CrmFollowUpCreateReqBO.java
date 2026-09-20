@@ -4,10 +4,10 @@ import com.lxzy.nomix.module.crm.dal.dataobject.business.CrmBusinessDO;
 import com.lxzy.nomix.module.crm.dal.dataobject.contact.CrmContactDO;
 import com.lxzy.nomix.module.crm.enums.DictTypeConstants;
 import com.lxzy.nomix.module.crm.enums.common.CrmBizTypeEnum;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 import java.util.List;
 

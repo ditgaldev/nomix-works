@@ -2,15 +2,15 @@ package com.lxzy.nomix.framework.xss.core.filter;
 
 import com.lxzy.nomix.framework.xss.core.clean.XssCleaner;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletRequestWrapper;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequestWrapper;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
  * Xss 请求 Wrapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class XssRequestWrapper extends HttpServletRequestWrapper {
 

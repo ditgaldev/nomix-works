@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * FMS 辅助核算组合 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface FmsAuxiliaryCombinationMapper extends BaseMapperX<FmsAuxiliaryCombinationDO> {

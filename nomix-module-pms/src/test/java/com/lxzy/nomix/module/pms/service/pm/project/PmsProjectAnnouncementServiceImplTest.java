@@ -6,10 +6,10 @@ import com.lxzy.nomix.module.pms.controller.admin.pm.project.vo.announcement.Pms
 import com.lxzy.nomix.module.pms.dal.dataobject.pm.project.PmsProjectAnnouncementDO;
 import com.lxzy.nomix.module.pms.dal.dataobject.pm.project.PmsProjectDO;
 import com.lxzy.nomix.module.pms.dal.mysql.pm.project.PmsProjectAnnouncementMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.Collections;
 
@@ -22,7 +22,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link PmsProjectAnnouncementServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsProjectAnnouncementServiceImpl.class)
 public class PmsProjectAnnouncementServiceImplTest extends BaseDbUnitTest {
@@ -33,7 +33,7 @@ public class PmsProjectAnnouncementServiceImplTest extends BaseDbUnitTest {
     @Resource
     private PmsProjectAnnouncementMapper announcementMapper;
 
-    @MockBean
+    @MockitoBean
     private PmsProjectMemberService projectMemberService;
 
     @Test

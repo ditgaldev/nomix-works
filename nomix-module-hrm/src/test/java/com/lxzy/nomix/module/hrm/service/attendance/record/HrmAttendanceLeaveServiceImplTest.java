@@ -10,10 +10,10 @@ import com.lxzy.nomix.module.hrm.dal.dataobject.employee.info.HrmEmployeeDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.attendance.record.HrmAttendanceLeaveMapper;
 import com.lxzy.nomix.module.hrm.service.employee.info.HrmEmployeeService;
 import com.lxzy.nomix.module.bpm.enums.task.BpmProcessInstanceStatusEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -35,7 +35,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmAttendanceLeaveServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmAttendanceLeaveServiceImpl.class)
 public class HrmAttendanceLeaveServiceImplTest extends BaseDbUnitTest {
@@ -44,9 +44,9 @@ public class HrmAttendanceLeaveServiceImplTest extends BaseDbUnitTest {
     private HrmAttendanceLeaveServiceImpl attendanceLeaveService;
     @Resource
     private HrmAttendanceLeaveMapper attendanceLeaveMapper;
-    @MockBean
+    @MockitoBean
     private HrmEmployeeService employeeService;
-    @MockBean
+    @MockitoBean
     private BpmProcessInstanceApi processInstanceApi;
 
     @Test

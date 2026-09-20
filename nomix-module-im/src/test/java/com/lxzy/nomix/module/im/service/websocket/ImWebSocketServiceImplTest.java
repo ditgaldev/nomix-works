@@ -30,7 +30,7 @@ import static org.mockito.Mockito.*;
 /**
  * {@link ImWebSocketServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class ImWebSocketServiceImplTest extends BaseMockitoUnitTest {
 
@@ -237,10 +237,9 @@ public class ImWebSocketServiceImplTest extends BaseMockitoUnitTest {
 
     private static boolean isNotification(Object object, ImConversationTypeEnum conversationType,
                                           ImContentTypeEnum contentType, Object payload) {
-        if (!(object instanceof ImNotificationWebSocketDTO)) {
+        if (!(object instanceof ImNotificationWebSocketDTO notification)) {
             return false;
         }
-        ImNotificationWebSocketDTO notification = (ImNotificationWebSocketDTO) object;
         return conversationType.getType().equals(notification.getConversationType())
                 && contentType.getType().equals(notification.getContentType())
                 && payload == notification.getPayload();

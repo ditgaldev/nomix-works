@@ -2,8 +2,8 @@ package com.lxzy.nomix.module.mes.service.wm.productreceipt;
 
 import com.lxzy.nomix.module.mes.controller.admin.wm.productreceipt.vo.detail.MesWmProductReceiptDetailSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.productreceipt.MesWmProductReceiptDetailDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**

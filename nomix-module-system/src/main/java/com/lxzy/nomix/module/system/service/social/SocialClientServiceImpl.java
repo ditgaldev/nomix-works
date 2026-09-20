@@ -38,6 +38,7 @@ import com.binarywang.spring.starter.wxjava.mp.properties.WxMpProperties;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
+import jakarta.annotation.Resource;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import me.chanjar.weixin.common.bean.WxJsapiSignature;
@@ -60,7 +61,6 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.time.Duration;
 import java.time.ZonedDateTime;
 import java.util.List;
@@ -78,7 +78,7 @@ import static java.util.Collections.singletonList;
 /**
  * 社交应用 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Slf4j
@@ -214,10 +214,6 @@ public class SocialClientServiceImpl implements SocialClientService {
             newAuthConfig.setClientSecret(client.getClientSecret());
             if (client.getAgentId() != null) { // 如果有 agentId 则修改 agentId
                 newAuthConfig.setAgentId(client.getAgentId());
-            }
-            // 如果是阿里的小程序
-            if (SocialTypeEnum.ALIPAY_MINI_PROGRAM.getType().equals(socialType)) {
-                return new AuthAlipayRequest(newAuthConfig, client.getPublicKey());
             }
             // 2.3 设置会 request 里，进行后续使用
             if (SocialTypeEnum.ALIPAY_MINI_PROGRAM.getType().equals(socialType)) {
@@ -383,7 +379,7 @@ public class SocialClientServiceImpl implements SocialClientService {
                 .uploadTime(ZonedDateTime.now().format(UTC_MS_WITH_XXX_OFFSET_FORMATTER))
                 .build();
         // 重试机制：解决支付回调与订单信息上传之间的时间差导致的 10060001 错误
-        // 对应 ISSUE：
+        // 对应 ISSUE：https://gitee.com/ditgaldev/nomix-cloud/pulls/230
         // 注意：wx-java 的 upload 内部对 errCode != 0 直接抛 WxErrorException，所以重试判断必须基于异常的 errorCode
         int maxAttempts = UPLOAD_SHIPPING_INFO_RETRY_BACKOFF_MILLIS.length + 1;
         for (int attempt = 1; attempt <= maxAttempts; attempt++) {

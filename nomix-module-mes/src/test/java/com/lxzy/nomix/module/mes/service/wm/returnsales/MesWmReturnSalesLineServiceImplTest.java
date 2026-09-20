@@ -5,13 +5,14 @@ import com.lxzy.nomix.module.mes.dal.dataobject.wm.returnsales.MesWmReturnSalesL
 import com.lxzy.nomix.module.mes.dal.mysql.wm.returnsales.MesWmReturnSalesLineMapper;
 import com.lxzy.nomix.module.mes.enums.qc.MesQcCheckResultEnum;
 import com.lxzy.nomix.module.mes.enums.wm.MesWmQualityStatusEnum;
+import jakarta.annotation.Resource;
+import org.junit.jupiter.api.Test;
+import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
+
 import com.lxzy.nomix.module.mes.service.md.item.MesMdItemService;
 import com.lxzy.nomix.module.mes.service.wm.batch.MesWmBatchService;
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -22,7 +23,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 /**
  * {@link MesWmReturnSalesLineServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(MesWmReturnSalesLineServiceImpl.class)
 public class MesWmReturnSalesLineServiceImplTest extends BaseDbUnitTest {
@@ -33,16 +34,16 @@ public class MesWmReturnSalesLineServiceImplTest extends BaseDbUnitTest {
     @Resource
     private MesWmReturnSalesLineMapper returnSalesLineMapper;
 
-    @MockBean
+    @MockitoBean
     private MesWmReturnSalesService returnSalesService;
 
-    @MockBean
+    @MockitoBean
     private MesMdItemService itemService;
 
-    @MockBean
+    @MockitoBean
     private MesWmBatchService batchService;
 
-    @MockBean
+    @MockitoBean
     private MesWmReturnSalesDetailService returnSalesDetailService;
 
     @Test

@@ -115,7 +115,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * AI Model 模型工厂的实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class AiModelFactoryImpl implements AiModelFactory {
 

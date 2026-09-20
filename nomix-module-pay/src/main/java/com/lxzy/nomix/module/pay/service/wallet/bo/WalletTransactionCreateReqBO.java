@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.pay.enums.wallet.PayWalletBizTypeEnum;
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * 创建钱包流水 BO

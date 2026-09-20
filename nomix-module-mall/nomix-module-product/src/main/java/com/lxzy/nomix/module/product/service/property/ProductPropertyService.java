@@ -4,14 +4,14 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.product.controller.admin.property.vo.property.*;
 import com.lxzy.nomix.module.product.dal.dataobject.property.ProductPropertyDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * 商品属性项 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ProductPropertyService {
 

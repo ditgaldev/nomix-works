@@ -36,7 +36,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link ImFriendRequestServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class ImFriendRequestServiceImplTest extends BaseMockitoUnitTest {
 

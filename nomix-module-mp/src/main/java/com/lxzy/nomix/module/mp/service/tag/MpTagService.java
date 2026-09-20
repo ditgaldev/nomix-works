@@ -6,7 +6,7 @@ import com.lxzy.nomix.module.mp.controller.admin.tag.vo.MpTagPageReqVO;
 import com.lxzy.nomix.module.mp.controller.admin.tag.vo.MpTagUpdateReqVO;
 import com.lxzy.nomix.module.mp.dal.dataobject.tag.MpTagDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.List;
 
 /**

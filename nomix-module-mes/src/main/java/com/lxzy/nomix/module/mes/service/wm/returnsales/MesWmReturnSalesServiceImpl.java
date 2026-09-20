@@ -22,11 +22,11 @@ import com.lxzy.nomix.module.mes.service.md.client.MesMdClientService;
 import com.lxzy.nomix.module.mes.service.md.item.MesMdItemService;
 import com.lxzy.nomix.module.mes.service.wm.transaction.MesWmTransactionService;
 import com.lxzy.nomix.module.mes.service.wm.transaction.dto.MesWmTransactionSaveReqDTO;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.Collections;
 import java.util.List;
@@ -39,7 +39,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 销售退货单 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

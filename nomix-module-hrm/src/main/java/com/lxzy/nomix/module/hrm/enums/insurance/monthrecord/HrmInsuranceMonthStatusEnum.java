@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * HRM 社保月度记录状态枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

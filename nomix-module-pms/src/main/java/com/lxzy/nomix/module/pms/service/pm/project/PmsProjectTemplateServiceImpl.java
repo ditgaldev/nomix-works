@@ -8,7 +8,7 @@ import com.lxzy.nomix.module.pms.controller.admin.pm.project.vo.template.PmsProj
 import com.lxzy.nomix.module.pms.dal.dataobject.pm.project.PmsProjectTemplateDO;
 import com.lxzy.nomix.module.pms.dal.mysql.pm.project.PmsProjectTemplateMapper;
 import com.lxzy.nomix.module.pms.enums.pm.workitem.PmsWorkItemTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -27,7 +27,7 @@ import static com.lxzy.nomix.module.pms.enums.ErrorCodeConstants.PROJECT_TEMPLAT
 /**
  * PMS 项目模板 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

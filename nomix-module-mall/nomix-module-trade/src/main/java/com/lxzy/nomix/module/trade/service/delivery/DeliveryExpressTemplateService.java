@@ -8,7 +8,7 @@ import com.lxzy.nomix.module.trade.controller.admin.delivery.vo.expresstemplate.
 import com.lxzy.nomix.module.trade.dal.dataobject.delivery.DeliveryExpressTemplateDO;
 import com.lxzy.nomix.module.trade.service.delivery.bo.DeliveryExpressTemplateRespBO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;

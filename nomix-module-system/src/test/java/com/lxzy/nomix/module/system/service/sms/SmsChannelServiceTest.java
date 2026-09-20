@@ -11,11 +11,11 @@ import com.lxzy.nomix.module.system.dal.mysql.sms.SmsChannelMapper;
 import com.lxzy.nomix.module.system.framework.sms.core.client.SmsClient;
 import com.lxzy.nomix.module.system.framework.sms.core.client.SmsClientFactory;
 import com.lxzy.nomix.module.system.framework.sms.core.property.SmsChannelProperties;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
@@ -40,9 +40,9 @@ public class SmsChannelServiceTest extends BaseDbUnitTest {
     @Resource
     private SmsChannelMapper smsChannelMapper;
 
-    @MockBean
+    @MockitoBean
     private SmsClientFactory smsClientFactory;
-    @MockBean
+    @MockitoBean
     private SmsTemplateService smsTemplateService;
 
     @Test
@@ -158,7 +158,7 @@ public class SmsChannelServiceTest extends BaseDbUnitTest {
     public void testGetSmsChannelPage() {
        // mock 数据
        SmsChannelDO dbSmsChannel = randomPojo(SmsChannelDO.class, o -> { // 等会查询到
-           o.setSignature("Nomix");
+           o.setSignature("Nomix源码");
            o.setStatus(CommonStatusEnum.ENABLE.getStatus());
            o.setCreateTime(buildTime(2020, 12, 12));
        });

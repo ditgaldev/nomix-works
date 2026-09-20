@@ -69,7 +69,7 @@ public class PayTransferRespVO {
     @ExcelProperty("收款人账号")
     private String userAccount;
 
-    @Schema(description = "异步通知商户地址", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "异步通知商户地址", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn")
     private String notifyUrl;
 
     @ExcelProperty("用户 IP")

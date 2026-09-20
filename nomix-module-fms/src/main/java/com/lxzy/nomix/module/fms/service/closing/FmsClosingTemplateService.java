@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * FMS 结账模板 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface FmsClosingTemplateService {
 

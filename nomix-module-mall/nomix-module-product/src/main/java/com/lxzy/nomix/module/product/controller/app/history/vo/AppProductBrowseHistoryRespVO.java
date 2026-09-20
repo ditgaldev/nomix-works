@@ -18,7 +18,7 @@ public class AppProductBrowseHistoryRespVO {
     @Schema(description = "商品 SPU 名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "赵六")
     private String spuName;
 
-    @Schema(description = "商品封面图", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "商品封面图", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn/pic.png")
     private String picUrl;
 
     @Schema(description = "商品单价", requiredMode = Schema.RequiredMode.REQUIRED, example = "50")

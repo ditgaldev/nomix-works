@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * MES 销售退货单状态枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

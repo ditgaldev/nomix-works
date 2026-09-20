@@ -4,15 +4,15 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.group.BpmUserGroupPageReqVO;
 import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.group.BpmUserGroupSaveReqVO;
 import com.lxzy.nomix.module.bpm.dal.dataobject.definition.BpmUserGroupDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * 用户组 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface BpmUserGroupService {
 

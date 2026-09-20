@@ -10,7 +10,7 @@ import com.lxzy.nomix.module.mes.enums.DictTypeConstants;
 /**
  * MES 编码规则 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_md_auto_code_rule")
 @KeySequence("mes_md_auto_code_rule_seq")

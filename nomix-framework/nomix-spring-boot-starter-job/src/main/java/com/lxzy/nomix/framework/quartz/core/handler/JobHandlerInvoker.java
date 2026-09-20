@@ -13,7 +13,7 @@ import org.quartz.PersistJobDataAfterExecution;
 import org.springframework.context.ApplicationContext;
 import org.springframework.scheduling.quartz.QuartzJobBean;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.time.LocalDateTime;
 
 import static cn.hutool.core.exceptions.ExceptionUtil.getRootCauseMessage;
@@ -21,7 +21,7 @@ import static cn.hutool.core.exceptions.ExceptionUtil.getRootCauseMessage;
 /**
  * 基础 Job 调用者，负责调用 {@link JobHandler#execute(String)} 执行任务
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @DisallowConcurrentExecution
 @PersistJobDataAfterExecution

@@ -4,7 +4,7 @@ import cn.hutool.core.collection.CollUtil;
 import com.lxzy.nomix.framework.excel.core.function.ExcelColumnSelectFunction;
 import com.lxzy.nomix.module.hrm.dal.dataobject.recruit.config.HrmRecruitChannelDO;
 import com.lxzy.nomix.module.hrm.service.recruit.config.HrmRecruitChannelService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,7 +14,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * 招聘渠道下拉框数据源的 {@link ExcelColumnSelectFunction} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class HrmRecruitChannelExcelColumnSelectFunction implements ExcelColumnSelectFunction {

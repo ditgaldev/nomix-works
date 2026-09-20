@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * MES 点检保养方案设备 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesDvCheckPlanMachineryMapper extends BaseMapperX<MesDvCheckPlanMachineryDO> {

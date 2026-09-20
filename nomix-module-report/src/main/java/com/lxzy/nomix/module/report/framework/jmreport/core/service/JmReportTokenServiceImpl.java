@@ -13,11 +13,11 @@ import com.lxzy.nomix.framework.security.core.util.SecurityFrameworkUtils;
 import com.lxzy.nomix.framework.tenant.core.context.TenantContextHolder;
 import com.lxzy.nomix.framework.web.core.util.WebFrameworkUtils;
 import com.lxzy.nomix.module.system.enums.permission.RoleCodeEnum;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.jeecg.modules.jmreport.api.JmReportTokenServiceI;
 import org.springframework.http.HttpHeaders;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.Objects;
 
 /**

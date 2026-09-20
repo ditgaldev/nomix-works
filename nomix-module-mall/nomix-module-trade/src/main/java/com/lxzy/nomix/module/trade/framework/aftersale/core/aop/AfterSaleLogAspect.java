@@ -9,7 +9,7 @@ import com.lxzy.nomix.module.trade.enums.aftersale.AfterSaleOperateTypeEnum;
 import com.lxzy.nomix.module.trade.framework.aftersale.core.annotations.AfterSaleLog;
 import com.lxzy.nomix.module.trade.service.aftersale.AfterSaleLogService;
 import com.lxzy.nomix.module.trade.service.aftersale.bo.AfterSaleLogCreateReqBO;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;

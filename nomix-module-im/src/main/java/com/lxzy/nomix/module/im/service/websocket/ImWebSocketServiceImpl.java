@@ -4,6 +4,7 @@ import cn.hutool.extra.spring.SpringUtil;
 import com.lxzy.nomix.framework.common.enums.UserTypeEnum;
 import com.lxzy.nomix.module.im.service.websocket.notification.ImNotificationWebSocketDTO;
 import com.lxzy.nomix.module.infra.api.websocket.WebSocketSenderApi;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
@@ -11,7 +12,6 @@ import org.springframework.transaction.support.TransactionSynchronization;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Set;
 
@@ -23,7 +23,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
  * 当调用方处于事务中时，推送会延迟到事务提交后再异步执行，
  * 避免客户端收到 WebSocket 消息时数据库变更尚未可见。
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

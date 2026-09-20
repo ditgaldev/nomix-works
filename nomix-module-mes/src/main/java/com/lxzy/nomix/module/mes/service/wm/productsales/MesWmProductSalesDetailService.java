@@ -2,14 +2,14 @@ package com.lxzy.nomix.module.mes.service.wm.productsales;
 
 import com.lxzy.nomix.module.mes.controller.admin.wm.productsales.vo.detail.MesWmProductSalesDetailSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.productsales.MesWmProductSalesDetailDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * MES 销售出库明细 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesWmProductSalesDetailService {
 

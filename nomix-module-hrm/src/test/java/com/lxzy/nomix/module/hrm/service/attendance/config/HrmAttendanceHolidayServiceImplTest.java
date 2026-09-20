@@ -6,7 +6,7 @@ import com.lxzy.nomix.module.hrm.controller.admin.attendance.vo.holiday.HrmAtten
 import com.lxzy.nomix.module.hrm.controller.admin.attendance.vo.holiday.HrmAttendanceHolidaySaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.attendance.config.HrmAttendanceHolidayDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.attendance.config.HrmAttendanceHolidayMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
@@ -27,7 +27,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 /**
  * {@link HrmAttendanceHolidayServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmAttendanceHolidayServiceImpl.class)
 public class HrmAttendanceHolidayServiceImplTest extends BaseDbUnitTest {

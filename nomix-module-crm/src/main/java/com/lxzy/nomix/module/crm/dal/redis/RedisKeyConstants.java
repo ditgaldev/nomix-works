@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.crm.dal.redis;
 /**
  * CRM Redis Key 枚举类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface RedisKeyConstants {
 

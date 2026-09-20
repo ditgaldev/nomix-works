@@ -29,7 +29,7 @@ import cn.hutool.core.lang.Assert;
  * <p>
  * 基于 Vert.x 实现 TCP 服务器，接收设备上行消息
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class IotTcpProtocol implements IotProtocol {

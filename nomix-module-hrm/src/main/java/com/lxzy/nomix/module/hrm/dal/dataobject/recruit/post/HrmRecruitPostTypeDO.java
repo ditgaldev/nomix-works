@@ -15,7 +15,7 @@ import lombok.ToString;
 /**
  * HRM 招聘职位类型 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("hrm_recruit_post_type")
 @KeySequence("hrm_recruit_post_type_seq")

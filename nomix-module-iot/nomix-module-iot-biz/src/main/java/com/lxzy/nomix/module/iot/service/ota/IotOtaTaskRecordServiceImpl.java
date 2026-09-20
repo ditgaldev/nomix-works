@@ -19,12 +19,12 @@ import com.lxzy.nomix.module.iot.dal.mysql.ota.IotOtaTaskRecordMapper;
 import com.lxzy.nomix.module.iot.enums.ota.IotOtaTaskRecordStatusEnum;
 import com.lxzy.nomix.module.iot.service.device.IotDeviceService;
 import com.lxzy.nomix.module.iot.service.device.message.IotDeviceMessageService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.*;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;

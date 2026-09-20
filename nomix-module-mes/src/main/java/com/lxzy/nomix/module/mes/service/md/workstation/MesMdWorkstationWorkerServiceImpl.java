@@ -6,10 +6,10 @@ import com.lxzy.nomix.module.mes.controller.admin.md.workstation.vo.worker.MesMd
 import com.lxzy.nomix.module.mes.dal.dataobject.md.workstation.MesMdWorkstationWorkerDO;
 import com.lxzy.nomix.module.mes.dal.mysql.md.workstation.MesMdWorkstationWorkerMapper;
 import com.lxzy.nomix.module.system.api.dept.PostApi;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collections;
 import java.util.List;
 
@@ -19,7 +19,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 人力资源 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

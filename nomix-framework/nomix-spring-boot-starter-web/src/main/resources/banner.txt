@@ -1,4 +1,4 @@
-Nomix 
+Nomix源码 http://www.nomix.cn
 Application Version: ${nomix.info.version}
 Spring Boot Version: ${spring-boot.version}
 

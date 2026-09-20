@@ -5,7 +5,7 @@ import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.module.pms.controller.admin.pm.project.vo.announcement.PmsProjectAnnouncementSaveReqVO;
 import com.lxzy.nomix.module.pms.dal.dataobject.pm.project.PmsProjectAnnouncementDO;
 import com.lxzy.nomix.module.pms.dal.mysql.pm.project.PmsProjectAnnouncementMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -17,7 +17,7 @@ import static com.lxzy.nomix.module.pms.enums.ErrorCodeConstants.PROJECT_ANNOUNC
 /**
  * PMS 项目公告 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

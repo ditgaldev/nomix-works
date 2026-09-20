@@ -4,11 +4,10 @@ import com.lxzy.nomix.framework.common.pojo.PageParam;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.crm.enums.common.CrmBizTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
-
-import javax.validation.constraints.NotNull;
 
 @Schema(description = "管理后台 - CRM 操作日志 Request VO")
 @Data

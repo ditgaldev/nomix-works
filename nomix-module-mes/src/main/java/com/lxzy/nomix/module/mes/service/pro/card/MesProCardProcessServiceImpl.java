@@ -7,11 +7,10 @@ import com.lxzy.nomix.module.mes.controller.admin.pro.card.vo.process.MesProCard
 import com.lxzy.nomix.module.mes.dal.dataobject.pro.card.MesProCardProcessDO;
 import com.lxzy.nomix.module.mes.dal.mysql.pro.card.MesProCardProcessMapper;
 import com.lxzy.nomix.module.mes.service.pro.process.MesProProcessService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
-
-import javax.annotation.Resource;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.PRO_CARD_PROCESS_NOT_EXISTS;
@@ -19,7 +18,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.PRO_CARD_PROCES
 /**
  * MES 流转卡工序记录 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * IoT 告警的接收方式枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Getter

@@ -5,7 +5,7 @@ import com.lxzy.nomix.framework.common.util.json.JsonUtils;
 /**
  * WebSocket 消息的发送器接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface WebSocketMessageSender {
 

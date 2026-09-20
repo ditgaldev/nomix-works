@@ -1,15 +1,14 @@
 package com.lxzy.nomix.module.system.api.social.dto;
 
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 
 /**
  * 小程序订单上传购物详情
  *
  * @see <a href="https://developers.weixin.qq.com/miniprogram/dev/OpenApiDoc/shopping-order/normal-shopping-detail/uploadShoppingInfo.html">上传购物详情</a>
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class SocialWxaOrderUploadShippingInfoReqDTO {

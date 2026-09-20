@@ -10,23 +10,22 @@ import com.lxzy.nomix.module.iot.dal.dataobject.thingmodel.model.dataType.ThingM
 import com.lxzy.nomix.module.iot.enums.thingmodel.IotDataSpecsDataTypeEnum;
 import com.lxzy.nomix.module.iot.service.device.IotDeviceModbusPointService;
 import com.lxzy.nomix.module.iot.service.product.IotProductService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * {@link IotThingModelServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(IotThingModelServiceImpl.class)
 public class IotThingModelServiceImplTest extends BaseDbUnitTest {
@@ -34,9 +33,9 @@ public class IotThingModelServiceImplTest extends BaseDbUnitTest {
     @Resource
     private IotThingModelServiceImpl thingModelService;
 
-    @MockBean
+    @MockitoBean
     private IotProductService productService;
-    @MockBean
+    @MockitoBean
     private IotDeviceModbusPointService deviceModbusPointService;
 
     @Test

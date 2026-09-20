@@ -1,10 +1,10 @@
 package com.lxzy.nomix.module.iot.controller.admin.device.vo.device;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.DecimalMax;
+import jakarta.validation.constraints.DecimalMin;
 import lombok.Data;
 
-import javax.validation.constraints.DecimalMax;
-import javax.validation.constraints.DecimalMin;
 import java.math.BigDecimal;
 import java.util.Set;
 
@@ -24,7 +24,7 @@ public class IotDeviceSaveReqVO {
     @Schema(description = "设备序列号", example = "123456")
     private String serialNumber;
 
-    @Schema(description = "设备图片", example = "")
+    @Schema(description = "设备图片", example = "https://nomix.cn/1.png")
     private String picUrl;
 
     @Schema(description = "设备分组编号数组", example = "1,2")

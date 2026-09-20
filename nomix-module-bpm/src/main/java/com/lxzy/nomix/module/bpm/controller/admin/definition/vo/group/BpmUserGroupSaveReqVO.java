@@ -1,9 +1,8 @@
 package com.lxzy.nomix.module.bpm.controller.admin.definition.vo.group;
-
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.Data;
+import jakarta.validation.constraints.NotNull;
+import lombok.*;
 
-import javax.validation.constraints.NotNull;
 import java.util.Set;
 
 @Schema(description = "管理后台 - 用户组创建/修改 Request VO")
@@ -17,7 +16,7 @@ public class BpmUserGroupSaveReqVO {
     @NotNull(message = "组名不能为空")
     private String name;
 
-    @Schema(description = "描述", example = "Nomix")
+    @Schema(description = "描述", example = "Nomix源码")
     private String description;
 
     @Schema(description = "成员编号数组", requiredMode = Schema.RequiredMode.REQUIRED, example = "1,2,3")

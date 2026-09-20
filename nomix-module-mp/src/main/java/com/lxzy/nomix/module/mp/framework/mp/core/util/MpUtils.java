@@ -5,12 +5,12 @@ import com.lxzy.nomix.framework.common.util.validation.ValidationUtils;
 import lombok.extern.slf4j.Slf4j;
 import me.chanjar.weixin.common.api.WxConsts;
 
-import javax.validation.Validator;
+import jakarta.validation.Validator;
 
 /**
  * 公众号工具类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class MpUtils {

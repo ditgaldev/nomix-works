@@ -6,11 +6,11 @@ import com.lxzy.nomix.module.product.controller.admin.category.vo.ProductCategor
 import com.lxzy.nomix.module.product.controller.admin.category.vo.ProductCategorySaveReqVO;
 import com.lxzy.nomix.module.product.dal.dataobject.category.ProductCategoryDO;
 import com.lxzy.nomix.module.product.dal.mysql.category.ProductCategoryMapper;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.util.object.ObjectUtils.cloneIgnoreId;
@@ -26,7 +26,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 /**
  * {@link ProductCategoryServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Disabled // TODO Nomix：后续 fix 补充的单测
 @Import(ProductCategoryServiceImpl.class)

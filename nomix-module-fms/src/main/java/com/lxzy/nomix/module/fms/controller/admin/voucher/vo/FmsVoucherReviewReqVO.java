@@ -3,8 +3,8 @@ package com.lxzy.nomix.module.fms.controller.admin.voucher.vo;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.fms.enums.voucher.FmsVoucherStatusEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.util.List;

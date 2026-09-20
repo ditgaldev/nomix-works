@@ -13,10 +13,10 @@ import com.lxzy.nomix.module.hrm.service.employee.info.HrmEmployeeService;
 import com.lxzy.nomix.module.system.api.notify.NotifyMessageSendApi;
 import com.lxzy.nomix.module.hrm.enums.salary.slip.HrmSalarySlipReadStatusEnum;
 import com.lxzy.nomix.module.hrm.enums.salary.slip.HrmSalarySlipTemplateOptionTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.math.BigDecimal;
 import java.time.YearMonth;
@@ -41,7 +41,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmSalarySlipServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmSalarySlipServiceImpl.class)
 public class HrmSalarySlipServiceImplTest extends BaseDbUnitTest {
@@ -51,9 +51,9 @@ public class HrmSalarySlipServiceImplTest extends BaseDbUnitTest {
     @Resource
     private HrmSalarySlipMapper salarySlipMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmEmployeeService employeeService;
-    @MockBean
+    @MockitoBean
     private NotifyMessageSendApi notifyMessageSendApi;
 
     @Test

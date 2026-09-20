@@ -15,12 +15,12 @@ import com.lxzy.nomix.module.wms.service.order.check.WmsCheckOrderDetailService;
 import com.lxzy.nomix.module.wms.service.order.movement.WmsMovementOrderDetailService;
 import com.lxzy.nomix.module.wms.service.order.receipt.WmsReceiptOrderDetailService;
 import com.lxzy.nomix.module.wms.service.order.shipment.WmsShipmentOrderDetailService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
@@ -33,7 +33,7 @@ import static com.lxzy.nomix.module.wms.enums.ErrorCodeConstants.*;
 /**
  * WMS 商品 SKU Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

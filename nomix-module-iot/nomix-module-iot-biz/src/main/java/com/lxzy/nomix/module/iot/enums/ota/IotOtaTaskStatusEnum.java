@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * IoT OTA 升级任务的状态
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Getter

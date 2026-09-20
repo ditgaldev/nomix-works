@@ -11,7 +11,7 @@ import com.lxzy.nomix.module.system.enums.ErrorCodeConstants;
 import com.lxzy.nomix.module.system.service.auth.AdminAuthService;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -19,7 +19,7 @@ import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUti
 /**
  * OAuth2 授予 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class OAuth2GrantServiceImpl implements OAuth2GrantService {

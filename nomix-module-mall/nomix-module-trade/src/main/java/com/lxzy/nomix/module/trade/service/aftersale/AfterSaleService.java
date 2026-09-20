@@ -12,7 +12,7 @@ import com.lxzy.nomix.module.trade.dal.dataobject.aftersale.AfterSaleDO;
 /**
  * 售后订单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface AfterSaleService {
 

@@ -3,16 +3,16 @@ package com.lxzy.nomix.framework.tracer.core.filter;
 import com.lxzy.nomix.framework.common.util.monitor.TracerUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
  * Trace 过滤器，打印 traceId 到 header 中返回
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class TraceFilter extends OncePerRequestFilter {
 

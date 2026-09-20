@@ -29,7 +29,7 @@ import static com.lxzy.nomix.module.ai.enums.ErrorCodeConstants.API_CONFIG_PLACE
 /**
  * Spring AI 工具类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class AiUtils {
 

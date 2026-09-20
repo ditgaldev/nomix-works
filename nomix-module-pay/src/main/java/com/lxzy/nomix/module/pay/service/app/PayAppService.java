@@ -7,8 +7,8 @@ import com.lxzy.nomix.module.pay.controller.admin.app.vo.PayAppCreateReqVO;
 import com.lxzy.nomix.module.pay.controller.admin.app.vo.PayAppPageReqVO;
 import com.lxzy.nomix.module.pay.controller.admin.app.vo.PayAppUpdateReqVO;
 import com.lxzy.nomix.module.pay.dal.dataobject.app.PayAppDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;

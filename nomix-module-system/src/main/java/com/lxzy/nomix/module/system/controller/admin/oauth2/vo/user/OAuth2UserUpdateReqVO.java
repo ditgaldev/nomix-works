@@ -6,8 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Length;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Size;
 
 @Schema(description = "管理后台 - OAuth2 更新用户基本信息 Request VO")
 @Data
@@ -19,7 +19,7 @@ public class OAuth2UserUpdateReqVO {
     @Size(max = 30, message = "用户昵称长度不能超过 30 个字符")
     private String nickname;
 
-    @Schema(description = "用户邮箱", example = "nomix@example.com")
+    @Schema(description = "用户邮箱", example = "nomix@nomix.cn")
     @Email(message = "邮箱格式不正确")
     @Size(max = 50, message = "邮箱长度不能超过 50 个字符")
     private String email;

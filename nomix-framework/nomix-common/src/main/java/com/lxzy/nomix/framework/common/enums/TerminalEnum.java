@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * 终端的枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Getter

@@ -1,9 +1,8 @@
 package com.lxzy.nomix.module.infra.controller.admin.db.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-
-import javax.validation.constraints.NotNull;
 
 @Schema(description = "管理后台 - 数据源配置创建/修改 Request VO")
 @Data
@@ -16,7 +15,7 @@ public class DataSourceConfigSaveReqVO {
     @NotNull(message = "数据源名称不能为空")
     private String name;
 
-    @Schema(description = "数据源连接", requiredMode = Schema.RequiredMode.REQUIRED, example = "jdbc:mysql://127.0.0.1:3306/nomix-vue-pro")
+    @Schema(description = "数据源连接", requiredMode = Schema.RequiredMode.REQUIRED, example = "jdbc:mysql://127.0.0.1:3306/nomix-works")
     @NotNull(message = "数据源连接不能为空")
     private String url;
 

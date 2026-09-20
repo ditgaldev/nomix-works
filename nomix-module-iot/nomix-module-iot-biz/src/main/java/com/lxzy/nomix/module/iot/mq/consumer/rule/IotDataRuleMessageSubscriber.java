@@ -5,16 +5,15 @@ import com.lxzy.nomix.module.iot.core.messagebus.core.IotMessageBus;
 import com.lxzy.nomix.module.iot.core.messagebus.core.IotMessageSubscriber;
 import com.lxzy.nomix.module.iot.core.mq.message.IotDeviceMessage;
 import com.lxzy.nomix.module.iot.service.rule.data.IotDataRuleService;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
 
 /**
  * 针对 {@link IotDeviceMessage} 的消费者，处理数据流转
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 @Slf4j

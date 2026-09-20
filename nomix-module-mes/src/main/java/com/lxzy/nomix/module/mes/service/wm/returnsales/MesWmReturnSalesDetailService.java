@@ -2,14 +2,14 @@ package com.lxzy.nomix.module.mes.service.wm.returnsales;
 
 import com.lxzy.nomix.module.mes.controller.admin.wm.returnsales.vo.detail.MesWmReturnSalesDetailSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.returnsales.MesWmReturnSalesDetailDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * MES 销售退货明细 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesWmReturnSalesDetailService {
 

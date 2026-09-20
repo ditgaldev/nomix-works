@@ -11,7 +11,7 @@ import com.lxzy.nomix.module.system.controller.admin.user.vo.user.UserImportResp
 import com.lxzy.nomix.module.system.controller.admin.user.vo.user.UserPageReqVO;
 import com.lxzy.nomix.module.system.controller.admin.user.vo.user.UserSaveReqVO;
 import com.lxzy.nomix.module.system.dal.dataobject.user.AdminUserDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import org.springframework.lang.Nullable;
 
 import java.util.Collection;
@@ -22,7 +22,7 @@ import java.util.Map;
 /**
  * 后台用户 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface AdminUserService {
 
@@ -175,6 +175,14 @@ public interface AdminUserService {
      * @param ids 用户编号数组
      */
     void validateUserList(Collection<Long> ids);
+
+    /**
+     * 校验用户存在且未被禁用
+     *
+     * @param id 用户编号
+     * @return 有效的用户
+     */
+    AdminUserDO validateUser(Long id);
 
     /**
      * 获得用户 Map

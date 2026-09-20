@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * MES 编码规则循环方式枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

@@ -7,21 +7,21 @@ import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.bom.MesMdProductBom
 import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.bom.MesMdProductBomSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.md.item.MesMdProductBomDO;
 import com.lxzy.nomix.module.mes.dal.mysql.md.item.MesMdProductBomMapper;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.*;
 
-import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.convertMultiMap2;
+import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 
 /**
  * MES 产品BOM Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

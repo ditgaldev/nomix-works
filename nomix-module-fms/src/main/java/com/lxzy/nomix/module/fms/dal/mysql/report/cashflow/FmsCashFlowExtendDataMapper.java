@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * FMS 现金流量表扩展数据 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface FmsCashFlowExtendDataMapper extends BaseMapperX<FmsCashFlowExtendDataDO> {

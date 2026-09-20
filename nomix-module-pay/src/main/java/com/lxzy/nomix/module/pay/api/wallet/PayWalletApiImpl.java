@@ -7,14 +7,13 @@ import com.lxzy.nomix.module.pay.api.wallet.dto.PayWalletRespDTO;
 import com.lxzy.nomix.module.pay.dal.dataobject.wallet.PayWalletDO;
 import com.lxzy.nomix.module.pay.enums.wallet.PayWalletBizTypeEnum;
 import com.lxzy.nomix.module.pay.service.wallet.PayWalletService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
 
 /**
  * 钱包 API 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class PayWalletApiImpl implements PayWalletApi {

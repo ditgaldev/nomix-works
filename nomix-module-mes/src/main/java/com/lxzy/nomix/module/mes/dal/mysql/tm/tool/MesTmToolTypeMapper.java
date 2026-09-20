@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * MES 工具类型 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesTmToolTypeMapper extends BaseMapperX<MesTmToolTypeDO> {

@@ -11,11 +11,11 @@ import com.lxzy.nomix.module.hrm.enums.employee.config.HrmEmployeeCreateFieldEnu
 import com.lxzy.nomix.module.hrm.enums.employee.info.HrmEmployeeEntryStatusEnum;
 import com.lxzy.nomix.module.hrm.service.config.HrmConfigService;
 import com.lxzy.nomix.module.hrm.enums.config.HrmConfigTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -35,7 +35,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmEmployeeFieldConfigServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmEmployeeFieldConfigServiceImpl.class)
 public class HrmEmployeeFieldConfigServiceImplTest extends BaseDbUnitTest {
@@ -43,7 +43,7 @@ public class HrmEmployeeFieldConfigServiceImplTest extends BaseDbUnitTest {
     @Resource
     private HrmEmployeeFieldConfigServiceImpl employeeFieldConfigService;
 
-    @MockBean
+    @MockitoBean
     private HrmConfigService configService;
 
     @Test

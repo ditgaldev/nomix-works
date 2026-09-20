@@ -17,7 +17,7 @@ import java.util.Objects;
 /**
  * ERP 采购入库 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ErpPurchaseInMapper extends BaseMapperX<ErpPurchaseInDO> {

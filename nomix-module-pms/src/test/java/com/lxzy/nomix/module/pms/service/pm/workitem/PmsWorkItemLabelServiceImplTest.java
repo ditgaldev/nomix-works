@@ -4,7 +4,7 @@ import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.pms.controller.admin.pm.workitem.vo.label.PmsWorkItemLabelSaveReqVO;
 import com.lxzy.nomix.module.pms.dal.dataobject.pm.workitem.PmsWorkItemLabelDO;
 import com.lxzy.nomix.module.pms.dal.mysql.pm.workitem.PmsWorkItemLabelMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * {@link PmsWorkItemLabelServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsWorkItemLabelServiceImpl.class)
 public class PmsWorkItemLabelServiceImplTest extends BaseDbUnitTest {

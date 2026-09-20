@@ -9,20 +9,20 @@ import com.lxzy.nomix.module.mes.controller.admin.dv.checkrecord.vo.MesDvCheckRe
 import com.lxzy.nomix.module.mes.dal.dataobject.dv.checkplan.MesDvCheckPlanSubjectDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.dv.checkrecord.MesDvCheckRecordDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.dv.checkrecord.MesDvCheckRecordLineDO;
-import com.lxzy.nomix.module.mes.dal.mysql.dv.checkrecord.MesDvCheckRecordMapper;
 import com.lxzy.nomix.module.mes.enums.dv.MesDvCheckRecordStatusEnum;
 import com.lxzy.nomix.module.mes.enums.dv.MesDvCheckPlanTypeEnum;
 import com.lxzy.nomix.module.mes.enums.dv.MesDvCheckResultEnum;
+import com.lxzy.nomix.module.mes.dal.mysql.dv.checkrecord.MesDvCheckRecordMapper;
 import com.lxzy.nomix.module.mes.service.dv.checkplan.MesDvCheckPlanService;
 import com.lxzy.nomix.module.mes.service.dv.checkplan.MesDvCheckPlanSubjectService;
 import com.lxzy.nomix.module.mes.service.dv.machinery.MesDvMachineryService;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,7 +32,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 设备点检记录 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

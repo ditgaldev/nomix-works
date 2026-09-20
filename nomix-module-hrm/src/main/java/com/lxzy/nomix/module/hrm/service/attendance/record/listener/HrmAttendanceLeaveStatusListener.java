@@ -4,13 +4,13 @@ import com.lxzy.nomix.module.bpm.api.event.BpmProcessInstanceStatusEvent;
 import com.lxzy.nomix.module.bpm.api.event.BpmProcessInstanceStatusEventListener;
 import com.lxzy.nomix.module.hrm.service.attendance.record.HrmAttendanceLeaveService;
 import com.lxzy.nomix.module.hrm.service.attendance.record.HrmAttendanceLeaveServiceImpl;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 
 /**
  * HRM 请假审批状态监听器
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 public class HrmAttendanceLeaveStatusListener extends BpmProcessInstanceStatusEventListener {

@@ -29,7 +29,7 @@ public class AiMidjourneyImagineReqVO {
     @NotEmpty(message = "版本号不能为空")
     private String version;
 
-    @Schema(description = "参考图", example = "")
+    @Schema(description = "参考图", example = "https://www.nomix.cn/x.png")
     private String referImageUrl;
 
 }

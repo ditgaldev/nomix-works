@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * ai 模块的 web 组件的 Configuration
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Configuration(proxyBeanMethods = false)
 public class AiWebConfiguration {

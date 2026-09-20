@@ -18,11 +18,10 @@ import com.lxzy.nomix.module.mes.service.qc.iqc.MesQcIqcService;
 import com.lxzy.nomix.module.mes.service.qc.oqc.MesQcOqcService;
 import com.lxzy.nomix.module.mes.service.qc.rqc.MesQcRqcService;
 import com.lxzy.nomix.module.system.api.dict.DictDataApi;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
-
-import javax.annotation.Resource;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import static com.lxzy.nomix.framework.common.util.object.ObjectUtils.cloneIgnoreId;
 import static com.lxzy.nomix.framework.test.core.util.AssertUtils.assertPojoEquals;
@@ -38,7 +37,7 @@ import static org.mockito.Mockito.*;
 /**
  * {@link MesQcIndicatorResultServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(MesQcIndicatorResultServiceImpl.class)
 public class MesQcIndicatorResultServiceImplTest extends BaseDbUnitTest {
@@ -49,19 +48,19 @@ public class MesQcIndicatorResultServiceImplTest extends BaseDbUnitTest {
     @Resource
     private MesQcIndicatorResultMapper resultMapper;
 
-    @MockBean
+    @MockitoBean
     private MesQcIndicatorResultDetailService resultDetailService;
-    @MockBean
+    @MockitoBean
     private MesQcIndicatorService indicatorService;
-    @MockBean
+    @MockitoBean
     private MesQcIqcService iqcService;
-    @MockBean
+    @MockitoBean
     private MesQcIpqcService ipqcService;
-    @MockBean
+    @MockitoBean
     private MesQcOqcService oqcService;
-    @MockBean
+    @MockitoBean
     private MesQcRqcService rqcService;
-    @MockBean
+    @MockitoBean
     private DictDataApi dictDataApi;
 
     @Test

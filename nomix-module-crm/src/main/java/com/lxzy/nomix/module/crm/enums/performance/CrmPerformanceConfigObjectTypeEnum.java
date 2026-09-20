@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * CRM 业绩目标对象类型枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

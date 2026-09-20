@@ -9,15 +9,14 @@ import com.lxzy.nomix.module.im.framework.rtc.core.LiveKitWebhookEventDTO;
 import com.lxzy.nomix.module.im.service.rtc.ImRtcCallService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.annotation.Resource;
+import jakarta.annotation.security.PermitAll;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.annotation.Resource;
-import javax.annotation.security.PermitAll;
-import javax.servlet.http.HttpServletRequest;
 
 import static com.lxzy.nomix.framework.common.pojo.CommonResult.success;
 
@@ -26,7 +25,7 @@ import static com.lxzy.nomix.framework.common.pojo.CommonResult.success;
  * <p>
  * 安全由请求签名（JWT + body sha256）保证，不走登录鉴权；伪造请求会被签名校验直接拒绝
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Tag(name = "LiveKit Webhook 回调")
 @RestController

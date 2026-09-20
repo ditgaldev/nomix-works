@@ -16,11 +16,11 @@ import com.lxzy.nomix.module.system.framework.sms.core.client.SmsClient;
 import com.lxzy.nomix.module.system.framework.sms.core.client.dto.SmsTemplateRespDTO;
 import com.lxzy.nomix.module.system.framework.sms.core.enums.SmsTemplateAuditStatusEnum;
 import com.google.common.collect.Lists;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
@@ -45,9 +45,9 @@ public class SmsTemplateServiceImplTest extends BaseDbUnitTest {
     @Resource
     private SmsTemplateMapper smsTemplateMapper;
 
-    @MockBean
+    @MockitoBean
     private SmsChannelService smsChannelService;
-    @MockBean
+    @MockitoBean
     private SmsClient smsClient;
 
     @Test
@@ -206,7 +206,7 @@ public class SmsTemplateServiceImplTest extends BaseDbUnitTest {
             o.setType(SmsTemplateTypeEnum.PROMOTION.getType());
             o.setStatus(CommonStatusEnum.ENABLE.getStatus());
             o.setCode("tudou");
-            o.setContent("Nomix");
+            o.setContent("Nomix源码");
             o.setApiTemplateId("nomix");
             o.setChannelId(1L);
             o.setCreateTime(buildTime(2021, 11, 11));

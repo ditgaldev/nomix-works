@@ -16,11 +16,11 @@ import com.lxzy.nomix.module.product.dal.dataobject.spu.ProductSpuDO;
 import com.lxzy.nomix.module.product.dal.mysql.comment.ProductCommentMapper;
 import com.lxzy.nomix.module.product.service.sku.ProductSkuService;
 import com.lxzy.nomix.module.product.service.spu.ProductSpuService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;

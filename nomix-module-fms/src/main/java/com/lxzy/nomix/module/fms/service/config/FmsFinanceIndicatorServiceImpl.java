@@ -12,7 +12,7 @@ import com.lxzy.nomix.module.fms.dal.dataobject.config.FmsFinanceIndicatorDO;
 import com.lxzy.nomix.module.fms.dal.dataobject.config.FmsSubjectDO;
 import com.lxzy.nomix.module.fms.dal.mysql.config.FmsFinanceIndicatorMapper;
 import com.lxzy.nomix.module.fms.service.report.FmsReportCommonService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import lombok.Data;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
@@ -35,7 +35,7 @@ import static com.lxzy.nomix.module.fms.enums.ErrorCodeConstants.HOME_METRIC_INV
  *
  * 指标公式复用报表已有表达式：行次公式使用 L1+L2，科目公式使用报表公式 JSON。
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -5,8 +5,8 @@ import com.lxzy.nomix.framework.common.util.collection.CollectionUtils;
 import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.form.BpmFormPageReqVO;
 import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.form.BpmFormSaveReqVO;
 import com.lxzy.nomix.module.bpm.dal.dataobject.definition.BpmFormDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;

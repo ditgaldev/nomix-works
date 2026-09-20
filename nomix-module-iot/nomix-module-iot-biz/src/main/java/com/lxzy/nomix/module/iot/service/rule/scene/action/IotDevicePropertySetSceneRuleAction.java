@@ -10,16 +10,16 @@ import com.lxzy.nomix.module.iot.dal.dataobject.rule.IotSceneRuleDO;
 import com.lxzy.nomix.module.iot.enums.rule.IotSceneRuleActionTypeEnum;
 import com.lxzy.nomix.module.iot.service.device.IotDeviceService;
 import com.lxzy.nomix.module.iot.service.device.message.IotDeviceMessageService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
  * IoT 设备属性设置的 {@link IotSceneRuleAction} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 @Slf4j

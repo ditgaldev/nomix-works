@@ -6,7 +6,7 @@ import com.lxzy.nomix.framework.mybatis.config.NomixMybatisAutoConfiguration;
 import com.lxzy.nomix.framework.redis.config.NomixRedisAutoConfiguration;
 import com.lxzy.nomix.framework.test.config.RedisTestConfiguration;
 import com.lxzy.nomix.framework.test.config.SqlInitializationTestConfiguration;
-import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure;
+import com.alibaba.druid.spring.boot3.autoconfigure.DruidDataSourceAutoConfigure;
 import com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration;
 import org.redisson.spring.starter.RedissonAutoConfigurationV2;
 import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
@@ -22,7 +22,7 @@ import org.springframework.test.context.jdbc.Sql;
  *
  * 相比 {@link BaseDbUnitTest} 来说，额外增加了内存 Redis
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE, classes = BaseDbAndRedisUnitTest.Application.class)
 @ActiveProfiles("unit-test") // 设置使用 application-unit-test 配置文件

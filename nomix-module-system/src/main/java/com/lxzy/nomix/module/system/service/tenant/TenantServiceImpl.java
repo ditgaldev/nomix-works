@@ -30,13 +30,13 @@ import com.lxzy.nomix.module.system.service.tenant.handler.TenantInfoHandler;
 import com.lxzy.nomix.module.system.service.tenant.handler.TenantMenuHandler;
 import com.lxzy.nomix.module.system.service.user.AdminUserService;
 import com.baomidou.dynamic.datasource.annotation.DSTransactional;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
@@ -48,7 +48,7 @@ import static java.util.Collections.singleton;
 /**
  * 租户 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated
@@ -96,7 +96,7 @@ public class TenantServiceImpl implements TenantService {
 
     @Override
     @DSTransactional // 多数据源，使用 @DSTransactional 保证本地事务，以及数据源的切换
-    @DataPermission(enable = false) // 参见  说明
+    @DataPermission(enable = false) // 参见 https://github.com/ditgaldev/nomix-works/pulls/1154 说明
     public Long createTenant(TenantSaveReqVO createReqVO) {
         // 校验租户名称是否重复
         validTenantNameDuplicate(createReqVO.getName(), null);

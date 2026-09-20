@@ -21,7 +21,7 @@ import com.lxzy.nomix.module.mes.enums.DictTypeConstants;
 /**
  * MES 来料检验单（IQC, Incoming Quality Control） DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_qc_iqc")
 @KeySequence("mes_qc_iqc_seq")

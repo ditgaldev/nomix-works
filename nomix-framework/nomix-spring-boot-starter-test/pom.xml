@@ -13,7 +13,9 @@
 
     <name>${project.artifactId}</name>
     <description>测试组件，用于单元测试、集成测试</description>
-<dependencies>
+    <url>https://github.com/ditgaldev/nomix-works</url>
+
+    <dependencies>
         <dependency>
             <groupId>com.lxzy.nomix</groupId>
             <artifactId>nomix-common</artifactId>

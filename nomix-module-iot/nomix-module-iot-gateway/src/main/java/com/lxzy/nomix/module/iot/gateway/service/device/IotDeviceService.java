@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.iot.core.biz.dto.IotDeviceRespDTO;
 /**
  * IoT 设备信息 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface IotDeviceService {
 

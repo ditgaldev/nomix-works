@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.cal.plan.vo.shift.MesCalPlanShiftPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.cal.plan.vo.shift.MesCalPlanShiftSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.cal.plan.MesCalPlanShiftDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -15,7 +15,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * MES 计划班次 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesCalPlanShiftService {
 

@@ -9,11 +9,11 @@ import com.lxzy.nomix.module.mes.dal.dataobject.dv.repair.MesDvRepairDO;
 import com.lxzy.nomix.module.mes.dal.mysql.dv.repair.MesDvRepairMapper;
 import com.lxzy.nomix.module.mes.enums.dv.MesDvRepairStatusEnum;
 import com.lxzy.nomix.module.mes.service.dv.machinery.MesDvMachineryService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -22,7 +22,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 维修工单 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -5,8 +5,8 @@ import com.lxzy.nomix.module.erp.controller.admin.product.vo.product.ErpProductP
 import com.lxzy.nomix.module.erp.controller.admin.product.vo.product.ErpProductRespVO;
 import com.lxzy.nomix.module.erp.controller.admin.product.vo.product.ProductSaveReqVO;
 import com.lxzy.nomix.module.erp.dal.dataobject.product.ErpProductDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -16,7 +16,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * ERP 产品 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ErpProductService {
 

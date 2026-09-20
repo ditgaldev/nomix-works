@@ -14,6 +14,10 @@ import com.lxzy.nomix.framework.encrypt.core.annotation.ApiEncrypt;
 import com.lxzy.nomix.framework.web.config.WebProperties;
 import com.lxzy.nomix.framework.web.core.filter.ApiRequestFilter;
 import com.lxzy.nomix.framework.web.core.handler.GlobalExceptionHandler;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpMethod;
 import org.springframework.web.method.HandlerMethod;
@@ -21,10 +25,6 @@ import org.springframework.web.servlet.HandlerExecutionChain;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 import org.springframework.web.util.ServletRequestPathUtils;
 
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.invalidParamException;
@@ -38,7 +38,7 @@ import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUti
  * 疑问：为什么不使用 SpringMVC 的 RequestBodyAdvice 或 ResponseBodyAdvice 机制呢？
  * 回答：考虑到项目中会记录访问日志、异常日志，以及 HTTP API 签名等场景，最好是全局级、且提前做解析！！！
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class ApiEncryptFilter extends ApiRequestFilter {

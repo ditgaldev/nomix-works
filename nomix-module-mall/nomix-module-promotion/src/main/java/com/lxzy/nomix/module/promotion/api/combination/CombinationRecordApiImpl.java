@@ -8,10 +8,9 @@ import com.lxzy.nomix.module.promotion.api.combination.dto.CombinationValidateJo
 import com.lxzy.nomix.module.promotion.convert.combination.CombinationActivityConvert;
 import com.lxzy.nomix.module.promotion.dal.dataobject.combination.CombinationRecordDO;
 import com.lxzy.nomix.module.promotion.service.combination.CombinationRecordService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
-
-import javax.annotation.Resource;
 
 /**
  * 拼团活动 API 实现类

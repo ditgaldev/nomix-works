@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 /**
  * FMS 结账期间 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface FmsClosingPeriodMapper extends BaseMapperX<FmsClosingPeriodDO> {

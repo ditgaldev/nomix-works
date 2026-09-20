@@ -3,14 +3,14 @@ package com.lxzy.nomix.module.hrm.service.salary.config;
 import com.lxzy.nomix.module.hrm.controller.admin.salary.vo.changetemplate.HrmSalaryChangeTemplateSaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.salary.config.HrmSalaryChangeTemplateDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
 /**
  * HRM 调薪模板 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmSalaryChangeTemplateService {
 

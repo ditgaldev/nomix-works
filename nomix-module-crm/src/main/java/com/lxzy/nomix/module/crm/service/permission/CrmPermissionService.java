@@ -8,8 +8,8 @@ import com.lxzy.nomix.module.crm.enums.common.CrmBizTypeEnum;
 import com.lxzy.nomix.module.crm.enums.permission.CrmPermissionLevelEnum;
 import com.lxzy.nomix.module.crm.service.permission.bo.CrmPermissionCreateReqBO;
 import com.lxzy.nomix.module.crm.service.permission.bo.CrmPermissionTransferReqBO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 

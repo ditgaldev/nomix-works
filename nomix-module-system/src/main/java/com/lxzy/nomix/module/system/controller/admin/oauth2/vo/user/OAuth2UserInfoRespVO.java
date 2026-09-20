@@ -22,7 +22,7 @@ public class OAuth2UserInfoRespVO {
     @Schema(description = "用户昵称", requiredMode = Schema.RequiredMode.REQUIRED, example = "Nomix")
     private String nickname;
 
-    @Schema(description = "用户邮箱", example = "nomix@example.com")
+    @Schema(description = "用户邮箱", example = "nomix@nomix.cn")
     private String email;
     @Schema(description = "手机号码", example = "15601691300")
     private String mobile;
@@ -30,7 +30,7 @@ public class OAuth2UserInfoRespVO {
     @Schema(description = "用户性别，参见 SexEnum 枚举类", example = "1")
     private Integer sex;
 
-    @Schema(description = "用户头像", example = "")
+    @Schema(description = "用户头像", example = "https://www.nomix.cn/xxx.png")
     private String avatar;
 
     /**

@@ -7,9 +7,8 @@ import cn.hutool.core.util.StrUtil;
 import com.lxzy.nomix.framework.quartz.core.handler.JobHandler;
 import com.lxzy.nomix.framework.tenant.core.job.TenantJob;
 import com.lxzy.nomix.module.statistics.service.product.ProductStatisticsService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.Resource;
 
 /**
  * 商品统计 Job

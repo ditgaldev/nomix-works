@@ -38,12 +38,12 @@ import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.ImmutableTable;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Table;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.Resource;
 import lombok.Setter;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ClassUtils;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
 import java.util.*;
 
 import static cn.hutool.core.map.MapUtil.getStr;
@@ -58,7 +58,7 @@ import static com.lxzy.nomix.module.infra.enums.ErrorCodeConstants.CODEGEN_MASTE
  *
  * 考虑到 Java 模板引擎的框架非常多，Freemarker、Velocity、Thymeleaf 等等，所以我们采用 hutool 封装的 {@link cn.hutool.extra.template.Template} 抽象
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 public class CodegenEngine {

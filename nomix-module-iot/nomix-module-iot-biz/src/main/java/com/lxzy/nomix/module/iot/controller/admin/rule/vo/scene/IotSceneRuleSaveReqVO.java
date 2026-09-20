@@ -4,10 +4,10 @@ import com.lxzy.nomix.framework.common.enums.CommonStatusEnum;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.iot.dal.dataobject.rule.IotSceneRuleDO;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Schema(description = "管理后台 - IoT 场景联动新增/修改 Request VO")

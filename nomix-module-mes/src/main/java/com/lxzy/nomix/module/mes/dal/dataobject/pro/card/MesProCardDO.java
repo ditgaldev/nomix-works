@@ -14,7 +14,7 @@ import com.lxzy.nomix.module.mes.enums.DictTypeConstants;
 /**
  * MES 生产流转卡 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_pro_card")
 @KeySequence("mes_pro_card_seq")

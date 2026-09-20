@@ -4,13 +4,13 @@ import com.lxzy.nomix.framework.common.biz.system.tenant.TenantCommonApi;
 import com.lxzy.nomix.module.system.service.tenant.TenantService;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 
 /**
  * 多租户的 API 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class TenantApiImpl implements TenantCommonApi {

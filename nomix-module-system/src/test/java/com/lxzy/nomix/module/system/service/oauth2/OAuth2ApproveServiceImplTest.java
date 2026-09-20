@@ -8,12 +8,12 @@ import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.system.dal.dataobject.oauth2.OAuth2ApproveDO;
 import com.lxzy.nomix.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
 import com.lxzy.nomix.module.system.dal.mysql.oauth2.OAuth2ApproveMapper;
+import jakarta.annotation.Resource;
 import org.assertj.core.util.Lists;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
@@ -32,7 +32,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link OAuth2ApproveServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(OAuth2ApproveServiceImpl.class)
 public class OAuth2ApproveServiceImplTest extends BaseDbUnitTest {
@@ -43,7 +43,7 @@ public class OAuth2ApproveServiceImplTest extends BaseDbUnitTest {
     @Resource
     private OAuth2ApproveMapper oauth2ApproveMapper;
 
-    @MockBean
+    @MockitoBean
     private OAuth2ClientService oauth2ClientService;
 
     @Test

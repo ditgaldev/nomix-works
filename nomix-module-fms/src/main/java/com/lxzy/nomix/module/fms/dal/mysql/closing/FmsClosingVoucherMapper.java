@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * FMS 结账凭证 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface FmsClosingVoucherMapper extends BaseMapperX<FmsClosingVoucherDO> {

@@ -16,11 +16,11 @@ import com.lxzy.nomix.module.trade.dal.mysql.brokerage.BrokerageRecordMapper;
 import com.lxzy.nomix.module.trade.enums.brokerage.BrokerageRecordBizTypeEnum;
 import com.lxzy.nomix.module.trade.enums.brokerage.BrokerageRecordStatusEnum;
 import com.lxzy.nomix.module.trade.service.config.TradeConfigService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.math.RoundingMode;
 
 import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
@@ -45,13 +45,13 @@ public class BrokerageRecordServiceImplTest extends BaseDbUnitTest {
     @Resource
     private BrokerageRecordMapper brokerageRecordMapper;
 
-    @MockBean
+    @MockitoBean
     private TradeConfigService tradeConfigService;
-    @MockBean
+    @MockitoBean
     private BrokerageUserService brokerageUserService;
-    @MockBean
+    @MockitoBean
     private ProductSpuApi productSpuApi;
-    @MockBean
+    @MockitoBean
     private ProductSkuApi productSkuApi;
 
     @Test

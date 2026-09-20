@@ -40,13 +40,13 @@ import com.lxzy.nomix.module.trade.framework.order.config.TradeOrderProperties;
 import com.lxzy.nomix.module.trade.service.delivery.DeliveryExpressService;
 import com.lxzy.nomix.module.trade.service.order.TradeOrderQueryService;
 import com.lxzy.nomix.module.trade.service.order.TradeOrderUpdateService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -56,7 +56,7 @@ import static com.lxzy.nomix.module.trade.enums.ErrorCodeConstants.*;
 /**
  * 售后订单 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 @Service

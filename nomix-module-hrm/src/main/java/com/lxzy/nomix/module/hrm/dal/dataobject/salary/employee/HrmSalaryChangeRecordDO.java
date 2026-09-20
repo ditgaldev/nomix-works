@@ -25,7 +25,7 @@ import java.util.List;
 /**
  * HRM 定薪/调薪记录 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "hrm_salary_change_record", autoResultMap = true)
 @KeySequence("hrm_salary_change_record_seq")

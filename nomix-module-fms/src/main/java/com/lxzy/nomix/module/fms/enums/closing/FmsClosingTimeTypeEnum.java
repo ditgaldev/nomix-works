@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * FMS 结转取数时间枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

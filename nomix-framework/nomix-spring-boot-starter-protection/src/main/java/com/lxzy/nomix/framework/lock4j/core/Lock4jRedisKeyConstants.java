@@ -3,7 +3,7 @@ package com.lxzy.nomix.framework.lock4j.core;
 /**
  * Lock4j Redis Key 枚举类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface Lock4jRedisKeyConstants {
 

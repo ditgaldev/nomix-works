@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * AI 工具 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface AiToolService {
 

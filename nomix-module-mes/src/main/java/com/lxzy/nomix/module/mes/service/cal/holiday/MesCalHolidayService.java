@@ -2,15 +2,15 @@ package com.lxzy.nomix.module.mes.service.cal.holiday;
 
 import com.lxzy.nomix.module.mes.controller.admin.cal.holiday.vo.MesCalHolidaySaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.cal.holiday.MesCalHolidayDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.time.LocalDateTime;
 import java.util.List;
 
 /**
  * MES 假期设置 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesCalHolidayService {
 

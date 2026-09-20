@@ -9,7 +9,7 @@ import lombok.*;
 /**
  * MES 设备资源 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_md_workstation_machine")
 @KeySequence("mes_md_workstation_machine_seq")

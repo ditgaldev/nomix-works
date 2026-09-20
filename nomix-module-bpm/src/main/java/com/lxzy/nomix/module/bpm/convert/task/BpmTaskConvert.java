@@ -35,7 +35,7 @@ import static com.lxzy.nomix.framework.common.util.collection.MapUtils.findAndTh
 /**
  * Bpm 任务 Convert
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface BpmTaskConvert {

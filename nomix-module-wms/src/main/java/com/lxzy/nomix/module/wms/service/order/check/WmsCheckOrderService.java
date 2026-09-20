@@ -4,13 +4,12 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.wms.controller.admin.order.check.vo.order.WmsCheckOrderPageReqVO;
 import com.lxzy.nomix.module.wms.controller.admin.order.check.vo.order.WmsCheckOrderSaveReqVO;
 import com.lxzy.nomix.module.wms.dal.dataobject.order.check.WmsCheckOrderDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * WMS 盘库单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface WmsCheckOrderService {
 

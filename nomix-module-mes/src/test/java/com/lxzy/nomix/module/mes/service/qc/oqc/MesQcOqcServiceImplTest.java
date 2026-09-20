@@ -13,11 +13,10 @@ import com.lxzy.nomix.module.mes.service.wm.productsales.MesWmProductSalesLineSe
 import com.lxzy.nomix.module.mes.service.wm.productsales.MesWmProductSalesService;
 import com.lxzy.nomix.module.mes.service.qc.indicatorresult.MesQcIndicatorResultService;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
-
-import javax.annotation.Resource;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import static com.lxzy.nomix.framework.test.core.util.AssertUtils.assertServiceException;
 import static com.lxzy.nomix.framework.test.core.util.RandomUtils.randomLongId;
@@ -30,7 +29,7 @@ import static org.mockito.Mockito.*;
 /**
  * {@link MesQcOqcServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(MesQcOqcServiceImpl.class)
 public class MesQcOqcServiceImplTest extends BaseDbUnitTest {
@@ -41,23 +40,23 @@ public class MesQcOqcServiceImplTest extends BaseDbUnitTest {
     @Resource
     private MesQcOqcMapper oqcMapper;
 
-    @MockBean
+    @MockitoBean
     private MesWmProductSalesLineService productSalesLineService;
-    @MockBean
+    @MockitoBean
     private MesWmProductSalesService productSalesService;
-    @MockBean
+    @MockitoBean
     private MesQcOqcLineService oqcLineService;
-    @MockBean
+    @MockitoBean
     private MesMdClientService clientService;
-    @MockBean
+    @MockitoBean
     private MesMdItemService itemService;
-    @MockBean
+    @MockitoBean
     private MesQcTemplateItemService templateItemService;
-    @MockBean
+    @MockitoBean
     private MesQcDefectRecordService defectRecordService;
-    @MockBean
+    @MockitoBean
     private AdminUserApi adminUserApi;
-    @MockBean
+    @MockitoBean
     private MesQcIndicatorResultService indicatorResultService;
 
     @Test

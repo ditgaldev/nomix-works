@@ -7,7 +7,7 @@ import com.lxzy.nomix.module.system.dal.mysql.oauth2.OAuth2CodeMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -18,7 +18,7 @@ import static com.lxzy.nomix.module.system.enums.ErrorCodeConstants.OAUTH2_CODE_
 /**
  * OAuth2.0 授权码 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -28,7 +28,7 @@ import java.util.List;
 /**
  * HRM 员工绩效考核 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "hrm_performance_assessment", autoResultMap = true)
 @KeySequence("hrm_performance_assessment_seq")

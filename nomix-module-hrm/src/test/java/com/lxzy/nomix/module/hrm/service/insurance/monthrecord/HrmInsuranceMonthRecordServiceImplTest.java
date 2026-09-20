@@ -7,10 +7,10 @@ import com.lxzy.nomix.module.hrm.dal.dataobject.insurance.monthrecord.HrmInsuran
 import com.lxzy.nomix.module.hrm.dal.mysql.insurance.monthrecord.HrmInsuranceMonthRecordMapper;
 import com.lxzy.nomix.module.hrm.enums.insurance.employee.HrmInsuranceEmployeeStatusEnum;
 import com.lxzy.nomix.module.hrm.enums.insurance.monthrecord.HrmInsuranceMonthStatusEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.math.BigDecimal;
 import java.util.Collections;
@@ -31,7 +31,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmInsuranceMonthRecordServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmInsuranceMonthRecordServiceImpl.class)
 public class HrmInsuranceMonthRecordServiceImplTest extends BaseDbUnitTest {
@@ -42,7 +42,7 @@ public class HrmInsuranceMonthRecordServiceImplTest extends BaseDbUnitTest {
     @Resource
     private HrmInsuranceMonthRecordMapper monthRecordMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmInsuranceMonthEmployeeRecordService monthEmployeeRecordService;
 
     @Test

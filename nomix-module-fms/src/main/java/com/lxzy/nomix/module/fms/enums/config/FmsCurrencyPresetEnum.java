@@ -11,7 +11,7 @@ import java.util.Arrays;
 /**
  * FMS 预置币别枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

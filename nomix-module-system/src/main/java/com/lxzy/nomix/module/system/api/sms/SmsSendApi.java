@@ -2,12 +2,12 @@ package com.lxzy.nomix.module.system.api.sms;
 
 import com.lxzy.nomix.module.system.api.sms.dto.send.SmsSendSingleToUserReqDTO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 短信发送 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface SmsSendApi {
 

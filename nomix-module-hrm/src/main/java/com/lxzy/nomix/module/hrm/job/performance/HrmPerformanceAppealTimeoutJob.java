@@ -4,7 +4,7 @@ import com.lxzy.nomix.framework.quartz.core.handler.JobHandler;
 import com.lxzy.nomix.framework.tenant.core.job.TenantJob;
 import com.lxzy.nomix.module.hrm.dal.dataobject.performance.assessment.HrmPerformanceAssessmentStageDO;
 import com.lxzy.nomix.module.hrm.service.performance.assessment.HrmPerformanceAssessmentProcessService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * HRM 绩效申诉超期处理 Job
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 public class HrmPerformanceAppealTimeoutJob implements JobHandler {

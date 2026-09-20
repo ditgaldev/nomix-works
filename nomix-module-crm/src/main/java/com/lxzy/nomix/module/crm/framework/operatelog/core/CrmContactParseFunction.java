@@ -4,10 +4,9 @@ import cn.hutool.core.util.StrUtil;
 import com.lxzy.nomix.module.crm.dal.dataobject.contact.CrmContactDO;
 import com.lxzy.nomix.module.crm.service.contact.CrmContactService;
 import com.mzt.logapi.service.IParseFunction;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.Resource;
 
 /**
  * CRM 联系人的 {@link IParseFunction} 实现类

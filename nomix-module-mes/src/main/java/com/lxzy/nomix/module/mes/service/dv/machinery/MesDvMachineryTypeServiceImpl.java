@@ -7,11 +7,11 @@ import com.lxzy.nomix.module.mes.controller.admin.dv.machinery.vo.type.MesDvMach
 import com.lxzy.nomix.module.mes.controller.admin.dv.machinery.vo.type.MesDvMachineryTypeSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.dv.machinery.MesDvMachineryTypeDO;
 import com.lxzy.nomix.module.mes.dal.mysql.dv.machinery.MesDvMachineryTypeMapper;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.*;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -20,7 +20,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 设备类型 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

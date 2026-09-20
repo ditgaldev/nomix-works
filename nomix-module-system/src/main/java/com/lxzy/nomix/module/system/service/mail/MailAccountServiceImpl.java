@@ -7,13 +7,13 @@ import com.lxzy.nomix.module.system.controller.admin.mail.vo.account.MailAccount
 import com.lxzy.nomix.module.system.dal.dataobject.mail.MailAccountDO;
 import com.lxzy.nomix.module.system.dal.mysql.mail.MailAccountMapper;
 import com.lxzy.nomix.module.system.dal.redis.RedisKeyConstants;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;

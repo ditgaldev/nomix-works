@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * CRM 产品分析 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface CrmStatisticsProductService {
 

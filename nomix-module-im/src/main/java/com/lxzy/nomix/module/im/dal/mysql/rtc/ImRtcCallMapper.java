@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * IM 通话记录 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ImRtcCallMapper extends BaseMapperX<ImRtcCallDO> {

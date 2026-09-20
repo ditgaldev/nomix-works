@@ -21,7 +21,7 @@ import com.lxzy.nomix.module.hrm.controller.admin.portal.employee.vo.employee.Hr
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.employment.HrmEmployeeChangeRecordDO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.info.HrmEmployeeDO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.employment.HrmEmployeeQuitInfoDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.time.LocalDateTime;
 import java.util.Collection;
@@ -33,7 +33,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * HRM 员工档案 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmEmployeeService {
 

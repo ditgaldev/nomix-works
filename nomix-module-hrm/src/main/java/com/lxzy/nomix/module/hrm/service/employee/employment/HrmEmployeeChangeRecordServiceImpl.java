@@ -6,7 +6,7 @@ import com.lxzy.nomix.module.hrm.controller.admin.employee.vo.changerecord.HrmEm
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.employment.HrmEmployeeChangeRecordDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.employee.employment.HrmEmployeeChangeRecordMapper;
 import com.lxzy.nomix.module.hrm.enums.employee.employment.HrmEmployeeChangeTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -20,7 +20,7 @@ import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.getDa
 /**
  * HRM 员工异动记录 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

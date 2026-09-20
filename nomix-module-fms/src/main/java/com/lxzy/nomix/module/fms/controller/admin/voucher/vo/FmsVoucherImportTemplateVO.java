@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * FMS 凭证导入模板 VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 @AllArgsConstructor

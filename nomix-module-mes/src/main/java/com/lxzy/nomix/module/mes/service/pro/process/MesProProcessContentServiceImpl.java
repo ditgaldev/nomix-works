@@ -4,11 +4,11 @@ import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.module.mes.controller.admin.pro.process.vo.content.MesProProcessContentSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.pro.process.MesProProcessContentDO;
 import com.lxzy.nomix.module.mes.dal.mysql.pro.process.MesProProcessContentMapper;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -17,7 +17,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.PRO_PROCESS_CON
 /**
  * MES 生产工序内容 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

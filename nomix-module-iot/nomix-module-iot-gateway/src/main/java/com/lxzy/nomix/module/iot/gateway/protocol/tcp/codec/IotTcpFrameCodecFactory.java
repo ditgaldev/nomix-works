@@ -7,7 +7,7 @@ import com.lxzy.nomix.module.iot.gateway.protocol.tcp.IotTcpConfig;
 /**
  * IoT TCP 帧编解码器工厂
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class IotTcpFrameCodecFactory {
 

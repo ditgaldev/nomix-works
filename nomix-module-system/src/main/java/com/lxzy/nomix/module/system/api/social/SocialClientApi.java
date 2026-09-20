@@ -2,15 +2,14 @@ package com.lxzy.nomix.module.system.api.social;
 
 import com.lxzy.nomix.module.system.api.social.dto.*;
 import com.lxzy.nomix.module.system.enums.social.SocialTypeEnum;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
 /**
  * 社交应用的 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface SocialClientApi {
 

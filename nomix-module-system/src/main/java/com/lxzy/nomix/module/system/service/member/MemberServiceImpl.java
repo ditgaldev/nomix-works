@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 /**
  * Member Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class MemberServiceImpl implements MemberService {

@@ -2,12 +2,12 @@ package com.lxzy.nomix.module.system.api.mail;
 
 import com.lxzy.nomix.module.system.api.mail.dto.MailSendSingleToUserReqDTO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 邮箱发送 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MailSendApi {
 

@@ -41,7 +41,7 @@ import static com.lxzy.nomix.module.pay.framework.pay.core.client.impl.weixin.Wx
 /**
  * 微信支付抽象类，实现微信统一的接口、以及部分实现（退款）
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public abstract class AbstractWxPayClient extends AbstractPayClient<WxPayClientConfig> {
@@ -66,7 +66,7 @@ public abstract class AbstractWxPayClient extends AbstractPayClient<WxPayClientC
             payConfig.setKeyContent(Base64.decode(config.getKeyContent()));
         } else if (Objects.equals(config.getApiVersion(), API_VERSION_V3)) {
             payConfig.setPrivateKeyContent(StrUtil.utf8Bytes(config.getPrivateKeyContent()));
-            // 参考  和 https://t.zsxq.com/ODR5V
+            // 参考 https://gitee.com/nomixcode/nomix-ui-admin-vue3/issues/ICUE53 和 https://t.zsxq.com/ODR5V
             if (StrUtil.isNotBlank(config.getPublicKeyContent())) {
                 payConfig.setPublicKeyContent(StrUtil.utf8Bytes(config.getPublicKeyContent()));
             }
@@ -540,7 +540,7 @@ public abstract class AbstractWxPayClient extends AbstractPayClient<WxPayClientC
      * @see <a href="https://github.com/binarywang/weixin-java-pay-demo/blob/master/src/main/java/com/github/binarywang/demo/wx/pay/controller/WxPayV3Controller.java#L202-L221">官方示例</a>
      */
     private SignatureHeader getRequestHeader(Map<String, String> headers) {
-        // 参见 
+        // 参见 https://gitee.com/ditgaldev/nomix-cloud/issues/ICSFL6
         return SignatureHeader.builder()
                 .signature(getHeaderValue(headers, "Wechatpay-Signature", "wechatpay-signature"))
                 .nonce(getHeaderValue(headers, "Wechatpay-Nonce", "wechatpay-nonce"))

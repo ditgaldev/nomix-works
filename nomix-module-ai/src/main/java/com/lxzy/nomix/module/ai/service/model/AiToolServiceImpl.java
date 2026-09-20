@@ -22,7 +22,7 @@ import static com.lxzy.nomix.module.ai.enums.ErrorCodeConstants.TOOL_NOT_EXISTS;
 /**
  * AI 工具 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

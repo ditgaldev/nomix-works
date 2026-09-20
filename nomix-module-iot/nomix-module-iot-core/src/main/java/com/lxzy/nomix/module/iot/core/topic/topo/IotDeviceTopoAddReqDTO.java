@@ -2,9 +2,9 @@ package com.lxzy.nomix.module.iot.core.topic.topo;
 
 import com.lxzy.nomix.module.iot.core.biz.dto.IotDeviceAuthReqDTO;
 import com.lxzy.nomix.module.iot.core.enums.IotDeviceMessageMethodEnum;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
 import java.util.List;
 
 /**
@@ -12,7 +12,7 @@ import java.util.List;
  * <p>
  * 用于 {@link IotDeviceMessageMethodEnum#TOPO_ADD} 消息的 params 参数
  *
- * @author Nomix
+ * @author Nomix源码
  * @see <a href="http://help.aliyun.com/zh/marketplace/add-topological-relationship">阿里云 - 添加拓扑关系</a>
  */
 @Data

@@ -9,9 +9,9 @@ import com.lxzy.nomix.module.iot.dal.dataobject.rule.IotSceneRuleDO;
 import com.lxzy.nomix.module.iot.enums.rule.IotSceneRuleTriggerTypeEnum;
 import com.lxzy.nomix.module.iot.service.device.IotDeviceService;
 import com.lxzy.nomix.module.iot.service.rule.scene.matcher.IotSceneRuleMatcherHelper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.Map;
 
 /**

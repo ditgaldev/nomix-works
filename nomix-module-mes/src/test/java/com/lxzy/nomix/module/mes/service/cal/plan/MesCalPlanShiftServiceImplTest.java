@@ -5,18 +5,19 @@ import com.lxzy.nomix.module.mes.dal.dataobject.cal.plan.MesCalPlanShiftDO;
 import com.lxzy.nomix.module.mes.dal.mysql.cal.plan.MesCalPlanShiftMapper;
 import com.lxzy.nomix.module.mes.enums.cal.MesCalShiftTypeEnum;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
+
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * {@link MesCalPlanShiftServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(MesCalPlanShiftServiceImpl.class)
 public class MesCalPlanShiftServiceImplTest extends BaseDbUnitTest {
@@ -27,7 +28,7 @@ public class MesCalPlanShiftServiceImplTest extends BaseDbUnitTest {
     @Resource
     private MesCalPlanShiftMapper planShiftMapper;
 
-    @MockBean
+    @MockitoBean
     private MesCalPlanService planService;
 
     @Test

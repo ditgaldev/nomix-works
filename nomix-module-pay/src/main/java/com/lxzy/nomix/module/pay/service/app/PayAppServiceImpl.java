@@ -12,11 +12,11 @@ import com.lxzy.nomix.module.pay.dal.mysql.app.PayAppMapper;
 import com.lxzy.nomix.module.pay.enums.ErrorCodeConstants;
 import com.lxzy.nomix.module.pay.service.order.PayOrderService;
 import com.lxzy.nomix.module.pay.service.refund.PayRefundService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;

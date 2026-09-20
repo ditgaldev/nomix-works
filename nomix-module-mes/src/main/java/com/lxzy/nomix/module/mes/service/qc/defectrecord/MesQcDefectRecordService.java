@@ -4,13 +4,12 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.qc.defectrecord.vo.MesQcDefectRecordPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.qc.defectrecord.vo.MesQcDefectRecordSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.defectrecord.MesQcDefectRecordDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * MES 质检缺陷记录 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesQcDefectRecordService {
 

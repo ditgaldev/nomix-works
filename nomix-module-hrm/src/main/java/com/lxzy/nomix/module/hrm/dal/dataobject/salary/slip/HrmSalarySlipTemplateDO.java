@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * HRM 工资条模板 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "hrm_salary_slip_template", autoResultMap = true)
 @KeySequence("hrm_salary_slip_template_seq")

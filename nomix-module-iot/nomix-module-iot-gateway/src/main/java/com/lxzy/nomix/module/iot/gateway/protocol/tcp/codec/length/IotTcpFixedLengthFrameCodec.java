@@ -14,7 +14,7 @@ import cn.hutool.core.lang.Assert;
  * <p>
  * 基于固定长度的拆包策略，每条消息固定字节数
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class IotTcpFixedLengthFrameCodec implements IotTcpFrameCodec {

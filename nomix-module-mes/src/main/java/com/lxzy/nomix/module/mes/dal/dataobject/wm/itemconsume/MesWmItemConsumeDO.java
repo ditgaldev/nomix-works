@@ -17,7 +17,7 @@ import com.lxzy.nomix.module.mes.enums.DictTypeConstants;
 /**
  * MES 物料消耗记录 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_wm_item_consume")
 @KeySequence("mes_wm_item_consume_seq")

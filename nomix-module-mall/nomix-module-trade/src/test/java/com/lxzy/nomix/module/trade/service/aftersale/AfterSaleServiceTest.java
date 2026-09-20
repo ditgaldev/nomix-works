@@ -20,12 +20,12 @@ import com.lxzy.nomix.module.trade.enums.order.TradeOrderStatusEnum;
 import com.lxzy.nomix.module.trade.framework.order.config.TradeOrderProperties;
 import com.lxzy.nomix.module.trade.service.order.TradeOrderQueryService;
 import com.lxzy.nomix.module.trade.service.order.TradeOrderUpdateService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 
 import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildTime;
@@ -40,7 +40,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link AfterSaleService} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Disabled // TODO Nomix：后续 fix 补充的单测
 @Import(AfterSaleServiceImpl.class)
@@ -54,15 +54,15 @@ public class AfterSaleServiceTest extends BaseDbUnitTest {
     @Resource
     private AfterSaleLogMapper tradeAfterSaleLogMapper;
 
-    @MockBean
+    @MockitoBean
     private TradeOrderUpdateService tradeOrderUpdateService;
     @Resource
     private TradeOrderQueryService tradeOrderQueryService;
 
-    @MockBean
+    @MockitoBean
     private PayRefundApi payRefundApi;
 
-    @MockBean
+    @MockitoBean
     private TradeOrderProperties tradeOrderProperties;
 
     @Test

@@ -12,7 +12,7 @@ import static com.lxzy.nomix.module.infra.enums.ErrorCodeConstants.FILE_PATH_INV
 /**
  * 文件路径工具类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class FilePathUtils {
 

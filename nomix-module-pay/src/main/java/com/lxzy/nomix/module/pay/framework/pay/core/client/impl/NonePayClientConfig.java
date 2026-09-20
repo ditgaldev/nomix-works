@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.pay.framework.pay.core.client.impl;
 import com.lxzy.nomix.module.pay.framework.pay.core.client.PayClientConfig;
 import lombok.Data;
 
-import javax.validation.Validator;
+import jakarta.validation.Validator;
 
 /**
  * 无需任何配置 PayClientConfig 实现类

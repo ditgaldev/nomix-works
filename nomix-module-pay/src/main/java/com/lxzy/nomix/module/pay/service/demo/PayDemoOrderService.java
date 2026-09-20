@@ -5,12 +5,12 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.pay.controller.admin.demo.vo.order.PayDemoOrderCreateReqVO;
 import com.lxzy.nomix.module.pay.dal.dataobject.demo.PayDemoOrderDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 示例订单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface PayDemoOrderService {
 

@@ -4,13 +4,13 @@ import com.lxzy.nomix.module.member.controller.app.address.vo.AppAddressCreateRe
 import com.lxzy.nomix.module.member.controller.app.address.vo.AppAddressUpdateReqVO;
 import com.lxzy.nomix.module.member.dal.dataobject.address.MemberAddressDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.List;
 
 /**
  * 用户收件地址 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface AddressService {
 

@@ -1,16 +1,15 @@
 package com.lxzy.nomix.module.bpm.service.definition;
 
-import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.listener.BpmProcessListenerPageReqVO;
 import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.listener.BpmProcessListenerSaveReqVO;
+import jakarta.validation.*;
 import com.lxzy.nomix.module.bpm.dal.dataobject.definition.BpmProcessListenerDO;
-
-import javax.validation.Valid;
+import com.lxzy.nomix.framework.common.pojo.PageResult;
 
 /**
  * BPM 流程监听器 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface BpmProcessListenerService {
 

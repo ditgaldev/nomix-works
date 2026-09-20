@@ -10,7 +10,7 @@ import com.lxzy.nomix.module.report.dal.mysql.goview.GoViewProjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 import static com.lxzy.nomix.framework.common.util.object.ObjectUtils.cloneIgnoreId;
 import static com.lxzy.nomix.framework.test.core.util.AssertUtils.assertPojoEquals;
@@ -22,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * {@link GoViewProjectServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(GoViewProjectServiceImpl.class)
 public class GoViewProjectServiceImplTest extends BaseDbUnitTest {

@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * AI 模型类型的枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @RequiredArgsConstructor

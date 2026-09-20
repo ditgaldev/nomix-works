@@ -8,12 +8,12 @@ import com.lxzy.nomix.module.product.controller.admin.property.vo.property.Produ
 import com.lxzy.nomix.module.product.dal.dataobject.property.ProductPropertyDO;
 import com.lxzy.nomix.module.product.dal.mysql.property.ProductPropertyMapper;
 import com.lxzy.nomix.module.product.service.sku.ProductSkuService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 
@@ -23,7 +23,7 @@ import static com.lxzy.nomix.module.product.enums.ErrorCodeConstants.*;
 /**
  * 商品属性项 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * PMS 知识库文档 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "pms_knowledge_document", autoResultMap = true)
 @KeySequence("pms_knowledge_document_seq")

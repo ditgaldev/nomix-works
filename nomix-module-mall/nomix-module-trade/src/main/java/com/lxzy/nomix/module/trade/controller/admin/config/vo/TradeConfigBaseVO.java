@@ -8,9 +8,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import org.hibernate.validator.constraints.Range;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.PositiveOrZero;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.PositiveOrZero;
 import java.util.List;
 
 /**
@@ -64,7 +64,7 @@ public class TradeConfigBaseVO {
     @InEnum(value = BrokerageBindModeEnum.class, message = "分销关系绑定模式必须是 {value}")
     private Integer brokerageBindMode;
 
-    @Schema(description = "分销海报图地址数组", requiredMode = Schema.RequiredMode.REQUIRED, example = "[]")
+    @Schema(description = "分销海报图地址数组", requiredMode = Schema.RequiredMode.REQUIRED, example = "[https://www.nomix.cn/nomix.jpg]")
     private List<String> brokeragePosterUrls;
 
     @Schema(description = "一级返佣比例", requiredMode = Schema.RequiredMode.REQUIRED, example = "5")

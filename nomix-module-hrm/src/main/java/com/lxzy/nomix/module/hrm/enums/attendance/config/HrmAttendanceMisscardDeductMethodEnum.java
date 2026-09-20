@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * HRM 考勤缺卡扣款方式
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

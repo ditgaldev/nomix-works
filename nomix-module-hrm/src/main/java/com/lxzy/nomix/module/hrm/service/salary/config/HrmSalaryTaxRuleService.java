@@ -2,7 +2,7 @@ package com.lxzy.nomix.module.hrm.service.salary.config;
 
 import com.lxzy.nomix.module.hrm.controller.admin.salary.vo.taxrule.HrmSalaryTaxRuleSaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.salary.config.HrmSalaryTaxRuleDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.Collection;
 import java.util.List;
@@ -13,7 +13,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * HRM 计税规则 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmSalaryTaxRuleService {
 

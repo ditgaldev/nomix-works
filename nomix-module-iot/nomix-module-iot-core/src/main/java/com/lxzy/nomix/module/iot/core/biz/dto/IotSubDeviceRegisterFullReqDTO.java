@@ -1,10 +1,10 @@
 package com.lxzy.nomix.module.iot.core.biz.dto;
 
 import com.lxzy.nomix.module.iot.core.topic.auth.IotSubDeviceRegisterReqDTO;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
@@ -12,7 +12,7 @@ import java.util.List;
  * <p>
  * 额外包含了网关设备的标识信息
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class IotSubDeviceRegisterFullReqDTO {

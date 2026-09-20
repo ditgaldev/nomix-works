@@ -2,9 +2,9 @@ package com.lxzy.nomix.module.mes.dal.mysql.wm.productsales;
 
 import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.productsales.MesWmProductSalesDetailDO;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.function.Consumer;
@@ -12,8 +12,7 @@ import java.util.function.Consumer;
 import static com.lxzy.nomix.framework.common.util.object.ObjectUtils.cloneIgnoreId;
 import static com.lxzy.nomix.framework.test.core.util.AssertUtils.assertPojoEquals;
 import static com.lxzy.nomix.framework.test.core.util.RandomUtils.randomPojo;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * {@link MesWmProductSalesDetailMapper} 的单元测试

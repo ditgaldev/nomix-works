@@ -28,6 +28,7 @@ import com.lxzy.nomix.module.iot.enums.thingmodel.IotDataSpecsDataTypeEnum;
 import com.lxzy.nomix.module.iot.framework.tdengine.core.TDengineTableField;
 import com.lxzy.nomix.module.iot.service.device.IotDeviceModbusPointService;
 import com.lxzy.nomix.module.iot.service.product.IotProductService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
@@ -36,11 +37,18 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.nio.charset.StandardCharsets;
-import java.time.*;
-import java.util.*;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
+import java.time.ZonedDateTime;
+import java.util.Collection;
+import java.util.Date;
+import java.util.List;
+import java.util.Objects;
+import java.util.Set;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.convertSet;
@@ -49,7 +57,7 @@ import static com.lxzy.nomix.module.iot.enums.ErrorCodeConstants.*;
 /**
  * IoT 产品物模型 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

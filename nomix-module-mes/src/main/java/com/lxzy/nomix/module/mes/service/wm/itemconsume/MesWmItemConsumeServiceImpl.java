@@ -23,10 +23,10 @@ import com.lxzy.nomix.module.mes.service.wm.transaction.dto.MesWmTransactionSave
 import com.lxzy.nomix.module.mes.service.wm.warehouse.MesWmWarehouseAreaService;
 import com.lxzy.nomix.module.mes.service.wm.warehouse.MesWmWarehouseLocationService;
 import com.lxzy.nomix.module.mes.service.wm.warehouse.MesWmWarehouseService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -40,7 +40,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.PRO_FEEDBACK_RO
 /**
  * MES 物料消耗记录 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

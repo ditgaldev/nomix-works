@@ -26,7 +26,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link TradePriceServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class TradePriceServiceImplTest extends BaseMockitoUnitTest {
 

@@ -2,16 +2,16 @@ package com.lxzy.nomix.module.mes.service.wm.itemconsume;
 
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.itemconsume.MesWmItemConsumeDetailDO;
 import com.lxzy.nomix.module.mes.dal.mysql.wm.itemconsume.MesWmItemConsumeDetailMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
  * MES 物料消耗记录明细 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

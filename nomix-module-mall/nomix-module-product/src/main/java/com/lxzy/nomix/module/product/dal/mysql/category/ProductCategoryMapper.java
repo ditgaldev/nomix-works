@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 商品分类 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ProductCategoryMapper extends BaseMapperX<ProductCategoryDO> {

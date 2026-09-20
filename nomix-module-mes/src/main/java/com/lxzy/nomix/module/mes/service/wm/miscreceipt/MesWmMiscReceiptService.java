@@ -4,13 +4,12 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.wm.miscreceipt.vo.MesWmMiscReceiptPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.wm.miscreceipt.vo.MesWmMiscReceiptSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.miscreceipt.MesWmMiscReceiptDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * MES 杂项入库单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesWmMiscReceiptService {
 

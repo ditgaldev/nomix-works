@@ -1,18 +1,22 @@
 package com.lxzy.nomix.module.crm.controller.admin.statistics;
 
 import com.lxzy.nomix.framework.common.pojo.CommonResult;
-import com.lxzy.nomix.module.crm.controller.admin.statistics.vo.portrait.*;
+import com.lxzy.nomix.module.crm.controller.admin.statistics.vo.portrait.CrmStatisticsPortraitReqVO;
+import com.lxzy.nomix.module.crm.controller.admin.statistics.vo.portrait.CrmStatisticCustomerAreaRespVO;
+import com.lxzy.nomix.module.crm.controller.admin.statistics.vo.portrait.CrmStatisticCustomerIndustryRespVO;
+import com.lxzy.nomix.module.crm.controller.admin.statistics.vo.portrait.CrmStatisticCustomerLevelRespVO;
+import com.lxzy.nomix.module.crm.controller.admin.statistics.vo.portrait.CrmStatisticCustomerSourceRespVO;
 import com.lxzy.nomix.module.crm.service.statistics.CrmStatisticsPortraitService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.annotation.Resource;
+import jakarta.validation.Valid;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
-import javax.validation.Valid;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.pojo.CommonResult.success;

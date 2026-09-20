@@ -2,13 +2,13 @@ package com.lxzy.nomix.module.pay.framework.pay.core.client;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import javax.validation.Validator;
+import jakarta.validation.Validator;
 
 /**
  * 支付客户端的配置，本质是支付渠道的配置
  * 每个不同的渠道，需要不同的配置，通过子类来定义
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @JsonTypeInfo(use = JsonTypeInfo.Id.CLASS)
 // @JsonTypeInfo 注解的作用，Jackson 多态

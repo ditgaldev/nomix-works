@@ -5,14 +5,14 @@ import com.lxzy.nomix.module.mes.controller.admin.qc.rqc.vo.MesQcRqcPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.qc.rqc.vo.MesQcRqcSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.defectrecord.MesQcDefectRecordDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.rqc.MesQcRqcDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * MES 退货检验单（RQC） Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesQcRqcService {
 

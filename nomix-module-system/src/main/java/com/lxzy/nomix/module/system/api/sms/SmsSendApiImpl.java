@@ -5,12 +5,12 @@ import com.lxzy.nomix.module.system.service.sms.SmsSendService;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * 短信发送 API 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

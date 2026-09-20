@@ -5,9 +5,9 @@ import lombok.Data;
 import org.hibernate.validator.constraints.URL;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -28,7 +28,7 @@ public class MemberUserBaseVO {
     @NotNull(message = "状态不能为空")
     private Byte status;
 
-    @Schema(description = "邮箱", example = "member@example.com")
+    @Schema(description = "邮箱", example = "member@nomix.cn")
     @Email(message = "邮箱格式不正确")
     @Size(max = 50, message = "邮箱长度不能超过 50 个字符")
     private String email;
@@ -37,7 +37,7 @@ public class MemberUserBaseVO {
     @NotNull(message = "用户昵称不能为空")
     private String nickname;
 
-    @Schema(description = "头像", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "头像", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn/x.png")
     @URL(message = "头像必须是 URL 格式")
     private String avatar;
 

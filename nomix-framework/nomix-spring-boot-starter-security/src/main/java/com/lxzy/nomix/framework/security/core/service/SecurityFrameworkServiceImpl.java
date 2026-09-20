@@ -14,7 +14,7 @@ import static com.lxzy.nomix.framework.security.core.util.SecurityFrameworkUtils
 /**
  * 默认的 {@link SecurityFrameworkService} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @AllArgsConstructor
 public class SecurityFrameworkServiceImpl implements SecurityFrameworkService {

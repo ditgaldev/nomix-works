@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.pms.enums;
 /**
  * PMS 字典类型的枚举类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface DictTypeConstants {
 

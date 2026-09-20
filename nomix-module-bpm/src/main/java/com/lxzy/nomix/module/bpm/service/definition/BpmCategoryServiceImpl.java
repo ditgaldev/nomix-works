@@ -8,11 +8,11 @@ import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.category.BpmCate
 import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.category.BpmCategorySaveReqVO;
 import com.lxzy.nomix.module.bpm.dal.dataobject.definition.BpmCategoryDO;
 import com.lxzy.nomix.module.bpm.dal.mysql.category.BpmCategoryMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -25,7 +25,7 @@ import static com.lxzy.nomix.module.bpm.enums.ErrorCodeConstants.*;
 /**
  * BPM 流程分类 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated
@@ -125,7 +125,7 @@ public class BpmCategoryServiceImpl implements BpmCategoryService {
     @Transactional(rollbackFor = Exception.class)
     public void updateCategorySortBatch(List<Long> ids) {
         // 校验分类都存在
-        List<BpmCategoryDO> categories = bpmCategoryMapper.selectBatchIds(ids);
+        List<BpmCategoryDO> categories = bpmCategoryMapper.selectByIds(ids);
         if (categories.size() != ids.size()) {
             throw exception(CATEGORY_NOT_EXISTS);
         }

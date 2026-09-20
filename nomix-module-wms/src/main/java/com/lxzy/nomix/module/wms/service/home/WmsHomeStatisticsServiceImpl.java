@@ -11,9 +11,9 @@ import com.lxzy.nomix.module.wms.dal.mysql.home.WmsHomeStatisticsMapper;
 import com.lxzy.nomix.module.wms.enums.order.WmsOrderStatusEnum;
 import com.lxzy.nomix.module.wms.enums.order.WmsOrderTypeEnum;
 import com.lxzy.nomix.module.wms.service.md.warehouse.WmsWarehouseService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -31,7 +31,7 @@ import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.getDa
 /**
  * WMS 首页统计 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class WmsHomeStatisticsServiceImpl implements WmsHomeStatisticsService {

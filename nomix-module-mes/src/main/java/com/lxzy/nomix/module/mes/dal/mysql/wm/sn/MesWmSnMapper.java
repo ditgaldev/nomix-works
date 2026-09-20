@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * MES SN 码 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesWmSnMapper extends BaseMapperX<MesWmSnDO> {

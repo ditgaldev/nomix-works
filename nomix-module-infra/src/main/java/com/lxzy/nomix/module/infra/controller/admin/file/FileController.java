@@ -16,6 +16,11 @@ import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.annotation.Resource;
+import jakarta.annotation.security.PermitAll;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -23,11 +28,6 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.annotation.Resource;
-import javax.annotation.security.PermitAll;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.validation.Valid;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.pojo.CommonResult.success;
@@ -112,8 +112,8 @@ public class FileController {
             throw new IllegalArgumentException("结尾的 path 路径必须传递");
         }
         // 解码，解决中文、%、+ 等特殊字符路径的问题
-        // 
-        // 
+        // https://github.com/ditgaldev/nomix-works/pulls/807/
+        // https://github.com/ditgaldev/nomix-works/pulls/1432/
         path = HttpUtils.decodeUrlPath(path);
 
         // 读取内容

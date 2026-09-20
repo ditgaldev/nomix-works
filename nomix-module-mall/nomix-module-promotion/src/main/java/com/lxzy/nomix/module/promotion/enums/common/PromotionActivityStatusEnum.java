@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * 促销活动的状态枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @AllArgsConstructor
 @Getter

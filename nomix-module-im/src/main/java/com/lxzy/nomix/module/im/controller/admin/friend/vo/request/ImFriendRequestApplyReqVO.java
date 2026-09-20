@@ -3,15 +3,14 @@ package com.lxzy.nomix.module.im.controller.admin.friend.vo.request;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.im.enums.friend.ImFriendAddSourceEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
-
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 /**
  * IM 好友申请 - 发起 Request VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Schema(description = "管理后台 - IM 好友申请发起 Request VO")
 @Data

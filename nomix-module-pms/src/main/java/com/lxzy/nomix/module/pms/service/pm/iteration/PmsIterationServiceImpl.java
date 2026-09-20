@@ -21,7 +21,7 @@ import com.lxzy.nomix.module.pms.service.pm.project.PmsProjectMemberService;
 import com.lxzy.nomix.module.pms.service.pm.workitem.PmsWorkItemActivityService;
 import com.lxzy.nomix.module.pms.service.pm.workitem.PmsWorkItemService;
 import com.lxzy.nomix.module.pms.service.pm.workitem.PmsWorkItemWorkLogService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -49,7 +49,7 @@ import static com.lxzy.nomix.module.pms.enums.ErrorCodeConstants.PROJECT_STATUS_
 /**
  * PMS 项目迭代 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

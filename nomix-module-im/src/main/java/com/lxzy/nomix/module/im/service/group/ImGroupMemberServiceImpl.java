@@ -11,6 +11,7 @@ import com.lxzy.nomix.module.im.dal.mysql.group.ImGroupMemberMapper;
 import com.lxzy.nomix.module.im.enums.group.ImGroupMemberRoleEnum;
 import com.lxzy.nomix.module.im.service.message.ImGroupMessageService;
 import com.lxzy.nomix.module.im.service.message.dto.ImGroupMessageSendDTO;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
@@ -19,7 +20,6 @@ import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.*;
 
@@ -33,7 +33,7 @@ import static com.lxzy.nomix.module.im.enums.ErrorCodeConstants.GROUP_MEMBER_NOT
 /**
  * 群成员 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 @Service

@@ -4,13 +4,12 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.wms.controller.admin.order.movement.vo.order.WmsMovementOrderPageReqVO;
 import com.lxzy.nomix.module.wms.controller.admin.order.movement.vo.order.WmsMovementOrderSaveReqVO;
 import com.lxzy.nomix.module.wms.dal.dataobject.order.movement.WmsMovementOrderDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * WMS 移库单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface WmsMovementOrderService {
 

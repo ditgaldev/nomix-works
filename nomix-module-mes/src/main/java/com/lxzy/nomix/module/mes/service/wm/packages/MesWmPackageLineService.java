@@ -4,13 +4,12 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.wm.packages.vo.line.MesWmPackageLinePageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.wm.packages.vo.line.MesWmPackageLineSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.packages.MesWmPackageLineDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * MES 装箱明细 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesWmPackageLineService {
 

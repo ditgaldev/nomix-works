@@ -7,7 +7,7 @@ import com.lxzy.nomix.module.hrm.controller.admin.attendance.vo.holiday.HrmAtten
 import com.lxzy.nomix.module.hrm.controller.admin.attendance.vo.holiday.HrmAttendanceHolidaySaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.attendance.config.HrmAttendanceHolidayDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.attendance.config.HrmAttendanceHolidayMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -26,7 +26,7 @@ import static com.lxzy.nomix.module.hrm.enums.ErrorCodeConstants.ATTENDANCE_HOLI
 /**
  * HRM 考勤节假日 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

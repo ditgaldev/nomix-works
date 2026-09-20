@@ -14,10 +14,10 @@ import com.lxzy.nomix.module.product.service.history.ProductBrowseHistoryService
 import com.lxzy.nomix.module.product.service.spu.ProductSpuService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.annotation.Resource;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
-import javax.validation.Valid;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;

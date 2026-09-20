@@ -9,7 +9,7 @@ import java.io.StringWriter;
 /**
  * 链路追踪 Util
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class TracerFrameworkUtils {
 

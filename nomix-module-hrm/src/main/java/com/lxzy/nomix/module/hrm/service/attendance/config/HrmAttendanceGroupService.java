@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.hrm.controller.admin.attendance.vo.group.HrmAttenda
 import com.lxzy.nomix.module.hrm.controller.admin.attendance.vo.group.HrmAttendanceGroupSaveReqVO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.attendance.config.HrmAttendanceGroupDO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.attendance.config.HrmAttendanceHolidayDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * HRM 考勤组 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmAttendanceGroupService {
 

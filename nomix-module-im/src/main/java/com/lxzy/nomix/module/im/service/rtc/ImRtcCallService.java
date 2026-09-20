@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * IM 实时通话 Service
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ImRtcCallService {
 

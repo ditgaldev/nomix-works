@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.hrm.controller.admin.attendance.vo.holiday;
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.hrm.enums.attendance.config.HrmAttendanceHolidayTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.time.LocalDateTime;

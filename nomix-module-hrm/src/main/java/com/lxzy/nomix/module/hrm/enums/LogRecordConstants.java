@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.hrm.enums;
 /**
  * HRM 操作日志常量
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface LogRecordConstants {
 

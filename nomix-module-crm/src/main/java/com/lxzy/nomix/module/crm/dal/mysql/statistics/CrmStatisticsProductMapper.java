@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * CRM 产品分析 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface CrmStatisticsProductMapper {

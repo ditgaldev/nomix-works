@@ -12,7 +12,7 @@ import lombok.ToString;
 /**
  * PMS 个人知识库分组关系 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("pms_knowledge_group_relation")
 @KeySequence("pms_knowledge_group_relation_seq")

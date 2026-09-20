@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 /**
  * MES 流转卡工序记录 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_pro_card_process")
 @KeySequence("mes_pro_card_process_seq")

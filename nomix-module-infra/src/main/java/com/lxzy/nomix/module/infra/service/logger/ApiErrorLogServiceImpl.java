@@ -10,11 +10,11 @@ import com.lxzy.nomix.module.infra.controller.admin.logger.vo.apierrorlog.ApiErr
 import com.lxzy.nomix.module.infra.dal.dataobject.logger.ApiErrorLogDO;
 import com.lxzy.nomix.module.infra.dal.mysql.logger.ApiErrorLogMapper;
 import com.lxzy.nomix.module.infra.enums.logger.ApiErrorLogProcessStatusEnum;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -25,7 +25,7 @@ import static com.lxzy.nomix.module.infra.enums.ErrorCodeConstants.API_ERROR_LOG
 /**
  * API 错误日志 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated
@@ -48,7 +48,7 @@ public class ApiErrorLogServiceImpl implements ApiErrorLogService {
                 TenantUtils.executeIgnore(() -> apiErrorLogMapper.insert(apiErrorLog));
             }
         } catch (Exception ex) {
-            // 兜底处理，目前只有 nomix-cloud 会发生：
+            // 兜底处理，目前只有 nomix-cloud 会发生：https://gitee.com/nomixcode/nomix-cloud-mini/issues/IC1O0A
             log.error("[createApiErrorLog][记录时({}) 发生异常]", createDTO, ex);
         }
     }

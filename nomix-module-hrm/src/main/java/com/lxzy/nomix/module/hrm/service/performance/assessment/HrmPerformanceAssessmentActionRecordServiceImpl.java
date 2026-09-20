@@ -4,7 +4,7 @@ import cn.hutool.core.collection.CollUtil;
 import com.lxzy.nomix.module.hrm.dal.dataobject.performance.assessment.HrmPerformanceAssessmentActionRecordDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.performance.assessment.HrmPerformanceAssessmentActionRecordMapper;
 import com.lxzy.nomix.module.hrm.enums.performance.assessment.HrmPerformanceAssessmentActionTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * HRM 员工绩效考核动作记录 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class HrmPerformanceAssessmentActionRecordServiceImpl

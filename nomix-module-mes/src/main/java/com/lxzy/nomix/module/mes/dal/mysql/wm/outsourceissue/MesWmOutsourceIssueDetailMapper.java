@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * MES 外协发料单明细 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesWmOutsourceIssueDetailMapper extends BaseMapperX<MesWmOutsourceIssueDetailDO> {

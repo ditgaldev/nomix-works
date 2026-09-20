@@ -6,10 +6,10 @@ import com.lxzy.nomix.module.product.controller.admin.history.vo.ProductBrowseHi
 import com.lxzy.nomix.module.product.dal.dataobject.history.ProductBrowseHistoryDO;
 import com.lxzy.nomix.module.product.dal.mysql.history.ProductBrowseHistoryMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 
 /**

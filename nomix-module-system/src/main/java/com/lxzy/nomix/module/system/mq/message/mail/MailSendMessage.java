@@ -1,16 +1,16 @@
 package com.lxzy.nomix.module.system.mq.message.mail;
 
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.io.File;
 import java.util.Collection;
 
 /**
  * 邮箱发送消息
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class MailSendMessage {

@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * MES 盘点任务 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesWmStockTakingTaskMapper extends BaseMapperX<MesWmStockTakingTaskDO> {

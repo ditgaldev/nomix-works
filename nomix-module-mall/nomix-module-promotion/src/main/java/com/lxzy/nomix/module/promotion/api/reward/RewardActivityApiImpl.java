@@ -2,17 +2,17 @@ package com.lxzy.nomix.module.promotion.api.reward;
 
 import com.lxzy.nomix.module.promotion.api.reward.dto.RewardActivityMatchRespDTO;
 import com.lxzy.nomix.module.promotion.service.reward.RewardActivityService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * 满减送活动 API 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

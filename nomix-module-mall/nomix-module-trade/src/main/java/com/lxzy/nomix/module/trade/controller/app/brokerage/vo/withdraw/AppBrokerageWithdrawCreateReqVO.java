@@ -5,14 +5,14 @@ import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.pay.enums.PayChannelEnum;
 import com.lxzy.nomix.module.trade.enums.brokerage.BrokerageWithdrawTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.Min;
 import lombok.Data;
 import org.hibernate.validator.constraints.URL;
 
-import javax.validation.Validator;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.PositiveOrZero;
+import jakarta.validation.Validator;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.PositiveOrZero;
 
 @Schema(description = "用户 App - 分销提现创建 Request VO")
 @Data
@@ -36,7 +36,7 @@ public class AppBrokerageWithdrawCreateReqVO {
     @NotBlank(message = "提现姓名不能为空", groups = {Bank.class, WechatApi.class, AlipayApi.class})
     private String userName;
 
-    @Schema(description = "收款码的图片", example = "")
+    @Schema(description = "收款码的图片", example = "https://www.nomix.cn/1.png")
     @URL(message = "收款码的图片，必须是一个 URL", groups = {WechatQR.class, AlipayQR.class})
     private String qrCodeUrl;
 

@@ -14,7 +14,7 @@ import com.lxzy.nomix.module.hrm.dal.dataobject.performance.plan.HrmPerformanceP
 /**
  * HRM 绩效评分 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmPerformanceAssessmentReviewService {
 

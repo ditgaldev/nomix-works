@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * {@link AnthropicChatModel} 集成测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class AnthropicChatModelTest {
 

@@ -18,7 +18,7 @@ import java.util.Map;
 /**
  * HRM 绩效流程 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmPerformanceAssessmentProcessService {
 

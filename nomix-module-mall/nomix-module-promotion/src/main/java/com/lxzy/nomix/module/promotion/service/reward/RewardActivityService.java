@@ -10,8 +10,8 @@ import com.lxzy.nomix.module.promotion.controller.admin.reward.vo.RewardActivity
 import com.lxzy.nomix.module.promotion.controller.admin.reward.vo.RewardActivityUpdateReqVO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.reward.RewardActivityDO;
 import com.lxzy.nomix.module.promotion.enums.common.PromotionConditionTypeEnum;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -21,7 +21,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.ge
 /**
  * 满减送活动 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface RewardActivityService {
 

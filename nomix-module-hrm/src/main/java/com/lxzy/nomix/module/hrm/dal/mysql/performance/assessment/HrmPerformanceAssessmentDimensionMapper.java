@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * HRM 绩效员工维度 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface HrmPerformanceAssessmentDimensionMapper

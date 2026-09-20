@@ -42,11 +42,11 @@ import com.lxzy.nomix.module.hrm.service.employee.info.HrmEmployeeService;
 import com.lxzy.nomix.module.system.api.dept.DeptApi;
 import com.lxzy.nomix.module.system.api.notify.NotifyMessageSendApi;
 import com.lxzy.nomix.module.system.api.notify.dto.NotifySendSingleToUserReqDTO;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -76,7 +76,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmPerformanceAssessmentProcessServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmPerformanceAssessmentProcessServiceImpl.class)
 public class HrmPerformanceAssessmentProcessServiceImplTest extends BaseDbUnitTest {
@@ -100,15 +100,15 @@ public class HrmPerformanceAssessmentProcessServiceImplTest extends BaseDbUnitTe
     @Resource
     private HrmPerformancePlanMapper planMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmEmployeeService employeeService;
-    @MockBean
+    @MockitoBean
     private DeptApi deptApi;
-    @MockBean
+    @MockitoBean
     private HrmPerformancePlanService planService;
-    @MockBean
+    @MockitoBean
     private NotifyMessageSendApi notifyMessageSendApi;
-    @MockBean
+    @MockitoBean
     private HrmPerformanceAssessmentActionRecordService assessmentActionRecordService;
 
     @Test

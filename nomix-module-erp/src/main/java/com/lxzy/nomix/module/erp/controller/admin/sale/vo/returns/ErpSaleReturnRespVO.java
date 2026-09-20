@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.erp.controller.admin.sale.vo.returns;
 import cn.idev.excel.annotation.ExcelIgnoreUnannotated;
 import cn.idev.excel.annotation.ExcelProperty;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -73,7 +73,7 @@ public class ErpSaleReturnRespVO {
     @Schema(description = "其它金额，单位：元", requiredMode = Schema.RequiredMode.REQUIRED, example = "7127")
     private BigDecimal otherPrice;
 
-    @Schema(description = "附件地址", example = "")
+    @Schema(description = "附件地址", example = "https://www.nomix.cn")
     @ExcelProperty("附件地址")
     private String fileUrl;
 

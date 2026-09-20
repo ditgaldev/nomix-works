@@ -12,7 +12,7 @@ import java.util.Set;
 /**
  * PMS 知识内容协作权限 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface PmsKnowledgeContentPermissionService {
 

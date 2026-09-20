@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * FMS 账簿余额方向模式枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

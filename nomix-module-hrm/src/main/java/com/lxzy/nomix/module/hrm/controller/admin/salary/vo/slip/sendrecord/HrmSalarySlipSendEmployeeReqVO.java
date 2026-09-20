@@ -2,7 +2,7 @@ package com.lxzy.nomix.module.hrm.controller.admin.salary.vo.slip.sendrecord;
 
 import com.lxzy.nomix.framework.common.pojo.PageParam;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

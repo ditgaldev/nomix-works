@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.crm.service.customer;
 import com.lxzy.nomix.module.crm.controller.admin.customer.vo.poolconfig.CrmCustomerPoolConfigSaveReqVO;
 import com.lxzy.nomix.module.crm.dal.dataobject.customer.CrmCustomerPoolConfigDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 客户公海配置 Service 接口

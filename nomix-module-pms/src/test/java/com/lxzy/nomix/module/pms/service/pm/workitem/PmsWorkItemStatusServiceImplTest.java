@@ -23,10 +23,10 @@ import com.lxzy.nomix.module.pms.service.pm.iteration.PmsIterationService;
 import com.lxzy.nomix.module.pms.service.pm.project.PmsProjectMemberService;
 import com.lxzy.nomix.module.system.api.notify.NotifyMessageSendApi;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -47,7 +47,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link PmsWorkItemStatusServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import({PmsWorkItemStatusServiceImpl.class, PmsWorkItemBoardServiceImpl.class, PmsWorkItemServiceImpl.class})
 public class PmsWorkItemStatusServiceImplTest extends BaseDbUnitTest {
@@ -62,23 +62,23 @@ public class PmsWorkItemStatusServiceImplTest extends BaseDbUnitTest {
     @Resource
     private PmsWorkItemMapper workItemMapper;
 
-    @MockBean
+    @MockitoBean
     private PmsProjectMemberService projectMemberService;
-    @MockBean
+    @MockitoBean
     private PmsIterationService iterationService;
-    @MockBean
+    @MockitoBean
     private PmsWorkItemCommentService workItemCommentService;
-    @MockBean
+    @MockitoBean
     private PmsWorkItemWorkLogService workItemWorkLogService;
-    @MockBean
+    @MockitoBean
     private PmsWorkItemUserSortService workItemUserSortService;
-    @MockBean
+    @MockitoBean
     private PmsWorkItemLabelService workItemLabelService;
-    @MockBean
+    @MockitoBean
     private PmsWorkItemActivityService workItemActivityService;
-    @MockBean
+    @MockitoBean
     private NotifyMessageSendApi notifyMessageSendApi;
-    @MockBean
+    @MockitoBean
     private AdminUserApi adminUserApi;
 
     @Test

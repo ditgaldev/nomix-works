@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * 微信公众号消息的发送来源
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

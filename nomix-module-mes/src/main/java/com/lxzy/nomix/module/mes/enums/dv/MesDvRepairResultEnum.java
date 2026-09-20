@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * MES 维修结果枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

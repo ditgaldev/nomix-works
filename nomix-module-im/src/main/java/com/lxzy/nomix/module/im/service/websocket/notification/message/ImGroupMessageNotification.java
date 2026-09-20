@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * IM 群聊消息 WebSocket 统一推送通知
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class ImGroupMessageNotification {

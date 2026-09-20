@@ -7,7 +7,7 @@ import org.springframework.amqp.rabbit.annotation.*;
 /**
  * {@link RabbitMQWebSocketMessage} 广播消息的消费者，真正把消息发送出去
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RabbitListener(
         bindings = @QueueBinding(

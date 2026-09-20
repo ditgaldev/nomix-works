@@ -2,13 +2,13 @@ package com.lxzy.nomix.module.hrm.service.recruit.config;
 
 import com.lxzy.nomix.module.hrm.controller.admin.recruit.vo.config.HrmRecruitEliminateReasonSaveReqVO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.List;
 
 /**
  * HRM 招聘设置 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmRecruitConfigService {
 

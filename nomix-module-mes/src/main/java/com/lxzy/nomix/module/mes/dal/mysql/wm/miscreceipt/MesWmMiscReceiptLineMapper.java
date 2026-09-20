@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * MES 杂项入库单行 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface MesWmMiscReceiptLineMapper extends BaseMapperX<MesWmMiscReceiptLineDO> {

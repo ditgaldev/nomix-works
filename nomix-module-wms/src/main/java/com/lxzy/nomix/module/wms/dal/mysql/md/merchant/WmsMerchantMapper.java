@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * WMS 往来企业 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface WmsMerchantMapper extends BaseMapperX<WmsMerchantDO> {

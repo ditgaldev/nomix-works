@@ -10,7 +10,7 @@ import java.util.Objects;
 /**
  * 支付订单的状态枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

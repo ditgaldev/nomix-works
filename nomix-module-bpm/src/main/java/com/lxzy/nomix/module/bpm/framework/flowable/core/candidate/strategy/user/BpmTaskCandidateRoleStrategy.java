@@ -5,9 +5,9 @@ import com.lxzy.nomix.module.bpm.framework.flowable.core.candidate.BpmTaskCandid
 import com.lxzy.nomix.module.bpm.framework.flowable.core.enums.BpmTaskCandidateStrategyEnum;
 import com.lxzy.nomix.module.system.api.permission.PermissionApi;
 import com.lxzy.nomix.module.system.api.permission.RoleApi;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.Set;
 
 /**

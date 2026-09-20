@@ -9,10 +9,10 @@ import com.lxzy.nomix.module.pms.controller.admin.kb.interaction.vo.favorite.Pms
 import com.lxzy.nomix.module.pms.dal.dataobject.kb.interaction.PmsKnowledgeFavoriteDO;
 import com.lxzy.nomix.module.pms.dal.mysql.kb.interaction.PmsKnowledgeFavoriteMapper;
 import com.lxzy.nomix.module.pms.enums.kb.PmsKnowledgeObjectTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -34,7 +34,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link PmsKnowledgeFavoriteServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsKnowledgeFavoriteServiceImpl.class)
 public class PmsKnowledgeFavoriteServiceImplTest extends BaseDbUnitTest {
@@ -45,7 +45,7 @@ public class PmsKnowledgeFavoriteServiceImplTest extends BaseDbUnitTest {
     @Resource
     private PmsKnowledgeFavoriteMapper favoriteMapper;
 
-    @MockBean
+    @MockitoBean
     private PmsKnowledgeInteractionTargetService interactionTargetService;
 
     @Test

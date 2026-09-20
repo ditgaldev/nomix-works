@@ -13,7 +13,7 @@ import lombok.ToString;
 /**
  * PMS 知识内容协作权限 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("pms_knowledge_content_permission")
 @KeySequence("pms_knowledge_content_permission_seq")

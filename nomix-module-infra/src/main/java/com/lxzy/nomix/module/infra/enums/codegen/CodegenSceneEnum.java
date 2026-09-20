@@ -8,7 +8,7 @@ import static cn.hutool.core.util.ArrayUtil.*;
 /**
  * 代码生成的场景枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @AllArgsConstructor
 @Getter

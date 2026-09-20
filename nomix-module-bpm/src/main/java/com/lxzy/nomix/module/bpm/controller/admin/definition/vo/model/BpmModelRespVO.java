@@ -23,7 +23,7 @@ public class BpmModelRespVO extends BpmModelMetaInfoVO {
     @Schema(description = "流程名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "Nomix")
     private String name;
 
-    @Schema(description = "流程图标", example = "")
+    @Schema(description = "流程图标", example = "https://www.nomix.cn/nomix.jpg")
     private String icon;
 
     @Schema(description = "流程分类编号", example = "1")

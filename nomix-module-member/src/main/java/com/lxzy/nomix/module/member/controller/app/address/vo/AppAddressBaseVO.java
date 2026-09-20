@@ -2,7 +2,7 @@ package com.lxzy.nomix.module.member.controller.app.address.vo;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 // TODO Nomix：example 缺失
 /**

@@ -1,23 +1,24 @@
 package com.lxzy.nomix.module.bpm.service.definition;
 
-import com.lxzy.nomix.framework.common.pojo.PageResult;
-import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.expression.BpmProcessExpressionPageReqVO;
 import com.lxzy.nomix.module.bpm.controller.admin.definition.vo.expression.BpmProcessExpressionSaveReqVO;
-import com.lxzy.nomix.module.bpm.dal.dataobject.definition.BpmProcessExpressionDO;
-import com.lxzy.nomix.module.bpm.dal.mysql.definition.BpmProcessExpressionMapper;
 import org.springframework.stereotype.Service;
+import jakarta.annotation.Resource;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
+import com.lxzy.nomix.module.bpm.dal.dataobject.definition.BpmProcessExpressionDO;
+import com.lxzy.nomix.framework.common.pojo.PageResult;
+import com.lxzy.nomix.framework.common.util.object.BeanUtils;
+
+import com.lxzy.nomix.module.bpm.dal.mysql.definition.BpmProcessExpressionMapper;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static com.lxzy.nomix.module.bpm.enums.ErrorCodeConstants.PROCESS_EXPRESSION_NOT_EXISTS;
+import static com.lxzy.nomix.module.bpm.enums.ErrorCodeConstants.*;
 
 /**
  * BPM 流程表达式 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

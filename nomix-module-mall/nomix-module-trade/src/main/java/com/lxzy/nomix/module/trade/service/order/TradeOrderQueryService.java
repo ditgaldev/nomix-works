@@ -17,7 +17,7 @@ import static java.util.Collections.singleton;
 /**
  * 交易订单【读】 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface TradeOrderQueryService {
 

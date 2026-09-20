@@ -24,8 +24,8 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.List;
@@ -76,7 +76,7 @@ public class MpAccountServiceImpl implements MpAccountService {
                 if (!ex.getMessage().contains("doesn't exist")) {
                     throw ex;
                 }
-                log.error("[微信公众号 nomix-module-mp - 表结构未导入][参考  开启]");
+                log.error("[微信公众号 nomix-module-mp - 表结构未导入][参考 https://doc.nomix.cn/mp/build/ 开启]");
             }
             log.info("[initLocalCacheIfUpdate][缓存公众号账号，数量为:{}]", accounts.size());
 

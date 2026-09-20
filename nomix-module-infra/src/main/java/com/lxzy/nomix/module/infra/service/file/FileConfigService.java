@@ -5,14 +5,14 @@ import com.lxzy.nomix.module.infra.controller.admin.file.vo.config.FileConfigPag
 import com.lxzy.nomix.module.infra.controller.admin.file.vo.config.FileConfigSaveReqVO;
 import com.lxzy.nomix.module.infra.dal.dataobject.file.FileConfigDO;
 import com.lxzy.nomix.module.infra.framework.file.core.client.FileClient;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
 /**
  * 文件配置 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface FileConfigService {
 

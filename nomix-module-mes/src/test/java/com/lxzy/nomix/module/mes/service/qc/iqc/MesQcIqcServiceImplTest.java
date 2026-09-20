@@ -14,22 +14,22 @@ import com.lxzy.nomix.module.mes.service.wm.outsourcereceipt.MesWmOutsourceRecei
 import com.lxzy.nomix.module.mes.service.qc.indicatorresult.MesQcIndicatorResultService;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
+
 import java.math.BigDecimal;
 
 import static com.lxzy.nomix.framework.test.core.util.RandomUtils.randomLongId;
 import static com.lxzy.nomix.framework.test.core.util.RandomUtils.randomPojo;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 /**
  * {@link MesQcIqcServiceImpl} 的单元测试
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(MesQcIqcServiceImpl.class)
 public class MesQcIqcServiceImplTest extends BaseDbUnitTest {
@@ -40,23 +40,23 @@ public class MesQcIqcServiceImplTest extends BaseDbUnitTest {
     @Resource
     private MesQcIqcMapper iqcMapper;
 
-    @MockBean
+    @MockitoBean
     private MesWmArrivalNoticeService arrivalNoticeService;
-    @MockBean
+    @MockitoBean
     private MesWmOutsourceReceiptService outsourceReceiptService;
-    @MockBean
+    @MockitoBean
     private MesQcIqcLineService iqcLineService;
-    @MockBean
+    @MockitoBean
     private MesQcDefectRecordService defectRecordService;
-    @MockBean
+    @MockitoBean
     private MesMdVendorService vendorService;
-    @MockBean
+    @MockitoBean
     private MesMdItemService itemService;
-    @MockBean
+    @MockitoBean
     private MesQcTemplateItemService templateItemService;
-    @MockBean
+    @MockitoBean
     private AdminUserApi adminUserApi;
-    @MockBean
+    @MockitoBean
     private MesQcIndicatorResultService indicatorResultService;
 
     @Test

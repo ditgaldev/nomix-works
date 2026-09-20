@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * PMS 项目优先级枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

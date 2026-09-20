@@ -24,10 +24,10 @@ import com.lxzy.nomix.module.trade.framework.delivery.core.client.ExpressClientF
 import com.lxzy.nomix.module.trade.framework.delivery.core.client.dto.ExpressTrackQueryReqDTO;
 import com.lxzy.nomix.module.trade.framework.delivery.core.client.dto.ExpressTrackRespDTO;
 import com.lxzy.nomix.module.trade.service.delivery.DeliveryExpressService;
+import jakarta.annotation.Resource;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.*;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -38,7 +38,7 @@ import static com.lxzy.nomix.module.trade.enums.ErrorCodeConstants.ORDER_NOT_FOU
 /**
  * 交易订单【读】 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 public class TradeOrderQueryServiceImpl implements TradeOrderQueryService {

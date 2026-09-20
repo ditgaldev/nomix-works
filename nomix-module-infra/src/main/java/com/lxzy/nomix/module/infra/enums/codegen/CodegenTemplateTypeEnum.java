@@ -9,7 +9,7 @@ import java.util.Objects;
 /**
  * 代码生成模板类型
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @AllArgsConstructor
 @Getter

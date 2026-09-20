@@ -16,7 +16,7 @@ import java.util.Objects;
 /**
  * ERP 销售订单 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface ErpSaleOrderMapper extends BaseMapperX<ErpSaleOrderDO> {

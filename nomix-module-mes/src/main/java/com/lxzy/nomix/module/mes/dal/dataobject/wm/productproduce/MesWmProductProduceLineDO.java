@@ -15,7 +15,7 @@ import com.lxzy.nomix.module.mes.enums.DictTypeConstants;
 /**
  * MES 生产入库单行 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_wm_product_produce_line")
 @KeySequence("mes_wm_product_produce_line_seq")

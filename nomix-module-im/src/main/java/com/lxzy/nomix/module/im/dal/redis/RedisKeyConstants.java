@@ -4,7 +4,7 @@ package com.lxzy.nomix.module.im.dal.redis;
 /**
  * IM Redis Key 枚举类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface RedisKeyConstants {
 

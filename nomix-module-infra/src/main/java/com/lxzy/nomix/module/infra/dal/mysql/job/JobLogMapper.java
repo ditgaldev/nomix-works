@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 /**
  * 任务日志 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface JobLogMapper extends BaseMapperX<JobLogDO> {

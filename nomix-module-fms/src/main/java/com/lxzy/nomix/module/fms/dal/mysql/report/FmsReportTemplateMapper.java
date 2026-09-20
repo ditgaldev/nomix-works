@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * FMS 报表模板 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface FmsReportTemplateMapper extends BaseMapperX<FmsReportTemplateDO> {

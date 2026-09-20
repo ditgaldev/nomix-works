@@ -9,10 +9,10 @@ import com.lxzy.nomix.module.hrm.controller.admin.performance.vo.assessmenttempl
 import com.lxzy.nomix.module.hrm.dal.dataobject.performance.config.HrmPerformanceAssessmentTemplateDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.performance.config.HrmPerformanceAssessmentTemplateMapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -35,7 +35,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmPerformanceAssessmentTemplateServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmPerformanceAssessmentTemplateServiceImpl.class)
 public class HrmPerformanceAssessmentTemplateServiceImplTest extends BaseDbUnitTest {
@@ -46,7 +46,7 @@ public class HrmPerformanceAssessmentTemplateServiceImplTest extends BaseDbUnitT
     @Resource
     private HrmPerformanceAssessmentTemplateMapper assessmentTemplateMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmPerformancePlanService performancePlanService;
 
     @Test

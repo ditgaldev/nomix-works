@@ -4,7 +4,7 @@ import com.lxzy.nomix.module.member.controller.admin.signin.vo.config.MemberSign
 import com.lxzy.nomix.module.member.controller.admin.signin.vo.config.MemberSignInConfigUpdateReqVO;
 import com.lxzy.nomix.module.member.dal.dataobject.signin.MemberSignInConfigDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.List;
 
 /**

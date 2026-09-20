@@ -3,19 +3,19 @@ package com.lxzy.nomix.module.infra.framework.file.core.utils;
 import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.util.StrUtil;
 import com.lxzy.nomix.framework.common.util.http.HttpUtils;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.tika.Tika;
 import org.apache.tika.mime.MimeTypeException;
 import org.apache.tika.mime.MimeTypes;
 
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
  * 文件类型 Utils
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class FileTypeUtils {
@@ -84,7 +84,7 @@ public class FileTypeUtils {
         response.setContentType(mineType);
         // 设置内容显示、下载文件名：https://www.cnblogs.com/wq-9/articles/12165056.html
         if (isImage(mineType)) {
-            // 参见  讨论
+            // 参见 https://github.com/ditgaldev/nomix-works/issues/692 讨论
             response.setHeader("Content-Disposition", buildContentDisposition("inline", filename));
         } else {
             response.setHeader("Content-Disposition", buildContentDisposition("attachment", filename));

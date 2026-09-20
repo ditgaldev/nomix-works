@@ -6,7 +6,7 @@ import lombok.Data;
 /**
  * IM 私聊消息发送 DTO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class ImPrivateMessageSendDTO {

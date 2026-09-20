@@ -38,6 +38,8 @@ import com.lxzy.nomix.module.iot.dal.redis.RedisKeyConstants;
 import com.lxzy.nomix.module.iot.enums.product.IotProductDeviceTypeEnum;
 import com.lxzy.nomix.module.iot.service.device.message.IotDeviceMessageService;
 import com.lxzy.nomix.module.iot.service.product.IotProductService;
+import jakarta.annotation.Resource;
+import jakarta.validation.ConstraintViolationException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
@@ -48,8 +50,6 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
 import javax.annotation.Nullable;
-import javax.annotation.Resource;
-import javax.validation.ConstraintViolationException;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.*;
@@ -62,7 +62,7 @@ import static java.util.Collections.singletonList;
 /**
  * IoT 设备 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

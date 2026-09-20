@@ -31,7 +31,7 @@ import java.util.Objects;
  * <p>
  * 由 {@link com.lxzy.nomix.module.im.framework.rtc.config.ImRtcConfiguration} 注册为 Bean，本类不带 {@code @Component}
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class LiveKitClient {

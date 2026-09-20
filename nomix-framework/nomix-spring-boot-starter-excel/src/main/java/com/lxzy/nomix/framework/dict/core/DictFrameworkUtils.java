@@ -18,7 +18,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * 字典工具类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class DictFrameworkUtils {

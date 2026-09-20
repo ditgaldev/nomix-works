@@ -14,7 +14,7 @@ import java.util.Objects;
  * <p>
  * 状态机：CREATED → RUNNING → ENDED；CREATED 直接到 ENDED 表示无人接听 / 主叫取消
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @RequiredArgsConstructor
 @Getter

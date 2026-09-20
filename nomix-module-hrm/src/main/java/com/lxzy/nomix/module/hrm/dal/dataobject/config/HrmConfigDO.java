@@ -15,7 +15,7 @@ import lombok.ToString;
 /**
  * HRM 通用业务配置 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("hrm_config")
 @KeySequence("hrm_config_seq")

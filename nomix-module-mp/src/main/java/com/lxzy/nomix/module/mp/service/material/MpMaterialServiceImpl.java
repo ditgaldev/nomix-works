@@ -25,7 +25,7 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.io.File;
 import java.io.IOException;
 import java.util.Collection;
@@ -37,7 +37,7 @@ import static com.lxzy.nomix.module.mp.enums.ErrorCodeConstants.*;
 /**
  * 公众号素材 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

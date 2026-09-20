@@ -6,13 +6,13 @@ import com.lxzy.nomix.module.bpm.controller.admin.oa.vo.BpmOALeaveCreateReqVO;
 import com.lxzy.nomix.module.bpm.controller.admin.oa.vo.BpmOALeavePageReqVO;
 import com.lxzy.nomix.module.bpm.dal.dataobject.oa.BpmOALeaveDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 请假申请 Service 接口
  *
  * @author jason
- * @author Nomix
+ * @author Nomix源码
  */
 public interface BpmOALeaveService {
 

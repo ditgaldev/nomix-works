@@ -11,7 +11,7 @@ import com.lxzy.nomix.module.trade.enums.brokerage.BrokerageRecordStatusEnum;
 import com.lxzy.nomix.module.trade.service.brokerage.bo.BrokerageAddReqBO;
 import com.lxzy.nomix.module.trade.service.brokerage.bo.UserBrokerageSummaryRespBO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;

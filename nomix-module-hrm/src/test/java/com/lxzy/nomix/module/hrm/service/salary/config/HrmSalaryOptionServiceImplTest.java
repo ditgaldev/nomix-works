@@ -6,7 +6,7 @@ import com.lxzy.nomix.module.hrm.dal.dataobject.salary.config.HrmSalaryOptionDO;
 import com.lxzy.nomix.module.hrm.dal.dataobject.salary.config.HrmSalaryOptionTemplateDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.salary.config.HrmSalaryOptionMapper;
 import com.lxzy.nomix.module.hrm.dal.mysql.salary.config.HrmSalaryOptionTemplateMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
@@ -23,7 +23,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 /**
  * {@link HrmSalaryOptionServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmSalaryOptionServiceImpl.class)
 public class HrmSalaryOptionServiceImplTest extends BaseDbUnitTest {

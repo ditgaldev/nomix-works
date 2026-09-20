@@ -11,7 +11,7 @@ import com.lxzy.nomix.module.pms.dal.dataobject.pm.project.PmsProjectGroupRelati
 import com.lxzy.nomix.module.pms.dal.mysql.pm.project.PmsProjectGroupMapper;
 import com.lxzy.nomix.module.pms.dal.mysql.pm.project.PmsProjectGroupRelationMapper;
 import com.lxzy.nomix.module.pms.enums.pm.project.PmsProjectGroupTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -37,7 +37,7 @@ import static com.lxzy.nomix.module.pms.enums.ErrorCodeConstants.PROJECT_GROUP_N
 /**
  * PMS 项目分组 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

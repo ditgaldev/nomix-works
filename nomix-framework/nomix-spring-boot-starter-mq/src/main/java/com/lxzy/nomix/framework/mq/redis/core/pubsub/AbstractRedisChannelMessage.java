@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 /**
  * Redis Channel Message 抽象类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public abstract class AbstractRedisChannelMessage extends AbstractRedisMessage {
 

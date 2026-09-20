@@ -7,8 +7,8 @@ import com.lxzy.nomix.module.crm.controller.admin.contact.vo.CrmContactTransferR
 import com.lxzy.nomix.module.crm.dal.dataobject.business.CrmBusinessDO;
 import com.lxzy.nomix.module.crm.dal.dataobject.contact.CrmContactDO;
 import com.lxzy.nomix.module.crm.dal.dataobject.customer.CrmCustomerDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
@@ -19,7 +19,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * CRM 联系人 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface CrmContactService {
 

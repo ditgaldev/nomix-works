@@ -9,11 +9,11 @@ import com.lxzy.nomix.module.product.controller.admin.category.vo.ProductCategor
 import com.lxzy.nomix.module.product.dal.dataobject.category.ProductCategoryDO;
 import com.lxzy.nomix.module.product.dal.mysql.category.ProductCategoryMapper;
 import com.lxzy.nomix.module.product.service.spu.ProductSpuService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -27,7 +27,7 @@ import static com.lxzy.nomix.module.product.enums.ErrorCodeConstants.*;
 /**
  * 商品分类 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

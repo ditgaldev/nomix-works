@@ -20,7 +20,7 @@ import java.time.LocalDateTime;
 /**
  * HRM 考勤请假 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("hrm_attendance_leave")
 @KeySequence("hrm_attendance_leave_seq")

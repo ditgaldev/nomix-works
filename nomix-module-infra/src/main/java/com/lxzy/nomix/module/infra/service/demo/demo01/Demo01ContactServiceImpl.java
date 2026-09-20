@@ -7,10 +7,10 @@ import com.lxzy.nomix.module.infra.controller.admin.demo.demo01.vo.Demo01Contact
 import com.lxzy.nomix.module.infra.controller.admin.demo.demo01.vo.Demo01ContactSaveReqVO;
 import com.lxzy.nomix.module.infra.dal.dataobject.demo.demo01.Demo01ContactDO;
 import com.lxzy.nomix.module.infra.dal.mysql.demo.demo01.Demo01ContactMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -19,7 +19,7 @@ import static com.lxzy.nomix.module.infra.enums.ErrorCodeConstants.DEMO01_CONTAC
 /**
  * 示例联系人 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

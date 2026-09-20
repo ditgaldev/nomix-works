@@ -6,10 +6,10 @@ import com.lxzy.nomix.module.hrm.dal.dataobject.salary.config.HrmSalaryTaxRuleDO
 import com.lxzy.nomix.module.hrm.dal.mysql.salary.config.HrmSalaryTaxRuleMapper;
 import com.lxzy.nomix.module.hrm.enums.salary.config.HrmSalaryTaxCycleTypeEnum;
 import com.lxzy.nomix.module.hrm.enums.salary.config.HrmSalaryTaxTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
@@ -33,7 +33,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmSalaryTaxRuleServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmSalaryTaxRuleServiceImpl.class)
 public class HrmSalaryTaxRuleServiceImplTest extends BaseDbUnitTest {
@@ -44,7 +44,7 @@ public class HrmSalaryTaxRuleServiceImplTest extends BaseDbUnitTest {
     @Resource
     private HrmSalaryTaxRuleMapper salaryTaxRuleMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmSalaryGroupService salaryGroupService;
 
     @Test

@@ -44,7 +44,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmPerformanceAssessmentQueryServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @ExtendWith(MockitoExtension.class)
 public class HrmPerformanceAssessmentQueryServiceImplTest {

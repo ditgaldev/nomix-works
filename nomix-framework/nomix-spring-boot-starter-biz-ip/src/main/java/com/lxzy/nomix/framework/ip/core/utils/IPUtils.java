@@ -10,7 +10,7 @@ import org.lionsoul.ip2region.xdb.Searcher;
 /**
  * IP 工具类
  *
- * IP 数据源来自 ip2region.xdb 精简版，基于 <a href=""/> 项目
+ * IP 数据源来自 ip2region.xdb 精简版，基于 <a href="https://gitee.com/ditgaldev/ip2region"/> 项目
  *
  * @author wanglhup
  */

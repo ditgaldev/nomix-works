@@ -5,7 +5,7 @@ import com.lxzy.nomix.module.hrm.controller.admin.employee.vo.changerecord.HrmEm
 import com.lxzy.nomix.module.hrm.dal.dataobject.employee.employment.HrmEmployeeChangeRecordDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.employee.employment.HrmEmployeeChangeRecordMapper;
 import com.lxzy.nomix.module.hrm.enums.employee.employment.HrmEmployeeChangeTypeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
@@ -23,7 +23,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * {@link HrmEmployeeChangeRecordServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmEmployeeChangeRecordServiceImpl.class)
 public class HrmEmployeeChangeRecordServiceImplTest extends BaseDbUnitTest {

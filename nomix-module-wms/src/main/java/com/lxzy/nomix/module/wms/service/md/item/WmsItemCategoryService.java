@@ -3,8 +3,8 @@ package com.lxzy.nomix.module.wms.service.md.item;
 import com.lxzy.nomix.module.wms.controller.admin.md.item.vo.category.WmsItemCategoryListReqVO;
 import com.lxzy.nomix.module.wms.controller.admin.md.item.vo.category.WmsItemCategorySaveReqVO;
 import com.lxzy.nomix.module.wms.dal.dataobject.md.item.WmsItemCategoryDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -15,7 +15,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * WMS 商品分类 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface WmsItemCategoryService {
 

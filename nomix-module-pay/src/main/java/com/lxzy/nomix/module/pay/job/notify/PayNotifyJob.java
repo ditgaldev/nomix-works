@@ -6,13 +6,13 @@ import com.lxzy.nomix.module.pay.service.notify.PayNotifyService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * 支付通知 Job
  * 通过不断扫描待通知的 PayNotifyTaskDO 记录，回调业务线的回调接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 @Slf4j

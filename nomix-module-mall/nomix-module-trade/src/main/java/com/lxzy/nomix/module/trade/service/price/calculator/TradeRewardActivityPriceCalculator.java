@@ -10,10 +10,10 @@ import com.lxzy.nomix.module.promotion.enums.common.PromotionTypeEnum;
 import com.lxzy.nomix.module.trade.enums.order.TradeOrderTypeEnum;
 import com.lxzy.nomix.module.trade.service.price.bo.TradePriceCalculateReqBO;
 import com.lxzy.nomix.module.trade.service.price.bo.TradePriceCalculateRespBO;
+import jakarta.annotation.Resource;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
@@ -26,7 +26,7 @@ import static com.lxzy.nomix.module.trade.service.price.calculator.TradePriceCal
 /**
  * 满减送活动的 {@link TradePriceCalculator} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 @Order(TradePriceCalculator.ORDER_REWARD_ACTIVITY)

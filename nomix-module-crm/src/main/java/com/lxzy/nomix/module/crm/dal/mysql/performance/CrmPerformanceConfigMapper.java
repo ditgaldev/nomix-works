@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * CRM 业绩目标配置 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface CrmPerformanceConfigMapper extends BaseMapperX<CrmPerformanceConfigDO> {

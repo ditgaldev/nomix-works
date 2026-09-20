@@ -9,7 +9,7 @@ import java.io.File;
 /**
  * 文件工具类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class FileUtils {
 

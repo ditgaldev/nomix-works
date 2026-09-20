@@ -5,13 +5,12 @@ import com.lxzy.nomix.module.mes.controller.admin.qc.template.vo.item.MesQcTempl
 import com.lxzy.nomix.module.mes.controller.admin.qc.template.vo.item.MesQcTemplateItemSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.template.MesQcTemplateItemDO;
 import com.lxzy.nomix.module.mes.enums.qc.MesQcTypeEnum;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * MES 质检方案-产品关联 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesQcTemplateItemService {
 

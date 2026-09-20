@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.md.unitmeasure.vo.MesMdUnitMeasurePageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.md.unitmeasure.vo.MesMdUnitMeasureSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.md.unitmeasure.MesMdUnitMeasureDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -15,7 +15,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * MES 计量单位 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesMdUnitMeasureService {
 

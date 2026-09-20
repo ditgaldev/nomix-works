@@ -5,8 +5,8 @@ import com.lxzy.nomix.module.erp.controller.admin.sale.vo.order.ErpSaleOrderPage
 import com.lxzy.nomix.module.erp.controller.admin.sale.vo.order.ErpSaleOrderSaveReqVO;
 import com.lxzy.nomix.module.erp.dal.dataobject.sale.ErpSaleOrderDO;
 import com.lxzy.nomix.module.erp.dal.dataobject.sale.ErpSaleOrderItemDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.List;
@@ -15,7 +15,7 @@ import java.util.Map;
 /**
  * ERP 销售订单 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ErpSaleOrderService {
 

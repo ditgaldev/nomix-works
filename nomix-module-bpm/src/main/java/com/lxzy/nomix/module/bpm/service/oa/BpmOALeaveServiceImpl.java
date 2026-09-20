@@ -10,11 +10,11 @@ import com.lxzy.nomix.module.bpm.controller.admin.oa.vo.BpmOALeavePageReqVO;
 import com.lxzy.nomix.module.bpm.dal.dataobject.oa.BpmOALeaveDO;
 import com.lxzy.nomix.module.bpm.dal.mysql.oa.BpmOALeaveMapper;
 import com.lxzy.nomix.module.bpm.enums.task.BpmTaskStatusEnum;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,7 +25,7 @@ import static com.lxzy.nomix.module.bpm.enums.ErrorCodeConstants.OA_LEAVE_NOT_EX
  * OA 请假申请 Service 实现类
  *
  * @author jason
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

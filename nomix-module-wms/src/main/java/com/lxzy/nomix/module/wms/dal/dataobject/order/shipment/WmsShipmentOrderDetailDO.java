@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 /**
  * WMS 出库单明细 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("wms_shipment_order_detail")
 @KeySequence("wms_shipment_order_detail_seq")

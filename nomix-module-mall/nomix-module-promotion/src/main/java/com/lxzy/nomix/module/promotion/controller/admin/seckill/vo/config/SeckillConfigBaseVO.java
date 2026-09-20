@@ -4,8 +4,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
-import javax.validation.constraints.AssertTrue;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.AssertTrue;
+import jakarta.validation.constraints.NotNull;
 import java.time.LocalTime;
 import java.util.List;
 
@@ -30,7 +30,7 @@ public class SeckillConfigBaseVO {
     @NotNull(message = "结束时间点不能为空")
     private String endTime;
 
-    @Schema(description = "秒杀轮播图", requiredMode = Schema.RequiredMode.REQUIRED, example = "[]")
+    @Schema(description = "秒杀轮播图", requiredMode = Schema.RequiredMode.REQUIRED, example = "[https://www.nomix.cn/xx.png]")
     @NotNull(message = "秒杀轮播图不能为空")
     private List<String> sliderPicUrls;
 

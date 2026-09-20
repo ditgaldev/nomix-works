@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 /**
  * IM 私聊消息 WebSocket 统一推送通知
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 @Accessors(chain = true)

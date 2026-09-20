@@ -12,14 +12,14 @@ import com.lxzy.nomix.module.system.dal.dataobject.social.SocialUserDO;
 import com.lxzy.nomix.module.system.dal.mysql.social.SocialUserBindMapper;
 import com.lxzy.nomix.module.system.dal.mysql.social.SocialUserMapper;
 import com.lxzy.nomix.module.system.enums.social.SocialTypeEnum;
+import jakarta.annotation.Resource;
+import jakarta.validation.constraints.NotNull;
 import lombok.extern.slf4j.Slf4j;
 import me.zhyd.oauth.model.AuthUser;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
-import javax.validation.constraints.NotNull;
 import java.util.Collections;
 import java.util.List;
 
@@ -31,7 +31,7 @@ import static com.lxzy.nomix.module.system.enums.ErrorCodeConstants.SOCIAL_USER_
 /**
  * 社交用户 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated
@@ -153,7 +153,7 @@ public class SocialUserServiceImpl implements SocialUserService {
         if (socialUser.getId() == null) {
             socialUserMapper.insert(socialUser);
         } else {
-            socialUser.clean(); // 避免 updateTime 不更新：
+            socialUser.clean(); // 避免 updateTime 不更新：https://gitee.com/nomixcode/nomix-boot-mini/issues/ID7FUL
             socialUserMapper.updateById(socialUser);
         }
         return socialUser;

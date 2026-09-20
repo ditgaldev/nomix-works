@@ -8,7 +8,7 @@ import java.util.Arrays;
 /**
  * FMS 首页财务指标枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

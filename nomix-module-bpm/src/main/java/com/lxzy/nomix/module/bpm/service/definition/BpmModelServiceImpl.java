@@ -21,10 +21,10 @@ import com.lxzy.nomix.module.bpm.framework.flowable.core.util.BpmnModelUtils;
 import com.lxzy.nomix.module.bpm.framework.flowable.core.util.FlowableUtils;
 import com.lxzy.nomix.module.bpm.framework.flowable.core.util.SimpleModelUtils;
 import com.lxzy.nomix.module.bpm.service.task.BpmProcessInstanceCopyService;
+import jakarta.annotation.Resource;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
-import org.flowable.bpmn.model.BpmnModel;
-import org.flowable.bpmn.model.StartEvent;
-import org.flowable.bpmn.model.UserTask;
+import org.flowable.bpmn.model.*;
 import org.flowable.common.engine.impl.db.SuspensionState;
 import org.flowable.engine.HistoryService;
 import org.flowable.engine.RepositoryService;
@@ -40,12 +40,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
-import javax.validation.Valid;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.convertMap;
@@ -56,7 +51,7 @@ import static com.lxzy.nomix.module.bpm.framework.flowable.core.util.BpmnModelUt
  * 流程模型实现：主要进行 Flowable {@link Model} 的维护
  *
  * @author yunlongn
- * @author Nomix
+ * @author Nomix源码
  * @author jason
  */
 @Service

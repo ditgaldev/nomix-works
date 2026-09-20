@@ -11,7 +11,7 @@ import static com.lxzy.nomix.framework.web.core.util.WebFrameworkUtils.HEADER_TE
  *
  * Producer 发送消息时，将 {@link TenantContextHolder} 租户编号，添加到消息的 Header 中
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class TenantRocketMQSendMessageHook implements SendMessageHook {
 

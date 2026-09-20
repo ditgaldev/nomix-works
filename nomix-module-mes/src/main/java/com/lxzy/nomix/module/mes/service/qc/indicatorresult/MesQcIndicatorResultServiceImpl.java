@@ -22,12 +22,12 @@ import com.lxzy.nomix.module.mes.service.qc.iqc.MesQcIqcService;
 import com.lxzy.nomix.module.mes.service.qc.oqc.MesQcOqcService;
 import com.lxzy.nomix.module.mes.service.qc.rqc.MesQcRqcService;
 import com.lxzy.nomix.module.system.api.dict.DictDataApi;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.net.URI;
 import java.util.*;
@@ -39,7 +39,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 检验结果 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

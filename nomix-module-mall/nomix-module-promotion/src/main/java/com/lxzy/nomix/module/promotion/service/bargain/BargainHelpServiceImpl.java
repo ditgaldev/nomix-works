@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 import java.util.Collection;
 import java.util.List;
@@ -27,7 +27,7 @@ import static com.lxzy.nomix.module.promotion.enums.ErrorCodeConstants.*;
 /**
  * 砍价助力 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

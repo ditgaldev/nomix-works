@@ -4,7 +4,7 @@ import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.crm.enums.performance.CrmPerformanceConfigBizTypeEnum;
 import com.lxzy.nomix.module.crm.enums.performance.CrmPerformanceConfigObjectTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.math.BigDecimal;

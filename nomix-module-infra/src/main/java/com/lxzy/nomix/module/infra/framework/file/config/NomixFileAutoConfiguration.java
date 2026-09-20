@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 文件配置类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Configuration(proxyBeanMethods = false)
 public class NomixFileAutoConfiguration {

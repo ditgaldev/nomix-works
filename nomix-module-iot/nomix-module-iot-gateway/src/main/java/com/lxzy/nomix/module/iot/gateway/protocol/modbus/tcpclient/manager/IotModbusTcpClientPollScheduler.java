@@ -22,7 +22,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.fi
 /**
  * IoT Modbus TCP Client 轮询调度器：管理点位的轮询定时器，调度读取任务并上报结果
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class IotModbusTcpClientPollScheduler extends AbstractIotModbusPollScheduler {

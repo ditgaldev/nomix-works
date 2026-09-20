@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 /**
  * FMS 辅助核算项目 Response VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Schema(description = "管理后台 - FMS 辅助核算项目 Response VO")
 @Data

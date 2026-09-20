@@ -2,8 +2,8 @@ package com.lxzy.nomix.module.bpm.service.message.dto;
 
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * BPM 发送任务被分配 Request DTO

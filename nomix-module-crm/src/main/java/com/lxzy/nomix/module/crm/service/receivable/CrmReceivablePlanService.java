@@ -5,15 +5,15 @@ import com.lxzy.nomix.module.crm.controller.admin.receivable.vo.plan.CrmReceivab
 import com.lxzy.nomix.module.crm.controller.admin.receivable.vo.plan.CrmReceivablePlanSaveReqVO;
 import com.lxzy.nomix.module.crm.dal.dataobject.customer.CrmCustomerDO;
 import com.lxzy.nomix.module.crm.dal.dataobject.receivable.CrmReceivablePlanDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * CRM 回款计划 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface CrmReceivablePlanService {
 

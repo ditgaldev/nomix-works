@@ -7,8 +7,8 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import java.time.LocalTime;
 
 /**
@@ -38,7 +38,7 @@ public class DeliveryPickUpStoreBaseVO {
     @NotBlank(message = "门店详细地址不能为空")
     private String detailAddress;
 
-    @Schema(description = "门店 logo", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "门店 logo", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn/1.png")
     @NotBlank(message = "门店 logo 不能为空")
     private String logo;
 

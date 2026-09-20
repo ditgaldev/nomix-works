@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * WebSocketMessageSender 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 @RequiredArgsConstructor

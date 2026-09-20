@@ -6,9 +6,9 @@ import lombok.Data;
 import me.chanjar.weixin.common.api.WxConsts;
 import org.hibernate.validator.constraints.URL;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import java.util.List;
 
 /**
@@ -16,7 +16,7 @@ import java.util.List;
  *
  * 为什么要有该 BO 呢？在自动回复、客服消息、菜单回复消息等场景，都涉及到 MP 给粉丝发送消息，所以使用该 BO 统一承接
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class MpMessageSendOutReqBO {

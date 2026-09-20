@@ -15,11 +15,11 @@ import com.lxzy.nomix.module.mes.enums.wm.BarcodeBizTypeEnum;
 import com.lxzy.nomix.module.mes.service.md.workstation.MesMdWorkstationService;
 import com.lxzy.nomix.module.mes.service.wm.barcode.MesWmBarcodeService;
 import com.lxzy.nomix.module.mes.service.wm.materialstock.MesWmMaterialStockService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;

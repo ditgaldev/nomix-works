@@ -6,16 +6,16 @@ import com.lxzy.nomix.framework.common.util.servlet.ServletUtils;
 import com.lxzy.nomix.framework.web.core.util.WebFrameworkUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import javax.servlet.FilterChain;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import static com.lxzy.nomix.framework.common.exception.enums.GlobalErrorCodeConstants.DEMO_DENY;
 
 /**
  * 演示 Filter，禁止用户发起写操作，避免影响测试数据
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class DemoFilter extends OncePerRequestFilter {
 

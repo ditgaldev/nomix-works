@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * PMS 知识库分组 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface PmsKnowledgeGroupService {
 

@@ -5,14 +5,14 @@ import com.lxzy.nomix.module.pay.dal.redis.RedisKeyConstants;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Repository;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
 /**
  * 支付序号的 Redis DAO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Repository
 public class PayNoRedisDAO {

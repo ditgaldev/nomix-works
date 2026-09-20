@@ -9,10 +9,10 @@ import com.lxzy.nomix.module.iot.dal.dataobject.product.IotProductCategoryDO;
 import com.lxzy.nomix.module.iot.dal.dataobject.product.IotProductDO;
 import com.lxzy.nomix.module.iot.dal.mysql.product.IotProductCategoryMapper;
 import com.lxzy.nomix.module.iot.service.device.IotDeviceService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.*;
 
@@ -24,7 +24,7 @@ import static com.lxzy.nomix.module.iot.enums.ErrorCodeConstants.PRODUCT_CATEGOR
 /**
  * IoT 产品分类 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

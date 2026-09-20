@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.erp.controller.admin.finance.vo.account.ErpAccountPageReqVO;
 import com.lxzy.nomix.module.erp.controller.admin.finance.vo.account.ErpAccountSaveReqVO;
 import com.lxzy.nomix.module.erp.dal.dataobject.finance.ErpAccountDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -15,7 +15,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * ERP 结算账户 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ErpAccountService {
 

@@ -28,6 +28,8 @@ import com.lxzy.nomix.module.system.api.social.SocialClientApi;
 import com.lxzy.nomix.module.system.api.social.dto.SocialWxaSubscribeMessageSendReqDTO;
 import com.lxzy.nomix.module.trade.api.order.TradeOrderApi;
 import com.lxzy.nomix.module.trade.enums.order.TradeOrderCancelTypeEnum;
+import jakarta.annotation.Nullable;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.scheduling.annotation.Async;
@@ -35,8 +37,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Nullable;
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collection;

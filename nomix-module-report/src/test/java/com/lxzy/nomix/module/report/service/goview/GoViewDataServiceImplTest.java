@@ -2,14 +2,14 @@ package com.lxzy.nomix.module.report.service.goview;
 
 import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.report.controller.admin.goview.vo.data.GoViewDataRespVO;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.jdbc.support.rowset.SqlRowSetMetaData;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -23,7 +23,7 @@ public class GoViewDataServiceImplTest extends BaseDbUnitTest {
     @Resource
     private GoViewDataServiceImpl goViewDataService;
 
-    @MockBean
+    @MockitoBean
     private JdbcTemplate jdbcTemplate;
 
     @Test
@@ -40,7 +40,7 @@ public class GoViewDataServiceImplTest extends BaseDbUnitTest {
         // mock 数据明细
         when(sqlRowSet.next()).thenReturn(true).thenReturn(true).thenReturn(false);
         when(sqlRowSet.getObject("id")).thenReturn(1L).thenReturn(2L);
-        when(sqlRowSet.getObject("name")).thenReturn("Nomix").thenReturn("Nomix");
+        when(sqlRowSet.getObject("name")).thenReturn("Nomix源码").thenReturn("Nomix");
 
         // 调用
         GoViewDataRespVO dataBySQL = goViewDataService.getDataBySQL(sql);
@@ -49,7 +49,7 @@ public class GoViewDataServiceImplTest extends BaseDbUnitTest {
         assertEquals(2, dataBySQL.getDimensions().size());
         assertEquals(2, dataBySQL.getSource().get(0).size());
         assertEquals(1L, dataBySQL.getSource().get(0).get("id"));
-        assertEquals("Nomix", dataBySQL.getSource().get(0).get("name"));
+        assertEquals("Nomix源码", dataBySQL.getSource().get(0).get("name"));
         assertEquals(2, dataBySQL.getSource().get(1).size());
         assertEquals(2L, dataBySQL.getSource().get(1).get("id"));
         assertEquals("Nomix", dataBySQL.getSource().get(1).get("name"));

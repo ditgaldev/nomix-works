@@ -8,7 +8,7 @@ import com.lxzy.nomix.module.pay.dal.dataobject.wallet.PayWalletTransactionDO;
 import com.lxzy.nomix.module.pay.enums.wallet.PayWalletBizTypeEnum;
 import com.lxzy.nomix.module.pay.service.wallet.bo.WalletTransactionCreateReqBO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.time.LocalDateTime;
 

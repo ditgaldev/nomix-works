@@ -1,10 +1,10 @@
 package com.lxzy.nomix.module.system.api.social.dto;
 
 import com.lxzy.nomix.framework.common.enums.UserTypeEnum;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.util.HashMap;
 import java.util.Map;
 

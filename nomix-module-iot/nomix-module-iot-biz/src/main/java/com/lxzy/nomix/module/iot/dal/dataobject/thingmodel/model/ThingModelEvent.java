@@ -2,11 +2,11 @@ package com.lxzy.nomix.module.iot.dal.dataobject.thingmodel.model;
 
 import com.lxzy.nomix.framework.common.validation.InEnum;
 import com.lxzy.nomix.module.iot.enums.thingmodel.IotThingModelServiceEventTypeEnum;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Pattern;
 import java.util.List;
 
 /**

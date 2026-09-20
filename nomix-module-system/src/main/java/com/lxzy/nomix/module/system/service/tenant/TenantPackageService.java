@@ -4,14 +4,14 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.system.controller.admin.tenant.vo.packages.TenantPackagePageReqVO;
 import com.lxzy.nomix.module.system.controller.admin.tenant.vo.packages.TenantPackageSaveReqVO;
 import com.lxzy.nomix.module.system.dal.dataobject.tenant.TenantPackageDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * 租户套餐 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface TenantPackageService {
 

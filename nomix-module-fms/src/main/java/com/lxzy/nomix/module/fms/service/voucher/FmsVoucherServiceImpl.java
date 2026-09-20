@@ -43,8 +43,8 @@ import com.lxzy.nomix.module.fms.service.config.FmsSubjectService;
 import com.lxzy.nomix.module.fms.service.config.FmsVoucherWordService;
 import com.mzt.logapi.context.LogRecordContext;
 import com.mzt.logapi.starter.annotation.LogRecord;
-import javax.annotation.Resource;
-import javax.validation.ConstraintViolationException;
+import jakarta.annotation.Resource;
+import jakarta.validation.ConstraintViolationException;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
@@ -84,7 +84,7 @@ import static java.util.Collections.singletonList;
 /**
  * FMS 凭证 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

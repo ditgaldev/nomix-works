@@ -32,10 +32,10 @@ import com.lxzy.nomix.module.hrm.enums.performance.assessment.HrmPerformanceAsse
 import com.lxzy.nomix.module.hrm.enums.performance.plan.HrmPerformanceStageTypeEnum;
 import com.lxzy.nomix.module.hrm.enums.performance.config.HrmPerformanceUpperLimitTypeEnum;
 import com.lxzy.nomix.module.hrm.service.employee.info.HrmEmployeeService;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
@@ -56,7 +56,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link HrmPerformanceAssessmentReviewServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmPerformanceAssessmentReviewServiceImpl.class)
 public class HrmPerformanceAssessmentReviewServiceImplTest extends BaseDbUnitTest {
@@ -82,13 +82,13 @@ public class HrmPerformanceAssessmentReviewServiceImplTest extends BaseDbUnitTes
     @Resource
     private HrmPerformanceAssessmentQuotaScoreMapper assessmentQuotaScoreMapper;
 
-    @MockBean
+    @MockitoBean
     private HrmEmployeeService employeeService;
-    @MockBean
+    @MockitoBean
     private HrmPerformanceAssessmentProcessService processService;
-    @MockBean
+    @MockitoBean
     private HrmPerformancePlanService planService;
-    @MockBean
+    @MockitoBean
     private HrmPerformanceAssessmentActionRecordService assessmentActionRecordService;
 
     @Test

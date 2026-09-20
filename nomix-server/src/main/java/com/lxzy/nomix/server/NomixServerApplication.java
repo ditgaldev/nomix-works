@@ -6,29 +6,29 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * 项目的启动类
  *
- * 如果你碰到启动的问题，请认真阅读  文章
- * 如果你碰到启动的问题，请认真阅读  文章
- * 如果你碰到启动的问题，请认真阅读  文章
+ * 如果你碰到启动的问题，请认真阅读 https://doc.nomix.cn/quick-start/ 文章
+ * 如果你碰到启动的问题，请认真阅读 https://doc.nomix.cn/quick-start/ 文章
+ * 如果你碰到启动的问题，请认真阅读 https://doc.nomix.cn/quick-start/ 文章
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @SuppressWarnings("SpringComponentScan") // 忽略 IDEA 无法识别 ${nomix.info.base-package}
 @SpringBootApplication(scanBasePackages = {"${nomix.info.base-package}.server", "${nomix.info.base-package}.module"})
 public class NomixServerApplication {
 
     public static void main(String[] args) {
-        // 如果你碰到启动的问题，请认真阅读  文章
-        // 如果你碰到启动的问题，请认真阅读  文章
-        // 如果你碰到启动的问题，请认真阅读  文章
+        // 如果你碰到启动的问题，请认真阅读 https://doc.nomix.cn/quick-start/ 文章
+        // 如果你碰到启动的问题，请认真阅读 https://doc.nomix.cn/quick-start/ 文章
+        // 如果你碰到启动的问题，请认真阅读 https://doc.nomix.cn/quick-start/ 文章
 
         SpringApplication.run(NomixServerApplication.class, args);
 //        new SpringApplicationBuilder(NomixServerApplication.class)
 //                .applicationStartup(new BufferingApplicationStartup(20480))
 //                .run(args);
 
-        // 如果你碰到启动的问题，请认真阅读  文章
-        // 如果你碰到启动的问题，请认真阅读  文章
-        // 如果你碰到启动的问题，请认真阅读  文章
+        // 如果你碰到启动的问题，请认真阅读 https://doc.nomix.cn/quick-start/ 文章
+        // 如果你碰到启动的问题，请认真阅读 https://doc.nomix.cn/quick-start/ 文章
+        // 如果你碰到启动的问题，请认真阅读 https://doc.nomix.cn/quick-start/ 文章
     }
 
 }

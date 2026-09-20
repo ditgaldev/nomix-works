@@ -11,12 +11,12 @@ import com.lxzy.nomix.module.mes.dal.dataobject.wm.arrivalnotice.MesWmArrivalNot
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.arrivalnotice.MesWmArrivalNoticeLineDO;
 import com.lxzy.nomix.module.mes.dal.mysql.wm.arrivalnotice.MesWmArrivalNoticeMapper;
 import com.lxzy.nomix.module.mes.enums.wm.MesWmArrivalNoticeStatusEnum;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.Collections;

@@ -12,8 +12,8 @@ import com.lxzy.nomix.module.pms.service.kb.library.PmsKnowledgeLibraryTemplateS
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import javax.annotation.Resource;
-import javax.validation.Valid;
+import jakarta.annotation.Resource;
+import jakarta.validation.Valid;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -33,7 +33,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * 管理后台 - PMS 知识库模板 Controller
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Tag(name = "管理后台 - PMS 知识库模板")
 @RestController

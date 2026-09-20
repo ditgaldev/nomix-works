@@ -7,14 +7,14 @@ import com.lxzy.nomix.module.promotion.controller.admin.coupon.vo.template.Coupo
 import com.lxzy.nomix.module.promotion.dal.dataobject.coupon.CouponTemplateDO;
 import com.lxzy.nomix.module.promotion.enums.coupon.CouponTakeTypeEnum;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 
 /**
  * 优惠劵模板 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface CouponTemplateService {
 

@@ -7,26 +7,31 @@ import com.lxzy.nomix.module.wms.dal.dataobject.order.movement.WmsMovementOrderD
 import com.lxzy.nomix.module.wms.dal.dataobject.order.movement.WmsMovementOrderDetailDO;
 import com.lxzy.nomix.module.wms.dal.mysql.order.movement.WmsMovementOrderDetailMapper;
 import com.lxzy.nomix.module.wms.dal.mysql.order.movement.WmsMovementOrderMapper;
-import com.lxzy.nomix.module.wms.enums.order.WmsOrderStatusEnum;
 import com.lxzy.nomix.module.wms.enums.order.WmsOrderTypeEnum;
+import com.lxzy.nomix.module.wms.enums.order.WmsOrderStatusEnum;
 import com.lxzy.nomix.module.wms.service.inventory.WmsInventoryService;
 import com.lxzy.nomix.module.wms.service.inventory.dto.WmsInventoryChangeReqDTO;
 import com.lxzy.nomix.module.wms.service.md.item.WmsItemSkuService;
 import com.lxzy.nomix.module.wms.service.md.warehouse.WmsWarehouseService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.test.core.util.AssertUtils.assertServiceException;
-import static com.lxzy.nomix.module.wms.enums.ErrorCodeConstants.*;
-import static org.junit.jupiter.api.Assertions.*;
+import static com.lxzy.nomix.module.wms.enums.ErrorCodeConstants.MOVEMENT_ORDER_DETAIL_REQUIRED;
+import static com.lxzy.nomix.module.wms.enums.ErrorCodeConstants.MOVEMENT_ORDER_STATUS_NOT_DELETABLE;
+import static com.lxzy.nomix.module.wms.enums.ErrorCodeConstants.MOVEMENT_ORDER_STATUS_NOT_PREPARE;
+import static com.lxzy.nomix.module.wms.enums.ErrorCodeConstants.MOVEMENT_ORDER_WAREHOUSE_SAME;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
@@ -42,11 +47,11 @@ public class WmsMovementOrderServiceImplTest extends BaseDbUnitTest {
     @Resource
     private WmsMovementOrderDetailMapper movementOrderDetailMapper;
 
-    @MockBean
+    @MockitoBean
     private WmsWarehouseService warehouseService;
-    @MockBean
+    @MockitoBean
     private WmsItemSkuService itemSkuService;
-    @MockBean
+    @MockitoBean
     private WmsInventoryService inventoryService;
 
     @Test

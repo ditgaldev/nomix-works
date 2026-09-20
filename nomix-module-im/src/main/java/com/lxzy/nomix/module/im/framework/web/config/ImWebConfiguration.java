@@ -1,7 +1,7 @@
 package com.lxzy.nomix.module.im.framework.web.config;
 
 import com.lxzy.nomix.framework.swagger.config.NomixSwaggerAutoConfiguration;
-import org.springdoc.core.GroupedOpenApi;
+import org.springdoc.core.models.GroupedOpenApi;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

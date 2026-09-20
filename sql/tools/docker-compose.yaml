@@ -1,4 +1,4 @@
-name: nomix-vue-pro
+name: nomix-works
 
 volumes:
     mysql: { }
@@ -16,13 +16,13 @@ services:
         environment:
             TZ: Asia/Shanghai
             MYSQL_ROOT_PASSWORD: 123456
-            MYSQL_DATABASE: nomix-vue-pro
+            MYSQL_DATABASE: nomix-works
         ports:
             - "3306:3306"
         volumes:
             - mysql:/var/lib/mysql/
             # 注入初始化脚本
-            - ./mysql/nomix-vue-pro.sql:/docker-entrypoint-initdb.d/init.sql:ro
+            - ./mysql/nomix-works.sql:/docker-entrypoint-initdb.d/init.sql:ro
         command:
             --default-authentication-plugin=mysql_native_password
             --character-set-server=utf8mb4
@@ -36,14 +36,14 @@ services:
         environment:
             POSTGRES_USER: root
             POSTGRES_PASSWORD: 123456
-            POSTGRES_DB: nomix-vue-pro
+            POSTGRES_DB: nomix-works
         ports:
             - "5432:5432"
         volumes:
             - postgres:/var/lib/postgresql/data
             # 注入初始化脚本
             - ../postgresql/quartz.sql:/docker-entrypoint-initdb.d/quartz.sql:ro
-            - ../postgresql/nomix-vue-pro.sql:/docker-entrypoint-initdb.d/nomix-vue-pro.sql:ro
+            - ../postgresql/nomix-works.sql:/docker-entrypoint-initdb.d/nomix-works.sql:ro
 
     oracle:
         image: gvenzl/oracle-xe:18-slim-faststart
@@ -54,7 +54,7 @@ services:
         ports:
             - "1521:1521"
         volumes:
-            - ../oracle/nomix-vue-pro.sql:/tmp/schema.sql:ro
+            - ../oracle/nomix-works.sql:/tmp/schema.sql:ro
             # 创建app用户: ROOT/123456@//localhost/XEPDB1
             - ./oracle/1_create_user.sql:/docker-entrypoint-initdb.d/1_create_user.sql:ro
             - ./oracle/2_create_schema.sh:/docker-entrypoint-initdb.d/2_create_schema.sh:ro
@@ -68,7 +68,7 @@ services:
       ports:
         - "1521:1521"
       volumes:
-        - ../oracle/nomix-vue-pro.sql:/tmp/schema.sql:ro
+        - ../oracle/nomix-works.sql:/tmp/schema.sql:ro
         # 创建app用户: ROOT/123456@//localhost/XEPDB1
         - ./oracle/1_create_user.sql:/docker-entrypoint-initdb.d/1_create_user.sql:ro
         - ./oracle/2_create_schema.sh:/docker-entrypoint-initdb.d/2_create_schema.sh:ro
@@ -84,7 +84,7 @@ services:
             - "1433:1433"
         volumes:
             - sqlserver:/var/opt/mssql
-            - ../sqlserver/nomix-vue-pro.sql:/tmp/schema.sql:ro
+            - ../sqlserver/nomix-works.sql:/tmp/schema.sql:ro
             # docker compose exec sqlserver bash /tmp/create_schema.sh
             - ./sqlserver/create_schema.sh:/tmp/create_schema.sh:ro
 
@@ -105,7 +105,7 @@ services:
             - "5236:5236"
         volumes:
             - dm8:/opt/dmdbms/data
-            - ../dm/nomix-vue-pro-dm8.sql:/tmp/schema.sql:ro
+            - ../dm/nomix-works-dm8.sql:/tmp/schema.sql:ro
 
     kingbase:
         image: kingbase_v009r001c001b0025_single_x86:v1
@@ -118,7 +118,7 @@ services:
             - "54321:54321"
         volumes:
             - kingbase:/home/kingbase/userdata
-            - ../kingbase/nomix-vue-pro.sql:/tmp/schema.sql:ro
+            - ../kingbase/nomix-works.sql:/tmp/schema.sql:ro
 
     opengauss:
         image: opengauss/opengauss:5.0.0
@@ -131,7 +131,7 @@ services:
             - "5432:5432"
         volumes:
             - opengauss:/var/lib/opengauss
-            - ../opengauss/nomix-vue-pro.sql:/tmp/schema.sql:ro
+            - ../opengauss/nomix-works.sql:/tmp/schema.sql:ro
             # docker compose exec opengauss bash -c '/usr/local/opengauss/bin/gsql -U $GS_USERNAME -W $GS_PASSWORD -d postgres -f /tmp/schema.sql'
 
     highgo:
@@ -144,4 +144,4 @@ services:
         volumes:
             - highgo:/home/highgo/hgdb/data
             - ../highgo/quartz.sql:/tmp/quartz.sql:ro
-            - ../highgo/nomix-vue-pro.sql:/tmp/schema.sql:ro
+            - ../highgo/nomix-works.sql:/tmp/schema.sql:ro

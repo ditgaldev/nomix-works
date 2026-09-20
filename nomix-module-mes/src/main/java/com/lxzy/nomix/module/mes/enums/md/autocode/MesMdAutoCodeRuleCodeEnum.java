@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * MES 编码规则代码枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

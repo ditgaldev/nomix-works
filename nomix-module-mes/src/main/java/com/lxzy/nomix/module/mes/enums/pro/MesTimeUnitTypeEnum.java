@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * MES 时间单位枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

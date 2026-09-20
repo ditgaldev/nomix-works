@@ -12,10 +12,10 @@ import com.lxzy.nomix.module.pms.enums.pm.project.PmsProjectStatusEnum;
 import com.lxzy.nomix.module.system.api.permission.PermissionApi;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
 import com.lxzy.nomix.module.system.enums.permission.RoleCodeEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.List;
 
@@ -39,7 +39,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link PmsProjectMemberServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(PmsProjectMemberServiceImpl.class)
 public class PmsProjectMemberServiceImplTest extends BaseDbUnitTest {
@@ -50,11 +50,11 @@ public class PmsProjectMemberServiceImplTest extends BaseDbUnitTest {
     @Resource
     private PmsProjectMemberMapper projectMemberMapper;
 
-    @MockBean
+    @MockitoBean
     private PmsProjectService projectService;
-    @MockBean
+    @MockitoBean
     private AdminUserApi adminUserApi;
-    @MockBean
+    @MockitoBean
     private PermissionApi permissionApi;
 
     @Test

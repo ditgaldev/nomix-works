@@ -4,7 +4,7 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.infra.controller.admin.job.vo.job.JobPageReqVO;
 import com.lxzy.nomix.module.infra.controller.admin.job.vo.job.JobSaveReqVO;
 import com.lxzy.nomix.module.infra.dal.dataobject.job.JobDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import org.quartz.SchedulerException;
 
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 定时任务 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface JobService {
 

@@ -2,8 +2,8 @@ package com.lxzy.nomix.module.mes.service.wm.transfer;
 
 import com.lxzy.nomix.module.mes.controller.admin.wm.transfer.vo.detail.MesWmTransferDetailSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.transfer.MesWmTransferDetailDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**

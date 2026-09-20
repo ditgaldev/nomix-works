@@ -2,14 +2,14 @@ package com.lxzy.nomix.module.mes.service.dv.checkplan;
 
 import com.lxzy.nomix.module.mes.controller.admin.dv.checkplan.vo.machinery.MesDvCheckPlanMachinerySaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.dv.checkplan.MesDvCheckPlanMachineryDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * MES 点检保养方案设备 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesDvCheckPlanMachineryService {
 

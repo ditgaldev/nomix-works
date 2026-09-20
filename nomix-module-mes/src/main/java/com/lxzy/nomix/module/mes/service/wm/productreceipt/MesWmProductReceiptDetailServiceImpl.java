@@ -5,11 +5,11 @@ import com.lxzy.nomix.module.mes.controller.admin.wm.productreceipt.vo.detail.Me
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.productreceipt.MesWmProductReceiptDetailDO;
 import com.lxzy.nomix.module.mes.dal.mysql.wm.productreceipt.MesWmProductReceiptDetailMapper;
 import com.lxzy.nomix.module.mes.service.wm.warehouse.MesWmWarehouseAreaService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;

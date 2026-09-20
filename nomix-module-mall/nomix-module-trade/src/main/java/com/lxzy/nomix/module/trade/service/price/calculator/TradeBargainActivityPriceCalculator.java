@@ -12,12 +12,12 @@ import com.lxzy.nomix.module.trade.service.price.bo.TradePriceCalculateRespBO;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * 砍价活动的 {@link TradePriceCalculator} 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 @Order(TradePriceCalculator.ORDER_BARGAIN_ACTIVITY)

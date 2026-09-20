@@ -1,8 +1,8 @@
 package com.lxzy.nomix.module.hrm.controller.admin.salary.vo.slip.template;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 @Schema(description = "管理后台 - HRM 工资条模板项 VO")

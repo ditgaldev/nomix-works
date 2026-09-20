@@ -14,11 +14,11 @@ import com.lxzy.nomix.module.mes.enums.wm.MesWmReturnSalesStatusEnum;
 import com.lxzy.nomix.module.mes.service.wm.batch.MesWmBatchService;
 import com.lxzy.nomix.module.mes.service.wm.materialstock.MesWmMaterialStockService;
 import com.lxzy.nomix.module.mes.service.wm.warehouse.MesWmWarehouseAreaService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -28,7 +28,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 销售退货明细 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

@@ -7,11 +7,11 @@ import com.lxzy.nomix.module.product.controller.admin.property.vo.value.ProductP
 import com.lxzy.nomix.module.product.dal.dataobject.property.ProductPropertyValueDO;
 import com.lxzy.nomix.module.product.dal.mysql.property.ProductPropertyValueMapper;
 import com.lxzy.nomix.module.product.service.sku.ProductSkuService;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 

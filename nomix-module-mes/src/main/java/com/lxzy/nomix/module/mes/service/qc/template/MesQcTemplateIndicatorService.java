@@ -4,15 +4,14 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.qc.template.vo.indicator.MesQcTemplateIndicatorPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.qc.template.vo.indicator.MesQcTemplateIndicatorSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.template.MesQcTemplateIndicatorDO;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
 /**
  * MES 质检方案-检测指标项 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesQcTemplateIndicatorService {
 

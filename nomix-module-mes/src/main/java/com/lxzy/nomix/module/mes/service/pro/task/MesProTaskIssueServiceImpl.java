@@ -7,10 +7,10 @@ import com.lxzy.nomix.module.mes.controller.admin.pro.task.vo.MesProTaskIssueSav
 import com.lxzy.nomix.module.mes.dal.dataobject.pro.task.MesProTaskIssueDO;
 import com.lxzy.nomix.module.mes.dal.mysql.pro.task.MesProTaskIssueMapper;
 import com.lxzy.nomix.module.mes.service.md.item.MesMdItemService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -19,7 +19,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.PRO_TASK_ISSUE_
 /**
  * MES 生产任务投料 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

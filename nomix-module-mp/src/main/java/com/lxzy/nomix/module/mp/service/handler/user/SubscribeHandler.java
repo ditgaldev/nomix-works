@@ -4,6 +4,7 @@ import cn.hutool.core.util.ObjUtil;
 import com.lxzy.nomix.module.mp.framework.mp.core.context.MpContextHolder;
 import com.lxzy.nomix.module.mp.service.message.MpAutoReplyService;
 import com.lxzy.nomix.module.mp.service.user.MpUserService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import me.chanjar.weixin.common.error.WxErrorException;
 import me.chanjar.weixin.common.error.WxMpErrorMsgEnum;
@@ -15,13 +16,12 @@ import me.chanjar.weixin.mp.bean.message.WxMpXmlOutMessage;
 import me.chanjar.weixin.mp.bean.result.WxMpUser;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.Map;
 
 /**
  * 关注的事件处理器
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Component
 @Slf4j

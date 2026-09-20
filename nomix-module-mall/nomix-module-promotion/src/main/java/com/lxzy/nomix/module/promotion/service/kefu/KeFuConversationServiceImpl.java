@@ -7,11 +7,11 @@ import com.lxzy.nomix.module.promotion.dal.dataobject.kefu.KeFuConversationDO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.kefu.KeFuMessageDO;
 import com.lxzy.nomix.module.promotion.dal.mysql.kefu.KeFuConversationMapper;
 import com.lxzy.nomix.module.promotion.enums.kefu.KeFuMessageContentTypeEnum;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.List;
 

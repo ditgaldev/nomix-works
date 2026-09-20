@@ -1,11 +1,10 @@
 package com.lxzy.nomix.module.member.controller.app.user.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 import org.hibernate.validator.constraints.URL;
-
-import javax.validation.constraints.Email;
-import javax.validation.constraints.Size;
 
 @Schema(description = "用户 App - 会员用户更新 Request VO")
 @Data
@@ -14,11 +13,11 @@ public class AppMemberUserUpdateReqVO {
     @Schema(description = "用户昵称", requiredMode = Schema.RequiredMode.REQUIRED, example = "李四")
     private String nickname;
 
-    @Schema(description = "头像", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "头像", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn/x.png")
     @URL(message = "头像必须是 URL 格式")
     private String avatar;
 
-    @Schema(description = "邮箱", example = "member@example.com")
+    @Schema(description = "邮箱", example = "member@nomix.cn")
     @Email(message = "邮箱格式不正确")
     @Size(max = 50, message = "邮箱长度不能超过 50 个字符")
     private String email;

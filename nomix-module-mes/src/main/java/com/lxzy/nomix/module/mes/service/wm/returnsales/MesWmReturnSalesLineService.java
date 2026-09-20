@@ -4,15 +4,15 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.wm.returnsales.vo.line.MesWmReturnSalesLinePageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.wm.returnsales.vo.line.MesWmReturnSalesLineSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.returnsales.MesWmReturnSalesLineDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.math.BigDecimal;
 import java.util.List;
 
 /**
  * MES 销售退货单行 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesWmReturnSalesLineService {
 

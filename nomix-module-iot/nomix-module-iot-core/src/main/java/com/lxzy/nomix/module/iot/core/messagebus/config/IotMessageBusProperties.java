@@ -4,12 +4,13 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.validation.annotation.Validated;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * IoT 消息总线配置属性
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @ConfigurationProperties("nomix.iot.message-bus")
 @Data

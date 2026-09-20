@@ -2,13 +2,13 @@ package com.lxzy.nomix.module.mes.controller.admin.wm.batch.vo;
 
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 
 /**
  * 批次生成请求 VO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 public class MesWmBatchGenerateReqVO {

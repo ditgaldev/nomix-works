@@ -8,13 +8,11 @@ import com.lxzy.nomix.module.mes.controller.admin.qc.oqc.vo.MesQcOqcSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.defectrecord.MesQcDefectRecordDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.oqc.MesQcOqcDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.qc.template.MesQcTemplateItemDO;
-import com.lxzy.nomix.module.mes.dal.dataobject.wm.productsales.MesWmProductSalesDO;
-import com.lxzy.nomix.module.mes.dal.dataobject.wm.productsales.MesWmProductSalesLineDO;
 import com.lxzy.nomix.module.mes.dal.mysql.qc.oqc.MesQcOqcMapper;
-import com.lxzy.nomix.module.mes.enums.MesBizTypeConstants;
 import com.lxzy.nomix.module.mes.enums.qc.MesQcDefectLevelEnum;
 import com.lxzy.nomix.module.mes.enums.qc.MesQcStatusEnum;
 import com.lxzy.nomix.module.mes.enums.qc.MesQcTypeEnum;
+import com.lxzy.nomix.module.mes.enums.MesBizTypeConstants;
 import com.lxzy.nomix.module.mes.service.md.client.MesMdClientService;
 import com.lxzy.nomix.module.mes.service.md.item.MesMdItemService;
 import com.lxzy.nomix.module.mes.service.qc.defectrecord.MesQcDefectRecordService;
@@ -22,13 +20,15 @@ import com.lxzy.nomix.module.mes.service.qc.indicatorresult.MesQcIndicatorResult
 import com.lxzy.nomix.module.mes.service.qc.template.MesQcTemplateItemService;
 import com.lxzy.nomix.module.mes.service.wm.productsales.MesWmProductSalesLineService;
 import com.lxzy.nomix.module.mes.service.wm.productsales.MesWmProductSalesService;
+import com.lxzy.nomix.module.mes.dal.dataobject.wm.productsales.MesWmProductSalesDO;
+import com.lxzy.nomix.module.mes.dal.dataobject.wm.productsales.MesWmProductSalesLineDO;
 import com.lxzy.nomix.module.system.api.user.AdminUserApi;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
@@ -40,7 +40,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 出货检验单（OQC） Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

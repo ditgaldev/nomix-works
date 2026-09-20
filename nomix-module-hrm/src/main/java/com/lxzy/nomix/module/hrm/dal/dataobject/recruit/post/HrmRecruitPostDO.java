@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * HRM 招聘职位 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName(value = "hrm_recruit_post", autoResultMap = true)
 @KeySequence("hrm_recruit_post_seq")

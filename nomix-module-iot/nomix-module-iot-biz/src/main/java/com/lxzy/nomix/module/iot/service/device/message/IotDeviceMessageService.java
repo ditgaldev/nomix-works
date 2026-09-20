@@ -7,16 +7,16 @@ import com.lxzy.nomix.module.iot.controller.admin.statistics.vo.IotStatisticsDev
 import com.lxzy.nomix.module.iot.core.mq.message.IotDeviceMessage;
 import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDeviceDO;
 import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDeviceMessageDO;
+import jakarta.validation.constraints.NotNull;
 
 import javax.annotation.Nullable;
-import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 import java.util.List;
 
 /**
  * IoT 设备消息 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface IotDeviceMessageService {
 

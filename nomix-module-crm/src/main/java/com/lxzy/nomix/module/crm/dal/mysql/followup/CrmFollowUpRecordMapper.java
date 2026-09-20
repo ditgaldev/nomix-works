@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 跟进记录 Mapper
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Mapper
 public interface CrmFollowUpRecordMapper extends BaseMapperX<CrmFollowUpRecordDO> {

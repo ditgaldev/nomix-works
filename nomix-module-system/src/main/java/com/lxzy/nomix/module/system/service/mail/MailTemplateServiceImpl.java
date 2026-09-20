@@ -11,14 +11,14 @@ import com.lxzy.nomix.module.system.dal.dataobject.mail.MailTemplateDO;
 import com.lxzy.nomix.module.system.dal.mysql.mail.MailTemplateMapper;
 import com.lxzy.nomix.module.system.dal.redis.RedisKeyConstants;
 import com.google.common.annotations.VisibleForTesting;
+import jakarta.annotation.Resource;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
-import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -143,7 +143,7 @@ public class MailTemplateServiceImpl implements MailTemplateService {
         // 1. 先替换模板变量
         String formattedContent = StrUtil.format(content, params);
 
-        // 关联 Pull Request： 讨论
+        // 关联 Pull Request：https://github.com/ditgaldev/nomix-works/pulls/1461 讨论
         // 2.1 反转义HTML特殊字符
         formattedContent = unescapeHtml(formattedContent);
         // 2.2 处理代码块（确保<pre><code>标签格式正确）
@@ -161,7 +161,7 @@ public class MailTemplateServiceImpl implements MailTemplateService {
         String regex = "(?s)<pre[^>]*>(.*?)</pre>";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(content);
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         while (matcher.find()) {
             // 提取 <pre> 标签内的内容
             String innerContent = matcher.group(1);
@@ -201,7 +201,7 @@ public class MailTemplateServiceImpl implements MailTemplateService {
         // 匹配 <pre><code> 标签的代码块
         Pattern codeBlockPattern = Pattern.compile("<pre\\s*.*?><code\\s*.*?>(.*?)</code></pre>", Pattern.DOTALL);
         Matcher matcher = codeBlockPattern.matcher(content);
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         while (matcher.find()) {
             // 获取代码块内容
             String codeBlock = matcher.group(1);

@@ -10,10 +10,10 @@ import com.lxzy.nomix.module.trade.controller.admin.delivery.vo.pickup.DeliveryP
 import com.lxzy.nomix.module.trade.convert.delivery.DeliveryPickUpStoreConvert;
 import com.lxzy.nomix.module.trade.dal.dataobject.delivery.DeliveryPickUpStoreDO;
 import com.lxzy.nomix.module.trade.dal.mysql.delivery.DeliveryPickUpStoreMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 

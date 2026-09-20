@@ -11,7 +11,7 @@ import java.util.Arrays;
 /**
  * 支付渠道的编码的枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Getter
 @AllArgsConstructor

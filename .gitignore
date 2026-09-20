@@ -7,7 +7,6 @@
 
 target/
 !.mvn/wrapper/maven-wrapper.jar
-.vite/
 
 .flattened-pom.xml
 
@@ -54,4 +53,3 @@ application-my.yaml
 /nomix-ui-app/unpackage/
 .DS_Store
 **/.DS_Store
-outputs/

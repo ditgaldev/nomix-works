@@ -15,7 +15,7 @@ import com.lxzy.nomix.module.mes.enums.DictTypeConstants;
 /**
  * MES 排班计划 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_cal_plan")
 @KeySequence("mes_cal_plan_seq")

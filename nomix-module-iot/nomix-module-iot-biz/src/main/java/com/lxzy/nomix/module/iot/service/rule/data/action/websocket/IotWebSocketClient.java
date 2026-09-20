@@ -15,7 +15,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * <p>
  * 负责与外部 WebSocket 服务器建立连接并发送设备消息
  * 支持 ws:// 和 wss:// 协议，支持 JSON 和 TEXT 数据格式
- * 基于 OkHttp WebSocket 实现
+ * 基于 OkHttp WebSocket 实现，兼容 JDK 8+
  * <p>
  * 注意：该类的线程安全由调用方（IotWebSocketDataRuleAction）通过分布式锁保证
  *

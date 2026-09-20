@@ -6,7 +6,7 @@ import com.lxzy.nomix.module.iot.core.mq.message.IotDeviceMessage;
 /**
  * IoT 设备消息 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface IotDeviceMessageService {
 

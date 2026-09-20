@@ -4,7 +4,7 @@ import com.lxzy.nomix.framework.test.core.ut.BaseDbUnitTest;
 import com.lxzy.nomix.module.hrm.dal.dataobject.performance.assessment.HrmPerformanceAssessmentActionRecordDO;
 import com.lxzy.nomix.module.hrm.enums.performance.assessment.HrmPerformanceAssessmentActionTypeEnum;
 import com.lxzy.nomix.module.hrm.enums.performance.assessment.HrmPerformanceAssessmentStageStatusEnum;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Import;
 
@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 /**
  * {@link HrmPerformanceAssessmentActionRecordServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(HrmPerformanceAssessmentActionRecordServiceImpl.class)
 public class HrmPerformanceAssessmentActionRecordServiceImplTest extends BaseDbUnitTest {

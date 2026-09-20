@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * 砍价记录的状态枚举
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @AllArgsConstructor
 @Getter

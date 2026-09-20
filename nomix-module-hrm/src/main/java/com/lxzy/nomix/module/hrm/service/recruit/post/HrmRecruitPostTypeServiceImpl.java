@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.hrm.service.recruit.post;
 import cn.hutool.core.collection.CollUtil;
 import com.lxzy.nomix.module.hrm.dal.dataobject.recruit.post.HrmRecruitPostTypeDO;
 import com.lxzy.nomix.module.hrm.dal.mysql.recruit.post.HrmRecruitPostTypeMapper;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -17,7 +17,7 @@ import static com.lxzy.nomix.module.hrm.enums.ErrorCodeConstants.RECRUIT_POST_TY
 /**
  * 招聘职位类型 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

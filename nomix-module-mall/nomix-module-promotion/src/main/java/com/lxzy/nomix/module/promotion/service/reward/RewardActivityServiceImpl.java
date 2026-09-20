@@ -16,10 +16,10 @@ import com.lxzy.nomix.module.promotion.controller.admin.reward.vo.RewardActivity
 import com.lxzy.nomix.module.promotion.dal.dataobject.reward.RewardActivityDO;
 import com.lxzy.nomix.module.promotion.dal.mysql.reward.RewardActivityMapper;
 import com.lxzy.nomix.module.promotion.enums.common.PromotionProductScopeEnum;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.*;
 
 import static cn.hutool.core.collection.CollUtil.intersectionDistinct;
@@ -30,7 +30,7 @@ import static com.lxzy.nomix.module.promotion.enums.ErrorCodeConstants.*;
 /**
  * 满减送活动 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

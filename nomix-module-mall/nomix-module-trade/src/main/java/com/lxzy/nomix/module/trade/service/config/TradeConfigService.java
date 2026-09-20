@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.trade.service.config;
 import com.lxzy.nomix.module.trade.controller.admin.config.vo.TradeConfigSaveReqVO;
 import com.lxzy.nomix.module.trade.dal.dataobject.config.TradeConfigDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 /**
  * 交易中心配置 Service 接口

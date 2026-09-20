@@ -7,7 +7,7 @@ import com.lxzy.nomix.module.promotion.controller.admin.article.vo.article.Artic
 import com.lxzy.nomix.module.promotion.controller.app.article.vo.article.AppArticlePageReqVO;
 import com.lxzy.nomix.module.promotion.dal.dataobject.article.ArticleDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.List;
 
 /**

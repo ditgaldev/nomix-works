@@ -1,8 +1,8 @@
 package com.lxzy.nomix.module.mes.dal.dataobject.tm.tool;
 
 import com.lxzy.nomix.framework.mybatis.core.dataobject.BaseDO;
-import com.lxzy.nomix.module.mes.enums.tm.MesTmMaintenTypeEnum;
 import com.lxzy.nomix.module.mes.enums.tm.MesTmToolStatusEnum;
+import com.lxzy.nomix.module.mes.enums.tm.MesTmMaintenTypeEnum;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -14,7 +14,7 @@ import com.lxzy.nomix.module.mes.enums.DictTypeConstants;
 /**
  * MES 工具台账 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_tm_tool")
 @KeySequence("mes_tm_tool_seq") // 用于 Oracle、PostgreSQL、Kingbase、DB2、H2 数据库的主键自增。如果是 MySQL 等数据库，可不写。

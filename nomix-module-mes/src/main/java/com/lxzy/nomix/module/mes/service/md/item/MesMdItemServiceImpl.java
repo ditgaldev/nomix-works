@@ -3,7 +3,6 @@ package com.lxzy.nomix.module.mes.service.md.item;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjUtil;
 import cn.hutool.core.util.StrUtil;
-import com.lxzy.nomix.framework.common.enums.CommonStatusEnum;
 import com.lxzy.nomix.framework.common.exception.ServiceException;
 import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.framework.common.util.object.BeanUtils;
@@ -11,6 +10,7 @@ import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.MesMdItemImportExce
 import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.MesMdItemImportRespVO;
 import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.MesMdItemPageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.md.item.vo.MesMdItemSaveReqVO;
+import com.lxzy.nomix.framework.common.enums.CommonStatusEnum;
 import com.lxzy.nomix.module.mes.dal.dataobject.md.item.MesMdItemBatchConfigDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.md.item.MesMdItemDO;
 import com.lxzy.nomix.module.mes.dal.dataobject.md.item.MesMdItemTypeDO;
@@ -22,11 +22,11 @@ import com.lxzy.nomix.module.mes.enums.wm.BarcodeBizTypeEnum;
 import com.lxzy.nomix.module.mes.service.md.unitmeasure.MesMdUnitMeasureService;
 import com.lxzy.nomix.module.mes.service.md.autocode.MesMdAutoCodeRecordService;
 import com.lxzy.nomix.module.mes.service.wm.barcode.MesWmBarcodeService;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -38,7 +38,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 物料产品 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

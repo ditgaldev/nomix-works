@@ -4,7 +4,7 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.crm.controller.admin.performance.vo.config.CrmPerformanceConfigPageReqVO;
 import com.lxzy.nomix.module.crm.controller.admin.performance.vo.config.CrmPerformanceConfigSaveReqVO;
 import com.lxzy.nomix.module.crm.dal.dataobject.performance.CrmPerformanceConfigDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.Collection;
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * CRM 业绩目标设置 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface CrmPerformanceConfigService {
 

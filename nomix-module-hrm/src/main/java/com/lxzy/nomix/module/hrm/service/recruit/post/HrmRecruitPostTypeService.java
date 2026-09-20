@@ -11,7 +11,7 @@ import static com.lxzy.nomix.framework.common.util.collection.CollectionUtils.co
 /**
  * 招聘职位类型 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface HrmRecruitPostTypeService {
 

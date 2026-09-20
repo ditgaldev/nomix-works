@@ -7,10 +7,10 @@ import com.lxzy.nomix.module.erp.controller.admin.sale.vo.customer.ErpCustomerPa
 import com.lxzy.nomix.module.erp.controller.admin.sale.vo.customer.ErpCustomerSaveReqVO;
 import com.lxzy.nomix.module.erp.dal.dataobject.sale.ErpCustomerDO;
 import com.lxzy.nomix.module.erp.dal.mysql.sale.ErpCustomerMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 
@@ -21,7 +21,7 @@ import static com.lxzy.nomix.module.erp.enums.ErrorCodeConstants.CUSTOMER_NOT_EX
 /**
  * ERP 客户 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

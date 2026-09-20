@@ -7,11 +7,10 @@ import com.lxzy.nomix.module.mes.controller.admin.wm.barcode.vo.config.MesWmBarc
 import com.lxzy.nomix.module.mes.controller.admin.wm.barcode.vo.config.MesWmBarcodeConfigSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.barcode.MesWmBarcodeConfigDO;
 import com.lxzy.nomix.module.mes.dal.mysql.wm.barcode.MesWmBarcodeConfigMapper;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
-
-import javax.annotation.Resource;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
@@ -19,7 +18,7 @@ import static com.lxzy.nomix.module.mes.enums.ErrorCodeConstants.*;
 /**
  * MES 条码配置 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

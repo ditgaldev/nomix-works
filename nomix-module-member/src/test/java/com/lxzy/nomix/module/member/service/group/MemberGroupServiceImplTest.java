@@ -9,11 +9,10 @@ import com.lxzy.nomix.module.member.controller.admin.group.vo.MemberGroupUpdateR
 import com.lxzy.nomix.module.member.dal.dataobject.group.MemberGroupDO;
 import com.lxzy.nomix.module.member.dal.mysql.group.MemberGroupMapper;
 import com.lxzy.nomix.module.member.service.user.MemberUserService;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
-
-import javax.annotation.Resource;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
 import static com.lxzy.nomix.framework.common.util.date.LocalDateTimeUtils.buildTime;
@@ -42,7 +41,7 @@ public class MemberGroupServiceImplTest extends BaseDbUnitTest {
     @Resource
     private MemberGroupMapper groupMapper;
 
-    @MockBean
+    @MockitoBean
     private MemberUserService memberUserService;
 
     @Test

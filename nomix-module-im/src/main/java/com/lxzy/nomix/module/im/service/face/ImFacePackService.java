@@ -4,14 +4,14 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.im.controller.admin.manager.face.vo.pack.ImFacePackPageReqVO;
 import com.lxzy.nomix.module.im.controller.admin.manager.face.vo.pack.ImFacePackSaveReqVO;
 import com.lxzy.nomix.module.im.dal.dataobject.face.ImFacePackDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.List;
 
 /**
  * IM 表情包 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface ImFacePackService {
 

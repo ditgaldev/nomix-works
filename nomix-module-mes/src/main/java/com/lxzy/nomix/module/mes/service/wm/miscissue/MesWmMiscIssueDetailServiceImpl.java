@@ -5,10 +5,10 @@ import com.lxzy.nomix.framework.common.util.object.BeanUtils;
 import com.lxzy.nomix.module.mes.controller.admin.wm.miscissue.vo.line.MesWmMiscIssueLineSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.miscissue.MesWmMiscIssueDetailDO;
 import com.lxzy.nomix.module.mes.dal.mysql.wm.miscissue.MesWmMiscIssueDetailMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;

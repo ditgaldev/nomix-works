@@ -20,7 +20,7 @@ import static java.io.File.separator;
  * <p>
  * 通过修改 groupIdNew、artifactIdNew、projectBaseDirNew 三个变量
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Slf4j
 public class ProjectReactor {

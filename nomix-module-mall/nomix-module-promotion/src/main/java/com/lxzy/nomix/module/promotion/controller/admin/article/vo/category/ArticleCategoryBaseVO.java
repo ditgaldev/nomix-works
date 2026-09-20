@@ -3,7 +3,7 @@ package com.lxzy.nomix.module.promotion.controller.admin.article.vo.category;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * 文章分类 Base VO，提供给添加、修改、详细的子 VO 使用
@@ -16,7 +16,7 @@ public class ArticleCategoryBaseVO {
     @NotNull(message = "文章分类名称不能为空")
     private String name;
 
-    @Schema(description = "图标地址", requiredMode = Schema.RequiredMode.REQUIRED, example = "")
+    @Schema(description = "图标地址", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.nomix.cn")
     private String picUrl;
 
     @Schema(description = "状态", requiredMode = Schema.RequiredMode.REQUIRED, example = "1")

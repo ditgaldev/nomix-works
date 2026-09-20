@@ -6,10 +6,10 @@ import com.lxzy.nomix.module.iot.controller.admin.device.vo.group.IotDeviceGroup
 import com.lxzy.nomix.module.iot.controller.admin.device.vo.group.IotDeviceGroupSaveReqVO;
 import com.lxzy.nomix.module.iot.dal.dataobject.device.IotDeviceGroupDO;
 import com.lxzy.nomix.module.iot.dal.mysql.device.IotDeviceGroupMapper;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static com.lxzy.nomix.framework.common.exception.util.ServiceExceptionUtil.exception;
@@ -19,7 +19,7 @@ import static com.lxzy.nomix.module.iot.enums.ErrorCodeConstants.DEVICE_GROUP_NO
 /**
  * IoT 设备分组 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service
 @Validated

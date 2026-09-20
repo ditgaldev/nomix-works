@@ -35,14 +35,14 @@ import com.google.common.annotations.VisibleForTesting;
 import com.mzt.logapi.context.LogRecordContext;
 import com.mzt.logapi.service.impl.DiffParseFunction;
 import com.mzt.logapi.starter.annotation.LogRecord;
+import jakarta.annotation.Resource;
+import jakarta.validation.ConstraintViolationException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.Resource;
-import javax.validation.ConstraintViolationException;
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -55,7 +55,7 @@ import static com.lxzy.nomix.module.system.enums.LogRecordConstants.*;
 /**
  * 后台用户 Service 实现类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Service("adminUserService")
 @Slf4j
@@ -358,6 +358,18 @@ public class AdminUserServiceImpl implements AdminUserService {
         return userMapper.selectList();
     }
 
+
+    @Override
+    public AdminUserDO validateUser(Long id) {
+        AdminUserDO user = userMapper.selectById(id);
+        if (user == null) {
+            throw exception(USER_NOT_EXISTS);
+        }
+        if (!CommonStatusEnum.ENABLE.getStatus().equals(user.getStatus())) {
+            throw exception(USER_IS_DISABLE, user.getNickname());
+        }
+        return user;
+    }
 
     @Override
     public void validateUserList(Collection<Long> ids) {

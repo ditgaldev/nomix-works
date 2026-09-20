@@ -4,8 +4,8 @@ import com.lxzy.nomix.framework.common.pojo.PageResult;
 import com.lxzy.nomix.module.mes.controller.admin.wm.salesnotice.vo.MesWmSalesNoticePageReqVO;
 import com.lxzy.nomix.module.mes.controller.admin.wm.salesnotice.vo.MesWmSalesNoticeSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.wm.salesnotice.MesWmSalesNoticeDO;
+import jakarta.validation.Valid;
 
-import javax.validation.Valid;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;

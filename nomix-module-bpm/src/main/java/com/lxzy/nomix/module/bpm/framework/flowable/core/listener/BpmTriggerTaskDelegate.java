@@ -3,14 +3,14 @@ package com.lxzy.nomix.module.bpm.framework.flowable.core.listener;
 import com.lxzy.nomix.module.bpm.enums.definition.BpmTriggerTypeEnum;
 import com.lxzy.nomix.module.bpm.framework.flowable.core.util.BpmnModelUtils;
 import com.lxzy.nomix.module.bpm.service.task.trigger.BpmTrigger;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.flowable.bpmn.model.FlowElement;
 import org.flowable.engine.delegate.DelegateExecution;
 import org.flowable.engine.delegate.JavaDelegate;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
 import java.util.EnumMap;
 import java.util.List;
 

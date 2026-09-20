@@ -5,13 +5,13 @@ import com.lxzy.nomix.module.mes.controller.admin.dv.maintenrecord.vo.line.MesDv
 import com.lxzy.nomix.module.mes.controller.admin.dv.maintenrecord.vo.line.MesDvMaintenRecordLineSaveReqVO;
 import com.lxzy.nomix.module.mes.dal.dataobject.dv.maintenrecord.MesDvMaintenRecordLineDO;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.List;
 
 /**
  * 设备保养记录明细 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface MesDvMaintenRecordLineService {
 

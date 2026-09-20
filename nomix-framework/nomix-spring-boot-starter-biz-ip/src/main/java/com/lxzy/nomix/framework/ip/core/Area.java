@@ -15,12 +15,12 @@ import java.util.List;
  *
  * 数据可见 resources/area.csv 文件
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString(exclude = {"parent"}) // 参见  原因
+@ToString(exclude = {"parent"}) // 参见 https://gitee.com/nomixcode/nomix-cloud-mini/pulls/2 原因
 public class Area {
 
     /**

@@ -11,12 +11,12 @@ import com.lxzy.nomix.module.system.dal.dataobject.social.SocialUserDO;
 import com.lxzy.nomix.module.system.dal.mysql.social.SocialUserBindMapper;
 import com.lxzy.nomix.module.system.dal.mysql.social.SocialUserMapper;
 import com.lxzy.nomix.module.system.enums.social.SocialTypeEnum;
+import jakarta.annotation.Resource;
 import me.zhyd.oauth.model.AuthUser;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 import static cn.hutool.core.util.RandomUtil.randomEle;
@@ -37,7 +37,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link SocialUserServiceImpl} 的单元测试类
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @Import(SocialUserServiceImpl.class)
 public class SocialUserServiceImplTest extends BaseDbUnitTest {
@@ -50,7 +50,7 @@ public class SocialUserServiceImplTest extends BaseDbUnitTest {
     @Resource
     private SocialUserBindMapper socialUserBindMapper;
 
-    @MockBean
+    @MockitoBean
     private SocialClientService socialClientService;
 
     @Test

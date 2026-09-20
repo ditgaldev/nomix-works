@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 /**
  * MES 杂项入库单 DO
  *
- * @author Nomix
+ * @author Nomix源码
  */
 @TableName("mes_wm_misc_receipt")
 @KeySequence("mes_wm_misc_receipt_seq")

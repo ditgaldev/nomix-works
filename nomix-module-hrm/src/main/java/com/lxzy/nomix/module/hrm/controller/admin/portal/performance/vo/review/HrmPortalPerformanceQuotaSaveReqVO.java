@@ -1,7 +1,7 @@
 package com.lxzy.nomix.module.hrm.controller.admin.portal.performance.vo.review;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 import java.math.BigDecimal;

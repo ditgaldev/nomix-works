@@ -11,7 +11,7 @@ import com.lxzy.nomix.module.iot.gateway.serialize.IotMessageSerializer;
  *
  * 直接使用 JsonUtils 序列化/反序列化 {@link IotDeviceMessage}，不包装额外字段
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public class IotJsonSerializer implements IotMessageSerializer {
 

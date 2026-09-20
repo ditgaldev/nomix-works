@@ -3,14 +3,14 @@ package com.lxzy.nomix.module.infra.service.demo.demo02;
 import com.lxzy.nomix.module.infra.controller.admin.demo.demo02.vo.Demo02CategoryListReqVO;
 import com.lxzy.nomix.module.infra.controller.admin.demo.demo02.vo.Demo02CategorySaveReqVO;
 import com.lxzy.nomix.module.infra.dal.dataobject.demo.demo02.Demo02CategoryDO;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
 /**
  * 示例分类 Service 接口
  *
- * @author Nomix
+ * @author Nomix源码
  */
 public interface Demo02CategoryService {
 
