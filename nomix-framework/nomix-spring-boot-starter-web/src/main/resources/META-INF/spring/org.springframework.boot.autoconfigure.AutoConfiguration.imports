@@ -1,0 +1,7 @@
+com.lxzy.nomix.framework.apilog.config.NomixApiLogAutoConfiguration
+com.lxzy.nomix.framework.jackson.config.NomixJacksonAutoConfiguration
+com.lxzy.nomix.framework.swagger.config.NomixSwaggerAutoConfiguration
+com.lxzy.nomix.framework.web.config.NomixWebAutoConfiguration
+com.lxzy.nomix.framework.xss.config.NomixXssAutoConfiguration
+com.lxzy.nomix.framework.banner.config.NomixBannerAutoConfiguration
+com.lxzy.nomix.framework.encrypt.config.NomixApiEncryptAutoConfiguration

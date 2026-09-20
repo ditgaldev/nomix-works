@@ -1,0 +1,37 @@
+package com.lxzy.nomix.module.mes.dal.mysql.wm.returnsales;
+
+import com.lxzy.nomix.framework.common.pojo.PageResult;
+import com.lxzy.nomix.framework.mybatis.core.mapper.BaseMapperX;
+import com.lxzy.nomix.framework.mybatis.core.query.LambdaQueryWrapperX;
+import com.lxzy.nomix.module.mes.controller.admin.wm.returnsales.vo.line.MesWmReturnSalesLinePageReqVO;
+import com.lxzy.nomix.module.mes.dal.dataobject.wm.returnsales.MesWmReturnSalesLineDO;
+import org.apache.ibatis.annotations.Mapper;
+
+import java.util.List;
+
+/**
+ * MES 销售退货单行 Mapper
+ *
+ * @author Nomix
+ */
+@Mapper
+public interface MesWmReturnSalesLineMapper extends BaseMapperX<MesWmReturnSalesLineDO> {
+
+    default PageResult<MesWmReturnSalesLineDO> selectPage(MesWmReturnSalesLinePageReqVO reqVO) {
+        return selectPage(reqVO, new LambdaQueryWrapperX<MesWmReturnSalesLineDO>()
+                .eqIfPresent(MesWmReturnSalesLineDO::getReturnId, reqVO.getReturnId())
+                .eqIfPresent(MesWmReturnSalesLineDO::getItemId, reqVO.getItemId())
+                .orderByDesc(MesWmReturnSalesLineDO::getId));
+    }
+
+    default List<MesWmReturnSalesLineDO> selectListByReturnId(Long returnId) {
+        return selectList(new LambdaQueryWrapperX<MesWmReturnSalesLineDO>()
+                .eq(MesWmReturnSalesLineDO::getReturnId, returnId));
+    }
+
+    default void deleteByReturnId(Long returnId) {
+        delete(new LambdaQueryWrapperX<MesWmReturnSalesLineDO>()
+                .eq(MesWmReturnSalesLineDO::getReturnId, returnId));
+    }
+
+}

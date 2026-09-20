@@ -1,0 +1,48 @@
+package com.lxzy.nomix.module.system.controller.app.tenant;
+
+import com.lxzy.nomix.framework.common.enums.CommonStatusEnum;
+import com.lxzy.nomix.framework.common.pojo.CommonResult;
+import com.lxzy.nomix.framework.common.util.object.BeanUtils;
+import com.lxzy.nomix.framework.tenant.core.aop.TenantIgnore;
+import com.lxzy.nomix.module.system.controller.app.tenant.vo.AppTenantRespVO;
+import com.lxzy.nomix.module.system.dal.dataobject.tenant.TenantDO;
+import com.lxzy.nomix.module.system.service.tenant.TenantService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
+import javax.annotation.security.PermitAll;
+import javax.validation.constraints.Pattern;
+
+import static com.lxzy.nomix.framework.common.pojo.CommonResult.success;
+
+@Tag(name = "用户 App - 租户")
+@RestController
+@RequestMapping("/system/tenant")
+@Validated
+public class AppTenantController {
+
+    @Resource
+    private TenantService tenantService;
+
+    @GetMapping("/get-by-website")
+    @PermitAll
+    @TenantIgnore
+    @Operation(summary = "使用域名，获得租户信息", description = "根据用户的域名，获得租户信息")
+    @Parameter(name = "website", description = "域名", required = true, example = "www.example.com")
+    public CommonResult<AppTenantRespVO> getTenantByWebsite(
+            @RequestParam("website") @Pattern(regexp = "^[a-zA-Z0-9.-]+(:\\d{1,5})?$", message = "网站域名格式不正确") String website) {
+        TenantDO tenant = tenantService.getTenantByWebsite(website);
+        if (tenant == null || CommonStatusEnum.isDisable(tenant.getStatus())) {
+            return success(null);
+        }
+        return success(BeanUtils.toBean(tenant, AppTenantRespVO.class));
+    }
+
+}

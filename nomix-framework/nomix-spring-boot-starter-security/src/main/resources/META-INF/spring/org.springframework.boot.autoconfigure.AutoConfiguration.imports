@@ -1,0 +1,3 @@
+com.lxzy.nomix.framework.security.config.NomixSecurityAutoConfiguration
+com.lxzy.nomix.framework.security.config.NomixWebSecurityConfigurerAdapter
+com.lxzy.nomix.framework.operatelog.config.NomixOperateLogConfiguration

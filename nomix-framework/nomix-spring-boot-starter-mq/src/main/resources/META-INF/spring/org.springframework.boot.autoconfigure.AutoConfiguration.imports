@@ -1,0 +1,3 @@
+com.lxzy.nomix.framework.mq.redis.config.NomixRedisMQProducerAutoConfiguration
+com.lxzy.nomix.framework.mq.redis.config.NomixRedisMQConsumerAutoConfiguration
+com.lxzy.nomix.framework.mq.rabbitmq.config.NomixRabbitMQAutoConfiguration

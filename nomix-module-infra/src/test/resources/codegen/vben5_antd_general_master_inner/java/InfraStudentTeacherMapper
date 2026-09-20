@@ -1,0 +1,32 @@
+package com.lxzy.nomix.module.infra.dal.mysql.demo;
+
+import java.util.*;
+
+import com.lxzy.nomix.framework.common.pojo.PageResult;
+import com.lxzy.nomix.framework.common.pojo.PageParam;
+import com.lxzy.nomix.framework.mybatis.core.query.LambdaQueryWrapperX;
+import com.lxzy.nomix.framework.mybatis.core.mapper.BaseMapperX;
+import com.lxzy.nomix.module.infra.dal.dataobject.demo.InfraStudentTeacherDO;
+import org.apache.ibatis.annotations.Mapper;
+
+/**
+ * 学生班主任 Mapper
+ *
+ * @author Nomix
+ */
+@Mapper
+public interface InfraStudentTeacherMapper extends BaseMapperX<InfraStudentTeacherDO> {
+
+    default InfraStudentTeacherDO selectByStudentId(Long studentId) {
+        return selectOne(InfraStudentTeacherDO::getStudentId, studentId);
+    }
+
+    default int deleteByStudentId(Long studentId) {
+        return delete(InfraStudentTeacherDO::getStudentId, studentId);
+    }
+
+	default int deleteByStudentIds(List<Long> studentIds) {
+	    return deleteBatch(InfraStudentTeacherDO::getStudentId, studentIds);
+	}
+
+}

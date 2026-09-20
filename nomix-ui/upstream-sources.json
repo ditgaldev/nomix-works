@@ -1,0 +1,23 @@
+[
+  {
+    "repository": "",
+    "directory": "nomix-ui/nomix-ui-mall-uniapp",
+    "branch": "master",
+    "commit": "3c4bf3864415054a88fe616a414e098972329412",
+    "files": 584
+  },
+  {
+    "repository": "",
+    "directory": "nomix-ui/nomix-ui-admin-vue3",
+    "branch": "master",
+    "commit": "aab14fb0e74720dd09e964ae066f8bbde9f9012e",
+    "files": 2904
+  },
+  {
+    "repository": "",
+    "directory": "nomix-ui/nomix-ui-admin-uniapp",
+    "branch": "master",
+    "commit": "ee676304925aa776cf62db21362a4498483c2c84",
+    "files": 2709
+  }
+]

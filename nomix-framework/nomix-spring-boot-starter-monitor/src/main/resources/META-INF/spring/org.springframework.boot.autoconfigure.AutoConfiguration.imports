@@ -1,0 +1,2 @@
+com.lxzy.nomix.framework.tracer.config.NomixTracerAutoConfiguration
+com.lxzy.nomix.framework.tracer.config.NomixMetricsAutoConfiguration

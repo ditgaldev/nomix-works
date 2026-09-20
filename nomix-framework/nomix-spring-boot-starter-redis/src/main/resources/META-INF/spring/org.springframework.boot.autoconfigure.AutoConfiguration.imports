@@ -1,0 +1,2 @@
+com.lxzy.nomix.framework.redis.config.NomixRedisAutoConfiguration
+com.lxzy.nomix.framework.redis.config.NomixCacheAutoConfiguration

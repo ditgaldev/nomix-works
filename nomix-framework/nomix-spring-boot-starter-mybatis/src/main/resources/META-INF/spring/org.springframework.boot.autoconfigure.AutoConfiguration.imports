@@ -1,0 +1,3 @@
+com.lxzy.nomix.framework.datasource.config.NomixDataSourceAutoConfiguration
+com.lxzy.nomix.framework.mybatis.config.NomixMybatisAutoConfiguration
+com.lxzy.nomix.framework.translate.config.NomixTranslateAutoConfiguration

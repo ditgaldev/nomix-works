@@ -1,18 +1,18 @@
 # encoding=utf8
-"""芋道系统数据库迁移工具
+"""Nomix系统数据库迁移工具
 
 Author: dhb52 (https://gitee.com/dhb52)
 
 pip install simple-ddl-parser
 
 or with uv
-uv run --with simple-ddl-parser convertor.py postgres ../mysql/ruoyi-vue-pro.sql > ../postgresql/ruoyi-vue-pro.sql
-uv run --with simple-ddl-parser convertor.py sqlserver ../mysql/ruoyi-vue-pro.sql > ../sqlserver/ruoyi-vue-pro.sql
-uv run --with simple-ddl-parser convertor.py kingbase ../mysql/ruoyi-vue-pro.sql > ../kingbase/ruoyi-vue-pro.sql
-uv run --with simple-ddl-parser convertor.py opengauss ../mysql/ruoyi-vue-pro.sql > ../opengauss/ruoyi-vue-pro.sql
-uv run --with simple-ddl-parser convertor.py highgo ../mysql/ruoyi-vue-pro.sql > ../highgo/ruoyi-vue-pro.sql
-uv run --with simple-ddl-parser convertor.py oracle ../mysql/ruoyi-vue-pro.sql > ../oracle/ruoyi-vue-pro.sql
-uv run --with simple-ddl-parser convertor.py dm8 ../mysql/ruoyi-vue-pro.sql > ../dm/ruoyi-vue-pro-dm8.sql
+uv run --with simple-ddl-parser convertor.py postgres ../mysql/nomix-vue-pro.sql > ../postgresql/nomix-vue-pro.sql
+uv run --with simple-ddl-parser convertor.py sqlserver ../mysql/nomix-vue-pro.sql > ../sqlserver/nomix-vue-pro.sql
+uv run --with simple-ddl-parser convertor.py kingbase ../mysql/nomix-vue-pro.sql > ../kingbase/nomix-vue-pro.sql
+uv run --with simple-ddl-parser convertor.py opengauss ../mysql/nomix-vue-pro.sql > ../opengauss/nomix-vue-pro.sql
+uv run --with simple-ddl-parser convertor.py highgo ../mysql/nomix-vue-pro.sql > ../highgo/nomix-vue-pro.sql
+uv run --with simple-ddl-parser convertor.py oracle ../mysql/nomix-vue-pro.sql > ../oracle/nomix-vue-pro.sql
+uv run --with simple-ddl-parser convertor.py dm8 ../mysql/nomix-vue-pro.sql > ../dm/nomix-vue-pro-dm8.sql
 """
 
 import argparse
@@ -29,7 +29,7 @@ from simple_ddl_parser import DDLParser
 sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', buffering=1)
 
 PREAMBLE = """/*
- Yudao Database Transfer Tool
+ Nomix Database Transfer Tool
 
  Source Server Type    : MySQL
 
@@ -1033,7 +1033,7 @@ class HighGoConvertor(PostgreSQLConvertor):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="芋道系统数据库转换工具")
+    parser = argparse.ArgumentParser(description="Nomix系统数据库转换工具")
     parser.add_argument(
         "type",
         type=str,
@@ -1045,7 +1045,7 @@ def main():
         type=str,
         help="源数据库脚本路径",
         nargs="?",
-        default="../mysql/ruoyi-vue-pro.sql"
+        default="../mysql/nomix-vue-pro.sql"
     )
     args = parser.parse_args()
 

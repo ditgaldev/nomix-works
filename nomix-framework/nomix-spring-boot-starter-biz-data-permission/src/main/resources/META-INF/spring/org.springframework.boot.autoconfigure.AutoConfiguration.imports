@@ -1,0 +1,2 @@
+com.lxzy.nomix.framework.datapermission.config.NomixDataPermissionAutoConfiguration
+com.lxzy.nomix.framework.datapermission.config.NomixDeptDataPermissionAutoConfiguration

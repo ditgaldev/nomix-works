@@ -7,6 +7,7 @@
 
 target/
 !.mvn/wrapper/maven-wrapper.jar
+.vite/
 
 .flattened-pom.xml
 
@@ -50,7 +51,7 @@ rebel.xml
 
 application-my.yaml
 
-/yudao-ui-app/unpackage/
+/nomix-ui-app/unpackage/
 .DS_Store
 **/.DS_Store
 outputs/

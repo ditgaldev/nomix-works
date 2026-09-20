@@ -1,0 +1,49 @@
+package com.lxzy.nomix.module.iot.mq.consumer.rule;
+
+import com.lxzy.nomix.module.iot.core.messagebus.core.IotMessageBus;
+import com.lxzy.nomix.module.iot.core.messagebus.core.IotMessageSubscriber;
+import com.lxzy.nomix.module.iot.core.mq.message.IotDeviceMessage;
+import com.lxzy.nomix.module.iot.service.rule.scene.IotSceneRuleService;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
+
+/**
+ * 针对 {@link IotDeviceMessage} 的消费者，处理规则场景
+ *
+ * @author Nomix
+ */
+@Component
+@Slf4j
+public class IotSceneRuleMessageSubscriber implements IotMessageSubscriber<IotDeviceMessage> {
+
+    @Resource
+    private IotSceneRuleService sceneRuleService;
+
+    @Resource
+    private IotMessageBus messageBus;
+
+    @PostConstruct
+    public void init() {
+        messageBus.register(this);
+    }
+
+    @Override
+    public String getTopic() {
+        return IotDeviceMessage.MESSAGE_BUS_DEVICE_MESSAGE_TOPIC;
+    }
+
+    @Override
+    public String getGroup() {
+        return "iot_rule_consumer";
+    }
+
+    @Override
+    public void onMessage(IotDeviceMessage message) {
+        log.info("[onMessage][消息内容({})]", message);
+        sceneRuleService.executeSceneRuleByDevice(message);
+    }
+
+}

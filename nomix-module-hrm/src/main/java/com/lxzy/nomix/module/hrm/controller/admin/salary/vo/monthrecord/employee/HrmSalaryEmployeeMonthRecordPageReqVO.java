@@ -1,0 +1,24 @@
+package com.lxzy.nomix.module.hrm.controller.admin.salary.vo.monthrecord.employee;
+
+import com.lxzy.nomix.framework.common.pojo.PageParam;
+import com.lxzy.nomix.framework.common.validation.InEnum;
+import com.lxzy.nomix.module.hrm.enums.salary.monthrecord.HrmSalaryMonthRecordStatusEnum;
+import io.swagger.v3.oas.annotations.media.Schema;
+import javax.validation.constraints.NotNull;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@Schema(description = "管理后台 - HRM 员工月度工资分页 Request VO")
+@Data
+@EqualsAndHashCode(callSuper = true)
+public class HrmSalaryEmployeeMonthRecordPageReqVO extends PageParam {
+
+    @Schema(description = "员工编号", requiredMode = Schema.RequiredMode.REQUIRED, example = "1024")
+    @NotNull(message = "员工编号不能为空")
+    private Long employeeId;
+
+    @Schema(description = "月度工资表状态", example = "10")
+    @InEnum(value = HrmSalaryMonthRecordStatusEnum.class, message = "月度工资表状态必须是 {value}")
+    private Integer monthRecordStatus;
+
+}

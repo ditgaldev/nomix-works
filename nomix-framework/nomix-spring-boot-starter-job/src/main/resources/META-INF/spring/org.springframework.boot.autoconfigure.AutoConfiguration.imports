@@ -1,0 +1,2 @@
+com.lxzy.nomix.framework.quartz.config.NomixQuartzAutoConfiguration
+com.lxzy.nomix.framework.quartz.config.NomixAsyncAutoConfiguration

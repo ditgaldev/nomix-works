@@ -1,0 +1,4 @@
+com.lxzy.nomix.framework.idempotent.config.NomixIdempotentConfiguration
+com.lxzy.nomix.framework.lock4j.config.NomixLock4jConfiguration
+com.lxzy.nomix.framework.ratelimiter.config.NomixRateLimiterConfiguration
+com.lxzy.nomix.framework.signature.config.NomixApiSignatureAutoConfiguration

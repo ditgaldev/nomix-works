@@ -1,0 +1,31 @@
+package com.lxzy.nomix.module.mes.dal.mysql.wm.itemconsume;
+
+import com.lxzy.nomix.framework.common.pojo.PageResult;
+import com.lxzy.nomix.framework.mybatis.core.mapper.BaseMapperX;
+import com.lxzy.nomix.framework.mybatis.core.query.LambdaQueryWrapperX;
+import com.lxzy.nomix.module.mes.controller.admin.wm.itemconsume.vo.MesWmItemConsumeLinePageReqVO;
+import com.lxzy.nomix.module.mes.dal.dataobject.wm.itemconsume.MesWmItemConsumeLineDO;
+import org.apache.ibatis.annotations.Mapper;
+
+import java.util.List;
+
+/**
+ * MES 物料消耗记录行 Mapper
+ *
+ * @author Nomix
+ */
+@Mapper
+public interface MesWmItemConsumeLineMapper extends BaseMapperX<MesWmItemConsumeLineDO> {
+
+    default PageResult<MesWmItemConsumeLineDO> selectPage(MesWmItemConsumeLinePageReqVO reqVO,
+                                                          Long consumeId) {
+        return selectPage(reqVO, new LambdaQueryWrapperX<MesWmItemConsumeLineDO>()
+                .eq(MesWmItemConsumeLineDO::getConsumeId, consumeId)
+                .orderByDesc(MesWmItemConsumeLineDO::getId));
+    }
+
+    default List<MesWmItemConsumeLineDO> selectListByConsumeId(Long consumeId) {
+        return selectList(MesWmItemConsumeLineDO::getConsumeId, consumeId);
+    }
+
+}
