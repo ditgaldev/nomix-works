@@ -53,3 +53,7 @@ application-my.yaml
 /nomix-ui-app/unpackage/
 .DS_Store
 **/.DS_Store
+
+# Local build and task artifacts
+**/.vite/
+/outputs/
