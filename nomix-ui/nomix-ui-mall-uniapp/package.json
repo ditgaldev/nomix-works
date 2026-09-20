@@ -1,24 +1,24 @@
 {
-  "id": "shopro",
-  "name": "shopro",
+  "id": "nomix-mall",
+  "name": "nomix-mall",
   "displayName": "Nomix商城",
   "version": "2026.08",
   "description": "Nomix商城，一套代码，同时发行到iOS、Android、H5、微信小程序多个平台，请使用手机扫码快速体验强大功能",
   "scripts": {
     "prettier": "prettier --write  \"{pages,sheep}/**/*.{js,json,tsx,css,less,scss,vue,html,md}\""
   },
-  "repository": "https://github.com/sheepjs/shop.git",
+  "repository": "https://github.com/ditgaldev/nomix-works.git",
   "keywords": [
     "商城",
     "B2C",
     "商城模板"
   ],
-  "author": "",
+  "author": "Nomix contributors",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sheepjs/shop/issues"
+    "url": "https://github.com/ditgaldev/nomix-works/issues"
   },
-  "homepage": "https://github.com/dcloudio/hello-uniapp#readme",
+  "homepage": "https://github.com/ditgaldev/nomix-works#readme",
   "dcloudext": {
     "category": [
       "前端页面模板",

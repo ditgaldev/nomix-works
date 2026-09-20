@@ -84,7 +84,7 @@ public class IotDeviceMessageUtils {
         if (params instanceof Map) {
             return ((Map<?, ?>) params).get(fieldName);
         }
-        // 跳过 JDK 内置类型，避免反射读取到内部字段（例如 JDK8 下 String#value 会返回 char[]）
+        // 跳过 JDK 内置类型，避免依赖 String 等类型的内部字段实现
         if (ClassUtil.isJdkClass(params.getClass())) {
             return null;
         }

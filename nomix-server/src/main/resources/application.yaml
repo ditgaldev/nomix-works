@@ -311,7 +311,6 @@ nomix:
     author: Nomix contributors
     version: ${nomix.info.version}
     url: ${nomix.web.admin-ui.url}
-    email: contact@example.com
     license: MIT
     license-url: https://opensource.org/license/mit
   codegen:

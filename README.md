@@ -2,6 +2,8 @@
 
 Nomix 是一个前后端分离的企业管理系统，包含 Java 后端、PC 管理端、移动管理端和商城端。
 
+项目仓库：https://github.com/ditgaldev/nomix-works
+
 ## 项目结构
 
 ### 后端模块
